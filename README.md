@@ -66,3 +66,11 @@ From ArcGIS: http://mapy.plzensky-kraj.cz/ArcGIS/rest/services/zastavky/MapServe
 ## MoravskoslezskyKraj.csv
 
 From ArcGIS: https://gis.msk.cz/arcgis/rest/services/public/dsh\_bus/MapServer/6
+
+## KrajVysocina.csv
+
+From ArcGIS: http://geoportal.kr-vysocina.cz/arcgis/rest/services/Trasy\_dopravy/zastavky/MapServer
+
+## KarlovarskyKraj.csv
+
+From ArcGIS: http://geoportal.kr-karlovarsky.cz/arcgis/rest/services/UAP/UAP\_msd/MapServer
