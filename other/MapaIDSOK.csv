@@ -44,6 +44,7 @@ Lupěné,49.86790102,16.84104811
 "Javorník, Račí údolí rozc.",50.382927,17.01041
 "Uničov, Střelice, rozc.Renoty",49.749363,17.092188
 "Loučany, Hliníky",49.600326,17.080789
+"Šumperk, aut.st.",49.9634337,16.97937156
 "Císařov, u pomníku",49.464603,17.353215
 "Koválovice-Osíčany, Osíčany, kaple",49.278262,17.173123
 "Ruda n.Mor., Hostice, Na drahách",50.001458,16.873269
@@ -80,6 +81,7 @@ Jindřichov na Moravě,50.09904872,16.98922136
 "Mohelnice, Libivá, rest.",49.797636,16.914193
 "Soběchleby, Záhumení",49.478146,17.648807
 "Bělotín, střed",49.585627,17.799648
+"Olomouc, Svatý Kopeček, bazilika",49.628787,17.340539
 "Olšany, Klášterec, rozc.",49.953942,16.865213
 "Dolany, Pod Kartouzkou",49.652611,17.333648
 "Šumperk, Zábřežská samoobsluha",49.963006,16.964714
@@ -88,6 +90,7 @@ Jindřichov na Moravě,50.09904872,16.98922136
 "Jeseník, rest.Slunce",50.218713,17.210044
 "Grygov, u parku",49.538788,17.308753
 "Vražné, Hynčice, Mendel",49.61897,17.835594
+"Olomouc, Svatý Kopeček, ZOO",49.630438,17.348125
 "Uničov, Renoty, náves",49.740585,17.101923
 "Jindřichov, Habartice, č.61",50.111212,16.965001
 "Bernartice, Buková, most",50.356749,17.075976
@@ -111,6 +114,7 @@ Odrlice,49.6438459,17.07184369
 "Olomouc, Pod Letištěm",49.591702,17.200422
 "Hranice, Struhlovsko",49.554625,17.724854
 "Bernartice, Buková, statek",50.362808,17.07391
+"Jaroměřice, Nadevsí",49.622976,16.756768
 "Olomouc, Erenburgova",49.599529,17.232164
 "Šumperk, TDK",49.952007,16.961932
 "Štíty, nám.",49.962031,16.763048
@@ -183,8 +187,8 @@ Vlaské,50.087463,16.900161
 "Pěnčín, ObÚ",49.568462,17.007113
 "Žulová, Tomíkovice, žel.st.",50.326174,17.104912
 "Plumlov, Hamry",49.470747,16.968799
-Sobotín,50.01770965,17.06672417
 Ostružná,50.18360257,17.05073485
+Sobotín,50.01770965,17.06672417
 "Jeseník, Ježkova-závod",50.225015,17.187033
 "Bochoř, včelín",49.417286,17.408796
 "Hustopeče n.Bečvou, Poruba, dvůr",49.539229,17.908832
@@ -198,6 +202,7 @@ Ostružná,50.18360257,17.05073485
 Dřínov,49.291172,17.233904
 Raškov,50.0402607,16.91260523
 Jesenec,49.60635724,16.861086
+"Nový Malín, škola",49.94211356,17.02091405
 "Bohutín, hasičárna",49.952378,16.876387
 "Přerov, Prior",49.450737,17.454807
 "Mořice, křiž.",49.327468,17.198296
@@ -236,7 +241,6 @@ Věžky,49.40837622,17.41627046
 Alojzov,49.422978,17.041971
 Dřevnovice,49.328528,17.145473
 "Troubelice, Dědinka, náves",49.805465,17.059643
-"Sobotín, Klepáčov, rekr.stř.",50.007016,17.134843
 "Hranice, pošta",49.552019,17.735363
 "Oskava, Bedřichov, obchod",49.931526,17.155709
 "Vlkoš, dřevařské záv.",49.397187,17.41619
@@ -299,7 +303,6 @@ Mohelnice,49.77675728,16.94297852
 "Šumperk, Lidická 13",49.971656,16.981617
 "Luká, Březina, rozc.",49.665566,16.93534
 "Zábřeh, Sladovna záv.",49.880998,16.87152
-"Nový Malín, škola",49.942151,17.020802
 "Šumperk, Jesenická",49.965007,16.993361
 "Klopina, rest.",49.814326,17.019511
 "Troubelice, žel.st.",49.804856,17.075754
@@ -309,7 +312,6 @@ Mohelnice,49.77675728,16.94297852
 "Litovel, Pošmíl",49.708922,17.086996
 "Uničov, sídl.Pionýrů",49.767455,17.112602
 "Určice, has.zbroj.",49.429141,17.072758
-"Huzová, mlýn",49.813655,17.2917
 "Olomouc, Kaufland",49.588092,17.271386
 "Prostějov, Trpínky",49.476577,17.155906
 "Dubicko, škola",49.82854,16.961966
@@ -319,7 +321,6 @@ Mohelnice,49.77675728,16.94297852
 Špičky,49.53679036,17.81288936
 "Hanušovice, U rychty",50.090886,16.944409
 "Zábřeh, Dvořákova",49.880297,16.867241
-"Olšany u Prostějova, Muerdter",49.539959,17.157053
 "Budětsko, Zavadilka",49.58263,16.911632
 "Bušín, Hartíkov, rozc.",49.994512,16.836305
 "Pavlov, Veselí, rest.",49.730227,16.846695
@@ -344,12 +345,12 @@ Hrubá Voda-Smilov,49.69056795,17.4429248
 "Medlov, u parku",49.787228,17.059737
 "Velký Týnec, Komárov",49.549448,17.343977
 "Velké Kunětice, rest.",50.317111,17.265384
-"Olomouc, Svatý Kopeček, bazilika",49.628787,17.340539
 "Horní Újezd, Drholec",49.445876,17.745126
 Postřelmov,49.9101149,16.92300414
 "Hanušovice, Žleb, rozc.",50.088353,16.914266
 "Klopina, ObÚ",49.817728,17.018217
 "Kladky, Vyšehrad",49.651106,16.823258
+Jablůnka,49.3767439,17.94737872
 "Prostějov, A.S.A.",49.467945,17.132752
 "Olomouc, Hřbitovy",49.595946,17.222986
 "Lipová, Seč",49.524801,16.885367
@@ -371,6 +372,7 @@ Tomíkovice,50.32267532,17.10769083
 "Lipina, Stachov",49.735341,17.327498
 Milotice n.Bečvou,49.5342363,17.83549694
 "Olomouc, motel Prachárna",49.606916,17.213594
+Brňov,49.43722319,17.96693149
 "Hněvotín, WANZL",49.569421,17.188655
 "Šumperk, Pramet",49.960111,16.981352
 "Loučka, náves",49.654302,17.011715
@@ -407,7 +409,6 @@ Dolní Orlice,50.065691,16.74746
 "Úsov, škola",49.80271,17.013133
 "Lobodice, točna",49.395461,17.291715
 "Staré Město, Chrastice, točna",50.136037,16.930004
-"Krčmaň, Olomoucká",49.521831,17.343633
 "Kelč, Němetice, čekárna",49.50176,17.840283
 "Zlaté Hory, RD",50.224493,17.404819
 "Senice na Hané, škola",49.628641,17.086481
@@ -418,6 +419,7 @@ Brodek u Přerova,49.48204499,17.33738814
 Bernartice u Javorníka,50.39663251,17.08158279
 "Loučná n.Des., ObÚ",50.071836,17.090252
 "Hlubočky, Domov důchodců",49.659565,17.408868
+"Olomouc, U Bristolu",49.598034,17.266806
 "Olomouc, Droždín, Bukovanská",49.6102092,17.3376781
 "Zábřeh, Zubní odd.",49.884122,16.879764
 "Suchdol, Labutice",49.547312,16.861958
@@ -431,6 +433,7 @@ Drahotuše,49.55240077,17.68233059
 "Olomouc, FN Alergologie",49.586987,17.238927
 "Prostějovičky, točna",49.425949,16.996187
 "Prostějov, Plumlovská",49.472447,17.101143
+"Velká Kraš, Hukovice, zast.",50.361268,17.127213
 "Oskava, Bedřichov, konečná",49.937115,17.158956
 "Protivanov, dol.zast.",49.487377,16.837704
 "Petrov n.Des., žel.st.",50.000915,17.030202
@@ -463,6 +466,7 @@ Uničov,49.77922587,17.11575866
 "Supíkovice, kolonky",50.307974,17.257672
 "Otinoves, hor.konec",49.426436,16.870216
 "Olomouc, Konzum",49.581838,17.273409
+"Lipina, rozc.",49.74129919,17.3224682
 "Skorošice, Nýznerov, kaple",50.291869,17.07775
 "Šternberk, Jesenická",49.736229,17.294501
 "Olomouc, Domov seniorů",49.615834,17.296648
@@ -479,10 +483,8 @@ Pivín,49.38748871,17.18874965
 "Šumvald, Břevenec, škola",49.852054,17.148765
 "Ptení, Ptenský Dvorek, rest.",49.530707,16.953444
 "Kralice na Hané, Prostějovská",49.463943,17.174312
-"Lipina, rozc.",49.741225,17.322459
 "Brodek u Konice, Lhota u Konice",49.557278,16.857383
 "Litovel, Nová Ves, rozc.",49.683457,17.022439
-"Hranice, Šromotovo nám.",49.550971,17.733395
 "Štíty, škola",49.961371,16.76546
 "Mikulovice, Široký Brod, pošta",50.273802,17.279704
 "Konice, Nová Dědina, Na Pindě",49.581529,16.957432
@@ -504,11 +506,11 @@ Nová Hradečná,49.83580314,17.07229716
 "Přerov, rozc.k letišti",49.440477,17.407161
 "Mohelnice, žel.st.",49.77689,16.942499
 "Šumperk, Jeremenkova 17",49.965392,16.989044
-"Velká Kraš, Hukovice, rozc.",50.362739,17.130035
 "Tovačov, Annín, rozc.",49.417408,17.282821
 "Černotín, rozc.",49.529279,17.77282
 "Javorník, MEZ",50.385262,16.984352
 "Olomouc, Nádraží město",49.595226,17.241994
+"Kokory, točna",49.497264,17.373874
 "Radvanice, Obecní úřad",49.509723,17.479762
 "Olomouc, Hněvotínská",49.58594,17.231236
 "Želechovice, Jednota",49.753792,17.144308
@@ -518,9 +520,7 @@ Nová Hradečná,49.83580314,17.07229716
 "Přerov, Popovice, kovárna",49.477181,17.444262
 "Olomouc, Pionýrská",49.577704,17.238372
 "Hranice, Pod farou",49.545362,17.734652
-"Želatovice, náves",49.444807,17.503575
 "Přerov, Kabelíkova",49.451376,17.474265
-"Bělkovice-Lašťany, Lašťany, Hostinec",49.670494,17.316506
 "Přerov, Kojetínská TESCO",49.449852,17.444673
 "Mikulovice, žel.st.",50.302969,17.322509
 "Kelč, aut.st.",49.479016,17.818158
@@ -552,13 +552,12 @@ Bousín,49.454871,16.889512
 "Křtomil, náves",49.409206,17.628257
 "Drahany, kostel",49.435277,16.900024
 "Litovel, Nasobůrky, cihelna",49.688049,17.053913
-"Bělkovice-Lašťany, Bělkovice",49.668191,17.316391
-"Brodek u Přerova, Masarykovo nám.",49.484302,17.339446
 "Šumperk, rozc.k sanatoriu",49.974584,16.973572
 "Stará Červ.Voda, Nová Červ.Voda, škola",50.311395,17.189154
 "Benešov, Pavlov",49.510604,16.780784
 Podivice,49.366435,17.011911
 "Tršice, Hostkovice, náves",49.54878,17.374353
+"Sobotín, Klepáčov, rekr.stř.",50.00694146,17.1347978
 "Polom, pošta",49.577642,17.842958
 "Hanušovice, lesní a.s.",50.0805,16.937019
 "Opatovice, dolní konec",49.504181,17.740126
@@ -575,10 +574,12 @@ Podivice,49.366435,17.011911
 "Přílepy, u zámku",49.320989,17.613318
 "Skorošice, Petrovice, obchod",50.310859,17.047843
 Hvozd,49.636474,16.909694
+"Moravský Beroun, U Sedmi Dvorů",49.783545,17.43900051
 "Přerov, Penčice, Penčičky náves",49.514109,17.417258
 "Bílá Lhota, Řimice, náves",49.722538,16.982869
 Mladeč jeskyně,49.70287488,17.01443999
 "Horní Moštěnice, stadion",49.41685,17.459259
+"Huzová, mlýn",49.81360001,17.29168
 "Malá Morava, Vojtíškov, horní konec",50.108692,16.873395
 "Bludov, škola",49.944677,16.92359
 "Bratrušov, škola",50.013929,16.949002
@@ -588,6 +589,7 @@ Mladeč jeskyně,49.70287488,17.01443999
 "Olomouc, Dopravní stavby",49.599383,17.289062
 "Město Libavá, nám.",49.720757,17.520194
 "Oskava, ObÚ",49.892005,17.134916
+"Rapotín, u hřiště",49.99985768,17.01699767
 "Hlubočky, Mariánské Údolí, potraviny",49.617451,17.394671
 "Kladníky, Vidláč",49.490308,17.616128
 "Mladějovice, rozc.",49.75128,17.233148
@@ -601,9 +603,11 @@ Víceměřice,49.344015,17.169472
 "Kyselovice, náves",49.376274,17.39923
 "Přerov, Lýsky, u podjezdu",49.480142,17.453703
 "Turovice, náves",49.424969,17.580222
+"Hranice, Šromotovo nám.",49.5509687,17.7334193
 "Boskovice, Lidická",49.487024,16.665445
 Hulín,49.316786,17.476202
 "Brodek u Konice, nám.",49.548604,16.832813
+"Krčmaň, Olomoucká",49.52174952,17.34375477
 "Těšetice, pošta",49.590736,17.130287
 "Hranice, Velká, rozc.",49.571615,17.730005
 "Úsov, nám.",49.799523,17.009943
@@ -638,6 +642,7 @@ Drahany,49.434529,16.899254
 "Bludov, konečná",49.957306,16.921748
 "Střeň, žel.st.",49.697593,17.156552
 "Šumperk, Lidická krytý bazén",49.959783,16.988802
+"Brodek u Přerova, Masarykovo nám.",49.484302,17.339446
 "Prostějov, rybník",49.467545,17.104706
 "Jaroměřice, u hřiště",49.627606,16.74633
 "Horka n.Mor., areál Delta",49.627357,17.205348
@@ -672,6 +677,7 @@ Ondřejovice zast.,50.26292337,17.35341878
 "Šumperk, Temenická ZŠ",49.972026,16.960447
 "Slatinice, Lípy, náves",49.546636,17.10373
 "Potštát, rozc.Kyžlířov",49.626547,17.663786
+"Huzová, Arnoltice",49.84537115,17.35464589
 "Lipník n.Bečvou, sídl.Zahradní",49.523572,17.588381
 Hranice na Moravě m.,49.54578185,17.74182335
 "Potštát, Lipná, točna",49.667131,17.692128
@@ -719,7 +725,6 @@ Bílá Voda,50.017342,16.747678
 "Hraničné Petrovice, rest.",49.738919,17.401207
 "Olomouc, Kaufland sklad",49.564083,17.307007
 "Oskava, Třemešek, zast.",49.912466,17.126458
-"Bělá p.Prad., Domašov, pošta",50.163878,17.196598
 "Olomouc, Droždín, dol.konec",49.617233,17.328931
 "Loučná n.Des., zámek",50.064572,17.0922
 "Vrbátky, Štětovice",49.496535,17.207032
@@ -746,7 +751,6 @@ Mikulovice,50.30248277,17.32025669
 "Příkazy, Hynkov, rest.",49.66911,17.173283
 "Šternberk, Těšíkov",49.737269,17.347571
 "Litovel, hřbitov",49.681998,17.078024
-"Loučná n.Des., rozc.Maršíkov",50.055624,17.086671
 "Lužice, nám.",49.715788,17.259722
 "Bouzov, hřbitov",49.69672,16.904458
 "Rajnochovice, Troják",49.353589,17.812723
@@ -758,6 +762,7 @@ Mikulovice,50.30248277,17.32025669
 "Supíkovice, ČMPK",50.293184,17.248583
 "Uničov, hřbitov",49.766773,17.116596
 "Olomouc, Finanční úřad",49.602776,17.252436
+Bystřička,49.41721278,17.95874679
 "Zábřeh, Hněvkov, zahrádky",49.866354,16.822281
 "Lhotka, most",49.498328,17.415019
 "Morkovice-Slížany, Morkovice, žel.st.",49.252521,17.211472
@@ -775,6 +780,7 @@ Hanušovice-Holba,50.05827055,16.92303791
 "Doloplazy, u lípy",49.568076,17.41385
 "Dolní Újezd, rozc.",49.544753,17.538173
 "Sobotín, koliba",50.015961,17.080365
+"Moravský Beroun, N.Valteřice, točna",49.84402389,17.47331277
 "Olomouc, Staškova",49.578669,17.298815
 "Dlouhá Loučka, u spálené hospody",49.811835,17.166172
 "Lipová-lázně, rest.Selská světnička",50.228784,17.159534
@@ -789,6 +795,7 @@ Hanušovice-Holba,50.05827055,16.92303791
 "Mrsklesy, křiž.",49.602826,17.401558
 "Olomouc, Šantovka",49.587758,17.257982
 "Rokytnice, pálenice",49.464019,17.379853
+"Šternberk, Masarykova",49.7255986,17.2902993
 "Bernartice, dopr.stř.",50.387876,17.066597
 "Červená Voda, Perla 09",50.045043,16.739512
 "Jeseník, Lázně, Kalvodova",50.232773,17.189125
@@ -850,6 +857,7 @@ Uničov zast.,49.77754522,17.14483474
 "Velký Újezd, aut.st.",49.578669,17.480566
 "Bernartice, Buková",50.366418,17.076476
 "Lutín, Sigma",49.555704,17.144586
+Vsetín,49.33520968,17.99394572
 "Přerov, Palackého",49.454413,17.447059
 Olomouc město,49.59409232,17.24123514
 "Konice, Ladín",49.610587,16.87642
@@ -891,7 +899,6 @@ Klopotovice,49.446101,17.25062
 "Ruda n.Mor., Hostice, kartáčovna",49.997719,16.877768
 "Olomouc, Horecká",49.639218,17.231563
 "Velké Losiny, zámek",50.02484,17.034749
-"Šternberk, Masarykova",49.725848,17.291741
 "Litovel, Savín, rozc.",49.681094,16.988612
 "Šumperk, hřbitov",49.950048,16.956545
 "Horní Nětčice, rozc.",49.469865,17.684074
@@ -989,7 +996,6 @@ Raková u Konice,49.607565,16.950231
 "Šumperk, PVT",49.951468,16.980661
 "Bystřice p.Host., nám.",49.399175,17.673876
 "Šumperk, nemocnice",49.959309,16.96301
-"Olomouc, Svatý Kopeček, ZOO",49.630438,17.348125
 "Věrovany, křiž.u pošty",49.463879,17.290927
 "Přerov, Velká Dlážka",49.460028,17.442193
 "Sobotín, rozc.Maršíkov",50.027766,17.088259
@@ -1001,7 +1007,6 @@ Babice u Šternberka,49.74106682,17.26866045
 "Javorník, háj.",50.382397,16.976245
 "Olomouc, Kmochova",49.593096,17.231247
 "Domašov u Šternberka, nám.",49.705846,17.338086
-"Jeseník, sídliště",50.237248,17.206576
 Plumlov,49.465907,17.015156
 Chropyně,49.36955041,17.36111123
 "Stražisko, Maleny",49.548325,16.927216
@@ -1086,7 +1091,6 @@ Hlubočky,49.64720167,17.40808946
 Hrdibořice,49.478058,17.219921
 "Slatinky, náves",49.549109,17.093394
 "Němčice, náves",49.365097,17.498365
-"Moravský Beroun, N.Valteřice, točna",49.844023,17.473309
 "Hnojice, nám.",49.7164,17.223692
 "Kladníky, Větrný mlýn",49.489456,17.591335
 "Lipovec, hor.konec",49.378953,16.812985
@@ -1161,7 +1165,6 @@ Hruška,49.358866,17.226304
 "Černotín, Obecní úřad",49.532468,17.772464
 "Lukavice, náves",49.822965,16.919718
 "Mohelnice, Podolí, u kaple",49.776835,16.891511
-"Kokory, točna",49.497264,17.373874
 "Mohelnice, U podjezdu",49.767068,16.918703
 "Sudkov, Moravolen",49.913234,16.934058
 Štarnov,49.68454171,17.28494121
@@ -1209,7 +1212,6 @@ Roštění,49.366171,17.533258
 "Nový Malín, Mladoňov, náves",49.922135,17.084521
 "Olomouc, Žižkovo nám.",49.596068,17.265189
 "Paseka, VEPA",49.777295,17.234102
-"Moravský Beroun, U Sedmi Dvorů",49.783545,17.439046
 "Olomouc, Neředín, krematorium",49.595407,17.21714
 "Supíkovice, jeskyně",50.28251,17.253725
 "Partutovice, horní konec",49.631078,17.708042
@@ -1258,6 +1260,7 @@ Hlubočky-Mar.Údolí,49.61331204,17.3948487
 "Skalička, škola",49.51837,17.793979
 "Linhartice, závod",49.760483,16.677119
 "Mohelnice, SIEMENS ul.1.máje",49.776392,16.931252
+"Bělá p.Prad., Domašov, pošta",50.16390333,17.19657825
 "Spálov, Na Kocandě",49.69991,17.715124
 "Brodek u Prostějova, zámek",49.369174,17.082435
 "Olomouc, U Bystřičky",49.594522,17.270832
@@ -1276,8 +1279,10 @@ Litovel předm.,49.69425767,17.07131303
 "Domašov n.Bystř., lihovar",49.742962,17.453018
 Blatec,49.52546256,17.24614409
 "Štěpánov, rozc.Krnovská",49.69065,17.20556
+"Loučná n.Des., rozc.Maršíkov",50.055624,17.086671
 "Police, kult.dům",49.814937,16.995673
 "Lipová-lázně, záv.",50.225077,17.113044
+"Uničov, Plzeňská",49.77182292,17.11662961
 "Nemile, kult.dům",49.87207,16.846157
 "Přerov, Předmostí, Teličkova",49.466229,17.443599
 "Bernartice, ObÚ",50.388733,17.078355
@@ -1330,6 +1335,7 @@ Myslechovice,49.67688548,17.04886661
 "Rozstání, křiž.",49.39728,16.836957
 "Litovel, Chořelice, rozc.",49.68845,17.077617
 "Dolní Studénky, kostel",49.930563,16.963687
+"Loučná n.Des., Rejhotice, DŘEVOSTYL",50.086526,17.09062
 "Přerov, Lověšice, podjezd",49.428389,17.449778
 "Ludíkov, rozc.0.5",49.458227,16.737046
 "Mrsklesy, Kovákov",49.606515,17.397027
@@ -1495,6 +1501,7 @@ Střeň,49.69722605,17.156894
 "Veselíčko, kamenolom",49.529097,17.49445
 "Vyšehoří, u kaple",49.932591,16.87996
 "Klopina, Veleboř, hájenka",49.847451,17.019737
+"Polom, rozc.k žel.st.",49.57651931,17.85678688
 "Libina, Svazarm",49.874276,17.086362
 "Radkovy, rest.",49.436081,17.614205
 "Štíty, samota",49.950455,16.738444
@@ -1512,6 +1519,7 @@ Velké Losiny zast.,50.04004535,17.05579289
 "Pavlov, Zavadilka, rest.",49.746472,16.865081
 Luboměř p.Strážnou,49.688002,17.664655
 "Kojetín, žel.st.",49.34593,17.304341
+Horní Heřmanice,49.29161792,17.05939248
 "Podivice, háj.",49.368286,17.042749
 Loučná n.Desnou-Filipová,50.05488662,17.08243132
 "Němčice n.Hanou, Novosady",49.34358,17.203621
@@ -1604,6 +1612,7 @@ Horka n.Moravou,49.63761644,17.20155166
 Hlušovice,49.63897981,17.2811519
 "Drahanovice, Kníničky, rozc.",49.576587,17.059633
 "Blatec, rozc.",49.529364,17.25152
+"Bělkovice-Lašťany, Bělkovice",49.66811255,17.31637174
 "Věrovany, rest.Na vrchu",49.462374,17.286129
 Litovel,49.71285472,17.07460498
 "Olomouc, Olomouc CITY",49.601483,17.219915
@@ -1623,7 +1632,6 @@ Srbce,49.303527,17.229633
 "Petrov n.Des., ObÚ",50.016179,17.064908
 "Bochoř, lázně",49.419788,17.427975
 "Žalkovice, rest.",49.371131,17.438038
-Horní Heřmanice,50.38777373,17.10745032
 Chrastice,50.14330879,16.94954531
 "Budětsko, pod Slavíkovem",49.58453,16.940121
 "Velký Týnec, Vsisko, rozc.",49.553557,17.316514
@@ -1641,6 +1649,7 @@ Nezamyslice,49.33573155,17.16145682
 "Olomouc, Pasteurova",49.599203,17.271997
 "Malhotice, ZD",49.485705,17.759851
 "Bouzov, Hvozdečko, čekárna",49.688846,16.929315
+Ivanovice na Hané,49.3063191,17.08719105
 "Maletín, Javoří, rekr.stř.",49.805001,16.801887
 "Zábřeh, krytý bazén",49.877397,16.867382
 "Velké Losiny, Žárová, most",50.06175,17.00434
@@ -1656,7 +1665,6 @@ Nezamyslice,49.33573155,17.16145682
 "Branná, u žel.st.",50.148055,17.013743
 "Olomouc, Jablonského",49.607928,17.260014
 "Kladky, obchod",49.64995,16.840178
-"Přerov, Žeravice, Lapač",49.48392,17.399119
 "Tučín, náves",49.45391,17.514116
 "Újezd, ObÚ",49.763312,17.180574
 Rájec,49.857359,16.901756
@@ -1702,7 +1710,6 @@ Olomouc-Hejčín,49.60229344,17.23665393
 "Vikýřovice, žel.zast.",49.977185,17.013498
 "Troubky, dědina",49.432125,17.351505
 "Branná, nám.",50.15222,17.010974
-"Olomouc, DPMO",49.598029,17.255401
 "Střítež n.Ludinou, Skalka",49.613225,17.745378
 "Bystročice, obchod",49.535749,17.191151
 "Olomouc, U kapličky",49.574196,17.248126
@@ -1727,6 +1734,7 @@ Zlaté Hory,50.25935193,17.38323328
 "Bělotín, Lučice, škola",49.593573,17.832794
 "Bludov, Habermannova vila",49.927725,16.920489
 "Libina, u Lišáka",49.889549,17.073009
+Lhotka n.Bečvou,49.504077,17.933061
 "Troubky, Zavadilka",49.430599,17.340351
 "Oskava, Nemrlov, kaple",49.883842,17.141054
 "Haňovice, náves",49.680789,17.04613
@@ -1781,12 +1789,12 @@ Prostějov hl.n.,49.47278585,17.1296126
 "Moravský Beroun, Ondrášov",49.787836,17.426911
 "Kojetín, nám.",49.352957,17.303466
 "Hulín, spínačka",49.31544,17.449244
+Vyškov na Moravě,49.27855981,16.99149544
 "Troubelice, u Polákových",49.814854,17.087209
 "Bílá Lhota, Hrabí, střed",49.712094,16.963049
 "Supíkovice, Národní dům",50.301273,17.257957
 "Olomouc, Zikova",49.577485,17.254725
 "Hanušovice, Vysoké Žibř., rozc.",50.111545,16.930091
-"Velká Kraš, Hukovice, zast.",50.361543,17.127888
 "Ruda n.Mor., Hrabenov, hor.konec",49.976216,16.912918
 "Nový Malín, u křížku",49.936215,17.056785
 "Ivaň, sokolovna",49.423287,17.247141
@@ -1820,6 +1828,7 @@ Hanušovice zast.,50.08921485,16.92011484
 "Skorošice, Sedmlánů",50.329638,17.068582
 "Černá Voda, hřiště",50.312869,17.160876
 "Kozlov, Slavkov, osada",49.584132,17.565202
+Chvalkovice na Hané,49.3212951,17.11133337
 "Štíty, Crhov, dol.konec",49.93191,16.749821
 "Bílá Voda, Kamenička",50.43691,16.933096
 "Olomouc, Na Špici",49.599016,17.27433
@@ -1838,7 +1847,6 @@ Rapotín zast.,50.00942589,17.03124913
 "Bystrovany, U Bystřičky",49.594026,17.32341
 "Přerov, Dluhonice, náves",49.454241,17.414206
 "Lukavice, Slavoňov",49.820149,16.892077
-"Jaroměřice, Nadevsí",49.627606,16.756768
 "Kralice na Hané, U háje",49.465562,17.15453
 "Přerov, Henčlov, náves",49.43693,17.392363
 "Malé Hradisko, Okluky",49.498518,16.90741
@@ -1847,7 +1855,6 @@ Rapotín zast.,50.00942589,17.03124913
 "Pavlovice u Kojetína, Unčice",49.299653,17.205003
 "Chvalčov, Valašky",49.372567,17.735606
 "Zábřeh, čistírna",49.873146,16.904791
-"Loučná n.Des., Rejhotice, DŘEVOSTYL",50.086526,17.09062
 "Dlouhá Loučka, Valš.Důl, točna",49.836166,17.211835
 "Tištín, Trávník",49.309144,17.167684
 "Kladky, Bělá, tábor",49.628676,16.815642
@@ -1879,6 +1886,7 @@ Králíky zast.,50.08674,16.748946
 "Senice na Hané, stará pošta",49.624676,17.088902
 "Dlouhá Loučka, Plinkout, Jednota",49.837933,17.168915
 "Loučná n.Des., Kouty n.Des., pošta",50.099919,17.107984
+"Jeseník, sídliště",50.23735659,17.20655943
 "Dolní Studénky, Třemešek",49.946899,17.001802
 "Litovel, Březové, náves",49.679282,17.115725
 "Vikýřovice, nové sídliště",49.972811,17.008656
@@ -1928,7 +1936,6 @@ Rokytnice u Přerova,49.46084354,17.3736346
 "Špičky, točna",49.550664,17.806776
 "Koválovice-Osíčany, Koválovice",49.284808,17.171121
 Mladějovice,49.75831124,17.23535281
-"Rapotín, u hřiště",49.999605,17.016632
 "Buk, hasičská nádrž",49.502081,17.469732
 "Vilémov, Na Prátné",49.641435,17.003757
 "Milotice n.Bečvou, E-TECHNIK",49.537051,17.842505
@@ -2010,7 +2017,6 @@ Slatinice,49.5670651,17.10901965
 "Olšovec, rozc.",49.593576,17.712726
 "Přerov, Lýsky",49.480589,17.456767
 "Olomouc, Okružní",49.580897,17.22631
-"Majetín, rest.",49.497884,17.333566
 "Týn n.Bečvou, náves",49.517386,17.618901
 "Újezd, Rybníček, rozc.",49.764765,17.196785
 "Troubelice, sídliště",49.825498,17.064849
@@ -2018,7 +2024,6 @@ Slatinice,49.5670651,17.10901965
 "Ludmírov, obchod",49.641308,16.874096
 "Mohelnice, rest.U nádraží",49.777034,16.940076
 "Kralice na Hané, Hrubčická",49.460282,17.184678
-"Kokory, Obecní úřad",49.49506,17.375363
 "Mohelnice, PENNY MARKET",49.777427,16.921802
 "Červenka, podjezd",49.726986,17.082137
 "Stará Červ.Voda, č.170",50.339433,17.20179
@@ -2052,7 +2057,6 @@ Branná,50.14691694,17.01504611
 "Javorník, Travná, konečná",50.373587,16.935301
 "Nová Hradečná, žel.st.",49.835846,17.072849
 "Příkazy, pomník padlým",49.642642,17.150413
-"Šumperk, aut.st.",49.961965,16.981145
 "Sobíšky, rest.",49.503938,17.451929
 "Štíty, Březná, rozc.",49.971379,16.779356
 "Zábřeh, žel.st.",49.872816,16.887054
@@ -2075,6 +2079,7 @@ Bohuňovice,49.66320384,17.28111377
 "Linhartice, odb.střelnice",49.760903,16.677444
 "Hradčany, náves",49.452727,17.571561
 "Nezamyslice, ZŠ",49.327042,17.172414
+"Přerov, Žeravice, Lapač",49.48392,17.399119
 "Loštice, Vlčice, zast.",49.734467,16.902546
 "Ludmírov, Milkov, farma",49.660492,16.873646
 "Olomouc, Kyselovská",49.564469,17.236569
@@ -2109,9 +2114,11 @@ Lipová Lázně jeskyně,50.24466381,17.14335846
 "Bílsko, náves",49.644668,17.018229
 "Suchdol, ZŠ",49.546647,16.89275
 "Lipník n.Bečvou, Novosady",49.526015,17.587833
+"Majetín, rest.",49.497884,17.333566
 "Tovačov, U učiliště",49.426103,17.28266
 "Přerov, Předmostí, hřbitov",49.465968,17.437044
 Ptení,49.52862413,16.9581776
+"Přerov, aut.st.",49.44684333,17.44843137
 "Šumperk, stadion",49.955783,16.977577
 "Zlaté Hory, Dolní Údolí, rozc.",50.239972,17.346137
 "Vidnava, záv.",50.369149,17.176703
@@ -2121,7 +2128,6 @@ Nový Malín,49.94591464,17.0344763
 "Olomouc, Tabulový vrch",49.58334,17.222648
 "Mírov, zast.",49.800594,16.852393
 Příkazy,49.63802771,17.14533975
-"Huzová, Arnoltice",49.845368,17.35475
 "Litovel, rozc.k cukrovaru",49.708789,17.073831
 "Janoušov, kostel",50.013201,16.845023
 "Hustopeče n.Bečvou, Vysoká, točna",49.552861,17.881404
@@ -2234,7 +2240,6 @@ Moravský Karlov,50.025703,16.75322
 "Dobromilice, pohostinství",49.35807,17.136971
 "Ruda n.Mor., Štědrákova Lhota, Lesanka",50.025978,16.870784
 "Zábřeh, sídl.Výsluní",49.878911,16.865062
-"Přerov, aut.st.",49.44684,17.448413
 "Šubířov, Chobyně",49.62149,16.815379
 "Přerov, Svépomoc III",49.457213,17.441306
 "Soběchleby, škola",49.476617,17.656453
@@ -2335,6 +2340,7 @@ Brodek u Prostějova,49.370452,17.091073
 "Maletín, dol.konec",49.796198,16.764564
 "Postřelmov, ObÚ",49.907111,16.912063
 "Olomouc, Zora",49.585956,17.274789
+Valašské Meziříčí,49.47451776,17.96081653
 "Hranice, Masarykovo nám.",49.548602,17.734401
 "Tovačov, Dopravní stavby",49.411626,17.303972
 "Jeseník, Dětřichov, lesní školka",50.218693,17.265436
@@ -2409,6 +2415,7 @@ Ostružná,50.185403,17.052006
 "Bělotín, rozc.Nejdek",49.59421,17.807316
 "Olomouc, Pustatiny",49.628763,17.243049
 "Velké Losiny, zast.",50.059478,17.056159
-"Polom, rozc.k žel.st.",49.576572,17.856938
 "Domaželice, škola",49.427579,17.545322
 "Štěpánov, Březecká",49.67225,17.229488
+"Želatovice, náves",49.444807,17.503575
+"Bělkovice-Lašťany, Lašťany, Hostinec",49.670494,17.316506

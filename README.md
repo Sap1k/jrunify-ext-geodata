@@ -23,6 +23,10 @@ Open data: https://dopravnimapy.kraj-lbc.cz/opendata/?id=584a7ad7-1680-4d8d-a20b
 
 Open data: https://geoportal.kraj-jihocesky.gov.cz/gs/zastavky-verejne-dopravy/
 
+## PID.csv
+
+Open data: http://opendata.praha.eu/dataset/zastavky-pid-jednotlive-oznacniky-geodata/resource/8c912738-d4cb-41ca-b223-a8e455cd4c80
+
 ## MPVNet\_PID.csv
 
 Scraped: https://mpvnet.cz/pid/map
@@ -31,7 +35,7 @@ Scraped: https://mpvnet.cz/pid/map
 
 Scraped: https://mpvnet.cz/odis/map
 
-## MPVNet\_ZLIN.csv
+## MPVNet\_Zlin.csv
 
 Scraped: https://mpvnet.cz/zlin/map
 
