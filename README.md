@@ -8,6 +8,11 @@ Extract from [official
 SR70](https://provoz.szdc.cz/Portal/ViewArticle.aspx?oid=34462) made with
 `sr70_process.py`.
 
+## SR70\_Nazev20.csv
+
+Variant of `SR70.csv` with names from column `NÁZEV20`. Intended for matching
+GRAPP names.
+
 # Other sources
 
 This includes anything other than railways. Buses, trams, funiculars...

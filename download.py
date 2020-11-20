@@ -97,7 +97,7 @@ def mpvnet_download_stops(instance):
         yield Stop(stop["n"], stop["x"], stop["y"])
 
 def jihocesky_kraj_download_stops():
-    # TODO: Get the current URl automatically, or ask them to create a
+    # TODO: Get the current URL automatically, or ask them to create a
     # permanent one
     URL = "https://geoportal.kraj-jihocesky.gov.cz/gs/data/uploads/opendata/zastavky_jck_20200609_shp.zip"
     zip_resp = requests.get(URL)
