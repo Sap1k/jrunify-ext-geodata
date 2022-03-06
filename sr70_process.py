@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import re
-import xlrd
+import openpyxl
 
 def dms_to_decimal(dms):
     match = re.match("[NE](.*)°(.*)'(.*)\"", dms)
@@ -28,11 +28,11 @@ if len(sys.argv) != 2:
           file=sys.stderr)
     sys.exit(1)
 
-wb = xlrd.open_workbook(sys.argv[1])
-sh = wb.sheet_by_index(0)
-header = sh.row_values(0)
-for rownum in range(1, sh.nrows):
-    row = sh.row_values(rownum)
+wb = openpyxl.load_workbook(sys.argv[1])
+sh = wb.active
+header = [c.value for c in sh[1]]
+for rownum in range(2, sh.max_row + 1):
+    row = [c.value for c in sh[rownum]]
     if only_stops:
         kind_num = row[header.index("Kvalifikátor")]
         if kind_num not in [1, 61]: continue
