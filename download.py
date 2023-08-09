@@ -1,62 +1,90 @@
 #!/usr/bin/env python3
 import io
 import re
+import ssl
 import sys
 import csv
 import json
 import time
 import pathlib
+import urllib3
 import zipfile
-import tempfile
 import itertools
 import statistics
 import datetime as dt
 from collections import namedtuple
 import pyproj
 import requests
+import requests.adapters
 import shapefile
 
 Stop = namedtuple("Stop", ["name", "lat", "lon"])
 
-def arcgis_download_stops(url, layer, name_fields, paginate=True):
+
+# See https://stackoverflow.com/a/73519818
+class LegacyHttpAdapter(requests.adapters.HTTPAdapter):
+    def __init__(self, **kwargs):
+        self.ssl_context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
+        self.ssl_context.options |= 0x4  # OP_LEGACY_SERVER_CONNECT
+        super().__init__(**kwargs)
+
+    def init_poolmanager(self, connections, maxsize, block=False):
+        self.poolmanager = urllib3.poolmanager.PoolManager(
+            num_pools=connections, maxsize=maxsize,
+            block=block, ssl_context=self.ssl_context)
+
+
+legacy_session = requests.session()
+legacy_session.mount("https://", LegacyHttpAdapter())
+
+
+def arcgis_download_stops(url, layer, name_fields, where="1=1"):
+    if isinstance(layer, list):
+        for l in layer:
+            for stop in arcgis_download_stops(url, l, name_fields, where):
+                yield stop
+        return
+
     batch = 1000
     offset = 0
-    all_stops = []
     while True:
         print("Downloading with offset", offset, file=sys.stderr)
-        resp = requests.post(f"{url}/{layer}/query", {
+        resp = requests.post(f"{url}/{layer}/query", data={
                 "f": "json",
-                "where": "1=1",
+                "where": where,
                 "outSR": "4326", # WGS84
                 "outFields": ",".join(name_fields),
                 "resultRecordCount": batch,
                 "resultOffset": offset,
             })
-        stops = resp.json()["features"]
+        try:
+            stops = resp.json()["features"]
+        except Exception:
+            print("Failed decoding response:", resp.text)
+            return
 
         for stop in stops:
             attrs = stop["attributes"]
-            name = ",".join(attrs[nf] or "" for nf in name_fields)
+            name = ",".join((attrs[nf] or "").strip() for nf in name_fields)
             geom = stop["geometry"]
             yield Stop(name, geom["y"], geom["x"])
 
         print("Got", len(stops), "stops", file=sys.stderr)
-        if len(stops) < batch or not paginate: break
+        if len(stops) != batch: break
         offset += batch
 
+
 def mapaduk_download_stops():
-    URL = "https://provoz.dopravauk.cz/sprinter/Pages/Others/map.aspx"
+    URL = "https://provoz.kr-ustecky.cz/TMD/API/Map/GetStopMarkers"
 
-    resp = requests.post(URL + "/GetStopsData", json={})
-    stops = json.loads(resp.json()["d"])
+    resp = requests.post(URL, json={})
+    stops = resp.json()["ItemL"]
 
-    w = csv.writer(sys.stdout)
     for stop in stops:
         yield Stop(stop["Name"], stop["Lat"], stop["Lng"])
 
-def tmapy_download_stops(url):
-    # I don't know who made this app, sorry for the naming
 
+def tmapy_download_stops(url):
     resp = requests.get(url + "/idspublicservices/api/station")
     stops = resp.json()
 
@@ -65,15 +93,6 @@ def tmapy_download_stops(url):
             continue
         yield Stop(stop["name"], stop["lat"], stop["lon"])
 
-def mapa_idsjmk_download_stops():
-    URL = "https://mapa.idsjmk.cz"
-
-    resp = requests.get(URL + "/api/stops.json")
-    stops = resp.json()
-    for stop in stops:
-        # There are some duplicates, weird...
-        if stop["Latitude"] == 0: continue
-        yield Stop(stop["Name"], stop["Latitude"], stop["Longitude"])
 
 def mpvnet_download_stops(instance):
     URL = "https://mpvnet.cz"
@@ -96,10 +115,9 @@ def mpvnet_download_stops(instance):
     for stop in resp.json()["S"]:
         yield Stop(stop["n"], stop["x"], stop["y"])
 
+
 def jihocesky_kraj_download_stops():
-    # TODO: Get the current URL automatically, or ask them to create a
-    # permanent one
-    URL = "https://geoportal.kraj-jihocesky.gov.cz/gs/data/uploads/opendata/zastavky_jck_20200609_shp.zip"
+    URL = "https://geoportal.kraj-jihocesky.gov.cz/portal/media/Soubory/opendata/zastavky_JCK_SHP.zip"
     zip_resp = requests.get(URL)
     zip_io = io.BytesIO(zip_resp.content)
     zip = zipfile.ZipFile(zip_io)
@@ -111,7 +129,7 @@ def jihocesky_kraj_download_stops():
 
     with zip.open(shp_name) as shp_file, \
          zip.open(dbf_name) as dbf_file, \
-         shapefile.Reader(shp=shp_file, dbf=dbf_file, encoding="852") as shp:
+         shapefile.Reader(shp=shp_file, dbf=dbf_file) as shp:
         stops = []
         for shrec in shp.shapeRecords():
             lat, lon = transformer.transform(*shrec.shape.points[0])
@@ -126,9 +144,10 @@ def jihocesky_kraj_download_stops():
             stops_agg.append(Stop(stop_grp[0], lat, lon))
         return stops_agg
 
+
 def liberecky_kraj_download_stops():
     URL = "https://dopravnimapy.kraj-lbc.cz/opendata/zastavky_shp_wgs84.zip"
-    zip_resp = requests.get(URL)
+    zip_resp = legacy_session.get(URL)
     zip_io = io.BytesIO(zip_resp.content)
     zip = zipfile.ZipFile(zip_io)
 
@@ -145,37 +164,46 @@ def liberecky_kraj_download_stops():
             stops.append(Stop(name, lat, lon))
         return stops
 
+
 def pid_download_stops():
-    URL = "http://opendata.iprpraha.cz/CUR/DOP/DOP_PID_ZASTAVKY_TS_B/WGS_84/DOP_PID_ZASTAVKY_TS_B.json"
+    URL = "https://data.pid.cz/stops/json/stops.json"
     resp = requests.get(URL)
-    for stop in resp.json()["features"]:
-        lon, lat = stop["geometry"]["coordinates"]
-        yield Stop(stop["properties"]["ZAST_NAZEV"], lat, lon)
+    for group in resp.json()["stopGroups"]:
+        for stop in group["stops"]:
+            lat = stop["lat"]
+            lon = stop["lon"]
+            yield Stop(group["name"], lat, lon)
+
+def karlovarsky_kraj_download_stops():
+    kv_stops = arcgis_download_stops(
+        "https://geoportal.kr-karlovarsky.cz/arcgis/rest/services/UAP/UAP_Kompletni_obsah/MapServer",
+        [296, 297, 298],
+        ["PrvekNaz"])
+    kv_stops_nonum = []
+    for stop in kv_stops:
+        name = re.sub(r'^("?)[0-9]* *', r'\1', stop.name)
+        kv_stops_nonum.append(Stop(name, stop.lat, stop.lon))
+    return kv_stops_nonum
+
 
 def write_stops_csv(outfile, stops):
     w = csv.writer(outfile.open("w"))
     for stop in stops:
         w.writerow([stop.name, stop.lat, stop.lon])
 
+
 def download_all(outdir):
     (outdir / "other").mkdir(exist_ok=True)
 
     print("-- Downloading other/KarlovarskyKraj.csv", file=sys.stderr)
-    kv_stops = arcgis_download_stops(
-        "http://geoportal.kr-karlovarsky.cz/arcgis/rest/services/UAP/UAP_msd/MapServer",
-        290,
-        ["PrvekNaz"])
-    kv_stops_nonum = []
-    for stop in kv_stops:
-        name = re.sub(r'^("?)[0-9]* *', r'\1', stop.name)
-        kv_stops_nonum.append(Stop(name, stop.lat, stop.lon))
-    write_stops_csv(outdir / "other" / "KarlovarskyKraj.csv", kv_stops_nonum)
+    write_stops_csv(outdir / "other" / "KarlovarskyKraj.csv",
+        karlovarsky_kraj_download_stops())
 
     print("-- Downloading other/KrajVysocina.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "KrajVysocina.csv",
         arcgis_download_stops(
-            "http://geoportal.kr-vysocina.cz/arcgis/rest/services/Trasy_dopravy/zastavky/MapServer",
-            0,
+            "https://mapy.kr-vysocina.cz/arcgis/rest/services/Doprava/SchemaLinek/MapServer",
+            7,
             ["OBEC", "OBEC_CAST", "BLIZSI_MIS"]))
 
     print("-- Downloading other/MoravskoslezskyKraj.csv", file=sys.stderr)
@@ -192,13 +220,19 @@ def download_all(outdir):
             0,
             ["NAZEV"]))
 
-    # Seems broken right now, sends "Unable to complete Query operation."
-    #print("-- Downloading other/PlzenskyKraj.csv", file=sys.stderr)
-    #write_stops_csv(outdir / "other" / "PlzenskyKraj.csv",
-    #    arcgis_download_stops(
-    #        "http://mapy.plzensky-kraj.cz/ArcGIS/rest/services/zastavky/MapServer",
-    #        1,
-    #        ["OZNACENI"]))
+    print("Downloading other/IDSJMK.csv", file=sys.stderr)
+    write_stops_csv(outdir / "other" / "IDSJMK_Map.csv",
+            arcgis_download_stops(
+                "https://services6.arcgis.com/fUWVlHWZNxUvTUh8/ArcGIS/rest/services/stops/FeatureServer",
+                0,
+                ["stop_name"]))
+
+    print("-- Downloading other/PlzenskyKraj.csv", file=sys.stderr)
+    write_stops_csv(outdir / "other" / "PlzenskyKraj.csv",
+        arcgis_download_stops(
+            "https://mapy.plzensky-kraj.cz/ArcGIS/rest/services/zastavky/MapServer",
+            1,
+            ["OZNACENI"]))
 
     print("Downloading other/MapaDUK.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "MapaDUK.csv",
@@ -211,10 +245,6 @@ def download_all(outdir):
     print("Downloading other/MapaIDSOK.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "MapaIDSOK.csv",
         tmapy_download_stops("https://cestujok.cz"))
-
-    print("Downloading other/IDSJMK_Map.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "IDSJMK_Map.csv",
-        mapa_idsjmk_download_stops())
 
     print("Downloading other/MPVNet_PID.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "MPVNet_PID.csv",
