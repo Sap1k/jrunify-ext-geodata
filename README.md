@@ -5,7 +5,7 @@ This data is used by [JrUnify-cloud](https://gitlab.com/dvdkon/jrunify-cloud)
 ## SR70.csv
 
 Extract from [official
-SR70](https://provoz.szdc.cz/Portal/ViewArticle.aspx?oid=34462) made with
+SR70](https://provoz.spravazeleznic.cz/Portal/ViewArticle.aspx?oid=34462) made with
 `sr70_process.py`.
 
 ## SR70\_Nazev20.csv
