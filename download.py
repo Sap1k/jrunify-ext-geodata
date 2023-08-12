@@ -14,6 +14,8 @@ import statistics
 import datetime as dt
 from collections import namedtuple
 import pyproj
+import shapely
+import shapely.geometry
 import requests
 import requests.adapters
 import shapefile
@@ -36,6 +38,18 @@ class LegacyHttpAdapter(requests.adapters.HTTPAdapter):
 
 legacy_session = requests.session()
 legacy_session.mount("https://", LegacyHttpAdapter())
+
+
+def load_towns():
+    towns_file = pathlib.Path(__file__).parent / "towns.json"
+    towns = {}
+    with towns_file.open() as f:
+        for feat in json.load(f)["features"]:
+            name = feat["properties"]["name"]
+            shape = shapely.geometry.shape(feat["geometry"])
+            towns[name] = shape
+    return towns
+towns = load_towns()
 
 
 def arcgis_download_stops(url, layer, name_fields, where="1=1"):
@@ -91,6 +105,9 @@ def tmapy_download_stops(url):
     for stop in stops:
         if "lat" not in stop:
             continue
+        if all(st["vehicleType"] == "V" for st in stop["serviceTypes"]):
+            # Skip train-only stops
+            continue
         yield Stop(stop["name"], stop["lat"], stop["lon"])
 
 
@@ -129,7 +146,7 @@ def jihocesky_kraj_download_stops():
 
     with zip.open(shp_name) as shp_file, \
          zip.open(dbf_name) as dbf_file, \
-         shapefile.Reader(shp=shp_file, dbf=dbf_file) as shp:
+         shapefile.Reader(shp=shp_file, dbf=dbf_file, encoding="UTF-8") as shp:
         stops = []
         for shrec in shp.shapeRecords():
             lat, lon = transformer.transform(*shrec.shape.points[0])
@@ -173,6 +190,8 @@ def pid_download_stops():
             lat = stop["lat"]
             lon = stop["lon"]
             yield Stop(group["name"], lat, lon)
+            if group["municipality"] not in group["name"]:
+                yield Stop(group["municipality"] + "," + group["name"], lat, lon)
 
 def karlovarsky_kraj_download_stops():
     kv_stops = arcgis_download_stops(
@@ -184,6 +203,20 @@ def karlovarsky_kraj_download_stops():
         name = re.sub(r'^("?)[0-9]* *', r'\1', stop.name)
         kv_stops_nonum.append(Stop(name, stop.lat, stop.lon))
     return kv_stops_nonum
+
+
+def idsjmk_download_stops():
+    stops = arcgis_download_stops(
+        # URL is backing service for https://data.brno.cz/datasets/747a824783044377b6d07a8060e7769d_0/explore
+        "https://services6.arcgis.com/fUWVlHWZNxUvTUh8/ArcGIS/rest/services/stops/FeatureServer",
+        0,
+        ["stop_name"])
+    brno = towns["Brno"]
+    for stop in stops:
+        yield stop
+        point = shapely.Point(stop.lon, stop.lat)
+        if point.within(brno) and "Brno," not in stop.name:
+            yield Stop("Brno," + stop.name, stop.lat, stop.lon)
 
 
 def write_stops_csv(outfile, stops):
@@ -222,10 +255,7 @@ def download_all(outdir):
 
     print("Downloading other/IDSJMK.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "IDSJMK_Map.csv",
-            arcgis_download_stops(
-                "https://services6.arcgis.com/fUWVlHWZNxUvTUh8/ArcGIS/rest/services/stops/FeatureServer",
-                0,
-                ["stop_name"]))
+        idsjmk_download_stops())
 
     print("-- Downloading other/PlzenskyKraj.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "PlzenskyKraj.csv",
