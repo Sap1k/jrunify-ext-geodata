@@ -40,6 +40,8 @@ legacy_session = requests.session()
 legacy_session.mount("https://", LegacyHttpAdapter())
 
 
+# towns.json is derived from data by ČÚZK:
+# https://geoportal.cuzk.cz/Default.aspx?mode=TextMeta&side=dSady_RUIAN_vse&metadataID=CZ-00025712-CUZK_SERIES-MD_RUIAN-STATY-SHP&head_tab=sekce-02-gp&menu=3327
 def load_towns():
     towns_file = pathlib.Path(__file__).parent / "towns.json"
     towns = {}
