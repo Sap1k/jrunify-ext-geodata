@@ -1,10 +1,5 @@
 Babice,49.1214142,17.47464
 Babice,49.1217079,17.4750614
-Babice,49.12161,17.47492
-"Babice,,hřbitov",49.12718,17.4717731
-"Babice,,hřbitov",49.1270866,17.47206
-"Babice,,pošta",49.1222076,17.4781933
-"Babice,,pošta",49.12209,17.4780216
 "Babice,,ZD",49.1280823,17.4809418
 "Babice,,ZD",49.1280937,17.4811954
 "Babice,Cerony",49.1168556,17.4702911
@@ -20,8 +15,6 @@ Babice,49.12161,17.47492
 "Bánovce n.Bebravou,,AS",48.722435,18.2532387
 "Bařice-Vel.Těšany,Bařice",49.24679,17.4240074
 "Bařice-Vel.Těšany,Bařice",49.246727,17.4239445
-"Bařice-Vel.Těšany,Bařice,škola",49.2451744,17.4276028
-"Bařice-Vel.Těšany,Bařice,škola",49.2450943,17.4276276
 "Bařice-Vel.Těšany,Vel.Těšany,rozc.",49.2447968,17.4103851
 "Bařice-Vel.Těšany,Vel.Těšany,rozc.",49.2447472,17.4103069
 "Bařice-Vel.Těšany,Vel.Těšany,točna",49.24478,17.4033241
@@ -38,6 +31,9 @@ Bezměrov,49.32702,17.3345356
 "Bílá,,aut.st.",49.4463844,18.4618645
 "Bílá,,hájenka",49.41572,18.3871365
 "Bílá,,hájenka",49.4156876,18.3871326
+"Bílá,,chata Třeštík",49.4020348,18.3870468
+"Bílá,,chata Třeštík",49.4022179,18.3886814
+"Bílá,,chata Třeštík",49.40243,18.3858852
 "Bílá,,Mezivodí",49.4252739,18.41027
 "Bílá,,Mezivodí",49.42526,18.4103546
 "Bílá,,Slaná",49.4322739,18.4216843
@@ -46,6 +42,7 @@ Bezměrov,49.32702,17.3345356
 "Bílá,,střed",49.4431038,18.4572372
 "Bílá,,zámeček",49.44095,18.4470215
 "Bílá,,zámeček",49.4409027,18.4471169
+"Bílá,Bumbálka,st.hr.",49.3991547,18.4097519
 "Bílá,Bumbálka,st.hr.",49.3990669,18.4099827
 "Bílá,Bumbálka,st.hr.",49.3992767,18.40941
 "Bílá,Hlavatá,kaple",49.41655,18.3735867
@@ -56,7 +53,6 @@ Bílovice,49.0993919,17.5480061
 Bílovice,49.09948,17.5480938
 "Bílovice,,průmyslový areál",49.1059456,17.5582027
 "Bílovice,,průmyslový areál",49.1058655,17.5583
-"Bílovice,,točna",49.1000481,17.5475044
 "Bílovice,Chmelnice",49.0986328,17.5587311
 "Bílovice,Chmelnice",49.09868,17.5583534
 "Bílovice,Včelary",49.09679,17.5358543
@@ -67,10 +63,6 @@ Biskupice,49.08416,17.7094765
 "Biskupice,,Obecní úřad",49.0840034,17.7090187
 "Biskupice,,rozc.0.2",49.0763779,17.7176571
 "Biskupice,,rozc.0.2",49.0763245,17.7177429
-"Biskupice,,rozc.0.2",49.0759468,17.7164726
-"Biskupice,,rozc.0.2",49.07589,17.7165184
-"Blazice,,hřbitov",49.43939,17.6468353
-"Blazice,,rozc.",49.44408,17.64444
 "Bohuslavice n.Vláří,,rozc.1.0",49.0994568,17.9266052
 "Bohuslavice n.Vláří,,rozc.1.0",49.09939,17.9266434
 "Bohuslavice n.Vláří,,točna",49.09048,17.92871
@@ -82,15 +74,7 @@ Biskupice,49.08416,17.7094765
 "Bohuslavice u Zlína,,škola",49.16135,17.6349354
 "Bohuslavice u Zlína,,vozovna",49.15732,17.6279945
 "Bohuslavice u Zlína,,vozovna",49.1574554,17.6281071
-"Bohuslavice u Zlína,Brdo",49.15173,17.6513157
-"Bochoř,,lázně",49.4201164,17.4279575
-"Bochoř,,lázně",49.4193535,17.4280777
-"Bochoř,,Na Zabrání",49.42301,17.4265118
-"Bochoř,,Na Zabrání",49.42316,17.42618
-"Bochoř,,rozc.k lesu",49.41409,17.4192734
-"Bochoř,,rozc.k lesu",49.4138031,17.4187469
 "Bojkovice,,Bezručova čtvrť",49.0327,17.8113422
-"Bojkovice,,městský úřad",49.03674,17.8109627
 "Bojkovice,,obchodní dům",49.03713,17.8104019
 "Bojkovice,,obchodní dům",49.03717,17.8108387
 "Bojkovice,,Pod Světlovem",49.036335,17.8041172
@@ -100,11 +84,9 @@ Biskupice,49.08416,17.7094765
 "Bojkovice,,sokolovna",49.03701,17.8048515
 "Bojkovice,,sokolovna",49.0370865,17.8047218
 "Bojkovice,,Světlov",49.02873,17.8001957
-"Bojkovice,,škola",49.03904,17.8060684
 "Bojkovice,,u lékárny",49.0389061,17.81474
 "Bojkovice,,u lékárny",49.0390244,17.8147488
 "Bojkovice,,Zeveta",49.0426865,17.8207188
-"Bojkovice,,Zeveta",49.0428734,17.8208942
 "Bojkovice,,Zeveta",49.0427361,17.8207874
 "Bojkovice,,Zeveta",49.0425873,17.8207226
 "Bojkovice,,Zeveta",49.0424728,17.8206711
@@ -145,8 +127,7 @@ Bratřejov,49.22647,17.9110661
 Bratřejov,49.2263336,17.9109516
 "Bratřejov,,Na Chrámečném",49.2208481,17.8879929
 "Bratřejov,,Na Chrámečném",49.22097,17.8896236
-"Bratřejov,,Obecní úřad",49.22138,17.91443
-"Bratřejov,,točna",49.2172127,17.919672
+"Brno,,Benešova tř.hotel GRAND",49.1934967,16.6144352
 "Brno,,Benešova tř.hotel GRAND",49.1934967,16.6144352
 "Brno,,ÚAN Zvonařka",49.1858139,16.61664
 "Brno,,ÚAN Zvonařka",49.1858559,16.616394
@@ -183,9 +164,6 @@ Bratřejov,49.2263336,17.9109516
 "Brumov-Bylnice,Sidonie,Vlára žel.st.",49.03164,18.0550671
 "Brumov-Bylnice,Svatý Štěpán",49.04715,18.0311317
 "Brumov-Bylnice,Svatý Štěpán",49.04703,18.03111
-"Brumov-Bylnice,Svatý Štěpán,MŠ",49.04412,18.0283241
-"Brumov-Bylnice,Svatý Štěpán,MŠ",49.0440559,18.0283585
-"Brumov-Bylnice,Svatý Štěpán,točna",49.041317,18.0253849
 "Brusné,,dol.zast.",49.3635445,17.660368
 "Brusné,,dol.zast.",49.36359,17.6605587
 "Brusné,,hor.zast.",49.3661766,17.6657543
@@ -202,37 +180,25 @@ Bratřejov,49.2263336,17.9109516
 "Břestek,,hor.konec",49.1000023,17.3537178
 "Břestek,,obecní úřad",49.0936928,17.3544331
 "Břestek,,obecní úřad",49.093792,17.3546638
-"Břestek,Chabaně",49.1107521,17.3476982
 "Břestek,Chabaně,rozc.0.3",49.1057434,17.3442764
 "Březnice,,křiž.",49.1839371,17.65422
 "Březnice,,křiž.",49.1839638,17.6538448
 "Březnice,,paseky",49.19189,17.657156
 "Březnice,,paseky",49.1930237,17.6570911
-"Březnice,,rozc.",49.18502,17.65844
-"Březnice,,rozc.",49.18501,17.6584873
-"Březnice,,střed",49.18842,17.669836
-"Březnice,,střed",49.1884,17.66997
-"Březnice,,točna",49.1876373,17.6767731
 "Březnice,,zast.",49.1800346,17.6444187
 "Březnice,,zast.",49.1806221,17.6451454
 "Březolupy,,hájenka",49.13123,17.5921154
 "Březolupy,,hájenka",49.13124,17.5927811
-"Březolupy,,škola",49.12167,17.5801239
 "Březolupy,,zámek",49.1206741,17.5821648
 "Březolupy,,zámek",49.12077,17.5821228
 "Březolupy,,Zápolí",49.116745,17.5754471
 "Březolupy,,Zápolí",49.11692,17.5761623
 Březová,49.2603264,17.7889
-"Březová,,dům peč.služby",48.9209976,17.7427063
-"Březová,,rozc.3.0",48.9274178,17.7147331
 "Březová,,škola",48.92703,17.73745
 "Březová,,škola",48.9269638,17.7373772
 "Březová,,Za hřbitovem",48.9305077,17.7403011
-"Březová,Důbrava",48.9257965,17.7334538
-"Březová,Důbrava",48.9266434,17.7308521
 "Březová,Olšovec",48.92813,17.7416687
 "Březůvky,,garáže",49.15023,17.7074051
-"Březůvky,,garáže",49.15023,17.7072563
 "Březůvky,,Losky",49.15774,17.7045631
 "Březůvky,,Losky",49.1587753,17.7048283
 "Březůvky,,Na hutích",49.1645546,17.7063313
@@ -247,14 +213,11 @@ Březová,49.2603264,17.7889
 "Buchlovice,,Lúčky",49.0826035,17.3468361
 "Buchlovice,,náměstí",49.0863876,17.3386021
 "Buchlovice,,Podvinohradí",49.0903358,17.33789
-"Buchlovice,,Podvinohradí",49.0900726,17.3372555
 "Buchlovice,,rozc.",49.08379,17.3317
 "Buchlovice,,rozc.",49.0835533,17.33166
 "Buchlovice,,Smraďavka",49.0764961,17.3210049
 "Buchlovice,,Újezda",49.0932579,17.320118
 "Buchlovice,,Újezda",49.0925827,17.3214169
-"Buchlovice,,Zahrady",49.0935249,17.3282452
-"Bystřice p.Host.,,aut.st.",49.3996735,17.6661243
 "Bystřice p.Host.,,aut.st.",49.3993034,17.66649
 "Bystřice p.Host.,,aut.st.",49.3997154,17.6658649
 "Bystřice p.Host.,,aut.st.",49.39959,17.6660843
@@ -268,9 +231,6 @@ Březová,49.2603264,17.7889
 "Bystřice p.Host.,,Černý potok",49.3907051,17.68351
 "Bystřice p.Host.,,lázně",49.3849831,17.68873
 "Bystřice p.Host.,,lázně",49.3853645,17.6896286
-"Bystřice p.Host.,,Lidrukov",49.40216,17.65562
-"Bystřice p.Host.,,Lidrukov",49.4022255,17.65565
-"Bystřice p.Host.,,Lipnická",49.404995,17.6665573
 "Bystřice p.Host.,,lom u Švajgrovky",49.3795128,17.7097549
 "Bystřice p.Host.,,lom u Švajgrovky",49.3795547,17.7097073
 "Bystřice p.Host.,,mlékárna",49.4019356,17.6748753
@@ -281,10 +241,7 @@ Březová,49.2603264,17.7889
 "Bystřice p.Host.,,nám.",49.3991165,17.6739426
 "Bystřice p.Host.,,parkoviště",49.3949661,17.68166
 "Bystřice p.Host.,,parkoviště",49.39489,17.68158
-"Bystřice p.Host.,,TON",49.4013977,17.6597633
-"Bystřice p.Host.,,TON",49.4014778,17.6597023
 "Bystřice p.Host.,,u kaple",49.3976974,17.6798477
-"Bystřice p.Host.,,u mostu",49.4111938,17.6550751
 "Bystřice p.Host.,,žel.st.",49.3936119,17.6661949
 "Bystřice p.Host.,,žel.st.",49.39369,17.6664314
 "Bystřice p.Host.,,žel.st.",49.39369,17.6663265
@@ -293,12 +250,8 @@ Březová,49.2603264,17.7889
 "Bystřice p.Host.,Hlinsko p.Host.",49.37101,17.6309814
 "Bystřice p.Host.,Hlinsko p.Host.",49.3712158,17.6312065
 "Bystřice p.Host.,Hostýn",49.37623,17.6979942
-"Bystřice p.Host.,Rychlov,Amerika",49.40585,17.64496
-"Bystřice p.Host.,Rychlov,Amerika",49.4059067,17.6449947
 "Bystřice p.Host.,Rychlov,rest.",49.40375,17.6496487
 "Bystřice p.Host.,Rychlov,rest.",49.4038734,17.6489067
-"Bystřice p.Host.,Rychlov,točna",49.4082336,17.6401176
-"Bystřice p.Host.,Sovadina,náves",49.431633,17.6528378
 "Bystřice p.Lop.,,dol.zast.",48.9751434,17.75141
 "Bystřice p.Lop.,,dol.zast.",48.9750671,17.7513256
 "Bystřice p.Lop.,,hor.zast.",48.9705276,17.7647457
@@ -306,9 +259,7 @@ Březová,49.2603264,17.7889
 "Bystřice p.Lop.,,chata Troják",48.9553223,17.79287
 "Bystřice p.Lop.,,chata Troják",48.9552574,17.7928677
 "Bystřice p.Lop.,,škola",48.97596,17.7544746
-"Bystřice p.Lop.,,škola",48.97591,17.75403
 "Bystřice p.Lop.,,zvonice",48.97488,17.76452
-"Bystřice p.Lop.,,zvonice",48.9749146,17.7642536
 "Bystřice p.Lop.,Kopánky",48.96133,17.7947788
 "Bystřice p.Lop.,Kopánky",48.9613,17.7946358
 "Bystřička,,Dolinky",49.42117,18.0301533
@@ -329,11 +280,6 @@ Březová,49.2603264,17.7889
 "Bystřička,,žel.st.",49.4175339,17.9586258
 "Bystřička,,žel.st.",49.417675,17.9588432
 "Bystřička,,žel.st.",49.4176331,17.9585819
-"Býškovice,,DESTA",49.4667969,17.7101574
-"Býškovice,,DESTA",49.4667969,17.7101574
-"Býškovice,,Obecní dům",49.46783,17.71729
-"Býškovice,,Obecní dům",49.4677429,17.7172623
-"Býškovice,,rozc.Rakov",49.4689178,17.7135944
 "Bzenec,,nám.",48.97285,17.2663517
 "Bzenec,,UNIKOV",48.9765549,17.3055229
 "Bzenec,,ZŠ",48.9704933,17.2796459
@@ -359,13 +305,12 @@ Cetechovice,49.17417,17.2604256
 Čelčice,49.4104919,17.193676
 Čelčice,49.4104462,17.19359
 "České Budějovice,,aut.nádr.",48.9728775,14.4874105
+"České Budějovice,,aut.nádr.",48.9728775,14.4874105
 "Český Krumlov,,aut.nádr.",48.8116074,14.3225489
 Dešná,49.2668266,17.8458881
 "Dešná,,rozc.0.5",49.2695732,17.8424263
 "Dešná,,rozc.0.5",49.2690773,17.8412876
 Dětkovice,49.27241,17.1443386
-Dětkovice,49.27238,17.1442833
-Dětkovice,49.2724152,17.1444
 "Dobrčice,,rest.",49.4020844,17.4802132
 "Dobrčice,,rozc.",49.3987656,17.4680481
 "Dobrčice,,rozc.",49.39869,17.4672279
@@ -373,18 +318,12 @@ Dětkovice,49.2724152,17.1444
 "Dobrkovice,,náves",49.0929871,17.669178
 "Dolní Bečva,,ObÚ",49.4550438,18.19379
 "Dolní Bečva,,ObÚ",49.4546738,18.1946754
-"Dolní Bečva,,pila",49.468,18.17275
 "Dolní Bečva,,pila",49.4680176,18.17265
 "Dolní Bečva,,pila",49.4679756,18.17271
-"Dolní Bečva,,škola",49.4572144,18.1918221
 "Dolní Bečva,,u tabulí",49.4468956,18.2140827
 "Dolní Bečva,,u tabulí",49.4471779,18.2125664
-"Dolní Bečva,,u vodojemu",49.4657669,18.2022171
-"Dolní Bečva,,zotavovna",49.46266,18.1840363
 "Dolní Bečva,,zotavovna",49.46266,18.1840515
 "Dolní Bečva,,zotavovna",49.4626541,18.18399
-"Dolní Bečva,Dolní Rozpité,točna",49.4708061,18.2108135
-"Dolní Bečva,Na čtvrtích",49.46013,18.19825
 "Dolní Dvořiště,,CLO",48.6506844,14.45245
 Dolní Lhota,49.13859,17.8117275
 Dolní Lhota,49.1387672,17.81184
@@ -409,9 +348,6 @@ Doubravy,49.14144,17.6655025
 Drnovice,49.17885,17.9571838
 Drnovice,49.17906,17.9578781
 "Drnovice,,průmyslový areál",49.18199,17.9642544
-"Drnovice,,průmyslový areál",49.1821365,17.9639187
-"Drnovice,,škola",49.1781578,17.9464569
-"Drnovice,,škola",49.17819,17.946434
 Drslavice,49.0470238,17.6003838
 Drslavice,49.0471458,17.6003723
 Držková,49.31714,17.7831135
@@ -420,7 +356,6 @@ Držková,49.3173332,17.7831745
 "Držková,,pod Jaroňovou",49.33214,17.8009014
 "Držková,,pož.zbroj.",49.3207054,17.7875423
 "Držková,,pož.zbroj.",49.3201828,17.787056
-"Držková,,točna",49.3288231,17.8007317
 "Dřevohostice,,nám.",49.42484,17.590662
 "Dřevohostice,,nám.",49.4247437,17.59068
 Dřínov,49.2912178,17.2338371
@@ -452,45 +387,15 @@ Dřínov,49.2912178,17.2338371
 "Fryšták,,Žabárna",49.2934265,17.65104
 "Fryšták,,Žabárna",49.29346,17.6514282
 "Fryšták,,Žabárna",49.2933922,17.6507
-"Fryšták,Dolní Ves",49.2827263,17.68323
-"Fryšták,Dolní Ves",49.28283,17.6832752
-"Fryšták,Dolní Ves,střed",49.2790031,17.6780262
-"Fryšták,Dolní Ves,střed",49.2789421,17.67787
-"Fryšták,Dolní Ves,točna",49.2732048,17.6735325
-"Fryšták,Horní Ves",49.288044,17.6914711
 "Fryšták,Vítová,rozc.1.0",49.2872276,17.70405
 "Fryšták,Vítová,rozc.1.0",49.2871361,17.70447
 "Fryšták,Vítová,točna",49.29607,17.7093086
 "Fryšták,Vítová,u kříže",49.2917671,17.7061939
 "Fryšták,Vítová,u kříže",49.2916222,17.7060947
-"Halenkov,,farma",49.3192978,18.1389427
-"Halenkov,,farma",49.31931,18.1390228
-"Halenkov,,rozc.Dinotice",49.3162041,18.1414089
-"Halenkov,,rozc.Dinotice",49.316227,18.1414871
 "Halenkov,,střed",49.3170052,18.14534
 "Halenkov,,střed",49.3172,18.1457863
 "Halenkov,,U fabriky",49.3216248,18.1558475
 "Halenkov,,U fabriky",49.32138,18.1555843
-"Halenkov,,U mostu",49.32635,18.1650429
-"Halenkov,,U mostu",49.32646,18.1650352
-"Halenkov,Břežitá,konečná",49.3141937,18.1844826
-"Halenkov,Černé,konečná",49.29604,18.1461563
-"Halenkov,Dinotice,u Děčků",49.3264122,18.1314945
-"Halenkov,Dinotice,u Děčků",49.3264,18.1316242
-"Halenkov,Dinotice,u Kršelských",49.3290062,18.1258583
-"Halenkov,Dinotice,u Kršelských",49.3290138,18.1259
-"Halenkov,Dinotice,u Měrků",49.3222427,18.1362514
-"Halenkov,Dinotice,u Měrků",49.32225,18.1363049
-"Halenkov,Dinotice,u Svrčinů",49.3451233,18.1105061
-"Halenkov,Dinotice,zámeček",49.33661,18.1168423
-"Halenkov,Dinotice,zámeček",49.33662,18.1169281
-"Halenkov,Lušová,revír",49.3567,18.15071
-"Halenkov,Lušová,u Halamíčků",49.33717,18.1599159
-"Halenkov,Lušová,u Halamíčků",49.3371925,18.1599712
-"Halenkov,Lušová,u Kopeckých",49.3416328,18.1559048
-"Halenkov,Lušová,u Kopeckých",49.34164,18.1559677
-"Halenkov,Lušová,u Kučerů",49.34915,18.1534252
-"Halenkov,Lušová,u Kučerů",49.3491669,18.1534729
 "Halenkovice,,dolina",49.1700439,17.4637089
 "Halenkovice,,dolina",49.1700172,17.4636669
 "Halenkovice,,Na Kopci",49.16498,17.4716244
@@ -504,25 +409,16 @@ Dřínov,49.2912178,17.2338371
 "Halenkovice,,u svatých",49.1602478,17.4650955
 Haluzice,49.13801,17.8978577
 "Haluzice,,rozc.1.0",49.13711,17.8871155
-"Haluzice,,rozc.1.0",49.1371269,17.8871021
 "Handlová,,centrum",48.7284241,18.7601681
-"Hluk,,Autopal",48.9819679,17.5365067
 "Hluk,,hostinec",48.98954,17.5187321
 "Hluk,,hostinec",48.9894447,17.5189648
 "Hluk,,SZT",48.99919,17.50567
-"Hluk,,SZT",48.9992027,17.5053673
 "Hluk,,škola",48.9880638,17.5273666
 "Hluk,,škola",48.98791,17.5275249
 "Hluk,,záv.Sport",48.9845963,17.5400715
 "Hluk,,záv.Sport",48.98448,17.5398083
-"Hodslavice,,dolní konec",49.5501366,18.0260983
-"Hodslavice,,dolní konec",49.5499458,18.02598
 "Hodslavice,,nákup.stř.",49.5375061,18.0225849
 "Hodslavice,,nákup.stř.",49.53728,18.0222
-"Hodslavice,,U viaduktu",49.5575523,18.02262
-"Hodslavice,,U viaduktu",49.55746,18.0224724
-"Holešov,,ČSAO",49.32513,17.5790234
-"Holešov,,Loana",49.3251839,17.5824947
 "Holešov,,Masarykova",49.3305244,17.5831738
 "Holešov,,Masarykova",49.3304558,17.5832176
 "Holešov,,Masarykova",49.33064,17.58308
@@ -535,11 +431,9 @@ Haluzice,49.13801,17.8978577
 "Holešov,,Sfinx",49.3247375,17.54823
 "Holešov,,st.statek",49.3391075,17.5732536
 "Holešov,,st.statek",49.33891,17.57338
-"Holešov,,Újezd",49.3272667,17.5865116
 "Holešov,,Újezd",49.3272171,17.5865135
 "Holešov,,Újezd",49.32737,17.5864964
 "Holešov,,Větřák",49.31816,17.5927048
-"Holešov,,Větřák",49.31818,17.5927582
 "Holešov,,zámek",49.3323021,17.5818424
 "Holešov,,zámek",49.3320847,17.5820885
 "Holešov,,žel.st.",49.32805,17.5707512
@@ -567,29 +461,23 @@ Haluzice,49.13801,17.8978577
 "Holešov,Tučapy",49.3533,17.57656
 "Holešov,Všetuly,u Uhlířů",49.32531,17.5605888
 "Holešov,Všetuly,u Uhlířů",49.3257751,17.5616264
-"Holešov,Žopy,nám.",49.3332825,17.6062355
-"Holešov,Žopy,nám.",49.3333321,17.60634
-"Holešov,Žopy,točna",49.33234,17.6145821
 Honětice,49.2059364,17.2521572
 Honětice,49.20597,17.2520523
 "Horní Bečva,,hotel Valaška",49.424015,18.3045521
 "Horní Bečva,,hotel Valaška",49.4243622,18.3034
-"Horní Bečva,,ObÚ",49.4322281,18.2877331
 "Horní Bečva,,ObÚ",49.4323578,18.287466
 "Horní Bečva,,ObÚ",49.43209,18.28796
-"Horní Bečva,,Paseky",49.4192238,18.3304253
 "Horní Bečva,,Paseky",49.4193573,18.3309231
 "Horní Bečva,,Paseky",49.41926,18.3306541
 "Horní Bečva,,přehrada",49.42407,18.31758
 "Horní Bečva,,přehrada",49.42395,18.31764
-"Horní Bečva,,rest.Na Bečvici",49.4189072,18.3469887
 "Horní Bečva,,rest.Na Bečvici",49.4189529,18.3469925
 "Horní Bečva,,rest.Na Bečvici",49.41886,18.34698
 "Horní Bečva,,stará pošta",49.4331322,18.2784843
 "Horní Bečva,,stará pošta",49.4330368,18.2785263
-"Horní Bečva,,u Vaníčků",49.4195747,18.31953
 "Horní Bečva,,u Vaníčků",49.4196167,18.3196735
 "Horní Bečva,,u Vaníčků",49.4195938,18.3195152
+"Horní Bečva,Hlavatá,rozc.",49.4165,18.3666229
 "Horní Bečva,Hlavatá,rozc.",49.4165077,18.3667011
 "Horní Bečva,Hlavatá,rozc.",49.4164848,18.3664818
 Horní Lapač,49.3018951,17.6149273
@@ -624,19 +512,9 @@ Horní Němčí,48.93333,17.6240387
 "Horní Němčí,,točna",48.9300079,17.626976
 "Horní Němčí,,váha",48.9367332,17.6213665
 "Horní Němčí,,váha",48.93664,17.62133
-"Horní Újezd,,škola",49.4476433,17.7320881
-"Horní Újezd,,škola",49.447567,17.7322235
-"Horní Újezd,,točna",49.4485054,17.7262287
-"Horní Újezd,,točna",49.44849,17.72597
-"Horní Újezd,Drholec",49.4459724,17.7452412
-"Horní Újezd,Drholec",49.4458351,17.7451363
-"Hostašovice,,Domoraz",49.5225258,18.0148487
-"Hostašovice,,Domoraz",49.52248,18.0149727
-"Hostašovice,,hájovna",49.5105324,18.0048141
 Hostějov,49.0396461,17.2574978
 Hostětín,49.0504227,17.8792286
 Hostětín,49.05022,17.8792419
-"Hostětín,,obecní úřad",49.0498962,17.8791637
 Hostišová,49.2557335,17.5882931
 "Hostišová,,rozc.2.0",49.25017,17.5714951
 "Hostišová,,rozc.2.0",49.25011,17.57159
@@ -644,7 +522,6 @@ Hostišová,49.2557335,17.5882931
 "Hošťálková,,dol.zast.",49.36135,17.8876534
 "Hošťálková,,Jednota Obuv",49.3578568,17.87562
 "Hošťálková,,Jednota Obuv",49.3578072,17.875452
-"Hošťálková,,Kovex",49.3526764,17.861742
 "Hošťálková,,Pod horou",49.3477249,17.8266125
 "Hošťálková,,Pod horou",49.3477974,17.8266582
 "Hošťálková,,Pod Kadlůbkem",49.35194,17.8457527
@@ -657,42 +534,15 @@ Hostišová,49.2557335,17.5882931
 "Hošťálková,,tělocvična",49.35499,17.8698711
 Hoštice,49.206,17.2365589
 Hoštice,49.2060051,17.23607
-"Hoštice-Heroltice,Heroltice,náves",49.28577,17.05844
 "Hoštice-Heroltice,Heroltice,rozc.",49.2850647,17.0572968
-"Hoštice-Heroltice,Heroltice,rozc.",49.28504,17.05725
-"Hoštice-Heroltice,Heroltice,rozc.",49.28513,17.05729
-"Hoštice-Heroltice,Hoštice,kostel",49.287384,17.0658474
 "Hovězí,,obec",49.30608,18.0590725
 "Hovězí,,obec",49.3058357,18.059948
-"Hovězí,,ObÚ",49.30433,18.0606689
-"Hovězí,,ObÚ",49.30434,18.0605621
-"Hovězí,Hořansko,Kozinec",49.28365,18.04263
-"Hovězí,Hořansko,Kozinec",49.28363,18.0425968
-"Hovězí,Hořansko,rozc.",49.2893753,18.0492516
-"Hovězí,Hořansko,rozc.",49.2893372,18.0491371
-"Hovězí,Hořansko,střed",49.29513,18.0547581
-"Hovězí,Hořansko,střed",49.29511,18.0546913
-"Hovězí,Hořansko,točna",49.2793655,18.0442352
-"Hovězí,Hořansko,u Juříků",49.2998,18.0591927
-"Hovězí,Hořansko,u Juříků",49.299736,18.0590935
-"Hovězí,Hovízky,Jednota",49.3129044,18.0668869
-"Hovězí,Hovízky,Jednota",49.3128242,18.0669174
-"Hovězí,Hovízky,konečná",49.31816,18.0735626
-"Hovězí,Hovízky,Pod zákopů",49.3079338,18.0644836
-"Hovězí,Hovízky,Pod zákopů",49.3081932,18.06502
 "Hradčovice,,Obecní úřad",49.04754,17.5814133
 "Hradčovice,,Obecní úřad",49.0477,17.5814934
 "Hradčovice,,žel.st.",49.0439949,17.5753937
 "Hradčovice,,žel.st.",49.0440254,17.57513
 "Hradčovice,Lhotka,rozc.1.0",49.04758,17.5886364
 "Hradčovice,Lhotka,rozc.1.0",49.04792,17.5881062
-"Hranice,,aut.st.",49.56314,17.7402287
-"Hranice,,aut.st.",49.5632973,17.74033
-"Hranice,,Pod farou",49.54549,17.7345161
-"Hranice,,Pod farou",49.5452232,17.73487
-"Hranice,,Šromotovo nám.",49.5512161,17.7335377
-"Hranice,,Šromotovo nám.",49.55081,17.7333469
-"Hrobice,,rest.",49.27736,17.79
 "Hrobice,,rest.",49.27734,17.78994
 "Hrobice,Nové Dvory",49.2644844,17.7994137
 "Hrobice,Nové Dvory",49.26453,17.79941
@@ -700,27 +550,16 @@ Hoštice,49.2060051,17.23607
 "Hrobice,Nové Dvory",49.2637,17.8008842
 Hřivínův Újezd,49.1204071,17.6913166
 Hřivínův Újezd,49.1198,17.6913681
-"Hukvaldy,Rychaltice,pod mostem",49.6497078,18.2172146
 "Hukvaldy,Rychaltice,pod mostem",49.6499939,18.2171383
-"Hulín,,cukrovar",49.31009,17.4750881
-"Hulín,,cukrovar",49.3085022,17.47615
 "Hulín,,nám.",49.31657,17.4660835
 "Hulín,,nám.",49.31664,17.4660683
 "Hulín,,nám.",49.3165054,17.4661045
 "Hulín,,spínačka",49.31545,17.4492188
-"Hulín,,spínačka",49.3155251,17.4487915
 "Hulín,,spínačka",49.3153877,17.449358
-"Hulín,,TOS",49.31096,17.4772873
-"Hulín,,u mostu",49.31437,17.47107
-"Hulín,,u mostu",49.3147621,17.4703217
 "Hulín,,u podjezdu",49.3195457,17.4779663
 "Hulín,,u podjezdu",49.3196144,17.4780045
 "Hulín,,u podjezdu",49.31946,17.4778
-"Hulín,,u štěrkoviště",49.3025742,17.4806042
-"Hulín,,u štěrkoviště",49.3029137,17.48061
 "Hulín,,žel.st.",49.31681,17.4778862
-"Hulín,Záhlinice,rest.",49.291523,17.4877434
-"Hulín,Záhlinice,rest.",49.29057,17.48755
 "Huslenky,,ObÚ",49.305,18.0987339
 "Huslenky,,ObÚ",49.30488,18.09793
 "Huslenky,,Pod černým",49.3104134,18.1250954
@@ -732,33 +571,8 @@ Hřivínův Újezd,49.1198,17.6913681
 "Huslenky,,u Suřanů",49.2819328,18.08438
 "Huslenky,,u Suřanů",49.28194,18.0843048
 "Huslenky,,žel.st.",49.3034668,18.09278
-"Huslenky,Bařiny,MŠ",49.3097763,18.11415
 "Huslenky,Bařiny,škola",49.3079834,18.1098289
 "Huslenky,Bařiny,škola",49.30784,18.1096916
-"Huslenky,Černé,u Kučerů",49.3027229,18.14196
-"Huslenky,Černé,u Kučerů",49.3027039,18.1419048
-"Huslenky,Černé,u Surovčáků",49.3072929,18.1348667
-"Huslenky,Černé,u Surovčáků",49.30725,18.1348763
-"Huslenky,Černé,u žel.přejezdu",49.3101959,18.1287689
-"Huslenky,Černé,u žel.přejezdu",49.310173,18.12873
-"Huslenky,Kychová,Hluboček",49.30284,18.1224689
-"Huslenky,Kychová,Hluboček",49.3028,18.12245
-"Huslenky,Kychová,kovárna",49.2985077,18.1265049
-"Huslenky,Kychová,kovárna",49.2984924,18.1264515
-"Huslenky,Kychová,ozdravovna",49.27649,18.1477489
-"Huslenky,Kychová,rozc.",49.3093948,18.1171856
-"Huslenky,Kychová,rozc.",49.3093834,18.1171551
-"Huslenky,Kychová,u č.180",49.29318,18.1287155
-"Huslenky,Kychová,u č.180",49.2931671,18.1286621
-"Huslenky,Kychová,zámeček",49.2847633,18.1356831
-"Huslenky,Kychová,zámeček",49.28476,18.1356068
-"Huslenky,Uherská,hájenka",49.27209,18.1120472
-"Huslenky,Uherská,hájenka",49.2720642,18.1120224
-"Huslenky,Uherská,konečná",49.2706528,18.1224537
-"Huslenky,Uherská,u Blinků",49.28334,18.0970325
-"Huslenky,Uherská,u Blinků",49.2833023,18.0970058
-"Huslenky,Uherská,u Machalů",49.2771225,18.1022224
-"Huslenky,Uherská,u Machalů",49.2771,18.10214
 Huštěnovice,49.10812,17.46409
 Huštěnovice,49.10746,17.4632854
 Huštěnovice,49.1085,17.4637566
@@ -791,23 +605,11 @@ Huštěnovice,49.10809,17.46386
 "Hvozdná,Osmek",49.25704,17.7566757
 Chomýž,49.36241,17.64704
 Chomýž,49.36259,17.6461811
-"Choryně,,Agrochemický podnik",49.50465,17.9114437
-"Choryně,,Agrochemický podnik",49.5045738,17.911726
-"Choryně,,Agrochemický podnik",49.50471,17.9110947
-"Choryně,,Jednota",49.4994,17.9021854
-"Choryně,,Jednota",49.4993439,17.90202
-"Choryně,,Jednota",49.4994431,17.9023037
-"Choryně,,rozc.Lhota",49.49568,17.8987331
 "Choryně,,rozc.Lhota",49.4957542,17.8990822
-"Choryně,,rozc.Lhota",49.49576,17.8989029
 "Choryně,,rozc.Lhota",49.49606,17.8982086
-"Chropyně,,hájovna",49.3666954,17.3859024
-"Chropyně,,hájovna",49.3665657,17.3857956
 "Chropyně,,kovárna",49.3649368,17.3602219
-"Chropyně,,nám. u ulice Míru",49.3576736,17.3627872
 "Chropyně,,nám.",49.3578758,17.3619671
 "Chropyně,,nám.",49.3578339,17.3622322
-"Chropyně,,nám.",49.35753,17.3625526
 "Chropyně,,rozc.k žel.st.",49.36685,17.3578625
 "Chropyně,,rozc.k žel.st.",49.3668976,17.35791
 "Chropyně,,závod",49.35731,17.3691044
@@ -833,23 +635,10 @@ Chomýž,49.36259,17.6461811
 "Chvalčov,Lhotka",49.3961449,17.6953869
 "Chvalnov-Lísky,Chvalnov,na Příhoně",49.16431,17.2442551
 "Chvalnov-Lísky,Chvalnov,na Příhoně",49.1642838,17.2444077
-"Chvalnov-Lísky,Chvalnov,rozc.",49.1642151,17.24376
-"Chvalnov-Lísky,Chvalnov,rozc.",49.1641769,17.2437267
-"Chvalnov-Lísky,Chvalnov,škola",49.16656,17.23208
-"Chvalnov-Lísky,Lísky",49.1696167,17.2107735
-"Chvalnov-Lísky,Lísky,rozc.",49.1628227,17.2119961
-"Chvalnov-Lísky,Lísky,rozc.",49.1628647,17.2120552
-"Ivanovice na Hané,,aut.st.",49.3044662,17.0885372
 "Ivanovice na Hané,,aut.st.",49.3045158,17.0885849
 "Ivanovice na Hané,,aut.st.",49.30448,17.08845
-"Ivanovice na Hané,,Fischer",49.2969,17.0946236
-"Ivanovice na Hané,,Fischer",49.29509,17.0957546
-"Ivanovice na Hané,,u Škrku",49.3011856,17.0938835
-"Ivanovice na Hané,,Žižkova",49.306675,17.0957127
 "Jablůnka,,hor.zast.",49.3809471,17.948658
 "Jablůnka,,hor.zast.",49.37999,17.948
-"Jablůnka,,kolonie",49.3896637,17.9504013
-"Jablůnka,,kolonie",49.3896141,17.950058
 "Jablůnka,,rest.Na papírně",49.3877335,17.9493828
 "Jablůnka,,rest.Na papírně",49.388,17.9494228
 "Jablůnka,,rozc.Ratiboř",49.3720245,17.9456577
@@ -858,7 +647,6 @@ Chomýž,49.36259,17.6461811
 "Jablůnka,,rozc.Ratiboř",49.3717957,17.9456062
 "Jablůnka,,u Matuštíků",49.4091377,17.9534168
 "Jablůnka,,u Matuštíků",49.40918,17.9534874
-"Jablůnka,,záv.",49.3912468,17.9634361
 Jalubí,49.1193848,17.42758
 "Jalubí,,dol.konec",49.11078,17.4329281
 "Jalubí,,dol.konec",49.11157,17.4328728
@@ -876,7 +664,6 @@ Jankovice,49.35692,17.6141815
 "Jankovice,,střed",49.15474,17.3868256
 "Janová,,rozc.",49.30939,18.0203037
 "Janová,,rozc.",49.30935,18.0205269
-"Jarcová,,ObÚ",49.4462852,17.96793
 "Jarcová,,rozc.",49.4445343,17.9717045
 "Jarcová,,rozc.",49.4441872,17.9713688
 Jarohněvice,49.2692757,17.3768711
@@ -890,7 +677,6 @@ Jarohněvice,49.26911,17.37642
 "Jasenná,,Syrákov",49.27367,17.9044247
 Jestřabí,49.0686646,17.9549351
 Jestřabí,49.0684433,17.9553127
-"Ježov,,škola",49.0244,17.2132416
 "Ježov,,u Šupalového",49.0244942,17.2063274
 "Ježov,,zdrav.stř.",49.02619,17.2096729
 "Jindřichův Hradec,,aut.nádr.",49.1540642,15.004899
@@ -901,11 +687,6 @@ Kaňovice,49.1080666,17.6972332
 Karlovice,49.1767159,17.5837345
 Karlovice,49.17675,17.58373
 "Karlovice,,točna",49.1756058,17.5866623
-"Karolín,,MŠ",49.23077,17.4339237
-"Karolín,,MŠ",49.23094,17.43347
-"Karolín,,rozc.1.0",49.2322464,17.4447384
-"Karolín,,rozc.1.0",49.2322578,17.4446945
-"Karolín,,točna",49.23168,17.42982
 "Karolinka,,Horebečví",49.35068,18.2494049
 "Karolinka,,Horebečví",49.35063,18.24938
 "Karolinka,,požární dům",49.3512764,18.23927
@@ -933,14 +714,12 @@ Karlovice,49.17675,17.58373
 "Kateřinice,,dol.zast.",49.377903,17.89923
 "Kateřinice,,dol.zast.",49.37793,17.89923
 "Kateřinice,,lom",49.3864174,17.88171
-"Kateřinice,,lom",49.3864937,17.8818569
 "Kateřinice,,Na hranici",49.3728371,17.9101353
 "Kateřinice,,Na hranici",49.3729935,17.90999
 "Kateřinice,,pod Vrtaným",49.39053,17.87229
 "Kateřinice,,škola",49.38203,17.8863926
 "Kateřinice,,škola",49.38207,17.8863735
 "Kateřinice,,u mostu",49.38942,17.8761921
-"Kateřinice,,u mostu",49.38943,17.8762112
 "Kateřinice,,u Poláchů",49.37915,17.8934212
 "Kateřinice,,u Poláchů",49.37917,17.89344
 "Kelč,,aut.st.",49.47877,17.8186512
@@ -953,9 +732,6 @@ Karlovice,49.17675,17.58373
 "Kelč,,ZD",49.4816475,17.8256149
 "Kelč,,ZD",49.4817162,17.8258457
 "Kelč,Babice,náves",49.45748,17.78832
-"Kelč,Komárovice,mlýn",49.4800529,17.8463421
-"Kelč,Komárovice,mlýn",49.4800377,17.8463
-"Kelč,Komárovice,mlýn",49.4800339,17.8463478
 "Kelč,Komárovice,rozc.",49.48994,17.8540211
 "Kelč,Komárovice,rozc.",49.48999,17.8540649
 "Kelč,Lhota,náves",49.4574661,17.8037567
@@ -983,11 +759,7 @@ Kněžpole,49.09884,17.5179558
 "Kojetín,,nám.",49.3528748,17.3035641
 "Kojetín,,nám.",49.3529968,17.303566
 "Kojetín,,nám.",49.35275,17.303566
-"Kojetín,,Padlých hrdinů",49.3409271,17.31174
 "Kojetín,,žel.st.",49.3459358,17.3043556
-"Kojetín,,žel.st.",49.345932,17.3042011
-"Kojetín,Popůvky,firma Hanák",49.3277664,17.2977047
-"Kojetín,Popůvky,firma Hanák",49.3277359,17.2978745
 Komárno,49.4346237,17.7808247
 Komárno,49.4345169,17.7811737
 Komárov,49.15003,17.57
@@ -997,17 +769,12 @@ Komárov,49.15003,17.57
 Komňa,48.9943924,17.80013
 Komňa,48.99394,17.80039
 "Komňa,,točna",48.99085,17.8026772
-"Komňa,Bučník",48.97201,17.79801
 "Komňa,Bučník",48.9722,17.798748
 "Komňa,Nový dvůr",48.97467,17.8060951
 "Komňa,Nový dvůr",48.97463,17.8064671
 "Komňa,Nový dvůr",48.97446,17.8061447
-"Koryčany,,garáže",49.1126137,17.1634846
-"Koryčany,,garáže",49.1126022,17.16356
 "Koryčany,,nám.",49.1061363,17.1632023
 "Koryčany,,nám.",49.10621,17.1635742
-"Koryčany,,přehrada",49.11714,17.18889
-"Koryčany,,přehrada",49.1171036,17.1888371
 "Koryčany,,rozc.Mouchnice",49.1066628,17.152298
 "Koryčany,,rozc.Mouchnice",49.10693,17.1520462
 "Koryčany,,u hřiště",49.11556,17.1799183
@@ -1016,9 +783,6 @@ Komňa,48.99394,17.80039
 "Koryčany,,u vodárny",49.1166954,17.17848
 "Koryčany,,závod",49.1117668,17.1692448
 "Koryčany,,závod",49.11174,17.1693783
-"Koryčany,Blišice",49.12172,17.1639214
-"Koryčany,Blišice,kopec",49.11681,17.163702
-"Koryčany,Blišice,kopec",49.1168022,17.1637821
 "Koryčany,Jestřabice",49.09212,17.12997
 "Koryčany,Jestřabice",49.0921135,17.1298141
 "Koryčany,Jestřabice,rozc.Haluzice",49.0876656,17.1206169
@@ -1036,7 +800,6 @@ Komňa,48.99394,17.80039
 "Korytná,,střed",48.941597,17.6652222
 "Korytná,,střed",48.9410934,17.6655636
 Kostelany n.Mor.,49.0467224,17.4063721
-"Kostelany n.Mor.,,rozc.0.5",49.05115,17.3986454
 "Kostelany n.Mor.,,rozc.0.5",49.0511742,17.3985214
 Kostelany,49.2030334,17.3813972
 "Kostelany,,Čenče",49.21,17.3749886
@@ -1076,25 +839,18 @@ Kožušice,49.1576729,17.1872215
 "Kroměříž,,aut.nádr.",49.3012161,17.402916
 "Kroměříž,,aut.nádr.",49.3011932,17.4032326
 "Kroměříž,,aut.nádr.",49.30117,17.4035473
-"Kroměříž,,aut.nádr.",49.3011436,17.4038525
-"Kroměříž,,aut.nádr.",49.30113,17.40404
 "Kroměříž,,aut.nádr.",49.3011169,17.4042358
-"Kroměříž,,aut.nádr.",49.3014221,17.402956
 "Kroměříž,,aut.nádr.",49.3015366,17.402298
-"Kroměříž,,aut.nádr.",49.301403,17.4032726
 "Kroměříž,,aut.nádr.",49.30138,17.4035969
 "Kroměříž,,aut.nádr.",49.30133,17.4042053
 "Kroměříž,,aut.nádr.",49.30135,17.40263
 "Kroměříž,,aut.nádr.",49.3013268,17.4029331
-"Kroměříž,,aut.nádr.",49.3013,17.4032459
 "Kroměříž,,aut.nádr.",49.30126,17.4035759
 "Kroměříž,,aut.nádr.",49.30126,17.4035759
-"Kroměříž,,aut.st.u nem.",49.2932854,17.3823166
 "Kroměříž,,Bezručův park",49.29513,17.3975563
 "Kroměříž,,Bezručův park",49.2952728,17.3974037
 "Kroměříž,,Bezručův park",49.29551,17.3971138
 "Kroměříž,,Bezručův park",49.29559,17.3971729
-"Kroměříž,,Dům kultury",49.29809,17.3985043
 "Kroměříž,,Hulínská Magneton",49.30518,17.4033127
 "Kroměříž,,Hulínská Magneton",49.3052444,17.4038239
 "Kroměříž,,Husovo náměstí",49.29626,17.3956051
@@ -1104,8 +860,6 @@ Kožušice,49.1576729,17.1872215
 "Kroměříž,,Kaplanova rozc.",49.32309,17.389782
 "Kroměříž,,Kaplanova rozc.",49.323143,17.3898621
 "Kroměříž,,Kojetínská",49.3009949,17.3857136
-"Kroměříž,,Kojetínská",49.3002739,17.3862438
-"Kroměříž,,Kojetínská",49.3016739,17.3851185
 "Kroměříž,,Lindovka",49.3012848,17.3794479
 "Kroměříž,,Lindovka",49.3015327,17.37964
 "Kroměříž,,Milíčovo nám.",49.29657,17.3906288
@@ -1117,9 +871,6 @@ Kožušice,49.1576729,17.1872215
 "Kroměříž,,Nemocnice",49.29329,17.3801842
 "Kroměříž,,Plačkov",49.2894058,17.37194
 "Kroměříž,,Plačkov",49.28858,17.3698616
-"Kroměříž,,Smetanova ZŠ",49.29876,17.3851089
-"Kroměříž,,Smetanova ZŠ",49.2989922,17.3848133
-"Kroměříž,,Tovačovského",49.2997665,17.3987331
 "Kroměříž,,Velehradská u hřbitova",49.28713,17.38927
 "Kroměříž,,Velehradská u hřbitova",49.2870064,17.3890667
 "Kroměříž,,Výzkumný ústav",49.285183,17.3636875
@@ -1127,7 +878,6 @@ Kožušice,49.1576729,17.1872215
 "Kroměříž,Bílany,rozc.",49.31525,17.4249439
 "Kroměříž,Bílany,rozc.",49.3153229,17.4251461
 "Kroměříž,Bílany,rozc.",49.3151665,17.4247169
-"Kroměříž,Bílany,točna",49.3112946,17.4258938
 "Kroměříž,Drahlov",49.2573624,17.3765
 "Kroměříž,Drahlov",49.2573166,17.3764172
 "Kroměříž,Hradisko",49.31976,17.3476753
@@ -1159,57 +909,35 @@ Křekov,49.1278458,17.9690056
 "Křenovice,,Na Zábraní",49.3279152,17.2713947
 "Křenovice,,rest.",49.3275681,17.27029
 "Křižanovice u Vyškova,,rozc.0.2",49.2837753,17.0366516
-"Křižanovice u Vyškova,,rozc.0.2",49.2837257,17.0365143
-"Křižanovice u Vyškova,,rozc.0.2",49.2837868,17.0367451
 "Křtomil,,náves",49.4091644,17.6282
 "Křtomil,,náves",49.409256,17.6283112
-Kudlovice,49.1305466,17.4555645
-Kudlovice,49.130703,17.4556961
-"Kudlovice,Dolina",49.1494522,17.4482822
-"Kudlovice,Dolina",49.14953,17.4483547
-"Kudlovice,Dolina,hájenka",49.157917,17.44474
 Kunkovice,49.1821632,17.1734982
 "Kunovice,,hřiště",49.4438972,17.8156567
 "Kunovice,,hřiště",49.4438744,17.8151131
 "Kunovice,,hřiště",49.44393,17.8162632
 "Kunovice,,koupaliště",49.0389442,17.4915771
-"Kunovice,,Let",49.04674,17.4356022
-"Kunovice,,Let",49.0467148,17.4356136
-"Kunovice,,Let",49.04677,17.4356136
 "Kunovice,,Lidická",49.0409775,17.4722557
 "Kunovice,,Lidická",49.04097,17.4727631
 "Kunovice,,Lidická",49.0410271,17.47159
-"Kunovice,,Na Bělince",49.0466423,17.4523888
-"Kunovice,,Na Bělince",49.0428963,17.4568787
 "Kunovice,,Na Páně",49.4466324,17.81191
 "Kunovice,,Na Rynku",49.0434647,17.4675369
 "Kunovice,,Na Rynku",49.0426178,17.4670887
 "Kunovice,,Na Rynku",49.0434761,17.467432
 "Kunovice,,Novoveská",49.0323563,17.4598961
 "Kunovice,,Novoveská",49.0328827,17.4599514
-"Kunovice,,ObÚ",49.44311,17.8084126
-"Kunovice,,ObÚ",49.44316,17.8083553
 "Kunovice,,Osvobození",49.0299377,17.4689369
 "Kunovice,,Osvobození",49.0298462,17.4688
-"Kunovice,,Panská",49.0422,17.4631577
-"Kunovice,,Panská",49.0422821,17.4629765
-"Kunovice,,Petříkovec",49.0284538,17.458046
 "Kunovice,,rozc.k žel.st.0.5",49.0508728,17.4664249
 "Kunovice,,rozc.k žel.st.0.5",49.05086,17.4665222
 "Kunovice,,rozc.k žel.st.0.5",49.0503273,17.4663429
 "Kunovice,,škola",49.0385551,17.462656
 "Kunovice,,škola",49.0390053,17.46288
-"Kunovice,,žel.st.",49.44034,17.8185
 "Kunovice,Nový dvůr",49.00533,17.4933414
 "Kunovice,Nový dvůr",49.0044746,17.49407
 Kurovice,49.2889862,17.5158653
-"Kvasice,,cihelna",49.23531,17.4525814
-"Kvasice,,cihelna",49.23534,17.4525738
 "Kvasice,,nám.",49.2419434,17.4730072
 "Kvasice,,nám.",49.2419853,17.4728451
 "Kvasice,,nám.",49.2420425,17.472702
-"Kvasice,,Nový dvůr",49.2281876,17.4703121
-"Kvasice,,Nový dvůr",49.22823,17.4702816
 "Kvasice,,u kapličky",49.23932,17.4721413
 "Kvasice,,u kapličky",49.2387962,17.4719982
 "Kyjov,,aut.st.",49.0065575,17.1242428
@@ -1218,11 +946,9 @@ Kurovice,49.2889862,17.5158653
 "Kyjov,,Brandlova sídl.",49.01193,17.1366234
 "Kyjov,,ČSAD",49.02029,17.1240311
 "Kyjov,,ČSAD",49.0194778,17.12436
-"Kyjov,,gymnázium",49.0113525,17.1259556
 "Kyjov,,pod nemocnicí",49.0077362,17.1142712
 "Kyjov,,pod nemocnicí",49.0077324,17.1141949
 "Kyjov,,pod nemocnicí",49.0077858,17.1143665
-"Kyjov,,Újezd škola",49.01059,17.13109
 "Kyjov,,žel.st.",49.0160522,17.1237869
 "Kyjov,Bohuslavice",49.0496864,17.1234245
 "Kyjov,Bohuslavice",49.0496979,17.12333
@@ -1236,10 +962,6 @@ Kurovice,49.2889862,17.5158653
 "Kyjov,Boršov",49.0250931,17.12259
 "Kyjov,Boršov,hor.zast.",49.02979,17.1213779
 "Kyjov,Boršov,hor.zast.",49.0296822,17.12153
-"Kyselovice,,Chropyňská",49.37394,17.3975067
-"Kyselovice,,Chropyňská",49.3739624,17.3976135
-"Kyselovice,,náves",49.3760376,17.3989143
-"Kyselovice,,náves",49.3765373,17.3995724
 "Kyselovice,,rest.",49.37714,17.40232
 "Kyselovice,,rest.",49.37708,17.4022655
 Labuty,49.0465279,17.2123222
@@ -1259,40 +981,9 @@ Lechotice,49.27475,17.5875988
 "Leskovec,,Na čtvrti",49.29111,17.9998779
 "Leskovec,,ObÚ",49.2858925,17.99825
 "Leskovec,,ObÚ",49.28569,17.9982243
-"Lešná,,ObÚ",49.51787,17.93086
-"Lešná,,ObÚ",49.5178337,17.93093
-"Lešná,,pož.zbroj.",49.5202866,17.9301
-"Lešná,,pož.zbroj.",49.5199852,17.9304142
-"Lešná,,rozc.Vysoká",49.5122528,17.9388237
-"Lešná,,rozc.Vysoká",49.5123138,17.9387589
-"Lešná,,škola",49.51531,17.9316254
-"Lešná,,škola",49.51549,17.9314117
-"Lešná,,škola",49.514164,17.9322128
-"Lešná,,škola",49.514328,17.9324169
-"Lešná,Jasenice,dol.konec",49.51935,17.9638214
-"Lešná,Jasenice,dol.konec",49.5193825,17.963932
-"Lešná,Jasenice,střed",49.5228539,17.9656467
-"Lešná,Jasenice,střed",49.52296,17.9657764
-"Lešná,Jasenice,točna",49.52539,17.96749
-"Lešná,Lhotka n.Bečvou,Prefa",49.5013657,17.9343452
 "Lešná,Lhotka n.Bečvou,prům.zóna",49.5044174,17.9419537
-"Lešná,Lhotka n.Bečvou,rozc.",49.50841,17.9281578
-"Lešná,Lhotka n.Bečvou,rozc.",49.50836,17.9281254
-"Lešná,Lhotka n.Bečvou,rozc.",49.50851,17.92814
-"Lešná,Lhotka n.Bečvou,ZD",49.50324,17.9218559
-"Lešná,Lhotka n.Bečvou,ZD",49.50322,17.92185
-"Lešná,Lhotka n.Bečvou,ZD",49.5032463,17.92181
 "Lešná,Mštěnovice,CS CABOT",49.50288,17.9575043
 "Lešná,Mštěnovice,CS CABOT",49.50297,17.9577389
-"Lešná,Mštěnovice,Podboří",49.50917,17.9549
-"Lešná,Mštěnovice,Podboří",49.5092125,17.9547367
-"Lešná,Mštěnovice,škola",49.50694,17.957428
-"Lešná,Mštěnovice,škola",49.50699,17.9573555
-"Lešná,Perná,farma ZD",49.52731,17.94444
-"Lešná,Perná,farma ZD",49.5273438,17.9443836
-"Lešná,Příluky,kaple",49.5076256,17.9491959
-"Lešná,Příluky,kaple",49.5076637,17.94918
-"Lešná,Vysoká,točna",49.5184822,17.9472542
 "Lhota u Vsetína,,Kapka resort",49.31188,17.9714947
 "Lhota u Vsetína,,Kapka resort",49.3132668,17.9722271
 "Lhota u Vsetína,,U Jakšíků",49.3046646,17.9578552
@@ -1331,8 +1022,6 @@ Lipová,49.12174,17.8797035
 "Lipová,,kaple",49.4108353,17.6069584
 "Lipová,,Losky",49.1165047,17.8811035
 "Lipová,,Losky",49.11653,17.8811855
-"Lipová,,samoobsluha",49.4100227,17.6172523
-"Lipová,,samoobsluha",49.41007,17.6177483
 "Liptál,,Na Špici",49.29176,17.90982
 "Liptál,,Na Špici",49.291935,17.9098339
 "Liptál,,rozc.Hluboké",49.30057,17.9475975
@@ -1346,9 +1035,6 @@ Lipová,49.12174,17.8797035
 "Liptál,Lůžko",49.2766838,17.9139767
 "Liptál,Lůžko",49.2768326,17.91462
 "Litenčice,,aut.st.",49.2018967,17.2081947
-"Litenčice,,aut.st.",49.201992,17.2083187
-"Litenčice,,ovocná školka",49.2075958,17.2048454
-"Litenčice,,ovocná školka",49.2075653,17.2048073
 "Litenčice,,u kovárny",49.20179,17.2013016
 "Litenčice,,u kovárny",49.2018166,17.2012634
 "Litenčice,,ZD",49.1886253,17.20663
@@ -1375,14 +1061,10 @@ Lipová,49.12174,17.8797035
 "Loučka,,škola",49.16751,17.8770428
 "Loučka,,škola",49.1674957,17.8771286
 "Loučka,Lázy,ObÚ",49.4164352,17.8696346
-"Loukov,,Benzina",49.41617,17.73908
-"Loukov,,dolní",49.4191933,17.7156525
 "Loukov,,dolní",49.41865,17.71513
 "Loukov,,dolní",49.4184341,17.71519
-"Loukov,,kostel",49.4233246,17.7231731
 "Loukov,,kostel",49.4234238,17.7233486
 "Loukov,,kostel",49.42271,17.7220631
-"Loukov,,náves",49.42207,17.7214355
 "Loukov,,náves",49.4210548,17.71937
 "Loukov,,náves",49.42157,17.7206554
 "Loukov,Libosváry",49.43001,17.71463
@@ -1391,8 +1073,6 @@ Lubná,49.22386,17.3953533
 "Lubná,,most",49.2177658,17.4019051
 "Lubná,,ÚSP",49.2208443,17.3979645
 Ludkovice,49.1135445,17.7261963
-"Ludkovice,,hájenka",49.1301041,17.7180157
-"Ludkovice,,hájenka",49.13014,17.7180176
 "Ludkovice,,Paseky",49.1081238,17.7231865
 "Ludkovice,,Paseky",49.1081543,17.7231064
 "Ludkovice,,přehrada",49.1208572,17.7281265
@@ -1415,6 +1095,7 @@ Ludslavice,49.3005943,17.53881
 "Luhačovice,,hřbitov",49.09272,17.7506027
 "Luhačovice,,Jestřábí",49.1105347,17.7655144
 "Luhačovice,,Jestřábí",49.11076,17.76507
+"Luhačovice,,pošta",49.10178,17.76016
 "Luhačovice,,pošta",49.10205,17.7601566
 "Luhačovice,,pošta",49.1015167,17.7601719
 "Luhačovice,,Pražská čtvrť",49.11351,17.7670059
@@ -1423,7 +1104,6 @@ Ludslavice,49.3005943,17.53881
 "Luhačovice,,provozovna",49.0911064,17.7390518
 "Luhačovice,,u zámku",49.0968,17.7490368
 "Luhačovice,,u zámku",49.09692,17.7490368
-"Luhačovice,,Valaška",49.0889244,17.7366085
 "Luhačovice,,Zahradní čtvrť",49.0943451,17.7415619
 "Luhačovice,,Zahradní čtvrť",49.0942841,17.7414856
 "Luhačovice,,zotavovna Fontána",49.115303,17.7723
@@ -1436,7 +1116,6 @@ Ludslavice,49.3005943,17.53881
 "Luhačovice,Kladná Žilín,paseky",49.0845451,17.7653179
 "Luhačovice,Polichno",49.0686722,17.7127457
 "Luhačovice,Polichno",49.0681076,17.7120647
-"Luhačovice,Řetechov",49.1304245,17.74954
 "Lukov,,Domov důchodců",49.29019,17.7302341
 "Lukov,,Domov důchodců",49.2900963,17.72997
 "Lukov,,horní zast.",49.2902336,17.7381172
@@ -1448,12 +1127,8 @@ Lukoveček,49.30238,17.669384
 "Lukoveček,,Hadovna",49.3075142,17.6540089
 Lutonina,49.2393227,17.8827629
 Lutonina,49.2392349,17.8827572
-"Lutonina,,most",49.2386627,17.8827724
-"Lutonina,,most",49.2386246,17.8827133
 Lutopecny,49.3020554,17.3447514
 Lutopecny,49.3022,17.3443832
-"Lutopecny,,cihelna",49.2987251,17.3574657
-"Lutopecny,,cihelna",49.2987862,17.3574924
 "Lutopecny,Měrůtky,rozc.",49.3026,17.3365231
 "Lutopecny,Měrůtky,rozc.",49.3027039,17.3367863
 "Lužná,,obec",49.2400742,18.01987
@@ -1473,10 +1148,6 @@ Machová,49.2532959,17.5457287
 "Malá Bystřice,,škola",49.4091263,18.0484371
 "Malá Bystřice,,u Melichaříků",49.4185524,18.04222
 "Malá Bystřice,,u Melichaříků",49.4185371,18.0425224
-"Malhotice,,náves",49.48962,17.7639122
-"Malhotice,,náves",49.4894333,17.7639942
-"Malhotice,,ZD",49.48566,17.7596989
-"Malhotice,,ZD",49.485817,17.7600231
 Malínky,49.1591568,17.1609135
 Malínky,49.1591377,17.1614914
 Martinice,49.3101,17.6019382
@@ -1488,8 +1159,6 @@ Medlovice,49.05245,17.2703037
 Medlovice,49.05253,17.27014
 Medlovice,49.0522079,17.2698421
 "Medlovice,,rozc.1.0",49.2779274,17.0921974
-"Medlovice,,rozc.1.0",49.277935,17.0926075
-"Medlovice,,rozc.1.0",49.2780151,17.0925159
 "Mikulůvka,,Čarabovská",49.4138,17.9184952
 "Mikulůvka,,Čarabovská",49.4138336,17.918438
 "Mikulůvka,,hájenka",49.4091454,17.90156
@@ -1511,7 +1180,6 @@ Mistřice,49.0859451,17.5363026
 "Mistřice,,rozc.1.0",49.09617,17.5315018
 "Mistřice,,rozc.1.0",49.09608,17.5314331
 "Mistřice,,rozc.1.0",49.09561,17.5310249
-"Mistřice,,rozc.1.0",49.095623,17.5309372
 "Mistřice,Javorovec",49.0765228,17.5293427
 "Míškovice,,ObÚ",49.27638,17.5485725
 "Míškovice,,ObÚ",49.2770844,17.5483837
@@ -1522,30 +1190,15 @@ Modrá,49.1092262,17.4045525
 "Moravský Písek,,ObÚ",48.9901047,17.33158
 "Moravský Písek,Kolonie,rozc.",48.9795837,17.3181362
 "Moravský Písek,Kolonie,žel.st.",48.97738,17.3142929
-"Morkovice-Slížany,,Skavsko",49.22494,17.18822
-"Morkovice-Slížany,,Skavsko",49.2249527,17.1881466
-"Morkovice-Slížany,Morkovice,1.máje",49.24134,17.1969414
-"Morkovice-Slížany,Morkovice,1.máje",49.2412834,17.1967964
-"Morkovice-Slížany,Morkovice,křiž.",49.248497,17.2115879
-"Morkovice-Slížany,Morkovice,nám.",49.2469063,17.2059784
 "Morkovice-Slížany,Morkovice,nám.",49.247,17.2062531
 "Morkovice-Slížany,Morkovice,nám.",49.2468758,17.2056866
-"Morkovice-Slížany,Morkovice,ZD",49.2453575,17.1972141
-"Morkovice-Slížany,Morkovice,ZD",49.24552,17.19696
 "Morkovice-Slížany,Morkovice,žel.st.",49.252388,17.2114887
 "Morkovice-Slížany,Morkovice,žel.st.",49.2526169,17.2114182
-"Morkovice-Slížany,Slížany,točna",49.24345,17.2273331
 Mořice,49.3277664,17.19729
 Mořice,49.32779,17.19699
-Mouchnice,49.1119881,17.1350918
-Mouchnice,49.11211,17.1351585
-"Mouchnice,,Na požárech",49.116333,17.1350346
-"Mouchnice,,Na požárech",49.11631,17.13519
-"Mrlínek,,křiž.",49.42607,17.68406
 "Mrlínek,,křiž.",49.42584,17.683836
 Mysločovice,49.2559738,17.5644073
 "Mysločovice,,škola",49.26013,17.5688057
-"Mysločovice,,škola",49.26006,17.5688286
 "Nahošovice,,Šebestián",49.4293976,17.57856
 "Nahošovice,,Šebestián",49.42954,17.5783672
 "Napajedla,,aut.st.",49.1706848,17.5077381
@@ -1580,8 +1233,6 @@ Nedachlebice,49.099308,17.58881
 "Nedakonice,,rozc.k žel.st.0.5",49.031147,17.37775
 "Nedakonice,,ZD",49.03922,17.38552
 "Nedakonice,,ZD",49.03969,17.3860588
-"Nedakonice,,žel.st.",49.0325279,17.3767223
-"Nedakonice,,žel.st.",49.0326271,17.3767223
 "Nedašov,,paseky",49.1008263,18.0830326
 "Nedašov,,paseky",49.0994148,18.08567
 "Nedašov,,pomník",49.1031876,18.0778217
@@ -1606,9 +1257,6 @@ Nedašova Lhota,49.1193466,18.0784721
 "Němčice,,náves",49.3653831,17.4986954
 "Němčice,,rozc.",49.36965,17.5080242
 "Němčice,,rozc.",49.36965,17.50813
-Nemotice,49.1295738,17.1243858
-Nemotice,49.1296921,17.1249866
-"Nemotice,,žel.st.",49.1340866,17.1167774
 "Nesovice,,čerp.st.",49.1495171,17.0801563
 "Nesovice,,čerp.st.",49.14964,17.08025
 "Neubuz,,Obecní úřad",49.26056,17.8259048
@@ -1634,12 +1282,6 @@ Nítkovice,49.20385,17.1662445
 "Nivnice,,u váhy",48.97891,17.6389427
 "Nivnice,,ZD",48.98595,17.6383514
 "Nivnice,,ZD",48.98492,17.6381969
-"Nová Dědina,,kopaniny",49.21785,17.4593945
-"Nová Dědina,,kopaniny",49.21788,17.4593563
-"Nová Dědina,,ObÚ",49.21134,17.4548378
-"Nová Dědina,,ObÚ",49.2113533,17.4547424
-"Nová Dědina,,točna",49.208683,17.4501419
-"Nová Dědina,,točna",49.2086639,17.4499969
 "Nový Hrozenkov,,DPS",49.342144,18.2097969
 "Nový Hrozenkov,,DPS",49.34231,18.2100525
 "Nový Hrozenkov,,rozc.",49.3444977,18.2136173
@@ -1649,11 +1291,8 @@ Nítkovice,49.20385,17.1662445
 "Nový Hrozenkov,,točna",49.3403931,18.2049675
 "Nový Hrozenkov,Břežitá,rozc.",49.32818,18.169714
 "Nový Hrozenkov,Břežitá,rozc.",49.3283424,18.1703911
-"Nový Hrozenkov,Břežitá,rozc.",49.3269234,18.1701984
 "Nový Hrozenkov,Čubov",49.333725,18.1787529
 "Nový Hrozenkov,Čubov",49.33385,18.1790066
-"Nový Hrozenkov,Lušová,u Tlašků",49.33163,18.1638889
-"Nový Hrozenkov,Lušová,u Tlašků",49.3317223,18.1639023
 "Nový Hrozenkov,Vranča,Hluchá",49.31662,18.2296143
 "Nový Hrozenkov,Vranča,Hluchá",49.316597,18.2295952
 "Nový Hrozenkov,Vranča,kolonie",49.3300056,18.2012768
@@ -1666,15 +1305,8 @@ Nítkovice,49.20385,17.1662445
 "Nový Hrozenkov,Vranča,rozc.Vranečka",49.3234749,18.2089844
 "Nový Hrozenkov,Vranča,rozc.Vranečka",49.32344,18.2089577
 "Nový Jičín,,aut.nádr.",49.59772,18.0095367
-"Nový Jičín,,aut.nádr.",49.597744,18.0090485
 "Nový Jičín,,aut.nádr.",49.5978432,18.0093918
 "Nový Jičín,,Sokolovská",49.59546,18.01277
-"Nový Jičín,,Tonak",49.5901566,18.0158329
-"Nový Jičín,,Tonak",49.5913429,18.0151
-"Nový Jičín,Bludovice,samoobsluha",49.5739136,18.0209732
-"Nový Jičín,Bludovice,samoobsluha",49.5741959,18.02108
-"Nový Jičín,Bludovice,škola",49.56518,18.02547
-"Nový Jičín,Bludovice,škola",49.5646439,18.0256538
 Obědkovice,49.3973923,17.2263546
 Obědkovice,49.3974533,17.2262764
 Obědkovice,49.397316,17.2264843
@@ -1686,11 +1318,6 @@ Oldřichovice,49.18192,17.5616455
 "Olomouc,,hl.nádr.",49.59195,17.277544
 "Olomouc,,hl.nádr.",49.59195,17.277544
 "Olomouc,,Pionýrská",49.57792,17.2384739
-"Opatovice,,dolní konec",49.5041962,17.74006
-"Opatovice,,dolní konec",49.50426,17.7402363
-"Opatovice,,rest.",49.49956,17.7388611
-"Opatovice,,rest.",49.4998169,17.739584
-Ořechov,49.0307236,17.30075
 Ořechov,49.0307579,17.3007774
 "Ořechov,,hřbitov",49.0299873,17.3083725
 "Ořechov,,hřbitov",49.0303,17.3082962
@@ -1702,10 +1329,8 @@ Ořechov,49.0307579,17.3007774
 "Ostrata,,dolní zast.",49.26642,17.7639942
 "Ostrata,,dolní zast.",49.2663651,17.7640285
 "Ostrata,,horní zast.",49.27107,17.7669468
-"Ostrata,,horní zast.",49.2709923,17.7670517
 "Ostrava,,ÚAN",49.8308372,18.27913
 "Ostrava,,ÚAN",49.83053,18.2807674
-"Ostrava,,ÚAN",49.8304253,18.2807961
 "Ostrava,Hrabůvka,Benzina",49.78245,18.27151
 "Ostrava,Hrabůvka,Benzina",49.78269,18.27183
 "Ostrava,Hrabůvka,Dřevoprodej",49.7918549,18.271616
@@ -1720,13 +1345,8 @@ Ořechov,49.0307579,17.3007774
 "Ostrožská Lhota,,Obecní úřad",48.9758224,17.4681034
 "Ostrožská Nová Ves,,křiž.",49.00515,17.435
 "Ostrožská Nová Ves,,křiž.",49.0050621,17.43468
-"Ostrožská Nová Ves,,Lhotská",49.0036774,17.4360275
 "Ostrožská Nová Ves,,Novoveské lázně",49.0178642,17.44622
 "Ostrožská Nová Ves,,Novoveské lázně",49.01818,17.4464569
-"Ostrožská Nová Ves,,ZD",48.99977,17.4445019
-"Ostrožská Nová Ves,,ZD",48.99958,17.4447765
-"Ostrožská Nová Ves,Chylice",48.9975929,17.4295158
-"Ostrožská Nová Ves,Chylice",48.9971542,17.4287987
 "Ostrožská Nová Ves,Kopanice",49.0084648,17.43962
 "Ostrožská Nová Ves,Kopanice",49.00853,17.4395332
 Osvětimany,49.05612,17.2493114
@@ -1734,8 +1354,6 @@ Osvětimany,49.05612,17.2493382
 "Osvětimany,,škola",49.0548,17.2559929
 "Osvětimany,,škola",49.0549049,17.2568722
 "Osvětimany,,ZD",49.05639,17.2436848
-"Otrokovice,,aut.nádr.Baťov",49.2163467,17.5160141
-"Otrokovice,,aut.nádr.Baťov",49.2166023,17.5159245
 "Otrokovice,,aut.nádr.Baťov",49.2163,17.51591
 "Otrokovice,,aut.nádr.Baťov",49.21678,17.5157261
 "Otrokovice,,aut.nádr.Baťov",49.2170639,17.5156689
@@ -1745,43 +1363,36 @@ Osvětimany,49.05612,17.2493382
 "Otrokovice,,Hurdisky",49.21137,17.5172329
 "Otrokovice,,Hurdisky",49.2118568,17.5171986
 "Otrokovice,,Moravní",49.2130127,17.5136967
-"Otrokovice,,Nadjezd",49.21121,17.52947
-"Otrokovice,,Nadjezd",49.21156,17.5299931
+"Otrokovice,,Nadjezd",49.21149,17.52986
+"Otrokovice,,Nadjezd",49.21123,17.52952
 "Otrokovice,,náměstí",49.20728,17.5367317
 "Otrokovice,,náměstí",49.2086525,17.5355
-"Otrokovice,,pneumatikárna",49.1985855,17.5258427
-"Otrokovice,,pneumatikárna",49.19875,17.5262356
 "Otrokovice,,poliklinika",49.20581,17.53751
 "Otrokovice,,poliklinika",49.20574,17.5375957
 "Otrokovice,,Pošta",49.20237,17.53696
 "Otrokovice,,Pošta",49.2023125,17.5369778
 "Otrokovice,,Pošta",49.20237,17.53696
-"Otrokovice,,průmyslový areál",49.2241135,17.5220356
-"Otrokovice,,průmyslový areál",49.2241135,17.5220356
 "Otrokovice,,Senior",49.2147446,17.5063648
 "Otrokovice,,Společenský dům",49.215435,17.5134087
 "Otrokovice,,Společenský dům",49.21459,17.51361
 "Otrokovice,,Štěrkoviště",49.22354,17.51334
 "Otrokovice,,Štěrkoviště",49.2236,17.5133
-"Otrokovice,,teplárna",49.20509,17.5171242
-"Otrokovice,,teplárna",49.2059364,17.5170059
 "Otrokovice,,Trávníky",49.20011,17.54523
 "Otrokovice,,Trávníky",49.2002,17.54624
 "Otrokovice,,U Dřevnice",49.2092056,17.5233479
 "Otrokovice,,U Dřevnice",49.2094,17.5245247
 "Otrokovice,,Zahradní",49.21969,17.51441
-"Otrokovice,,žel.st.",49.2019348,17.5323563
+"Otrokovice,,žel.st.",49.20248,17.53224
 "Otrokovice,,žel.st.",49.2018852,17.53232
 "Otrokovice,,žel.st.",49.2025032,17.5322838
+"Otrokovice,Kvítkovice,hřbitov",49.19293,17.54161
+"Otrokovice,Kvítkovice,hřbitov",49.19293,17.54161
 "Otrokovice,Kvítkovice,Napajedelská",49.1975174,17.5371475
 "Otrokovice,Kvítkovice,Napajedelská",49.19852,17.5371361
 "Otrokovice,Kvítkovice,náves",49.197197,17.5433254
 "Otrokovice,Kvítkovice,náves",49.197197,17.5433254
 "Otrokovice,Kvítkovice,Zlínská",49.1989555,17.5385723
 "Otrokovice,Kvítkovice,Zlínská",49.1991653,17.5381031
-"Otrokovice,Kvítkovice,Zlínská",49.1991844,17.5379715
-"Otrokovice,Terezov",49.2357445,17.5382385
-"Otrokovice,Terezov",49.2357674,17.5383263
 "Oznice,,konečná",49.43515,17.90702
 "Oznice,,škola",49.4323845,17.91711
 "Oznice,,škola",49.43243,17.9170341
@@ -1790,19 +1401,13 @@ Osvětimany,49.05612,17.2493382
 "Oznice,,u Piskláků",49.42344,17.9402485
 "Oznice,,u Piskláků",49.4234543,17.9402618
 Pacetluky,49.3790855,17.56585
-Pačlavice,49.25983,17.1683311
 Pačlavice,49.2597466,17.1683388
 Pačlavice,49.2598953,17.16832
 "Pačlavice,Lhota",49.24425,17.1544476
-"Pačlavice,Pornice",49.2497749,17.1823
 "Pačlavice,Pornice",49.2497559,17.1822414
 "Pačlavice,Pornice",49.24977,17.18241
-"Paršovice,,kostel",49.5004044,17.7111721
-"Paršovice,,kostel",49.50003,17.7109966
 "Pašovice,,Obecní úřad",49.0788879,17.6447544
-Pavlovice u Kojetína,49.3020859,17.2121029
-"Pavlovice u Kojetína,Unčice",49.2996674,17.2050533
-"Pavlovice u Kojetína,Unčice",49.299633,17.20501
+Petrůvka,49.10654,17.80927
 Petrůvka,49.1066132,17.8093071
 Petrůvka,49.1063843,17.8092632
 "Petrůvka,,paseky",49.10812,17.8019142
@@ -1827,9 +1432,6 @@ Podkopná Lhota,49.304924,17.8317986
 "Podolí,,ObÚ",49.4300346,17.8565159
 "Podolí,,U Olšavy",49.04347,17.5267372
 "Podolí,,U Olšavy",49.0434036,17.52681
-"Podolí,,U Zvonice",49.0429,17.5266457
-"Podolí,,U Zvonice",49.04254,17.5270653
-"Podolí,,U žlebu",49.0387,17.5340824
 "Pohořelice,,Oldřichovská",49.1785545,17.53611
 "Pohořelice,,Oldřichovská",49.1785851,17.535656
 "Polešovice,,Městečko",49.03357,17.34109
@@ -1844,7 +1446,6 @@ Podkopná Lhota,49.304924,17.8317986
 "Police,,rozc.",49.4491425,17.86791
 "Police,,rozc.",49.44917,17.8678169
 "Police,,točna",49.45595,17.8662872
-"Police,,točna",49.4559631,17.8662815
 "Poličná,,střed",49.4665833,17.9466343
 "Poličná,,střed",49.46656,17.9464817
 "Poličná,,střed",49.4666,17.9467525
@@ -1858,17 +1459,10 @@ Podkopná Lhota,49.304924,17.8317986
 "Polkovice,,rozc.",49.38868,17.2578659
 "Polkovice,,rozc.",49.3885078,17.2582
 "Polkovice,,rozc.",49.388813,17.2575359
-Popovice,49.0521545,17.5257111
-"Popovice,,dol.konec",49.04778,17.5250416
-"Popovice,,dol.konec",49.04795,17.52486
 Poteč,49.15431,18.0330811
 Poteč,49.15526,18.034296
-"Pozděchov,,č.27",49.23029,17.9635563
-"Pozděchov,,č.27",49.23028,17.9635
 "Pozděchov,,obec",49.2339439,17.9554043
 "Pozděchov,,obec",49.23414,17.9551086
-"Pozděchov,,obec",49.2333,17.9561176
-"Pozděchov,,točna",49.22519,17.9643955
 "Pozděchov,,Václavák",49.2277374,17.9451046
 "Pozděchov,,Václavák",49.2277222,17.94485
 "Pozlovice,,dol.konec",49.1211624,17.7649841
@@ -1880,8 +1474,6 @@ Poteč,49.15526,18.034296
 "Pozlovice,,Nad přehradou",49.12067,17.7804375
 "Pozlovice,,Nad přehradou",49.1211052,17.7810936
 "Pozlovice,,přehrada",49.12037,17.7750969
-"Pozlovice,,PV ZD",49.12268,17.75844
-"Pozlovice,,PV ZD",49.12273,17.7584171
 "Pozlovice,,střed",49.1267548,17.7683067
 "Pozlovice,,střed",49.12619,17.7684231
 "Praha,,ÚAN Florenc",50.0894279,14.4408064
@@ -1892,8 +1484,6 @@ Poteč,49.15526,18.034296
 "Prakšice,,škola",49.0703239,17.6351242
 Prasklice,49.2689438,17.18604
 Prasklice,49.2689934,17.1859779
-"Pravčice,,aut.st.",49.323925,17.4945831
-"Pravčice,,aut.st.",49.3238869,17.4947376
 "Pravčice,,rozc.0.5",49.31811,17.49652
 "Pravčice,,rozc.0.5",49.31813,17.4959164
 "Pravčice,,rozc.0.5",49.31811,17.49707
@@ -1913,7 +1503,6 @@ Prasklice,49.2689934,17.1859779
 "Prostějov,,Železárny",49.4653931,17.1333542
 "Prostějov,,Železárny",49.4656029,17.13342
 "Prostějov,,Železárny",49.46501,17.1332779
-"Prostřední Bečva,,Bártek",49.44772,18.2710857
 "Prostřední Bečva,,Bártek",49.4476929,18.27101
 "Prostřední Bečva,,Bártek",49.4477158,18.27113
 "Prostřední Bečva,,hotel Zavadilka",49.43763,18.2643166
@@ -1936,7 +1525,6 @@ Prasklice,49.2689934,17.1859779
 "Prostřední Bečva,,U Šírů",49.44615,18.2515
 "Prostřední Bečva,,U Šírů",49.4461479,18.2515545
 "Prostřední Bečva,Bacov,škola",49.4535942,18.2528057
-"Prostřední Bečva,Kněhyně,Skokan",49.45465,18.2790947
 "Prostřední Bečva,Kněhyně,Skokan",49.4546432,18.27905
 "Prostřední Bečva,Kněhyně,Skokan",49.4546623,18.27915
 "Provodov,,Dvory",49.16421,17.74583
@@ -1953,23 +1541,17 @@ Prasklice,49.2689934,17.1859779
 "Provodov,Maleniska",49.1532326,17.74105
 "Provodov,Zabačky",49.171936,17.7647362
 "Provodov,Zabačky",49.17183,17.7645149
-"Provodovice,,rozc.",49.45171,17.7655449
-"Provodovice,,rozc.",49.4511566,17.7657833
 "Prusinovice,,aut.st.",49.3778725,17.5891838
-"Prusinovice,,aut.st.",49.37784,17.5895081
 "Prusinovice,,Holešovská",49.3742371,17.58071
 "Prusinovice,,křiž.",49.37627,17.5842552
 "Prusinovice,,křiž.",49.376545,17.5852585
 "Prusinovice,,Pacetlucká ulice",49.37681,17.58273
 "Prusinovice,,Pacetlucká ulice",49.37641,17.5829926
-"Přerov,,aut.st.",49.446537,17.44807
 "Přerov,,aut.st.",49.4469757,17.4475975
 "Přerov,,aut.st.",49.44668,17.4483032
 "Přerov,,aut.st.",49.44677,17.4478149
 "Přerov,,aut.st.",49.44677,17.4478149
 "Přerov,,Čechova EMOS",49.45185,17.45621
-"Přerov,,Přer.stroj.hl.brána",49.4421425,17.4400139
-"Přerov,,Přer.stroj.hl.brána",49.4415321,17.4394627
 "Přerov,,Želatovská",49.4508324,17.4674416
 "Přerov,,Želatovská",49.4509163,17.4659271
 "Přestavlky,,náves",49.38939,17.4787426
@@ -1995,23 +1577,16 @@ Prasklice,49.2689934,17.1859779
 "Rajnochovice,,Bernádka",49.3526344,17.7977314
 "Rajnochovice,,garáže",49.40762,17.8114471
 "Rajnochovice,,garáže",49.4076347,17.8114929
-"Rajnochovice,,Košovy",49.37381,17.8148842
 "Rajnochovice,,ObÚ",49.413456,17.8109989
 "Rajnochovice,,ObÚ",49.41354,17.8110981
 "Rajnochovice,,Rosošná",49.40105,17.8144073
 "Rajnochovice,,Rosošná",49.40112,17.8145123
-"Rajnochovice,,Sochová",49.3902626,17.8183422
-"Rajnochovice,,Sochová",49.3903427,17.8183556
 "Rajnochovice,,u kapličky",49.4161835,17.8063049
 "Rajnochovice,,u kapličky",49.4162064,17.8063583
 "Rajnochovice,Tesák",49.3664474,17.7733555
 "Rajnochovice,Tesák",49.3667145,17.7736454
 "Rajnochovice,Troják",49.3534966,17.8127327
 "Rajnochovice,Troják",49.3536224,17.8128166
-"Rakov,,rest.",49.49133,17.7074
-"Rakov,,rest.",49.49133,17.7074
-Rataje,49.273716,17.3346939
-Rataje,49.2737465,17.3346481
 "Rataje,,křiž.",49.2738342,17.3342533
 "Rataje,,křiž.",49.274044,17.3339176
 "Rataje,,točna",49.2696571,17.3387337
@@ -2025,6 +1600,7 @@ Rataje,49.2737465,17.3346481
 "Ratiboř,,hor.zast.",49.3657227,17.9012814
 "Ratiboř,,kino",49.3674431,17.91618
 "Ratiboř,,kino",49.367527,17.91566
+"Ratiboř,,kino",49.3679352,17.9151859
 "Ratiboř,,kino",49.36773,17.91511
 "Ratiboř,,Na hranici",49.36184,17.8907681
 "Ratiboř,,Na hranici",49.3618622,17.89065
@@ -2034,25 +1610,17 @@ Rataje,49.2737465,17.3346481
 "Rokytnice,,horní zast.",49.06458,17.9052486
 "Rokytnice,,Obecní dům",49.06704,17.91587
 "Rokytnice,,Obecní dům",49.0665131,17.9145184
-"Rokytnice,,Obecní dům",49.0666237,17.9166031
-"Rokytnice,,rozc.1.0",49.07099,17.9158478
 "Rokytnice,,rozc.1.0",49.0709763,17.91584
 "Rokytnice,,TVD",49.0698,17.9302311
 "Rokytnice,,TVD",49.0691147,17.9317436
-"Rokytnice,Kochavec,horní zast.",49.04829,17.9376659
-"Rokytnice,Kochavec,horní zast.",49.0481873,17.9376278
-"Rokytnice,Kochavec,točna",49.0395775,17.9378338
 Roštění,49.36612,17.5335579
 Roštění,49.3662148,17.5328579
 Roštín,49.18892,17.2865715
 Roštín,49.1889954,17.28654
 "Rožnov p.Radh.,,1.máje",49.4620667,18.1311111
-"Rožnov p.Radh.,,1.máje",49.4620628,18.1311588
-"Rožnov p.Radh.,,1.máje",49.46208,18.1310539
 "Rožnov p.Radh.,,aut.st.",49.4599571,18.13455
 "Rožnov p.Radh.,,aut.st.",49.460144,18.1350327
 "Rožnov p.Radh.,,aut.st.",49.4601974,18.13553
-"Rožnov p.Radh.,,aut.st.",49.4599953,18.13451
 "Rožnov p.Radh.,,aut.st.",49.4600258,18.1349621
 "Rožnov p.Radh.,,aut.st.",49.4600525,18.1351833
 "Rožnov p.Radh.,,aut.st.",49.4598732,18.1343269
@@ -2065,11 +1633,9 @@ Roštín,49.1889954,17.28654
 "Rožnov p.Radh.,,aut.st.",49.4601326,18.13487
 "Rožnov p.Radh.,,aut.st.",49.4599571,18.13455
 "Rožnov p.Radh.,,Bezručova",49.4625244,18.1427727
-"Rožnov p.Radh.,,Knihovna",49.4624329,18.1434288
 "Rožnov p.Radh.,,Knihovna",49.46245,18.1433144
 "Rožnov p.Radh.,,Knihovna",49.46243,18.1436253
 "Rožnov p.Radh.,,Koryčanské paseky",49.4641838,18.1266518
-"Rožnov p.Radh.,,Koryčanské paseky",49.4641724,18.1266727
 "Rožnov p.Radh.,,Kramolišov",49.4499435,18.1408634
 "Rožnov p.Radh.,,Kramolišov",49.45011,18.1409454
 "Rožnov p.Radh.,,Lipová",49.4491,18.16954
@@ -2084,7 +1650,6 @@ Roštín,49.1889954,17.28654
 "Rožnov p.Radh.,,rest.U eroplánu",49.4656,18.1553936
 "Rožnov p.Radh.,,rest.U eroplánu",49.4655151,18.15898
 "Rožnov p.Radh.,,U bazénu",49.46471,18.12783
-"Rožnov p.Radh.,,U bazénu",49.4647064,18.1277943
 "Rožnov p.Radh.,,u kříže",49.4549522,18.1512527
 "Rožnov p.Radh.,,u kříže",49.4549141,18.15082
 "Rožnov p.Radh.,,u náměstí",49.4569626,18.1432819
@@ -2096,8 +1661,6 @@ Roštín,49.1889954,17.28654
 "Rožnov p.Radh.,,Uhliska",49.4362946,18.1328869
 "Rožnov p.Radh.,,Videčská",49.4576874,18.1372814
 "Rožnov p.Radh.,,Videčská",49.45814,18.13819
-"Rožnov p.Radh.,,zemědělská škola",49.4610023,18.13757
-"Rožnov p.Radh.,,zemědělská škola",49.4611359,18.1377163
 "Rožnov p.Radh.,Dolní Paseky,palírna",49.46625,18.1416588
 "Rožnov p.Radh.,Dolní Paseky,revír",49.4830322,18.1402359
 "Rožnov p.Radh.,Dolní Paseky,točna",49.48821,18.1391449
@@ -2113,15 +1676,8 @@ Roštín,49.1889954,17.28654
 "Rudice,,střed",49.05674,17.7377186
 "Rudice,,střed",49.0565224,17.73759
 "Rudice,,točna",49.06179,17.7476177
-Rudimov,49.0795174,17.8281212
-Rudimov,49.07955,17.8282051
-"Rudimov,,Jankulka",49.08044,17.8387928
-"Rudimov,,Jankulka",49.0803871,17.8388538
 "Rudimov,,rozc.3.0",49.08896,17.85307
 "Rudimov,,rozc.3.0",49.0889778,17.8531151
-"Rudimov,,točna",49.0735435,17.82143
-"Rudimov,,u bytovky",49.08058,17.8305569
-"Rudimov,,u bytovky",49.08069,17.8304768
 "Rusava,,Hořansko",49.3544121,17.7007656
 "Rusava,,kino",49.34661,17.6802921
 "Rusava,,kino",49.3463058,17.6806564
@@ -2151,8 +1707,6 @@ Rudimov,49.07955,17.8282051
 "Růžďka,Dušná,serpentiny",49.3791161,18.0256538
 "Růžďka,Holešov",49.3887024,18.0075932
 Rybníček,49.27584,17.07262
-Rybníček,49.2757874,17.0726032
-Rybníček,49.275856,17.0726414
 "Rybníček,,statek",49.27782,17.06553
 "Rymice,,boční",49.344696,17.5292759
 "Rymice,,boční",49.3446732,17.5291023
@@ -2193,6 +1747,7 @@ Skalka,49.0352821,17.20861
 "Skaštice,,křiž.",49.3329544,17.41536
 "Slavičín,,Luhačovská",49.0877838,17.8611279
 "Slavičín,,Luhačovská",49.0878334,17.8612976
+"Slavičín,,Radnice",49.0879822,17.8782063
 "Slavičín,,Radnice",49.0883636,17.87797
 "Slavičín,,Radnice",49.08764,17.8783531
 "Slavičín,,U Hotelu",49.08362,17.88299
@@ -2244,8 +1799,6 @@ Slopné,49.15547,17.8464451
 "Slušovice,,škola",49.24879,17.8090343
 "Slušovice,,výpočetní středisko",49.25914,17.80054
 "Slušovice,,výpočetní středisko",49.2591171,17.8006287
-"Slušovice,,zdrav.stř.",49.2488861,17.7953854
-"Slušovice,,zdrav.stř.",49.248745,17.7957649
 Soběsuky,49.23213,17.35992
 Soběsuky,49.23207,17.3599052
 "Soběsuky,,Olšina",49.2425957,17.3444824
@@ -2266,15 +1819,10 @@ Spytihněv,49.14194,17.49837
 "Spytihněv,,rozc.",49.1416435,17.4977
 "Spytihněv,,sever",49.1518,17.5030251
 "Spytihněv,,sever",49.1513557,17.502676
-"Srbce,,rozc.",49.29637,17.22831
-"Srbce,,rozc.",49.2963676,17.2282257
 "Stará Ves,,rest.",49.3785553,17.486908
 "Stará Ves,,rest.",49.3784752,17.4877949
 "Staré Hutě,,hor.zast.",49.1255226,17.2782822
 "Staré Hutě,,hor.zast.",49.1243973,17.27892
-"Staré Hutě,,Obecní úřad",49.1328545,17.2799187
-"Staré Hutě,,u kříže",49.1290169,17.2774639
-"Staré Hutě,,u kříže",49.1289978,17.27754
 "Staré Město,,Finská čtvrť",49.07429,17.4302177
 "Staré Město,,Finská čtvrť",49.07437,17.4298573
 "Staré Město,,hřbitov",49.0757027,17.4489479
@@ -2307,8 +1855,8 @@ Spytihněv,49.14194,17.49837
 "Staré Město,,žel.st.",49.07591,17.42308
 "Staré Město,,žel.st.",49.07605,17.4232216
 "Staré Město,,žel.st.",49.07607,17.42343
-"Staré Město,,žel.st.",49.0758362,17.4235916
 "Starý Hrozenkov,,celnice",48.95205,17.8966
+"Starý Hrozenkov,,celnice",48.95203,17.8955669
 "Starý Hrozenkov,,CLO",48.9519043,17.8961468
 "Starý Hrozenkov,,dol.konec",48.9640541,17.8697758
 "Starý Hrozenkov,,dol.konec",48.9639168,17.8697224
@@ -2335,47 +1883,29 @@ Stříbrnice,49.05633,17.3072128
 "Stříbrnice,,státní",49.32699,17.2453957
 "Stříbrnice,,státní",49.326992,17.24569
 "Střílky,,nám.",49.142395,17.21131
-"Střítež n.Bečvou,,hotel Květoň",49.45864,18.0565434
 "Střítež n.Bečvou,,hotel Květoň",49.45906,18.0563488
 "Střítež n.Bečvou,,hotel Květoň",49.45844,18.0569572
 "Střítež n.Bečvou,,kostel",49.4568748,18.0644474
 "Střítež n.Bečvou,,kostel",49.4568329,18.0644321
-"Střítež n.Bečvou,,lesní záv.",49.46569,18.0742664
-"Střítež n.Bečvou,,rozc.",49.46574,18.05595
 "Střítež n.Bečvou,,rozc.",49.4656944,18.0563889
 "Střítež n.Bečvou,,rozc.",49.4657364,18.0564079
 "Střítež n.Bečvou,,rozc.",49.4655037,18.05605
 "Střítež n.Bečvou,,rozc.",49.4654274,18.0560188
 Střížovice,49.2569847,17.4470329
 Střížovice,49.25635,17.4472084
-"Střížovice,,rozc.0.5",49.2517624,17.4423771
-"Stupava,,na kopečku",49.111496,17.2468815
-"Stupava,,na kopečku",49.11231,17.2471962
 "Stupava,,náves",49.1156044,17.24933
 "Stupava,,náves",49.115696,17.2492
 "Stupava,,samota",49.1250153,17.2602673
 "Stupava,,samota",49.1251831,17.2593441
 "Stupava,,samota",49.1241379,17.2584057
-"Stupava,,samota",49.12427,17.2587166
 "Stupava,,u kříže",49.1223259,17.2503223
 "Stupava,,u kříže",49.12233,17.2502174
 Suchá Loz,48.96988,17.7132416
-"Suchá Loz,,ZD",48.9696922,17.70399
-"Suchá Loz,,ZD",48.9697151,17.7037144
-"Suchá Loz,Volenov",48.96749,17.6812057
-"Suchá Loz,Volenov",48.96755,17.681036
-"Suchá Loz,Volenov,dětský tábor",48.95007,17.6903553
-"Suchá Loz,Volenov,dětský tábor",48.9500275,17.6902714
-"Suchá Loz,Volenov,rozc.1.0",48.96573,17.67514
-"Suchá Loz,Volenov,rozc.1.0",48.9657059,17.6750755
-Sulimov,49.22655,17.42311
-Sulimov,49.22654,17.4232979
 Sušice,49.12202,17.4523468
 Sušice,49.1220627,17.4524651
 "Sušice,,Nová ulice",49.11637,17.4528122
 "Sušice,,Nová ulice",49.1165237,17.4528
 Svárov,49.11614,17.6248569
-"Svárov,,paseky",49.12074,17.6024227
 "Svárov,,paseky",49.1205826,17.602272
 "Svárov,,Pod Svárovem",49.11932,17.61597
 "Svárov,,Pod Svárovem",49.1192131,17.61575
@@ -2383,9 +1913,6 @@ Syrovín,49.02556,17.2636585
 Šanov,49.0457039,17.8980141
 "Šanov,,horní zast.",49.0488434,17.8960972
 "Šanov,,horní zast.",49.0488663,17.89601
-"Šanov,,rozc.1.0",49.0572128,17.89186
-"Šanov,,rozc.1.0",49.0572739,17.8917923
-"Šanov,,rozc.1.0",49.05697,17.8917027
 Šarovy,49.1486,17.6068687
 Šarovy,49.1489944,17.6072617
 "Šarovy,,Dvůr Lapač",49.1401672,17.6051445
@@ -2413,36 +1940,22 @@ Syrovín,49.02556,17.2636585
 "Šumice,,škola",49.028183,17.7220039
 "Šumice,,žel.st.",49.0299759,17.72587
 Švábenice,49.27869,17.1228256
-Švábenice,49.2786522,17.12282
-Švábenice,49.2787323,17.1227646
-Tečovice,49.2216034,17.5864964
 Tečovice,49.2213326,17.5868359
 Tečovice,49.2216644,17.5864315
-"Tečovice,,Malenovská",49.2162857,17.5899754
 "Tečovice,,Malenovská",49.21654,17.58906
 "Tečovice,,Malenovská",49.2162666,17.5900116
 "Telč,,aut.nádr.",49.18205,15.4640942
 "Těmice,,rest.",49.0003929,17.2638016
 "Těmice,,u mlýna",49.0090256,17.2661476
 "Těmice,,ZD",49.0015,17.2747326
-"Teplice n.Bečvou,,lázně",49.5330734,17.74789
-"Teplice n.Bečvou,,žel.st.",49.52962,17.74817
 "Tichov,,dolní zast.",49.17616,17.98161
-"Tichov,,dolní zast.",49.1761665,17.9817562
 "Tichov,,Kamenec",49.18247,17.9814835
-"Tichov,,Kamenec",49.18258,17.9815025
 "Tichov,,Obecní úřad",49.1777458,17.9827347
-"Tichov,,Obecní úřad",49.1777725,17.9828014
 "Tichov,Tanečnice",49.1702652,17.9879074
-"Tichov,Tanečnice",49.1702232,17.98801
-"Tlumačov,,Holešovská",49.2569771,17.497612
-"Tlumačov,,Holešovská",49.2568779,17.4976368
 "Tlumačov,,hřebčín",49.2480125,17.5002
 "Tlumačov,,hřebčín",49.2482376,17.5001411
 "Tlumačov,,křiž.",49.2528572,17.4959259
-"Tlumačov,,Masarykova",49.2548676,17.4963551
 "Tlumačov,,náměstí",49.25352,17.49353
-"Tlumačov,,Skalka čerp.st.",49.2303963,17.5206547
 "Tlumačov,,Skalka",49.2336922,17.5111313
 "Tlumačov,,Skalka",49.23222,17.5130577
 Topolná,49.121315,17.5408936
@@ -2458,8 +1971,6 @@ Traplice,49.13122,17.43672
 "Trnava,,Fagus",49.3019257,17.8423328
 "Trnava,,hájenka",49.284,17.8287868
 "Trnava,,hájenka",49.28469,17.8294525
-"Trnava,,pekárna",49.30158,17.849966
-"Trnava,,pekárna",49.3015175,17.8498726
 "Trnava,,rozc.",49.2988739,17.8441868
 "Trnava,,škola",49.29369,17.8398132
 "Trnava,,škola",49.2938881,17.8403416
@@ -2469,7 +1980,6 @@ Traplice,49.13122,17.43672
 "Trnava,Dolansko",49.2809677,17.8261986
 "Trnava,Jamice",49.27389,17.8186665
 "Trnava,Jamice",49.27363,17.8185158
-"Trnava,Papradná",49.3033257,17.858366
 "Troubky-Zdislavice,,Stroužník",49.23188,17.2914181
 "Troubky-Zdislavice,,Stroužník",49.23187,17.2914429
 "Troubky-Zdislavice,Troubky,rest.",49.2302361,17.26919
@@ -2487,27 +1997,19 @@ Tučapy,49.0478554,17.3330421
 "Tučapy,,hřiště",49.0463066,17.3286877
 Tupesy,49.0837746,17.3701916
 Tupesy,49.0839081,17.3701839
-"Ublo,,MŠ",49.2293,17.9061241
-"Ublo,,zast.",49.2349625,17.8989544
-"Ublo,,zast.",49.23385,17.8996525
 "Uherské Hradiště,,aut.nádr.",49.070015,17.4651966
 "Uherské Hradiště,,aut.nádr.",49.0698242,17.4644241
-"Uherské Hradiště,,aut.nádr.",49.0698967,17.4651623
 "Uherské Hradiště,,aut.nádr.",49.0698662,17.4656
 "Uherské Hradiště,,aut.nádr.",49.0700569,17.4644566
-"Uherské Hradiště,,aut.nádr.",49.0700378,17.46465
 "Uherské Hradiště,,aut.nádr.",49.0700073,17.4649658
 "Uherské Hradiště,,aut.nádr.",49.0700035,17.4651833
 "Uherské Hradiště,,aut.nádr.",49.06999,17.46539
-"Uherské Hradiště,,aut.nádr.",49.06997,17.4656181
 "Uherské Hradiště,,aut.nádr.",49.0699577,17.4658489
 "Uherské Hradiště,,aut.nádr.",49.0698051,17.4646111
 "Uherské Hradiště,,aut.nádr.",49.07014,17.464674
 "Uherské Hradiště,,aut.nádr.",49.0701065,17.4651966
-"Uherské Hradiště,,aut.nádr.",49.0701027,17.46519
 "Uherské Hradiště,,aut.nádr.",49.070076,17.4656429
 "Uherské Hradiště,,aut.nádr.",49.06979,17.4649181
-"Uherské Hradiště,,aut.nádr.",49.0697021,17.4651432
 "Uherské Hradiště,,aut.nádr.",49.06967,17.4653549
 "Uherské Hradiště,,aut.nádr.",49.06966,17.4655876
 "Uherské Hradiště,,aut.nádr.",49.0696449,17.4658051
@@ -2544,15 +2046,11 @@ Tupesy,49.0839081,17.3701839
 "Uherské Hradiště,Jarošov,U Bagru",49.08204,17.4892979
 "Uherské Hradiště,Mařatice,Derflanská",49.05766,17.4790764
 "Uherské Hradiště,Mařatice,Derflanská",49.05766,17.4790764
-"Uherské Hradiště,Mařatice,Derflanská",49.05766,17.4790764
 "Uherské Hradiště,Mařatice,dol.konec",49.0681572,17.4772034
 "Uherské Hradiště,Mařatice,dol.konec",49.0681572,17.4772034
-"Uherské Hradiště,Mařatice,dol.konec",49.0681572,17.4772034
-"Uherské Hradiště,Mařatice,hor.konec",49.0620728,17.4826088
 "Uherské Hradiště,Mařatice,hor.konec",49.0620728,17.4826088
 "Uherské Hradiště,Mařatice,hor.konec",49.0620728,17.4826088
 "Uherské Hradiště,Mařatice,hřbitov točna",49.0646057,17.4888382
-"Uherské Hradiště,Mařatice,hřbitov",49.06393,17.4869156
 "Uherské Hradiště,Mařatice,hřbitov",49.06393,17.4869156
 "Uherské Hradiště,Mařatice,Jaktáře",49.077652,17.4848213
 "Uherské Hradiště,Mařatice,Jaktáře",49.0773125,17.4843922
@@ -2562,8 +2060,6 @@ Tupesy,49.0839081,17.3701839
 "Uherské Hradiště,Mařatice,Mesit",49.0736656,17.4812031
 "Uherské Hradiště,Mařatice,R.Kubíčka",49.05914,17.4838448
 "Uherské Hradiště,Mařatice,R.Kubíčka",49.05914,17.4838448
-"Uherské Hradiště,Mařatice,R.Kubíčka",49.05914,17.4838448
-"Uherské Hradiště,Mařatice,škola",49.06511,17.4806232
 "Uherské Hradiště,Mařatice,škola",49.06511,17.4806232
 "Uherské Hradiště,Mařatice,škola",49.06511,17.4806232
 "Uherské Hradiště,Mařatice,ZŠ Větrná",49.0599022,17.4785175
@@ -2578,7 +2074,6 @@ Tupesy,49.0839081,17.3701839
 "Uherské Hradiště,Sady,rozc.",49.0565643,17.4684982
 "Uherské Hradiště,Sady,rozc.",49.0565147,17.4690075
 "Uherské Hradiště,Sady,rozc.",49.05655,17.4684525
-"Uherské Hradiště,Sady,Špitálky",49.0570068,17.46796
 "Uherské Hradiště,Sady,Špitálky",49.0570068,17.46796
 "Uherské Hradiště,Sady,Špitálky",49.0570068,17.46796
 "Uherské Hradiště,Sady,Za Kovárnou",49.0509033,17.4849529
@@ -2614,7 +2109,6 @@ Tupesy,49.0839081,17.3701839
 "Uherský Brod,,Mariánské náměstí",49.02568,17.6456661
 "Uherský Brod,,Močidla",49.02611,17.66004
 "Uherský Brod,,Močidla",49.0259247,17.6593151
-"Uherský Brod,,Na Chmelnici",49.03148,17.64023
 "Uherský Brod,,Neradice",49.0242081,17.6526642
 "Uherský Brod,,Neradice",49.02411,17.6525326
 "Uherský Brod,,Nivnická",49.01369,17.652317
@@ -2632,12 +2126,8 @@ Tupesy,49.0839081,17.3701839
 "Uherský Brod,,Slovácké strojírny",49.0044174,17.6492348
 "Uherský Brod,,sokolovna",49.02618,17.640728
 "Uherský Brod,,sokolovna",49.02598,17.641058
-"Uherský Brod,,stadion Lapač",49.0301743,17.64523
-"Uherský Brod,,stadion Lapač",49.0302162,17.6455288
 "Uherský Brod,,Šumická",49.0246429,17.6566124
 "Uherský Brod,,Šumická",49.0240135,17.6572361
-"Uherský Brod,,Tovární",49.02865,17.6326885
-"Uherský Brod,,Tovární",49.0285721,17.63274
 "Uherský Brod,,u splavu",49.02708,17.6658611
 "Uherský Brod,,u splavu",49.0269775,17.6658039
 "Uherský Brod,,Větrná",49.0323753,17.6560974
@@ -2645,8 +2135,6 @@ Tupesy,49.0839081,17.3701839
 "Uherský Brod,,Vlčnovská",49.0200272,17.6387672
 "Uherský Brod,,zimní stadion",49.01847,17.6516666
 "Uherský Brod,,zimní stadion",49.01853,17.65149
-"Uherský Brod,,ZŠ Na Výsluní",49.03075,17.642767
-"Uherský Brod,,ZŠ Na Výsluní",49.0308037,17.64282
 "Uherský Brod,,ZŠ Pod Vinohrady",49.02587,17.65379
 "Uherský Brod,Havřice",49.0322647,17.6222572
 "Uherský Brod,Havřice,Dolní",49.030304,17.6234283
@@ -2664,34 +2152,15 @@ Tupesy,49.0839081,17.3701839
 "Uherský Brod,Újezdec",49.0344238,17.68461
 "Uherský Brod,Újezdec",49.0345039,17.6845474
 "Uherský Brod,Újezdec,žel.st.",49.0333252,17.6857929
-"Uherský Ostroh,,Dyas",48.98214,17.4010258
-"Uherský Ostroh,,Dyas",48.981636,17.4011078
-"Uherský Ostroh,,Dyas",48.9825134,17.4009418
-"Uherský Ostroh,,most",48.9868279,17.39371
-"Uherský Ostroh,,most",48.98679,17.3937244
-"Uherský Ostroh,,náměstí",48.9850845,17.3888016
-"Uherský Ostroh,,náměstí",48.9851265,17.3888626
-"Uherský Ostroh,,rest.Osmek",48.9867363,17.4064732
-"Uherský Ostroh,,rest.Osmek",48.9861832,17.4043274
-"Uherský Ostroh,,točna",48.9837532,17.3781242
-"Uherský Ostroh,,závod ČD",48.97354,17.4020233
-"Uherský Ostroh,,závod ČD",48.9728546,17.4018211
-"Uherský Ostroh,Kvačice",48.98989,17.4114418
-"Uherský Ostroh,Kvačice",48.989872,17.4107246
-Uhřice,49.28131,17.2035542
-"Uhřice,,Pančocha",49.2720337,17.2056217
-"Uhřice,,Pančocha",49.27204,17.2057037
 Uhřičice,49.37161,17.2905045
 Uhřičice,49.3718,17.2903061
 Uhřičice,49.3714371,17.290659
-Újezd,49.1685829,17.9052219
 Újezd,49.1686363,17.9050884
 Újezd,49.16856,17.90539
 "Újezd,,pekárna",49.17107,17.9150925
 "Újezd,,pekárna",49.1710129,17.9149513
 Újezdec,49.0393867,17.2707329
 Újezdec,49.0393333,17.2702446
-"Ústí,,osada Mariánské Údolí",49.52478,17.7528
 "Ústí,,pož.zbroj.",49.3065948,18.0031
 "Ústí,,pož.zbroj.",49.3060074,18.0029564
 "Ústí,,rozc.",49.3104858,18.00526
@@ -2702,6 +2171,7 @@ Uhřičice,49.3714371,17.290659
 "Valašská Bystřice,,centrum",49.4144249,18.1097584
 "Valašská Bystřice,,farma ZD",49.4209442,18.078371
 "Valašská Bystřice,,farma ZD",49.4209747,18.0783386
+"Valašská Bystřice,,Hajdůšky",49.4207764,18.0850849
 "Valašská Bystřice,,Hajdůšky",49.42074,18.08505
 "Valašská Bystřice,,Hajdůšky",49.4208374,18.0850677
 "Valašská Bystřice,,Hlaváčky",49.42766,18.12389
@@ -2711,12 +2181,11 @@ Uhřičice,49.3714371,17.290659
 "Valašská Bystřice,,Kelnar",49.40049,18.1463528
 "Valašská Bystřice,,kostel",49.4155731,18.10901
 "Valašská Bystřice,,kostel",49.4156,18.1090832
+"Valašská Bystřice,,kostel",49.4151764,18.1096954
 "Valašská Bystřice,,Křižnice",49.4263763,18.115099
 "Valašská Bystřice,,Křižnice",49.4264679,18.11501
-"Valašská Bystřice,,Křižnice",49.4270859,18.1137657
 "Valašská Bystřice,,Leskovec",49.4230042,18.11833
 "Valašská Bystřice,,Leskovec",49.4228172,18.1182365
-"Valašská Bystřice,,Leskovec",49.4232559,18.1189861
 "Valašská Bystřice,,Na horách",49.4294,18.1072445
 "Valašská Bystřice,,Na horách",49.42948,18.10725
 "Valašská Bystřice,,prodejna Paseky",49.4038048,18.1421642
@@ -2728,11 +2197,9 @@ Uhřičice,49.3714371,17.290659
 "Valašská Bystřice,,škola",49.412056,18.11208
 "Valašská Bystřice,,u Machýčků",49.4051666,18.1383858
 "Valašská Bystřice,,u Machýčků",49.4051857,18.1380157
-"Valašská Bystřice,,u Míčky",49.42457,18.1283569
-"Valašská Bystřice,,u Míčky",49.42454,18.1283665
+"Valašská Bystřice,,u Petruželů",49.4195442,18.0970821
 "Valašská Bystřice,,u Petruželů",49.4195862,18.0968132
 "Valašská Bystřice,,u Petruželů",49.41952,18.0973721
-"Valašská Bystřice,,Údolí Žáry",49.4263458,18.13987
 "Valašská Polanka,,ObÚ",49.2626076,17.9967976
 "Valašská Polanka,,ObÚ",49.2623749,17.9967251
 "Valašská Polanka,,rozc.",49.2495728,18.0002232
@@ -2760,26 +2227,18 @@ Uhřičice,49.3714371,17.290659
 "Valašské Klobouky,,koliba",49.11886,18.0168133
 "Valašské Klobouky,,poliklinika",49.14283,18.0135479
 "Valašské Klobouky,,poliklinika",49.1429138,18.0138645
-"Valašské Klobouky,,provozovna",49.14701,18.0213814
 "Valašské Klobouky,,provozovna",49.14651,18.0204086
 "Valašské Klobouky,,provozovna",49.1464577,18.0204563
 "Valašské Klobouky,,SÚS",49.1435051,17.9943485
 "Valašské Klobouky,,SÚS",49.14353,17.9945431
 "Valašské Klobouky,,Valaška",49.1307068,18.0119629
 "Valašské Klobouky,,Valaška",49.12977,18.0117416
-"Valašské Klobouky,,záv.Igla",49.1405754,18.0191574
-"Valašské Klobouky,,záv.Igla",49.1406364,18.0191231
-"Valašské Klobouky,,ZŠ",49.1457329,18.0141869
-"Valašské Klobouky,,žel.st.",49.14253,18.0224876
 "Valašské Klobouky,Lipina",49.13155,17.98515
 "Valašské Klobouky,Lipina",49.1335869,17.98618
 "Valašské Klobouky,Mirošov",49.1472473,17.9784775
 "Valašské Klobouky,Mirošov",49.1472664,17.9786072
 "Valašské Klobouky,Smolina",49.1570435,17.99554
-"Valašské Klobouky,Smolina",49.1570244,17.9956379
 "Valašské Klobouky,Smolina,dětský domov",49.15531,17.9965248
-"Valašské Klobouky,Smolina,dětský domov",49.1553574,17.996582
-"Valašské Klobouky,Smolina,háj",49.1606331,17.9970551
 "Valašské Klobouky,Sychrov",49.14145,17.99843
 "Valašské Klobouky,Sychrov",49.1410675,17.9999142
 "Valašské Meziříčí,,40. pluku",49.468544,17.9820652
@@ -2795,20 +2254,12 @@ Uhřičice,49.3714371,17.290659
 "Valašské Meziříčí,,aut.st.",49.4742546,17.97417
 "Valašské Meziříčí,,aut.st.",49.4742775,17.9743938
 "Valašské Meziříčí,,aut.st.",49.4739532,17.9737682
-"Valašské Meziříčí,,aut.st.",49.4739265,17.9740276
-"Valašské Meziříčí,,aut.st.",49.47391,17.9742565
 "Valašské Meziříčí,,aut.st.",49.4738846,17.9745083
-"Valašské Meziříčí,,aut.st.",49.4742775,17.97474
 "Valašské Meziříčí,,DEZA I",49.49095,17.95983
-"Valašské Meziříčí,,hřbitov",49.4831161,17.9662628
-"Valašské Meziříčí,,Jednota",49.48208,17.9613552
-"Valašské Meziříčí,,Jednota",49.48213,17.9613171
 "Valašské Meziříčí,,Koupaliště",49.4711,17.98698
 "Valašské Meziříčí,,Koupaliště",49.4711,17.98698
-"Valašské Meziříčí,,Křižná ul.rozc.",49.4717636,17.9603863
 "Valašské Meziříčí,,Křižná ul.rozc.",49.47177,17.9603577
 "Valašské Meziříčí,,Křižná ul.rozc.",49.4717522,17.9604
-"Valašské Meziříčí,,Masarykova rozc.",49.4779358,17.9694958
 "Valašské Meziříčí,,Masarykova rozc.",49.477993,17.9693775
 "Valašské Meziříčí,,Masarykova rozc.",49.4780464,17.9695148
 "Valašské Meziříčí,,Na Štěpánově I",49.4645767,17.9932766
@@ -2842,12 +2293,9 @@ Uhřičice,49.3714371,17.290659
 "Valašské Meziříčí,,stan.MHD u náměstí",49.47118,17.9687557
 "Valašské Meziříčí,,Šafaříkova ul.",49.46587,17.9808121
 "Valašské Meziříčí,,Šafaříkova ul.",49.46587,17.9808121
-"Valašské Meziříčí,,škola Křižná",49.47279,17.9652786
-"Valašské Meziříčí,,škola Křižná",49.4728241,17.96551
 "Valašské Meziříčí,,škola Křižná",49.47277,17.9651337
 "Valašské Meziříčí,,škola Masarykova",49.4751854,17.9713726
 "Valašské Meziříčí,,škola Masarykova",49.4753075,17.9715176
-"Valašské Meziříčí,,škola Šafaříkova",49.466507,17.9773731
 "Valašské Meziříčí,,škola Šafaříkova",49.46662,17.9772263
 "Valašské Meziříčí,,škola Šafaříkova",49.4664726,17.9773674
 "Valašské Meziříčí,,Tesco",49.48438,17.9653511
@@ -2862,8 +2310,6 @@ Uhřičice,49.3714371,17.290659
 "Valašské Meziříčí,,u Policie",49.47234,17.97298
 "Valašské Meziříčí,,u skláren",49.477417,17.9798737
 "Valašské Meziříčí,,u skláren",49.47719,17.9822464
-"Valašské Meziříčí,,Uhelné sklady",49.4835663,17.9565849
-"Valašské Meziříčí,,Uhelné sklady",49.4836655,17.95633
 "Valašské Meziříčí,,Vsetínská",49.46867,17.9734745
 "Valašské Meziříčí,,Vsetínská",49.4686127,17.9735756
 "Valašské Meziříčí,,Vsetínská",49.4686852,17.97339
@@ -2890,13 +2336,6 @@ Uhřičice,49.3714371,17.290659
 "Valašské Meziříčí,Hrachovec,u Zetků",49.4575729,17.9987545
 "Valašské Meziříčí,Hrachovec,u Zetků",49.4575729,17.9987545
 "Valašské Meziříčí,Hrachovec,ZD",49.4692955,18.0055141
-"Valašské Meziříčí,Juřinka,Hrb",49.48335,17.9440937
-"Valašské Meziříčí,Juřinka,Hrb",49.48335,17.9440937
-"Valašské Meziříčí,Juřinka,rozc.",49.4859,17.9392643
-"Valašské Meziříčí,Juřinka,rozc.",49.4859,17.9392643
-"Valašské Meziříčí,Juřinka,točna",49.4881325,17.9396019
-"Valašské Meziříčí,Juřinka,u mostu",49.48374,17.9488945
-"Valašské Meziříčí,Juřinka,u mostu",49.48374,17.9488945
 "Valašské Meziříčí,Lhota",49.4797058,17.9134369
 "Valašské Meziříčí,Lhota",49.4796867,17.9135189
 "Valašské Meziříčí,Lhota,dol.konec",49.48396,17.9135666
@@ -2950,7 +2389,6 @@ Vážany,49.0328674,17.3126068
 "Velehrad,,úpravna vody",49.09953,17.41501
 "Veletiny,,Dřevoděl",49.0335274,17.56573
 "Veletiny,,Dřevoděl",49.0334358,17.56569
-"Veletiny,,kaplička",49.03745,17.5630989
 "Veletiny,,kaplička",49.03741,17.56313
 "Veletiny,,křiž.",49.0367546,17.5612
 "Veletiny,,křiž.",49.0364761,17.561657
@@ -2995,13 +2433,6 @@ Vážany,49.0328674,17.3126068
 "Velké Karlovice,Leskové,rozc.U Tabulí",49.3825455,18.40933
 "Velké Karlovice,Leskové,U Dorňáků",49.37532,18.36941
 "Velké Karlovice,Leskové,U Dorňáků",49.3753,18.3694153
-"Velké Karlovice,Miloňov,hotel",49.38321,18.3148785
-"Velké Karlovice,Miloňov,penzion",49.3771,18.30445
-"Velké Karlovice,Miloňov,penzion",49.3771,18.3045082
-"Velké Karlovice,Miloňov,rozc.",49.3653069,18.3089561
-"Velké Karlovice,Miloňov,rozc.",49.36533,18.3089924
-"Velké Karlovice,Miloňov,U Malinů",49.37185,18.3084488
-"Velké Karlovice,Miloňov,U Malinů",49.3718338,18.3085022
 "Velké Karlovice,Pluskovec,střed",49.3514328,18.29598
 "Velké Karlovice,Pluskovec,střed",49.351368,18.2960453
 "Velké Karlovice,Pluskovec,točna",49.34535,18.2992744
@@ -3009,18 +2440,10 @@ Vážany,49.0328674,17.3126068
 "Velké Karlovice,Podťaté,pila",49.3565,18.3498516
 "Velké Karlovice,Podťaté,rozc.Tísňavy",49.3601952,18.3369122
 "Velké Karlovice,Podťaté,rozc.Tísňavy",49.3601532,18.3369045
-"Velké Karlovice,Podťaté,rozc.Tísňavy",49.3598251,18.33749
 "Velké Karlovice,Podťaté,rozc.Tísňavy",49.3598251,18.3374233
 "Velké Karlovice,Podťaté,Světlá",49.3479767,18.3689823
 "Velké Karlovice,Podťaté,U Polanských",49.3505249,18.36028
 "Velké Karlovice,Podťaté,U Polanských",49.3504753,18.3602581
-"Velké Karlovice,Tísňavy,hasičská zbrojnice",49.3431664,18.3250675
-"Velké Karlovice,Tísňavy,hasičská zbrojnice",49.3431473,18.3249969
-"Velké Karlovice,Tísňavy,točna",49.3400764,18.3267174
-"Velké Karlovice,Tísňavy,U Vojvodíků",49.3522377,18.3296146
-"Velké Karlovice,Tísňavy,U Vojvodíků",49.35225,18.3295574
-"Velké Karlovice,Tísňavy,výrobní zóna",49.34889,18.3250275
-"Velké Karlovice,Tísňavy,výrobní zóna",49.3489037,18.325
 "Velký Ořechov,,aut.st.",49.1103249,17.6694717
 "Velký Ořechov,,aut.st.",49.1103668,17.6697884
 "Velký Ořechov,,rest.",49.11096,17.66303
@@ -3030,23 +2453,9 @@ Vážany,49.0328674,17.3126068
 "Veselá,,u školy",49.2366867,17.7737484
 "Veselá,,u školy",49.2367,17.773838
 "Veselí n.Mor.,,Bartolomějské nám.",48.9535332,17.378582
-"Veselí n.Mor.,,u polikliniky",48.9495964,17.3900967
 "Veselí n.Mor.,,žel.st.",48.94926,17.3820648
-"Veselí n.Mor.,,žel.st.",48.94923,17.3820477
-"Veselí n.Mor.,Břestek",48.96166,17.3921337
-"Veselí n.Mor.,Břestek",48.9612,17.39163
-"Veselí n.Mor.,Břestek",48.9621048,17.3925343
-"Veselí n.Mor.,Chaloupky",48.95576,17.3851757
-"Veselí n.Mor.,Chaloupky",48.9556236,17.3850784
-"Veselí n.Mor.,Chaloupky",48.95594,17.3852673
-"Veselí n.Mor.,Milokošť",48.9663544,17.3964424
-"Veselí n.Mor.,Milokošť",48.9666748,17.39675
-"Veselí n.Mor.,Milokošť",48.9660225,17.3961678
 Věžky,49.28578,17.2798
 Věžky,49.2857666,17.2796383
-"Věžky,,rozc.",49.40664,17.4168415
-"Věžky,,rozc.",49.4063,17.4165535
-"Věžky,Vlčí Doly",49.2928658,17.2580929
 "Vidče,,Fabián",49.4397621,18.10818
 "Vidče,,Hajný",49.4433365,18.0852451
 "Vidče,,Hajný",49.443367,18.0853024
@@ -3065,34 +2474,21 @@ Věžky,49.2857666,17.2796383
 "Vigantice,,stolařství",49.4375153,18.1983776
 "Vigantice,,škola",49.4449463,18.1798573
 "Vigantice,,škola",49.4448929,18.1799774
-"Vítonice,,křiž.",49.4484444,17.6896515
 "Vítonice,,křiž.",49.4483948,17.6893749
-"Vítonice,,škola",49.44777,17.6894264
-"Vítonice,,Větřák",49.4438972,17.6865864
 "Vítonice,,Větřák",49.44385,17.68647
-"Vizovice,,Lázeňská točna",49.2046432,17.8457813
-"Vizovice,,Lázeňská",49.2095451,17.8501434
-"Vizovice,,Lázeňská",49.20943,17.84991
 "Vizovice,,náměstí",49.2217026,17.8532887
 "Vizovice,,náměstí",49.22165,17.8533421
 "Vizovice,,Razov",49.2138939,17.8405037
 "Vizovice,,Razov",49.2137756,17.84057
 "Vizovice,,Říčanská",49.21222,17.86114
 "Vizovice,,Říčanská",49.2121124,17.86148
-"Vizovice,,u transformátoru",49.21597,17.8523769
-"Vizovice,,u transformátoru",49.2169037,17.8531418
-"Vizovice,Chrastěšov,dolní zast.",49.23811,17.8557758
-"Vizovice,Chrastěšov,dolní zast.",49.23813,17.8558121
-"Vizovice,Chrastěšov,Obecní dům",49.2496872,17.8561249
-"Vizovice,Chrastěšov,střed",49.2439041,17.8543377
-"Vizovice,Chrastěšov,střed",49.2438927,17.8543587
 Vlachova Lhota,49.1505966,17.95333
 Vlachova Lhota,49.1507721,17.9534321
+Vlachovice,49.12326,17.9394875
 Vlachovice,49.123127,17.93925
 Vlachovice,49.1233635,17.9396343
 "Vlachovice,,sídliště",49.1189651,17.93832
 "Vlachovice,,sídliště",49.11893,17.9383945
-"Vlachovice,,Zábraní",49.1291847,17.9427319
 "Vlachovice,Vrbětice",49.1132278,17.9385147
 "Vlachovice,Vrbětice",49.11319,17.9386749
 "Vlachovice,Vrbětice,u Polomíku",49.10451,17.9362011
@@ -3107,8 +2503,6 @@ Vlachovice,49.1233635,17.9396343
 "Vlčková,,zast.",49.30655,17.7667332
 "Vlčnov,,Araver",49.0215073,17.5716629
 "Vlčnov,,Araver",49.02133,17.5716457
-"Vlčnov,,Brodská",49.01013,17.5829887
-"Vlčnov,,Brodská",49.0102272,17.5827427
 "Vlčnov,,dol.konec",49.0173264,17.5766964
 "Vlčnov,,dol.konec",49.0173645,17.5768337
 "Vlčnov,,hor.konec",49.00133,17.5799923
@@ -3119,19 +2513,10 @@ Vlachovice,49.1233635,17.9396343
 "Vlčnov,,sokolovna",49.0064735,17.5814438
 Vlkoš,48.9908028,17.1619034
 "Vlkoš,,křiž.",48.9901848,17.1641178
-"Vlkoš,,průmysl.areál",49.3970222,17.41622
-"Vlkoš,,průmysl.areál",49.3973351,17.4161568
-"Vlkoš,,sokolovna",49.39361,17.4171124
-"Vlkoš,,sokolovna",49.3939552,17.4169979
 Vrbka,49.2274132,17.4156685
 Vrbka,49.2278,17.4158478
-Vrbka,49.228035,17.4161243
-"Vrbka,Tabarky",49.20773,17.4230213
-"Vrbka,Tabarky",49.2077522,17.4230213
 Vrchoslavice,49.3326721,17.2184029
 Vrchoslavice,49.3328056,17.2180462
-"Vrchoslavice,Dlouhá Ves",49.332592,17.2286777
-"Vrchoslavice,Dlouhá Ves",49.33272,17.2280159
 Vřesovice,49.0587845,17.2151127
 "Vřesovice,Paseky",49.0594978,17.21966
 "Vsetín,,4.května",49.34237,17.98962
@@ -3141,10 +2526,8 @@ Vřesovice,49.0587845,17.2151127
 "Vsetín,,aut.nádr.",49.3347778,17.99677
 "Vsetín,,aut.nádr.",49.3350143,17.9959774
 "Vsetín,,aut.nádr.",49.3351059,17.9960537
-"Vsetín,,aut.nádr.",49.33502,17.99628
 "Vsetín,,aut.nádr.",49.33493,17.9962044
 "Vsetín,,aut.nádr.",49.3349342,17.9964981
-"Vsetín,,aut.nádr.",49.3348541,17.9967136
 "Vsetín,,aut.nádr.",49.3347855,17.9969273
 "Vsetín,,aut.nádr.",49.3346977,17.9971313
 "Vsetín,,aut.nádr.",49.3346329,17.9973354
@@ -3201,7 +2584,6 @@ Vřesovice,49.0587845,17.2151127
 "Vsetín,Jasenice,technické služby",49.3383,18.03036
 "Vsetín,Jasenice,technické služby",49.33824,18.0305
 "Vsetín,Jasenice,točna",49.3443871,18.04571
-"Vsetín,Jasenice,točna",49.3443871,18.04571
 "Vsetín,Jasenice,VIII",49.3505821,18.04755
 "Vsetín,Jasenice,VIII",49.3505249,18.04756
 "Vsetín,Jasenice,VIII",49.3507042,18.0475712
@@ -3220,11 +2602,7 @@ Vřesovice,49.0587845,17.2151127
 "Vsetín,Lázky",49.3498764,17.97351
 "Vsetín,Lázky",49.34933,17.9740429
 "Vsetín,Luh I",49.3334045,18.0081234
-"Vsetín,Luh I",49.3334274,18.0076885
-"Vsetín,Luh I",49.3333855,18.0085316
 "Vsetín,Luh II",49.3350258,18.0169067
-"Vsetín,Luh II",49.3350334,18.01682
-"Vsetín,Luh II",49.3350334,18.0170422
 "Vsetín,Luh III",49.3370247,18.02413
 "Vsetín,Luh III",49.33691,18.0234737
 "Vsetín,Luh III",49.33712,18.024828
@@ -3232,8 +2610,6 @@ Vřesovice,49.0587845,17.2151127
 "Vsetín,Ohrada",49.3299522,18.0020275
 "Vsetín,Ohrada",49.33039,18.00203
 "Vsetín,Ohrada,restaurace",49.330616,18.00256
-"Vsetín,Ohrada,restaurace",49.330616,18.00256
-"Vsetín,Ohrada,sportovní areál",49.32715,18.0021133
 "Vsetín,Ohrada,sportovní areál",49.32715,18.0021133
 "Vsetín,Rokytnice",49.3332176,17.98692
 "Vsetín,Rokytnice",49.3331451,17.9869766
@@ -3243,13 +2619,10 @@ Vřesovice,49.0587845,17.2151127
 "Vsetín,Rokytnice,Irisa",49.31728,17.9753323
 "Vsetín,Rokytnice,Irisa",49.316597,17.9741974
 "Vsetín,Rokytnice,Kotovo",49.3323555,17.9878445
-"Vsetín,Rokytnice,Kotovo",49.3323746,17.9878578
 "Vsetín,Rokytnice,sídliště",49.3304253,17.9862671
-"Vsetín,Rokytnice,sídliště",49.33054,17.9863148
 "Vsetín,Rokytnice,střed",49.32762,17.9834442
 "Vsetín,Rokytnice,střed",49.32762,17.9834442
 "Vsetín,Rokytnice,škola",49.3301239,17.9879017
-"Vsetín,Rokytnice,škola",49.3301353,17.9879055
 "Vsetín,Rybníky",49.3401642,17.9787388
 "Vsetín,Rybníky,Družstevní",49.34025,17.9810181
 "Vsetín,Semetín",49.334713,17.9366283
@@ -3265,16 +2638,6 @@ Vřesovice,49.0587845,17.2151127
 "Vsetín,Semetín,střed",49.34576,17.9509411
 "Vsetín,Trávníky",49.3403778,17.9847374
 "Vsetín,Trávníky,mateřská škola",49.3387833,17.98789
-"Vsetín,Trávníky,škola",49.3407364,17.9873562
-"Vsetín,Trávníky,točna",49.34709,17.97551
-"Všechovice,,aut.st.",49.4609833,17.75753
-"Všechovice,,aut.st.",49.4610176,17.7575912
-"Všechovice,,aut.st.",49.4609566,17.7576675
-"Všechovice,,aut.st.",49.4608879,17.7577362
-"Všechovice,,U Juhyně",49.4585762,17.763
-"Všechovice,,U Juhyně",49.4584122,17.7630119
-"Všechovice,Přílesí,rozc.",49.4522057,17.7487087
-"Všechovice,Přílesí,rozc.",49.45221,17.74878
 "Všemina,,hájenka",49.27445,17.8569088
 "Všemina,,hájenka",49.2744522,17.8570137
 "Všemina,,Hořansko",49.2830429,17.8842125
@@ -3289,51 +2652,28 @@ Vřesovice,49.0587845,17.2151127
 Vysoké Pole,49.17754,17.93637
 Vysoké Pole,49.17762,17.9373474
 "Vysoké Pole,,rozc.Drnovice",49.17754,17.9425545
-"Vysoké Pole,,rozc.Drnovice",49.1774559,17.9425411
 "Vysoké Pole,,rozc.Drnovice",49.17738,17.9437389
 "Vysoké Pole,Podpolí",49.1696854,17.9423389
 "Vysoké Pole,Podpolí",49.1696548,17.9422665
 "Vyškov,,aut.nádr.",49.2754173,16.9913921
 "Vyškov,,aut.nádr.",49.2754173,16.9913921
-"Vyškov,,aut.nádr.",49.2758331,16.991785
 "Vyškov,,aut.nádr.",49.275444,16.9917545
-"Vyškov,,aut.nádr.",49.2754173,16.9913921
 "Vyškov,,Dukelská u čistírny",49.28061,17.0000687
-"Vyškov,,Palánek",49.2761078,17.0009727
 "Vyškov,,Tržiště",49.2800255,17.0073719
-"Vyškov,,Tržiště",49.2799454,17.00752
-"Vyškov,,Tržiště",49.28017,17.00703
-"Vyškov,,Tyršova",49.27858,17.0067635
 "Vyškov,,u podchodu",49.27851,16.99718
-"Vyškov,,u podchodu",49.27855,16.9973717
-"Vyškov,,u podchodu",49.2784767,16.9970951
 "Vyškov,,žel.st.",49.2782478,16.9920578
-"Vyškov,,žel.st.",49.27809,16.99217
-"Vyškov,,žel.st.",49.2781029,16.9920635
 "Vyškov,Marchanice",49.28271,17.0235214
-"Vyškov,Marchanice",49.28279,17.0243282
-"Vyškov,Marchanice",49.2826576,17.02292
 Vyškovec,48.9406624,17.8534527
 "Vyškovec,Bošáčky",48.936573,17.8345127
 "Vyškovec,Bošáčky",48.9373932,17.83144
 "Vyškovec,Hribovny,točna",48.9338531,17.8378582
 "Wullowitz,,ZOLL",48.64464,14.4537888
-"Zádveřice-Raková,Raková",49.23767,17.815731
-"Zádveřice-Raková,Raková,dolní zast.",49.23127,17.8167
-"Zádveřice-Raková,Raková,dolní zast.",49.2312737,17.8167572
-"Zádveřice-Raková,Raková,pálenice",49.2249756,17.8077927
-"Zádveřice-Raková,Raková,pálenice",49.2249756,17.80791
 "Zádveřice-Raková,Zádveřice",49.2123833,17.8067913
 "Zádveřice-Raková,Zádveřice",49.2122574,17.8071861
-"Zádveřice-Raková,Zádveřice,Jednota",49.21665,17.8078079
-"Zádveřice-Raková,Zádveřice,Jednota",49.2166824,17.80706
 "Zádveřice-Raková,Zádveřice,paseky",49.2030678,17.8030777
 "Zádveřice-Raková,Zádveřice,paseky",49.2030869,17.8029919
-Zahnašovice,49.3039665,17.55988
 Zahnašovice,49.3039551,17.5599461
-"Zahnašovice,,Kameňák",49.2907372,17.5568752
 "Zahnašovice,,Kameňák",49.29072,17.5569344
-"Zahnašovice,,U hřbitova",49.3030624,17.5590668
 "Zahnašovice,,U hřbitova",49.3030243,17.55906
 Záhorovice,49.0227127,17.7780132
 Záhorovice,49.0226326,17.7781811
@@ -3343,45 +2683,30 @@ Záhorovice,49.0226326,17.7781811
 "Záhorovice,,hor.konec",49.02414,17.7841835
 "Záříčí,,ObÚ",49.3831635,17.3530331
 "Záříčí,,ObÚ",49.38317,17.3531532
-"Záříčí,,Plučisko",49.4029274,17.3685436
-"Záříčí,,Plučisko",49.4029045,17.3685875
-"Záříčí,,u mostu",49.3937836,17.36659
-"Záříčí,,u mostu",49.39381,17.3666553
-Zástřizly,49.1498833,17.2363682
 "Zástřizly,,rozc.0.3",49.1536064,17.2292366
 "Zástřizly,,rozc.0.3",49.1531525,17.2284718
-"Zašová,,konečná",49.485817,18.0429287
 "Zašová,,konečná",49.4857826,18.0428925
 "Zašová,,konečná",49.4858322,18.042942
 "Zašová,,pod Zapadlým",49.4733429,18.01716
 "Zašová,,pod Zapadlým",49.4731026,18.01804
 "Zašová,,rozc.Veselá",49.47101,18.0257168
 "Zašová,,rozc.Veselá",49.47101,18.025404
-"Zašová,,Stračka",49.4815331,18.0436974
+"Zašová,,rozc.Veselá",49.4710121,18.0255451
 "Zašová,,Stračka",49.4815254,18.0436974
 "Zašová,,Stračka",49.4815254,18.0438023
-"Zašová,,škola",49.4765625,18.0436516
 "Zašová,,škola",49.4769058,18.0435925
 "Zašová,,škola",49.4762459,18.043726
 "Zašová,,U chovatelů",49.4682159,18.0424747
 "Zašová,,U chovatelů",49.46838,18.0424538
-"Zašová,,zdrav.stř.",49.4720535,18.0424042
 "Zašová,,zdrav.stř.",49.4722023,18.0424786
 "Zašová,,zdrav.stř.",49.47219,18.0425129
 "Zašová,,žel.st.",49.4675751,18.0431232
 "Zašová,,žel.st.",49.4674225,18.0436
-"Zašová,Veselá,dol.konec",49.4636765,18.0287914
 "Zašová,Veselá,dol.konec",49.463665,18.0288162
 "Zašová,Veselá,dol.konec",49.46367,18.028738
-"Zašová,Veselá,střed",49.46002,18.02782
 "Zašová,Veselá,střed",49.4600563,18.0277634
 "Zborovice,,ObÚ",49.2493324,17.2846737
-"Zborovice,,ObÚ",49.24938,17.2848034
-"Zborovice,,škola",49.24783,17.2832241
 "Zborovice,,závod",49.2521172,17.2814617
-"Zborovice,,závod",49.25199,17.2817383
-"Zborovice,Medlov",49.2602959,17.26654
-"Zborovice,Medlov",49.2603645,17.2666
 "Zděchov,,hotel",49.2577438,18.07659
 "Zděchov,,hotel",49.25778,18.0766525
 "Zděchov,,kolonie",49.26644,18.0801373
@@ -3397,7 +2722,6 @@ Zástřizly,49.1498833,17.2363682
 "Zdounky,,žel.st.",49.2286072,17.3153419
 "Zdounky,Cvrčovice",49.2243919,17.3378429
 "Zdounky,Cvrčovice",49.2243233,17.33767
-"Zdounky,Divoky",49.2099648,17.3091583
 "Zdounky,Lebedov",49.21161,17.29354
 "Zdounky,Lebedov",49.2115974,17.29347
 "Zdounky,Nětčice",49.2485466,17.3099689
@@ -3422,8 +2746,6 @@ Zlámanec,49.12953,17.62846
 "Zlín,,aut.nádr.",49.225975,17.6602631
 "Zlín,,aut.nádr.",49.2257767,17.6609554
 "Zlín,,aut.nádr.",49.226,17.66098
-"Zlín,,aut.nádr.",49.2259636,17.6608372
-"Zlín,,aut.nádr.",49.2259178,17.6606579
 "Zlín,,aut.nádr.",49.2259178,17.6606541
 "Zlín,,aut.nádr.",49.2258263,17.6603069
 "Zlín,,aut.nádr.",49.2257767,17.6601181
@@ -3437,7 +2759,6 @@ Zlámanec,49.12953,17.62846
 "Zlín,,aut.nádr.",49.2259178,17.6602364
 "Zlín,,aut.nádr.",49.22588,17.6600666
 "Zlín,,aut.nádr.",49.2258339,17.6598816
-"Zlín,,aut.nádr.",49.22579,17.6597157
 "Zlín,,aut.nádr.",49.2256851,17.6605988
 "Zlín,,aut.nádr.",49.2261963,17.6608639
 "Zlín,,aut.nádr.",49.2261543,17.6607113
@@ -3474,12 +2795,10 @@ Zlámanec,49.12953,17.62846
 "Zlín,,Cigánov",49.23139,17.67195
 "Zlín,,Cihelna",49.2111053,17.6094875
 "Zlín,,Cihelna",49.21129,17.6109924
-"Zlín,,Čepkov",49.22866,17.65985
 "Zlín,,Čepkov",49.2287,17.65738
-"Zlín,,Čepkov",49.22857,17.6599751
+"Zlín,,Čepkov",49.22866,17.65985
 "Zlín,,Česká",49.2411728,17.66843
 "Zlín,,Česká",49.2414055,17.6688042
-"Zlín,,Díly II.",49.2272377,17.6792431
 "Zlín,,Díly II.",49.2271957,17.6799431
 "Zlín,,Divadlo",49.2255135,17.66993
 "Zlín,,Dlouhá",49.22618,17.66874
@@ -3490,13 +2809,10 @@ Zlámanec,49.12953,17.62846
 "Zlín,,Dřevnická",49.2262535,17.7021
 "Zlín,,Dukelská",49.2277756,17.6978035
 "Zlín,,Dukelská",49.22753,17.6993637
-"Zlín,,Dvacátá",49.22376,17.65887
 "Zlín,,Filmové ateliéry točna",49.2004929,17.6702766
 "Zlín,,Filmové ateliéry",49.20229,17.6695118
 "Zlín,,Hradská",49.2208023,17.6724377
-"Zlín,,Hradská",49.2207069,17.6725235
-"Zlín,,Hradská",49.22084,17.6723042
-"Zlín,,J.A.Bati",49.2229271,17.65665
+"Zlín,,Hradská",49.22079,17.67232
 "Zlín,,Januštice tenis.kurty",49.2393646,17.6889763
 "Zlín,,Januštice tenis.kurty",49.2390366,17.68893
 "Zlín,,K Pasekám",49.23716,17.6567383
@@ -3517,13 +2833,11 @@ Zlámanec,49.12953,17.62846
 "Zlín,,Lesní čtvrť",49.2195,17.6915646
 "Zlín,,Lesní hřbitov",49.2018776,17.6628475
 "Zlín,,Lesní hřbitov",49.2016945,17.66245
-"Zlín,,Lešetín I.",49.2273369,17.6713238
 "Zlín,,Lešetín I.",49.2272949,17.6736355
 "Zlín,,Letná škola",49.2188072,17.6507988
 "Zlín,,Letná škola",49.2186623,17.65028
 "Zlín,,Maják točna",49.2018776,17.6529827
 "Zlín,,Maják točna",49.2018776,17.6529827
-"Zlín,,Mladcovská",49.22869,17.6531773
 "Zlín,,Mladcovská",49.22873,17.6527557
 "Zlín,,Mladcovská",49.228672,17.6531658
 "Zlín,,Mokrá II.",49.24027,17.6527748
@@ -3538,7 +2852,6 @@ Zlámanec,49.12953,17.62846
 "Zlín,,Nad Prohledem",49.18218,17.6079121
 "Zlín,,Nad Prohledem",49.18207,17.6080112
 "Zlín,,Nad Prohledem",49.18244,17.6070137
-"Zlín,,Nám.Míru",49.22541,17.6648
 "Zlín,,Nám.Míru",49.2254677,17.6649036
 "Zlín,,Nám.Práce",49.22313,17.6606255
 "Zlín,,Nám.Práce",49.22332,17.66153
@@ -3554,7 +2867,6 @@ Zlámanec,49.12953,17.62846
 "Zlín,,Padělky I.",49.2321167,17.6754169
 "Zlín,,Padělky IX.",49.231987,17.6816921
 "Zlín,,Padělky IX.",49.2316742,17.6831512
-"Zlín,,Památník T. Bati",49.2193947,17.6650143
 "Zlín,,Pančava Gemini",49.22009,17.70789
 "Zlín,,Pančava Gemini",49.21991,17.70863
 "Zlín,,Pasecká",49.2388649,17.6603031
@@ -3573,8 +2885,6 @@ Zlámanec,49.12953,17.62846
 "Zlín,,Podvesná VI.",49.22844,17.68316
 "Zlín,,Podvesná X.",49.22676,17.68613
 "Zlín,,Podvesná X.",49.22664,17.68665
-"Zlín,,Podvesná XII.",49.2288361,17.68828
-"Zlín,,Podvesná XVI.",49.22843,17.6926746
 "Zlín,,Podvesná XVII.",49.22613,17.6921
 "Zlín,,poliklinika",49.22167,17.65435
 "Zlín,,poliklinika",49.22167,17.6545887
@@ -3598,12 +2908,9 @@ Zlámanec,49.12953,17.62846
 "Zlín,,Spojovací",49.22444,17.68564
 "Zlín,,Sportovní hala",49.2197266,17.6590424
 "Zlín,,Sportovní hala",49.22046,17.65844
-"Zlín,,střed",49.22616,17.6595116
 "Zlín,,Svat.Čecha",49.2159157,17.634388
 "Zlín,,Svat.Čecha",49.2158356,17.6345444
 "Zlín,,Školní",49.2235451,17.6667557
-"Zlín,,Školní",49.2235451,17.6667557
-"Zlín,,Školní",49.223568,17.6669331
 "Zlín,,Šrámkova",49.21284,17.6159134
 "Zlín,,Šrámkova",49.2124863,17.6140442
 "Zlín,,Topolová",49.21856,17.6467724
@@ -3614,10 +2921,10 @@ Zlámanec,49.12953,17.62846
 "Zlín,,U Splavu",49.2295647,17.6807041
 "Zlín,,U Splavu",49.2294769,17.68041
 "Zlín,,U Zámku",49.22542,17.66193
-"Zlín,,U Zámku",49.2258148,17.6619358
+"Zlín,,U Zámku",49.2258453,17.6619339
 "Zlín,,Věžové domy",49.2250366,17.6899757
 "Zlín,,Věžové domy",49.2252,17.6891785
-"Zlín,,Vodní",49.22839,17.6649761
+"Zlín,,Vršava",49.24202,17.68884
 "Zlín,,Vršava",49.24202,17.68884
 "Zlín,,Vršava",49.24202,17.68884
 "Zlín,,Vysoká mez",49.23312,17.6802711
@@ -3629,11 +2936,8 @@ Zlámanec,49.12953,17.62846
 "Zlín,,Zahradnická",49.2209625,17.647892
 "Zlín,,Zálešná V.",49.23073,17.6883774
 "Zlín,,Zálešná V.",49.230793,17.6877213
-"Zlín,,zimní lázně",49.2221642,17.669
-"Zlín,,Žabárna",49.22533,17.7082157
 "Zlín,,Žabárna",49.22526,17.7082138
 "Zlín,Chlum",49.23008,17.60213
-"Zlín,Chlum",49.2301064,17.60211
 "Zlín,Chlum",49.23038,17.60213
 "Zlín,Jaroslavice",49.2140465,17.69746
 "Zlín,Jaroslavice",49.213768,17.69729
@@ -3668,7 +2972,6 @@ Zlámanec,49.12953,17.62846
 "Zlín,Kostelec,U Pomníku",49.26043,17.70243
 "Zlín,Kostelec,U Řadovek",49.2583122,17.7068863
 "Zlín,Kostelec,U Řadovek",49.2596245,17.7097034
-"Zlín,Kudlov,dolní konec",49.2096672,17.6821632
 "Zlín,Kudlov,dolní konec",49.2096672,17.6821423
 "Zlín,Kudlov,dolní konec",49.2091255,17.6817551
 "Zlín,Kudlov,garáže",49.1866379,17.6994915
@@ -3678,16 +2981,13 @@ Zlámanec,49.12953,17.62846
 "Zlín,Kudlov,Průkop",49.1975365,17.6996613
 "Zlín,Kudlov,Průkop",49.1974678,17.6995773
 "Zlín,Kudlov,střed",49.2066345,17.6826153
-"Zlín,Kudlov,střed",49.20659,17.6826477
-"Zlín,Kudlov,střed",49.20669,17.682373
+"Zlín,Kudlov,střed",49.20667,17.68232
 "Zlín,Kudlov,tiskárna",49.2004433,17.6805439
 "Zlín,Kudlov,tiskárna",49.2003632,17.6803589
 "Zlín,Kudlov,točna",49.19955,17.69489
 "Zlín,Kudlov,točna",49.19955,17.69489
-"Zlín,Kudlov,U Pomníku padlých",49.1989,17.687294
 "Zlín,Kudlov,U Pomníku padlých",49.199173,17.6883926
 "Zlín,Kudlov,U Pomníku padlých",49.1989174,17.6872368
-"Zlín,Kudlov,Výhledy",49.20246,17.68405
 "Zlín,Kudlov,Výhledy",49.2024,17.6841316
 "Zlín,Kudlov,Výhledy",49.2016754,17.6845551
 "Zlín,Lešná,ZOO zadní vstup",49.2742233,17.72085
@@ -3695,12 +2995,9 @@ Zlámanec,49.12953,17.62846
 "Zlín,Lešná,ZOO",49.27109,17.7145977
 "Zlín,Lešná,ZOO",49.2709923,17.7142487
 "Zlín,Lhotka",49.23393,17.58944
-"Zlín,Lhotka",49.2338943,17.5894737
 "Zlín,Lhotka",49.23393,17.58944
-"Zlín,Lhotka,rozc.",49.22638,17.5822926
 "Zlín,Lhotka,rozc.",49.22598,17.58186
 "Zlín,Lhotka,rozc.",49.2261429,17.5819321
-"Zlín,Lhotka,rozc.",49.2264061,17.5822563
 "Zlín,Louky,hřiště",49.2189941,17.6184082
 "Zlín,Louky,hřiště",49.2186966,17.6184464
 "Zlín,Louky,křiž.",49.21618,17.6251431
@@ -3722,7 +3019,6 @@ Zlámanec,49.12953,17.62846
 "Zlín,Malenovice",49.2070541,17.5962143
 "Zlín,Malenovice,1.máje",49.20177,17.5954552
 "Zlín,Malenovice,Centro",49.20499,17.56974
-"Zlín,Malenovice,Centro",49.20499,17.56974
 "Zlín,Malenovice,hřiště",49.2046928,17.58922
 "Zlín,Malenovice,hřiště",49.20479,17.5898724
 "Zlín,Malenovice,J.Staši",49.2059135,17.5934162
@@ -3735,8 +3031,8 @@ Zlámanec,49.12953,17.62846
 "Zlín,Malenovice,křiž.",49.20956,17.5948811
 "Zlín,Malenovice,Masarykova",49.20771,17.5955467
 "Zlín,Malenovice,Mlýnská",49.20664,17.5853157
-"Zlín,Malenovice,obchodní zóna",49.2043762,17.5646725
-"Zlín,Malenovice,obchodní zóna",49.20434,17.5627689
+"Zlín,Malenovice,obchodní zóna",49.20436,17.5626678
+"Zlín,Malenovice,obchodní zóna",49.2043533,17.5646877
 "Zlín,Malenovice,paseky",49.19423,17.603384
 "Zlín,Malenovice,paseky",49.1941948,17.6033688
 "Zlín,Malenovice,Pila",49.2102852,17.6053562
@@ -3747,7 +3043,6 @@ Zlámanec,49.12953,17.62846
 "Zlín,Malenovice,Sklady",49.20619,17.578228
 "Zlín,Malenovice,Sklady",49.2064743,17.5802612
 "Zlín,Malenovice,Sokolovská",49.20456,17.5909176
-"Zlín,Malenovice,Tečovská",49.2126,17.59496
 "Zlín,Malenovice,Tečovská",49.21185,17.5917873
 "Zlín,Malenovice,Tečovská",49.2125778,17.59491
 "Zlín,Malenovice,točna",49.20862,17.5953712
@@ -3760,15 +3055,12 @@ Zlámanec,49.12953,17.62846
 "Zlín,Malenovice,ZPS",49.2051659,17.5727634
 "Zlín,Malenovice,ZPS",49.20516,17.57282
 "Zlín,Malenovice,ZPS",49.2052956,17.5709763
-"Zlín,Mladcová,Bartošův dům",49.24132,17.6465645
 "Zlín,Mladcová,Bartošův dům",49.2410164,17.6463051
 "Zlín,Mladcová,Bartošův dům",49.2412872,17.6465054
 "Zlín,Mladcová,hřbitov",49.24803,17.6429272
 "Zlín,Mladcová,hřbitov",49.24805,17.6429844
-"Zlín,Mladcová,hřiště",49.2348366,17.6452961
 "Zlín,Mladcová,hřiště",49.235817,17.6447067
 "Zlín,Mladcová,hřiště",49.23481,17.6452484
-"Zlín,Mladcová,rozvodna",49.2301254,17.6441727
 "Zlín,Mladcová,rozvodna",49.22962,17.6439552
 "Zlín,Mladcová,rozvodna",49.2301178,17.6441669
 "Zlín,Prštné",49.2197647,17.6403847
@@ -3797,15 +3089,16 @@ Zlámanec,49.12953,17.62846
 "Zlín,Štípa,družstvo",49.2665863,17.728054
 "Zlín,Štípa,Na Vyhlídce",49.2765,17.74057
 "Zlín,Štípa,Na Vyhlídce",49.2764359,17.7406235
+"Zlín,Štípa,Pod Větřákem",49.2657356,17.7278423
 "Zlín,Štípa,pošta",49.2625237,17.7148647
 "Zlín,Štípa,pošta",49.2628365,17.7155056
-"Zlín,Štípa,škola",49.26196,17.7161751
+"Zlín,Štípa,škola",49.2619743,17.7162685
 "Zlín,Štípa,škola",49.26189,17.7163086
 "Zlín,Štípa,U Kapličky",49.2682877,17.7235317
 "Zlín,Štípa,U Kapličky",49.2681427,17.7237339
 "Zlín,Štípa,U Obrázku",49.272583,17.7338219
 "Zlín,Štípa,U Obrázku",49.27259,17.7339287
-"Zlín,Štípa,U Potoka",49.2660637,17.7271175
+"Zlín,Štípa,U Potoka",49.26522,17.7268715
 "Zlín,Štípa,U Potoka",49.26575,17.7274361
 "Zlín,Štípa,Zámecká",49.2697144,17.7187557
 "Zlín,Velíková,Dolní konec",49.28039,17.75374
@@ -3816,19 +3109,14 @@ Zlámanec,49.12953,17.62846
 "Zlín,Velíková,točna",49.28769,17.7610683
 "Zlobice,,náves",49.302,17.3136311
 "Zlobice,,náves",49.30214,17.31241
-"Zlobice,,škola",49.3026352,17.3133717
-"Zlobice,Bojanovice",49.31166,17.3126965
 "Zubří,,centrum",49.47056,18.0914536
 "Zubří,,centrum",49.47005,18.0916023
 "Zubří,,centrum",49.4711037,18.0915241
 "Zubří,,Gumárny",49.4621735,18.0923882
-"Zubří,,Klub",49.46306,18.0906124
-"Zubří,,Klub",49.46309,18.0906029
 "Zubří,,kovárna",49.4827766,18.08938
 "Zubří,,kovárna",49.48291,18.0893288
 "Zubří,,kovárna",49.4827271,18.0894089
 "Zubří,,pod rozcestím",49.4747849,18.0916653
-"Zubří,,rozc.Staré Zubří",49.4754562,18.0917072
 "Zubří,,rozc.Staré Zubří",49.4754562,18.0917072
 "Zubří,,rozc.Staré Zubří",49.4754562,18.0917072
 "Zubří,,točna",49.49642,18.0946045
@@ -3838,13 +3126,10 @@ Zlámanec,49.12953,17.62846
 "Zubří,,u Perniců",49.4887047,18.0885715
 "Zubří,,u Perniců",49.48922,18.0886269
 "Zubří,,Vlkoprdy",49.4764175,18.1055412
-"Zubří,,výzk.ústav",49.46339,18.0828285
-"Zubří,,výzk.ústav",49.4634933,18.0829449
 "Zubří,,žel.st.",49.4612732,18.0912228
 "Zubří,,žel.st.",49.4612732,18.0904255
 "Zubří,Staré Zubří",49.48884,18.1046219
 Žádovice,49.01592,17.19568
-"Žákovice,,kult.dům",49.4542732,17.65979
 "Žalkovice,,Jednota",49.37082,17.4346581
 "Žalkovice,,Jednota",49.3707848,17.434948
 "Žalkovice,,rest.",49.3711662,17.4381428
@@ -3869,8 +3154,6 @@ Zlámanec,49.12953,17.62846
 "Želechovice n.Dřev.,,střed",49.2177162,17.7458973
 "Želechovice n.Dřev.,,škola",49.21717,17.7539
 "Želechovice n.Dřev.,,škola",49.2157822,17.7586918
-"Želechovice n.Dřev.,,točna u školy",49.2158852,17.7570438
-"Želechovice n.Dřev.,,točna u školy",49.2158852,17.7570438
 "Želechovice n.Dřev.,,zbrojnice",49.19622,17.74182
 "Želechovice n.Dřev.,,ZD",49.2121,17.7418
 "Želechovice n.Dřev.,,ZD",49.21208,17.7416916
@@ -3921,7 +3204,6 @@ Brankovice,49.1503944,17.1343517
 Branky na Moravě,49.4593925,17.9060917
 Brno hl.n.,49.1905,16.6128139
 Brno-Černovice,49.1886,16.6307755
-Brno-Chrlice,49.13205,16.6572151
 Brno-Slatina,49.1695137,16.6820412
 Brňov,49.4374352,17.9672451
 Brno-Židenice,49.20415,16.6360264
@@ -4002,7 +3284,6 @@ Krhová,49.47704,17.9894562
 Kroměříž,49.3022766,17.4034729
 Kroměříž-Oskol,49.2922249,17.4076633
 Křenovice dolní n.,49.14428,16.8341
-Křenovice horní n.,49.1434746,16.8246021
 Křižanovice,49.14501,16.9354572
 Kunčice p.Ondřej.,49.53481,18.2951889
 Kunovice zast.,49.0383339,17.4610729
@@ -4072,11 +3353,14 @@ Podivín,48.8374977,16.8539963
 Police u Val.Meziříčí,49.45056,17.8681469
 Polichno,49.0685425,17.7112484
 Ponětovice,49.1548767,16.7489319
+Popice,48.9242973,16.66814
 Popov,49.0803337,17.96876
+Popovice u Rajhradu,49.10293,16.60564
 Popovice u Uh.Hradiště,49.04629,17.5272465
 Postoupky,49.32071,17.3616
 Postřelmov,49.9101143,16.9230042
 Poteč,49.15452,18.0428829
+Pouzdřany,48.9419823,16.6305561
 Považská Bystrica,49.12276,18.4317589
 Praha hl.n.,50.0829773,14.43595
 Praha-Libeň,50.1007729,14.5017023
@@ -4088,6 +3372,7 @@ Přelouč,50.0395966,15.57462
 Přerov,49.4470673,17.4449768
 Púchov,49.11391,18.32726
 Raciborz,50.0905037,18.2266235
+Rajhrad,49.0851555,16.6053162
 Rakvice,48.86686,16.82144
 Rohatec kolonie,48.8924561,17.2123547
 Rohatec zast.,48.8832779,17.1784611
@@ -4095,7 +3380,6 @@ Rohatec,48.8928032,17.1984711
 Rokytnice u Přerova,49.4608421,17.3736343
 Ropice (Ropica),49.71244,18.61643
 Ropice-Zálesí (Ropica-Zalesie),49.6937141,18.596426
-Rousínov,49.1970749,16.8677483
 Rožnov p.Radhoštěm,49.460537,18.13455
 Rybnik(PL),50.0889664,18.5477333
 Říkovice,49.37897,17.4539948
@@ -4124,7 +3408,6 @@ Třebětice,49.3174553,17.51953
 Uherské Hradiště,49.066803,17.45724
 Uherský Brod,49.02182,17.6435318
 Uherský Ostroh,48.9818,17.4034481
-Újezd u Brna,49.10731,16.7456741
 Újezd u Uničova,49.77529,17.18464
 Újezdec u Luhačovic,49.0328255,17.6853027
 Uničov zast.,49.7775421,17.1448345
@@ -4147,6 +3430,7 @@ Věžky,49.4074974,17.41503
 Vizovice,49.2201042,17.8432655
 Vlkoš,48.9878654,17.1665382
 Vnorovy,48.9308624,17.3476849
+Vojkovice n.Svratkou,49.0558929,16.59733
 Vracov,48.9766121,17.2193489
 Vranovice,48.9638138,16.6046925
 Vratimov,49.7697,18.30365
@@ -4176,5 +3460,6 @@ Zlín-Prštné,49.21993,17.6406765
 Zlín-Příluky,49.2209053,17.71527
 Zlín-U mlýna,49.2076454,17.5847855
 Zubří,49.4609756,18.09433
+Žabčice,49.0112877,16.5948429
 Želechovice n.Dřevnicí,49.219593,17.7442818
 Žilina,49.227,18.7466316

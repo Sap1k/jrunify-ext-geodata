@@ -254,8 +254,7 @@ def mapa_idsjmk_download_stops():
 
 
 def idsjmk_download_stops():
-    stops = arcgis_download_stops(
-        # URL is backing service for https://data.brno.cz/datasets/747a824783044377b6d07a8060e7769d_0/explore
+    stops = arcgis_download_stops( # URL is backing service for https://data.brno.cz/datasets/747a824783044377b6d07a8060e7769d_0/explore
         "https://services6.arcgis.com/fUWVlHWZNxUvTUh8/ArcGIS/rest/services/stops/FeatureServer",
         0,
         ["stop_name"])
@@ -287,10 +286,10 @@ def plzen_download_stops():
             pre_urls=["https://opendata.plzen.eu/public/opendata/detail/9"]))
 
 
-
 def write_stops_csv(outfile, stops):
     w = csv.writer(outfile.open("w"))
     for stop in stops:
+        if stop.lat == 0 and stop.lon == 0: continue
         w.writerow([stop.name, stop.lat, stop.lon])
 
 
