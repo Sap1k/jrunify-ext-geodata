@@ -142,6 +142,34 @@ def mpvnet_download_stops(instance):
         yield Stop(stop["n"], stop["x"], stop["y"])
 
 
+def zipped_geojson_download_stops(url, name_prop, pre_urls=[]):
+    def geom_to_points(geom):
+        if geom["type"] == "Polygon":
+            shape = shapely.geometry.shape(geom)
+            centre = shape.centroid
+            yield (centre.y, centre.x)
+        elif geom["type"] == "Point":
+            yield (geom["coordinates"][1], geom["coordinates"][0])
+        elif geom["type"] == "GeometryCollection":
+            for g in geom["geometries"]:
+                for p in geom_to_points(g):
+                    yield p
+        else:
+            assert False, f"Unknown geometry type: {geom['type']}"
+
+    sess = requests.session()
+    for pre_url in pre_urls:
+        sess.get(pre_url)
+    resp = sess.get(url)
+    zip_io = io.BytesIO(resp.content)
+    zip = zipfile.ZipFile(zip_io)
+    with zip.open(zip.namelist()[0]) as f:
+        geojson = json.load(f)
+        for feat in geojson["features"]:
+            for lat, lon in geom_to_points(feat["geometry"]):
+                yield Stop(feat["properties"][name_prop], lat, lon)
+
+
 def jihocesky_kraj_download_stops():
     URL = "https://geoportal.kraj-jihocesky.gov.cz/portal/media/Soubory/opendata/zastavky_JCK_SHP.zip"
     zip_resp = requests.get(URL)
@@ -214,6 +242,15 @@ def karlovarsky_kraj_download_stops():
     return kv_stops_nonum
 
 
+def mapa_idsjmk_download_stops():
+    def inner():
+        stops_json = requests.get("https://mapa.idsjmk.cz/api/stops").json()
+        for stop in stops_json["Stops"]:
+            yield Stop(stop["Name"], stop["Latitude"], stop["Longitude"])
+
+    return add_missing_town(inner())
+
+
 def idsjmk_download_stops():
     stops = arcgis_download_stops(
         # URL is backing service for https://data.brno.cz/datasets/747a824783044377b6d07a8060e7769d_0/explore
@@ -222,6 +259,7 @@ def idsjmk_download_stops():
         ["stop_name"])
     return add_missing_town(stops)
 
+
 def most_download_stops():
     stops = arcgis_download_stops(
         # URL is backing service for https://opendata.mesto-most.cz/datasets/mestomost::zast%C3%A1vky-mhd/explore
@@ -229,6 +267,23 @@ def most_download_stops():
         0,
         ["NAZEV"])
     return add_missing_town(stops)
+
+
+def ostrava_download_stops():
+    return add_missing_town(
+        zipped_geojson_download_stops(
+            "https://mapy.ostrava.cz/opendata/data/opendata/zastavky_MHD_WGS84_gjson.zip",
+            "zast_jm"))
+
+
+def plzen_download_stops():
+    return add_missing_town(
+        zipped_geojson_download_stops(
+            "https://opendata.plzen.eu/public/opendata/detail/9?detail-fileId=18&do=detail-downloadFile",
+            "NAZEV",
+            # The website requires some cookies for downloading?
+            pre_urls=["https://opendata.plzen.eu/public/opendata/detail/9"]))
+
 
 
 def write_stops_csv(outfile, stops):
@@ -265,8 +320,12 @@ def download_all(outdir):
             0,
             ["NAZEV"]))
 
+    print("Downloading other/Mapa_IDSJMK.csv", file=sys.stderr)
+    write_stops_csv(outdir / "other" / "Mapa_IDSJMK.csv",
+        mapa_idsjmk_download_stops())
+
     print("Downloading other/IDSJMK.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "IDSJMK_Map.csv",
+    write_stops_csv(outdir / "other" / "IDSJMK.csv",
         idsjmk_download_stops())
 
     print("-- Downloading other/PlzenskyKraj.csv", file=sys.stderr)
@@ -319,6 +378,14 @@ def download_all(outdir):
     print("Downloading other/Most.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "Most.csv",
         most_download_stops())
+
+    print("Downloading other/Ostrava.csv", file=sys.stderr)
+    write_stops_csv(outdir / "other" / "Ostrava.csv",
+        ostrava_download_stops())
+
+    print("Downloading other/Plzen.csv", file=sys.stderr)
+    write_stops_csv(outdir / "other" / "Plzen.csv",
+        plzen_download_stops())
 
 
 if __name__ == "__main__":
