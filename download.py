@@ -52,6 +52,15 @@ def load_towns():
 towns = load_towns()
 
 
+def add_missing_town(stops):
+    for stop in stops:
+        yield stop
+        point = shapely.Point(stop.lon, stop.lat)
+        for town_name, town in towns.items():
+            if point.within(town) and f"{town_name}," not in stop.name:
+                yield Stop(f"{town_name}," + stop.name, stop.lat, stop.lon)
+
+
 def arcgis_download_stops(url, layer, name_fields, where="1=1"):
     if isinstance(layer, list):
         for l in layer:
@@ -211,12 +220,15 @@ def idsjmk_download_stops():
         "https://services6.arcgis.com/fUWVlHWZNxUvTUh8/ArcGIS/rest/services/stops/FeatureServer",
         0,
         ["stop_name"])
-    brno = towns["Brno"]
-    for stop in stops:
-        yield stop
-        point = shapely.Point(stop.lon, stop.lat)
-        if point.within(brno) and "Brno," not in stop.name:
-            yield Stop("Brno," + stop.name, stop.lat, stop.lon)
+    return add_missing_town(stops)
+
+def most_download_stops():
+    stops = arcgis_download_stops(
+        # URL is backing service for https://opendata.mesto-most.cz/datasets/mestomost::zast%C3%A1vky-mhd/explore
+        "https://mapy.mesto-most.cz/server/rest/services/Opendata/Zastavky_MHD_opendata/FeatureServer",
+        0,
+        ["NAZEV"])
+    return add_missing_town(stops)
 
 
 def write_stops_csv(outfile, stops):
@@ -303,6 +315,11 @@ def download_all(outdir):
     print("Downloading other/PID.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "PID.csv",
         pid_download_stops())
+
+    print("Downloading other/Most.csv", file=sys.stderr)
+    write_stops_csv(outdir / "other" / "Most.csv",
+        most_download_stops())
+
 
 if __name__ == "__main__":
     outdir = pathlib.Path(sys.argv[1])
