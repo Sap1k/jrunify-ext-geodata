@@ -53,15 +53,15 @@ def process(file, name_col, just_names, only_stops):
 
 def main():
     name_col = "Tarifní název"
-    if sys.argv[1].startswith("--name="):
+    if len(sys.argv) > 1 and sys.argv[1].startswith("--name="):
         name_col = sys.argv[1][len("--name="):]
         del sys.argv[1]
     just_names = False
-    if sys.argv[1] == "--just-names":
+    if len(sys.argv) > 1 and sys.argv[1] == "--just-names":
         just_names = True
         del sys.argv[1]
     only_stops = False
-    if sys.argv[1] == "--only-stops":
+    if len(sys.argv) > 1 and sys.argv[1] == "--only-stops":
         only_stops = True
         del sys.argv[1]
     if len(sys.argv) == 1:
