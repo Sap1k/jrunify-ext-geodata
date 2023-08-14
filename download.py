@@ -4,6 +4,7 @@ import re
 import ssl
 import sys
 import csv
+import gzip
 import json
 import time
 import pathlib
@@ -12,7 +13,7 @@ import zipfile
 import itertools
 import statistics
 import datetime as dt
-from collections import namedtuple
+from dataclasses import dataclass
 import pyproj
 import shapely
 import shapely.geometry
@@ -20,8 +21,12 @@ import requests
 import requests.adapters
 import shapefile
 
-Stop = namedtuple("Stop", ["name", "lat", "lon"])
-
+@dataclass
+class Stop:
+    name: str
+    lat: float
+    lon: float
+    region: str | None = None
 
 # See https://stackoverflow.com/a/73519818
 class LegacyHttpAdapter(requests.adapters.HTTPAdapter):
@@ -40,18 +45,32 @@ legacy_session = requests.session()
 legacy_session.mount("https://", LegacyHttpAdapter())
 
 
-# towns.json is derived from data by ČÚZK:
+# towns.json and regions.json are derived from data by ČÚZK:
 # https://geoportal.cuzk.cz/Default.aspx?mode=TextMeta&side=dSady_RUIAN_vse&metadataID=CZ-00025712-CUZK_SERIES-MD_RUIAN-STATY-SHP&head_tab=sekce-02-gp&menu=3327
 def load_towns():
-    towns_file = pathlib.Path(__file__).parent / "towns.json"
+    towns_file = pathlib.Path(__file__).parent / "towns.json.gz"
     towns = {}
-    with towns_file.open() as f:
+    with gzip.open(towns_file) as f:
         for feat in json.load(f)["features"]:
             name = feat["properties"]["name"]
             shape = shapely.geometry.shape(feat["geometry"])
             towns[name] = shape
     return towns
 towns = load_towns()
+
+
+def load_regions():
+    regions_file = pathlib.Path(__file__).parent / "regions.json.gz"
+    regions = []
+    region_codes = []
+    with gzip.open(regions_file) as f:
+        for feat in json.load(f)["features"]:
+            code = feat["properties"]["code"]
+            region_codes.append(code)
+            shape = shapely.geometry.shape(feat["geometry"])
+            regions.append(shape)
+    return region_codes, shapely.STRtree(regions)
+region_codes, regions = load_regions()
 
 
 def add_missing_town(stops):
@@ -61,6 +80,20 @@ def add_missing_town(stops):
         for town_name, town in towns.items():
             if point.within(town) and f"{town_name}," not in stop.name:
                 yield Stop(f"{town_name}," + stop.name, stop.lat, stop.lon)
+
+
+def add_missing_regions(stops):
+    for stop in stops:
+        if stop.region:
+            yield stop
+            continue
+        point = shapely.Point(stop.lon, stop.lat)
+        regions_idx = regions.query(point, predicate="within").tolist()
+        if len(regions_idx) == 1:
+            yield Stop(stop.name, stop.lat, stop.lon,
+                       region_codes[regions_idx[0]])
+        else:
+            yield stop
 
 
 def arcgis_download_stops(url, layer, name_fields, where="1=1"):
@@ -226,11 +259,14 @@ def pid_download_stops():
     resp = requests.get(URL)
     for group in resp.json()["stopGroups"]:
         for stop in group["stops"]:
+            if all(l["type"] == "train" for l in stop["lines"]):
+                continue
             lat = stop["lat"]
             lon = stop["lon"]
-            yield Stop(group["name"], lat, lon)
+            yield Stop(group["name"], lat, lon, group["districtCode"])
             if group["municipality"] not in group["name"]:
-                yield Stop(group["municipality"] + "," + group["name"], lat, lon)
+                yield Stop(group["municipality"] + "," + group["name"],
+                           lat, lon, group["districtCode"])
 
 def karlovarsky_kraj_download_stops():
     kv_stops = arcgis_download_stops(
@@ -289,10 +325,11 @@ def plzen_download_stops():
 
 
 def write_stops_csv(outfile, stops):
+    stops = add_missing_regions(stops)
     w = csv.writer(outfile.open("w"))
     for stop in stops:
         if stop.lat == 0 and stop.lon == 0: continue
-        w.writerow([stop.name, stop.lat, stop.lon])
+        w.writerow([stop.name, stop.lat, stop.lon, stop.region or ""])
 
 
 def download_all(outdir):
