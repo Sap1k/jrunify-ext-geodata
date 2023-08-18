@@ -139,6 +139,8 @@ def mapaduk_download_stops():
     stops = resp.json()["ItemL"]
 
     for stop in stops:
+        # These look like train stops
+        if stop["PostNote"] == "žst.": continue
         yield Stop(stop["Name"], stop["Lat"], stop["Lng"])
 
 
@@ -174,6 +176,8 @@ def mpvnet_download_stops(instance):
             "sOpt": "/z",
         })
     for stop in resp.json()["S"]:
+        # Filter out train stops
+        if stop["t"] == "T": continue
         yield Stop(stop["n"], stop["x"], stop["y"])
 
 
