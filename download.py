@@ -75,11 +75,14 @@ region_codes, regions = load_regions()
 
 def add_missing_town(stops):
     for stop in stops:
-        yield stop
         point = shapely.Point(stop.lon, stop.lat)
+        town_added = False
         for town_name, town in towns.items():
             if point.within(town) and f"{town_name}," not in stop.name:
+                town_added = True
                 yield Stop(f"{town_name}," + stop.name, stop.lat, stop.lon)
+        if not town_added:
+            yield stop
 
 
 def add_missing_regions(stops):
