@@ -660,6 +660,7 @@ Bořislavka,50.09872,14.36414,AB
 Bořislavka,50.09905,14.36469,AB
 Bořislavka,50.09913,14.36485,AB
 Bořislavka,50.09913,14.36485,AB
+Bořislavka,50.09832,14.36258,AB
 Bořislavka,50.09765,14.36444,AB
 Bořislavka,50.09821,14.36498,AB
 Bořislavka,50.09836,14.36355,AB
@@ -1049,12 +1050,6 @@ Bykoš,49.88296,14.06375,BE
 "Bykoš,odb.Vinařice",49.89474,14.07553,BE
 "Bylany,hlavní silnice",49.95639,15.73477,CR
 "Bylany,hlavní silnice",49.95665,15.73309,CR
-"Bystřice,,nám.",49.7322578,14.667223,BN
-"Bystřice,,nám.",49.7321053,14.6674318,BN
-"Bystřice,,škola",49.7376862,14.6663532,BN
-"Bystřice,,škola",49.7377853,14.6665192,BN
-"Bystřice,,žel.st.",49.74066,14.6662083,BN
-"Bystřice,,žel.st.",49.7405,14.6662788,BN
 "Bystřice,Božkovice,rozc. (BN)",49.70105,14.60772,BN
 "Bystřice,Božkovice,rozc. (BN)",49.701,14.60778,BN
 "Bystřice,Drachkov (BN)",49.71368,14.61985,BN
@@ -1100,8 +1095,8 @@ Bykoš,49.88296,14.06375,BE
 "Bystřice,Ouběnice,rozc.Jiřín (BN)",49.69115,14.6817,BN
 "Bystřice,Petrovice (BN)",49.72031,14.64163,BN
 "Bystřice,Petrovice (BN)",49.72031,14.64171,BN
-"Bystřice,přeložka (BN)",49.7418175,14.6659689,BN
-"Bystřice,přeložka (BN)",49.7417,14.6651754,BN
+"Bystřice,přeložka (BN)",49.74182,14.66597,BN
+"Bystřice,přeložka (BN)",49.7417,14.66518,BN
 "Bystřice,Radošovice,rozc. (BN)",49.70916,14.65527,BN
 "Bystřice,Radošovice,rozc. (BN)",49.70905,14.65506,BN
 "Bystřice,rozc.Kobylí (BN)",49.68982,14.69787,BN
@@ -1501,6 +1496,8 @@ Cukrovar Modřany,50.00005,14.40512,AB
 "Červený Újezd,Zátiší (BN)",49.5734,14.61376,BN
 Červený Vrch,50.09684,14.35297,AB
 Červený Vrch,50.09682,14.35231,AB
+Červený Vrch,50.09719,14.35388,AB
+Červený Vrch,50.09686,14.35355,AB
 "Česká Lípa,aut.nádr.",50.67752,14.53568,CL
 "Česká Lípa,Borská",50.69444,14.54148,CL
 "Česká Lípa,Borská",50.69491,14.54116,CL
@@ -1984,9 +1981,15 @@ Dobšín,50.48303,15.11195,MB
 "Doksany,zámek",50.45509,14.1612,LT
 Doksy (KD),50.11866,14.04829,KD
 Doksy (KD),50.11871,14.04842,KD
-"Doksy,,Bílá Labuť",50.56725,14.65362,CL
 "Doksy,aut.st. (CL)",50.56358,14.65366,CL
-"Doksy,Bílá Labuť",50.56726,14.65354,CL
+"Doksy,Břehyně,II (CL)",50.58426,14.69473,CL
+"Doksy,Břehyně,II (CL)",50.58421,14.69448,CL
+"Doksy,Břehyně,rybník (CL)",50.57525,14.69229,CL
+"Doksy,Břehyně,rybník (CL)",50.57548,14.6923,CL
+"Doksy,Lipové nám. (CL)",50.56751,14.65786,CL
+"Doksy,Lipové nám. (CL)",50.5676,14.6578,CL
+"Doksy,Mimoňská (CL)",50.56554,14.66589,CL
+"Doksy,Mimoňská (CL)",50.56562,14.66589,CL
 "Doksy,most[KD]",50.11658,14.04058,KD
 "Doksy,most[KD]",50.11663,14.03956,KD
 "Doksy,rozcestí (KD)",50.12981,14.04272,KD
@@ -3516,6 +3519,8 @@ Jabkenice,50.32559,15.01366,MB
 "Jabkenice,křižovatka",50.32214,15.01355,MB
 "Jabkenice,rozc.Charvatce",50.32188,15.01254,MB
 "Jabkenice,rozc.Charvatce",50.32194,15.01253,MB
+"Jablonec n.Jiz.,nám.",50.70325,15.42962,SM
+"Jablonec n.Jiz.,nám.",50.70309,15.42946,SM
 Jablonná,49.66139,14.13868,PB
 Jablonná,49.6615,14.13854,PB
 "Jablonná,Horní Hbity",49.65352,14.1496,PB
@@ -4163,7 +4168,6 @@ Kelerka,50.11532,14.4902,AB
 Kelerka,50.11512,14.48887,AB
 Kesnerka,50.05788,14.40207,AB
 Khodlova,50.11029,14.60407,AB
-"Kladno,Americká",50.12709,14.12342,KD
 "Kladno,autobusové nádraží",50.14608,14.10582,KD
 "Kladno,autobusové nádraží",50.14602,14.10617,KD
 "Kladno,autobusové nádraží",50.14584,14.10631,KD
@@ -4229,8 +4233,6 @@ Khodlova,50.11029,14.60407,AB
 "Kladno,OAZA",50.13231,14.1385,KD
 "Kladno,OAZA",50.13223,14.13956,KD
 "Kladno,Okrsek 4",50.13059,14.13692,KD
-"Kladno,Okrsek 4",50.13155,14.13814,KD
-"Kladno,Okrsek 4",50.13053,14.13765,KD
 "Kladno,pekárna",50.11763,14.11495,KD
 "Kladno,pekárna",50.11761,14.1147,KD
 "Kladno,pod mostem",50.15744,14.13267,KD
@@ -4249,7 +4251,6 @@ Khodlova,50.11029,14.60407,AB
 "Kladno,Rozdělov",50.14073,14.06548,KD
 "Kladno,Rozdělov",50.14045,14.06536,KD
 "Kladno,Růžové pole",50.1292,14.13149,KD
-"Kladno,Růžové pole",50.12885,14.1309,KD
 "Kladno,Seifertova",50.16361,14.09691,KD
 "Kladno,Seifertova",50.16339,14.09568,KD
 "Kladno,Showa",50.11863,14.12931,KD
@@ -4263,15 +4264,13 @@ Khodlova,50.11029,14.60407,AB
 "Kladno,Školská",50.1427,14.11726,KD
 "Kladno,U Bondyho",50.14461,14.10995,KD
 "Kladno,U Bondyho",50.14424,14.11059,KD
-"Kladno,U Hvězdy",50.13276,14.11332,KD
+"Kladno,U Hvězdy",50.1327553,14.1133184,KD
+"Kladno,U Hvězdy",50.13279,14.1143112,KD
 "Kladno,u Kauflandu",50.12902,14.11606,KD
-"Kladno,u Kauflandu",50.12912,14.11589,KD
 "Kladno,U Knotků",50.16379,14.10682,KD
 "Kladno,U Knotků",50.16368,14.10697,KD
 "Kladno,u kostela",50.14088,14.07205,KD
 "Kladno,u kostela",50.14066,14.07088,KD
-"Kladno,U Meisnerů",50.13975,14.11662,KD
-"Kladno,U Meisnerů",50.13975,14.11645,KD
 "Kladno,u nemocnice",50.14282,14.08804,KD
 "Kladno,u nemocnice",50.14272,14.08858,KD
 "Kladno,u Tesca",50.12573,14.11804,KD
@@ -4293,8 +4292,6 @@ Khodlova,50.11029,14.60407,AB
 "Kladno,žel.zast.město",50.14127,14.08358,KD
 "Kladno,žel.zast.město",50.14062,14.08132,KD
 "Kladno,žel.zast.město",50.14129,14.08461,KD
-Kladruby,49.72181,14.94912,BN
-Kladruby,49.72181,14.94902,BN
 "Kladruby,rehab.ústav",49.72012,14.96105,BN
 "Kladruby,rehab.ústav",49.72022,14.96033,BN
 "Kladruby,rozc.",49.72142,14.95392,BN
@@ -5114,8 +5111,6 @@ Královský letohrádek,50.09426,14.40453,AB
 "Kralupy n.Vlt.,U Jízku",50.23957,14.30372,ME
 "Kralupy n.Vlt.,U Jízku",50.23973,14.30337,ME
 "Kralupy n.Vlt.,U Parku",50.25223,14.30879,ME
-"Kralupy n.Vlt.,u požárního domu",50.24036,14.29684,ME
-"Kralupy n.Vlt.,u požárního domu",50.24046,14.29688,ME
 "Kralupy n.Vlt.,V Luhu",50.24454,14.30723,ME
 "Kralupy n.Vlt.,V Zátiší",50.23886,14.30429,ME
 "Kralupy n.Vlt.,V Zátiší",50.23892,14.30417,ME
@@ -5787,8 +5782,8 @@ Lhotky,50.39596,15.05581,MB
 "Lhotky,Řehnice",50.3795,15.05652,MB
 "Lhotky,Řehnice",50.37951,15.05669,MB
 "Libáň,aut.st.",50.37426,15.21613,JC
-"Libáň,Kozodírky",50.36625,15.19145,JC
-"Libáň,Kozodírky",50.36635,15.19142,JC
+"Libáň,Kozodírky",50.37599,15.19154,JC
+"Libáň,Kozodírky",50.37605,15.19155,JC
 "Libáň,Křešice",50.33884,15.20053,JC
 "Libáň,Křešice",50.3388,15.2006,JC
 "Libáň,Psinice,kostel",50.35462,15.21452,JC
@@ -6550,8 +6545,6 @@ Mezno,49.53462,14.64422,BN
 "Mezno,žel.st.",49.53673,14.65489,BN
 Mezouň,50.00459,14.21408,BE
 Mezouň,50.00483,14.214,BE
-"Mezouň,Letník",50.00547,14.21904,BE
-"Mezouň,Letník",50.00551,14.21933,BE
 Michelangelova,50.07007,14.50982,AB
 Michelangelova,50.07038,14.5094,AB
 Michelská,50.05507,14.45383,AB
@@ -6682,7 +6675,6 @@ Milý,50.23213,13.86758,RA
 "Mimoň,,Pražská",50.65096,14.73516,CL
 "Mimoň,aut.st.",50.66147,14.72186,CL
 "Mimoň,aut.st.",50.66138,14.72178,CL
-"Mimoň,aut.st.",50.66126,14.72278,CL
 "Mimoň,žel.st.",50.65789,14.71521,CL
 "Mimoň,Žitavská",50.66623,14.72675,CL
 "Mimoň,Žitavská",50.66637,14.72656,CL
@@ -6728,6 +6720,7 @@ Miškovice,50.15561,14.54181,AB
 "Mišovice,Draheničky,rozc.Hostišovice 2.0",49.50059,13.94949,PI
 "Mladá Boleslav,,aut.st.",50.41996,14.91639,MB
 "Mladá Boleslav,,aut.st.",50.42012,14.91651,MB
+"Mladá Boleslav,,aut.st.",50.41967,14.91659,MB
 "Mladá Boleslav,AKUMA",50.4071,14.89884,MB
 "Mladá Boleslav,AKUMA",50.4072,14.8986,MB
 "Mladá Boleslav,aut.st.",50.41974,14.91578,MB
@@ -6740,7 +6733,6 @@ Miškovice,50.15561,14.54181,AB
 "Mladá Boleslav,aut.st.",50.42018,14.91677,MB
 "Mladá Boleslav,aut.st.",50.41953,14.91648,MB
 "Mladá Boleslav,aut.st.",50.4199,14.91595,MB
-"Mladá Boleslav,aut.st.",50.41967,14.91659,MB
 "Mladá Boleslav,aut.st.",50.41984,14.91672,MB
 "Mladá Boleslav,aut.st.",50.41997,14.91682,MB
 "Mladá Boleslav,aut.st.",50.42012,14.91696,MB
@@ -7196,6 +7188,7 @@ Na Pazderce,50.12518,14.41827,AB
 Na Petynce,50.08862,14.38089,AB
 Na Petynce,50.08775,14.38181,AB
 Na pískách,50.09896,14.36969,AB
+Na pískách,50.09877,14.36839,AB
 Na pískách,50.09909,14.37035,AB
 Na Plácku,49.9659,14.39435,AB
 Na Plácku,49.96623,14.39453,AB
@@ -7335,8 +7328,6 @@ Nadějkov,49.50285,14.47889,TA
 "Nadějkov,Kaliště,rozc.1.0",49.51641,14.48587,TA
 "Nadějkov,Petříkovice",49.49575,14.4857,TA
 "Nadějkov,Petříkovice",49.49586,14.48567,TA
-Nademlejnská,50.10383,14.52417,AB
-Nademlejnská,50.1038,14.52506,AB
 Nádraží Běchovice střed,50.08442,14.61671,AB
 Nádraží Běchovice střed,50.08442,14.61671,AB
 Nádraží Běchovice,50.08102,14.5996,AB
@@ -7425,10 +7416,13 @@ Nádraží Veleslavín,50.09539,14.34639,AB
 Nádraží Veleslavín,50.09628,14.34705,AB
 Nádraží Veleslavín,50.09663,14.34736,AB
 Nádraží Veleslavín,50.09598,14.34834,AB
+Nádraží Veleslavín,50.09618,14.34965,AB
 Nádraží Veleslavín,50.09572,14.34608,AB
+Nádraží Veleslavín,50.09571,14.34585,AB
 Nádraží Veleslavín,50.09616,14.34887,AB
 Nádraží Veleslavín,50.09557,14.34779,AB
 Nádraží Veleslavín,50.09561,14.34674,AB
+Nádraží Veleslavín,50.09538,14.3451,AB
 Nádraží Velká Chuchle,50.01145,14.3891,AB
 Nádraží Velká Chuchle,50.0114,14.38918,AB
 Nádraží Vršovice,50.06611,14.44758,AB
@@ -7590,8 +7584,6 @@ Nechvalice,49.57535,14.39735,PB
 "Nechvalice,Mokřany",49.56894,14.40789,PB
 "Nechvalice,Ředice",49.57063,14.43346,PB
 "Nechvalice,Ředice",49.57058,14.43351,PB
-Nelahozeves,50.26083,14.29902,ME
-Nelahozeves,50.26173,14.3012,ME
 "Nelahozeves,Lešany",50.25618,14.2853,ME
 "Nelahozeves,Lešany,Rozc.",50.25682,14.29698,ME
 "Nelahozeves,Lešany,Rozc.",50.25686,14.29657,ME
@@ -7599,8 +7591,7 @@ Nelahozeves,50.26173,14.3012,ME
 "Nelahozeves,Tukové záv.",50.27588,14.30957,ME
 "Nelahozeves,U Kaštanu",50.2809,14.31477,ME
 "Nelahozeves,U Kaštanu",50.28119,14.31488,ME
-"Nelahozeves,U Nadjezdu",50.26713,14.30282,ME
-"Nelahozeves,U Nadjezdu",50.26674,14.30299,ME
+"Nelahozeves,U Nadjezdu",50.26797,14.303,ME
 Němčice (MB),50.3466,14.92481,MB
 Němčice (NB),50.08421,15.29416,KO
 Němčice (NB),50.08422,15.29401,KO
@@ -7870,11 +7861,9 @@ Nová Ves u Bakova n.Jiz.,50.48975,14.92842,MB
 "Nová Ves,Miřejovice,Most (ME)",50.28094,14.3159,ME
 "Nová Ves,Nové Ouholice (ME)",50.30281,14.31685,ME
 "Nová Ves,Nové Ouholice (ME)",50.3027,14.31653,ME
-"Nová Ves,Nové Ouholice,U Havlínů (ME)",50.30342,14.31768,ME
 "Nová Ves,Rozc. (ME)",50.30875,14.31428,ME
 "Nová Ves,Rozc. (ME)",50.30868,14.3145,ME
 "Nová Ves,Staré Ouholice (ME)",50.29003,14.32188,ME
-"Nová Ves,Vepřek,U Fary (ME)",50.30845,14.32387,ME
 Nové Butovice,50.05114,14.35325,AB
 Nové Butovice,50.05074,14.35333,AB
 Nové Butovice,50.05074,14.35333,AB
@@ -8019,6 +8008,8 @@ Nučice (PH),49.9551,14.88457,PH
 "Nučice,Bytovky (PZ)",50.01992,14.23602,PZ
 "Nučice,Na Kladívku (PH)",49.95879,14.88277,PH
 "Nučice,Na Kladívku (PH)",49.95826,14.88295,PH
+"Nučice,Na Krahulově (PZ)",50.01533,14.21727,PZ
+"Nučice,Na Krahulově (PZ)",50.01527,14.21714,PZ
 "Nučice,Nádraží (PZ)",50.02422,14.22477,PZ
 "Nučice,Nádraží (PZ)",50.02422,14.22472,PZ
 "Nučice,Pod Vinicí (PZ)",50.02017,14.23047,PZ
@@ -8027,6 +8018,8 @@ Nučice (PH),49.9551,14.88457,PH
 "Nučice,Prokopská náves (PZ)",50.0168,14.23209,PZ
 "Nučice,Rozc.Krahulov (PZ)",50.00908,14.19592,PZ
 "Nučice,Rozc.Krahulov (PZ)",50.009,14.19597,PZ
+"Nučice,Sokolská (PZ)",50.01566,14.22398,PZ
+"Nučice,Sokolská (PZ)",50.01557,14.22405,PZ
 "Nučice,Žel.zast. (PZ)",50.01429,14.21328,PZ
 "Nučice,Žel.zast. (PZ)",50.01431,14.21332,PZ
 Nupaky,49.99457,14.60262,PH
@@ -8586,10 +8579,10 @@ Pavlišovská,50.11129,14.62243,AB
 Pavlišovská,50.11139,14.62254,AB
 "Pavlov,žel.zast.",50.09582,14.1668,KD
 "Pavlov,žel.zast.",50.09554,14.16683,KD
-Pavlovice,49.71568,14.93568,BN
-Pavlovice,49.7158,14.93556,BN
 "Pavlovice,rozc.",49.71455,14.92945,BN
 "Pavlovice,rozc.",49.71454,14.92926,BN
+"Pavlovice,rozc.",49.71366,14.9294,BN
+"Pavlovice,rozc.",49.71403,14.92898,BN
 Pávovské náměstí,50.09317,14.54025,AB
 Pávovské náměstí,50.09325,14.54147,AB
 Pečice,49.60122,14.10544,PB
@@ -8619,7 +8612,7 @@ Pěčice,50.34982,15.00426,MB
 "Pečky,Žel.st.",50.09035,15.02808,KO
 Pekárenská,50.04945,14.46395,AB
 Pelc Tyrolka,50.11594,14.44385,AB
-"Pelhřimov,aut.nádr.",49.42536,15.22328,PE
+"Pelhřimov,,aut.nádr.",49.42536,15.22328,PE
 "Pelhřimov,aut.nádr.",49.42492,15.22342,PE
 "Pelhřimov,Čakovice,rozc.",49.45814,15.18414,PE
 "Pelhřimov,Čakovice,rozc.",49.4584,15.18428,PE
@@ -9084,8 +9077,6 @@ Poliklinika Modřany,50.00459,14.41875,AB
 Poliklinika Modřany,50.0048,14.41957,AB
 Poliklinika Modřany,50.0048,14.41665,AB
 Poliklinika Modřany,50.00487,14.41688,AB
-Poliklinika Modřany,50.00463,14.41945,AB
-Poliklinika Modřany,50.00475,14.41863,AB
 Poliklinika Na Dlouhém lánu,50.09676,14.36491,AB
 Poliklinika Na Dlouhém lánu,50.09671,14.36498,AB
 Poliklinika Petrovice,50.03995,14.56018,AB
@@ -9360,11 +9351,11 @@ Přeštínská,49.99394,14.37529,AB
 "Přezletice,Vinořská",50.15378,14.57742,PH
 Příborská,50.13146,14.51094,AB
 Příborská,50.13139,14.51113,AB
-"Příbram,,aut.nádr.",49.69017,14.00386,PB
+"Příbram,,aut.nádr.",49.69089,14.0033,PB
 "Příbram,,Balbínova",49.68879,14.02078,PB
 "Příbram,,Čs.armády",49.68548,14.00649,PB
 "Příbram,,Dolejší Obora",49.69116,14.00325,PB
-"Příbram,,Fibichova",49.6900673,14.0152788,PB
+"Příbram,,Fibichova",49.69007,14.01528,PB
 "Příbram,,Hořejší Obora",49.688,14.00609,PB
 "Příbram,,Jiráskovy sady",49.68971,14.01278,PB
 "Příbram,,Jiráskovy sady",49.68948,14.01295,PB
@@ -9753,18 +9744,14 @@ Rakovice,49.47204,14.05507,PI
 "Rakovník,židovský hřbitov",50.09863,13.74351,RA
 "Rakovník,židovský hřbitov",50.09877,13.74286,RA
 "Ralsko,Boreček",50.63337,14.71689,CL
-"Ralsko,Boreček",50.63337,14.71689,CL
 "Ralsko,Boreček",50.63322,14.7164,CL
 "Ralsko,Boreček,háj.",50.6406,14.71649,CL
-"Ralsko,Boreček,háj.",50.6406,14.71649,CL
 "Ralsko,Boreček,háj.",50.64041,14.71627,CL
-"Ralsko,Hradčany",50.61769,14.70671,CL
 "Ralsko,Hradčany",50.61769,14.70671,CL
 "Ralsko,Hradčany",50.6174,14.70653,CL
 "Ralsko,Kuřivody",50.58604,14.80391,CL
 "Ralsko,Ploužnice",50.63137,14.75217,CL
 "Ralsko,Ploužnice",50.63073,14.75252,CL
-"Ralsko,Ploužnice",50.63083,14.7518,CL
 "Ralsko,Skelná Huť",50.60837,14.77395,CL
 "Ralsko,Skelná Huť",50.60843,14.77377,CL
 Rápošovská,50.07716,14.65502,AB
@@ -9870,6 +9857,12 @@ Rokycanova,50.08612,14.45543,AB
 "Rokytňany,Dolní Rokytňany",50.37733,15.12816,JC
 "Rokytňany,Horní Rokytňany",50.37559,15.13801,JC
 "Rokytňany,Horní Rokytňany",50.37569,15.13792,JC
+"Rokytnice n.Jiz.,,host.",50.719,15.42286,SM
+"Rokytnice n.Jiz.,,host.",50.71909,15.42263,SM
+"Rokytnice n.Jiz.,Horní Rokytnice",50.72992,15.4734,SM
+"Rokytnice n.Jiz.,Horní Rokytnice",50.72984,15.47355,SM
+"Rokytnice n.Jiz.,nám.",50.72919,15.45147,SM
+"Rokytnice n.Jiz.,nám.",50.72931,15.45112,SM
 Rokytovec,50.40654,14.8317,MB
 Rokytovec,50.40646,14.83165,MB
 Ronešova,50.10715,14.56618,AB
@@ -10361,7 +10354,6 @@ Sdružení,50.05452,14.44267,AB
 "Sedlčany,zemědělský areál",49.65265,14.44802,PB
 Sedlec (MB),50.30067,14.79241,MB
 Sedlec (MB),50.30077,14.79242,MB
-Sedlec (PH),50.18462,14.45704,PH
 Sedlec (PH),50.18494,14.45698,PH
 Sedlec (PH),50.18564,14.45928,PH
 Sedlec,50.13468,14.3919,AB
@@ -10455,8 +10447,8 @@ Semčice,50.36988,15.00544,MB
 "Semčice,zdravotní středisko",50.36623,15.00408,MB
 Semice,50.16391,14.87571,NB
 Semice,50.1644,14.87461,NB
-"Semice,Křiž.",50.1657753,14.8575239,NB
-"Semice,Křiž.",50.1658134,14.8573551,NB
+"Semice,Křiž.",50.16578,14.85752,NB
+"Semice,Křiž.",50.16581,14.85736,NB
 "Semice,Křiž.",50.1655,14.85964,NB
 "Semice,Křiž.",50.16585,14.8583,NB
 "Semice,Rozc.Velenka",50.16459,14.87665,NB
@@ -10549,6 +10541,7 @@ Sídliště Černý Most,50.10221,14.5827,AB
 Sídliště Černý Most,50.10213,14.58293,AB
 Sídliště Červený Vrch,50.09798,14.35919,AB
 Sídliště Červený Vrch,50.09807,14.35929,AB
+Sídliště Červený Vrch,50.09802,14.36008,AB
 Sídliště Čimice,50.14319,14.43131,AB
 Sídliště Čimice,50.14492,14.4326,AB
 Sídliště Čimice,50.14423,14.43215,AB
@@ -12504,7 +12497,6 @@ Urxova,50.09521,14.4571,AB
 Ústav mateřství,50.02449,14.46016,AB
 Ústavy Akademie věd,50.01793,14.46695,AB
 Ústavy Akademie věd,50.01802,14.46682,AB
-Ústavy Akademie věd,50.01726,14.46805,AB
 Ústřední dílny DP,50.07429,14.53235,AB
 Ústřední dílny DP,50.07471,14.53223,AB
 Ústřední dílny DP,50.07466,14.53242,AB
@@ -13516,6 +13508,8 @@ Vysoká,50.41244,14.53706,ME
 "Vysoké n.Jiz.,nám.",50.68588,15.40139,SM
 "Vysoké n.Jiz.,nemocnice",50.68222,15.40398,SM
 "Vysoké n.Jiz.,nemocnice",50.68217,15.40388,SM
+"Vysoké n.Jiz.,Sklenařice,host.Mexiko",50.70269,15.38636,SM
+"Vysoké n.Jiz.,Sklenařice,host.Mexiko",50.70228,15.38634,SM
 Vysokovská,50.10899,14.60283,AB
 Vysoký Chlumec,49.61805,14.38869,PB
 Vysoký Chlumec,49.61773,14.38971,PB
@@ -14281,994 +14275,3 @@ Zvonařka,50.07115,14.43482,AB
 "Žleby,ZŠ",49.88935,15.48872,KH
 Županovice,49.7069,14.2985,PB
 Žvahov,50.04399,14.40145,AB
-Bad Schandau,50.91874,14.13972,
-Bahno,49.86544,15.22049,KH
-Bakov n.Jizerou m.,50.47892,14.93907,MB
-Bakov n.Jizerou,50.47219,14.92281,MB
-Bartoušov zast.,50.35501,15.31105,JC
-Bečov n.Teplou,50.083,12.83115,KV
-Bečov u Mostu,50.45655,13.71172,MO
-Bečváry,49.95604,15.07104,KO
-Bechov,50.43614,15.08526,MB
-Bělá p.Bezdězem město,50.49333,14.78722,MB
-Bělá p.Bezdězem z.,50.5002,14.86891,MB
-Bělá p.Bezdězem,50.48833,14.8359,MB
-Bělá u Staré Paky z.,50.53383,15.4457,SM
-Bělčice,49.5041,13.88601,ST
-Běleč,49.90957,14.17816,BE
-Benešov n.Ploučnicí,50.73829,14.30515,DC
-Benešov u Prahy,49.77903,14.68305,BN
-Beroun,49.95724,14.07658,BE
-Beroun-Závodí,49.96716,14.08344,BE
-Běrunice,50.1859,15.34135,NB
-Bezdědovice,49.44556,13.87509,ST
-Bezděkov u Klatov,49.38058,13.23658,KT
-Bezděz,50.5161,14.72941,MB
-Bílina,50.55407,13.77214,TP
-Blansko,49.35262,16.64702,BK
-Blatná,49.43099,13.87277,ST
-Blatno u Jesenice,50.09998,13.38998,LN
-Blíževedly,50.61345,14.39551,CL
-Bohumín,49.90067,18.35947,KA
-Bohušovice n.Ohří,50.49134,14.14912,LT
-Bojanovice,49.8678,14.34497,PZ
-Bojov,49.88039,14.34875,PZ
-Borek p.Troskami,50.53576,15.23187,SM
-Borek u Žlutic,50.06767,13.1325,KV
-Borovy,49.52684,13.29946,PJ
-Bošice,50.01533,15.01531,KO
-Brandýs n.Labem z.,50.18029,14.67815,PH
-Brandýs n.Labem,50.18349,14.65518,PH
-Brandýs n.Labem-Zápská,50.1836,14.6646,PH
-Brandýs n.Orlicí,50.00022,16.28408,UO
-Brandýsek,50.18415,14.17303,KD
-Bratkovice,49.73865,14.00295,PB
-Brno dolní nádraží,49.18315,16.61593,BM
-Brno hl.n.,49.1905,16.61281,BM
-Brno-Královo Pole,49.23082,16.59688,BM
-Brno-Židenice,49.20415,16.63603,BM
-Břeclav,48.75377,16.89302,BV
-Březina n.Jizerou,50.5456,15.03612,MB
-Březiny u Děčína,50.76102,14.24374,DC
-Březnice,49.55841,13.96391,PB
-Březno u Chomutova,50.39588,13.42103,CV
-Březno u Ml.Boleslavi,50.41361,15.00562,MB
-Březno u Postoloprt,50.35161,13.72206,LN
-Březová n.Svitavou,49.63335,16.52035,SY
-Bříza obec,50.36353,14.21833,LT
-Břvany,50.40797,13.72307,LN
-Budčice,49.7224,15.18465,KH
-Bukovno,50.44362,14.8333,MB
-Butoves,50.38811,15.42492,JC
-Bykáň,49.89164,15.23994,KH
-Bystřice (Bystrzyca),49.63638,18.71716,FM
-Bystřice u Benešova,49.74176,14.66657,BN
-Byšice,50.30573,14.60389,ME
-Cerekvice n.Bystřicí,50.32562,15.71666,JC
-Cerhenice,50.07793,15.07948,KO
-Cerhovice,49.83634,13.83714,BE
-Cidlina,50.50077,15.33656,JC
-Církvice,49.94248,15.3291,KH
-Cítov,50.36639,14.4188,ME
-Ctiněves,50.37841,14.30648,LT
-Čadca,49.44489,18.78745,
-Čachovice,50.27249,14.94906,MB
-Čáslav,49.91525,15.39485,KH
-Čelákovice zast.,50.15987,14.73538,PH
-Čelákovice,50.1579,14.75429,PH
-Čelákovice-Jiřina,50.16758,14.76549,PH
-Čerčany,49.85135,14.70199,BN
-Černíny,49.84093,15.21619,KH
-Černošice,49.95984,14.32347,PZ
-Černošice-Mokropsy,49.94618,14.33039,PZ
-Červené Pečky,49.98798,15.207,KO
-Červené Poříčí,49.49577,13.30492,KT
-Červenka,49.72405,17.0911,OC
-Červený Kostelec,50.48374,16.07542,NA
-Červený Újezd u Votic zast.,49.56032,14.61372,BN
-Česká Lípa hl.n.,50.67515,14.53324,CL
-Česká Lípa střelnice,50.69173,14.53319,CL
-Česká Lípa-Holý vrch,50.68236,14.5229,CL
-Česká Skalice,50.39553,16.05403,NA
-Česká Třebová,49.89716,16.44656,UO
-České Budějovice,48.97446,14.48859,CB
-České Velenice,48.76937,14.95767,JH
-Český Brod,50.07671,14.8663,KO
-Český Krumlov,48.82238,14.31709,CK
-Český Šternberk zast.,49.80863,14.9297,BN
-Český Šternberk,49.81357,14.93554,BN
-Český Těšín (Czeski Cieszyn),49.74369,18.62253,KA
-Číčenice,49.15355,14.22149,ST
-Čimelice,49.47026,14.07667,PI
-Čisovice,49.85819,14.31962,PZ
-Čížkovice,50.4836,14.0394,LT
-Čížov,49.75195,15.04875,KH
-Čížová,49.35356,14.09775,PI
-Čtyřkoly,49.86909,14.71497,BN
-Davle,49.8877,14.39876,PZ
-Děčín hl.n.,50.77347,14.20125,DC
-Děčín východ,50.77509,14.22335,DC
-Dehtín,49.45095,13.28621,KT
-Dešenice,49.27742,13.17506,KT
-Deštnice,50.22574,13.60613,LN
-Dlouhá Lhota,50.42113,15.03954,MB
-Dlouhá Třebová,49.93679,16.42204,UO
-Dlouhé Dvory,50.2617,15.72592,HK
-Dobrá Voda u Březnice,49.55608,13.99903,PB
-Dobrá Voda u Hořic,50.34589,15.60972,JC
-Dobroměřice,50.37082,13.79902,LN
-Dobronín,49.47821,15.64176,JI
-Dobrovice,50.35559,14.93941,MB
-Dobrovíz,50.11069,14.21999,PZ
-Dobrovíz-Amazon,50.10728,14.2137,PZ
-Dobřany zast.,49.68177,13.3242,PJ
-Dobřany,49.65645,13.30329,PJ
-Dobříčkov,49.75245,14.76176,BN
-Dobřichovice,49.92753,14.28804,PZ
-Dobříkov u Chocně,49.99582,16.13616,UO
-Dobříň,50.43711,14.29619,LT
-Dobříš,49.78991,14.18339,PB
-Dobšice n.Cidlinou,50.14018,15.26385,NB
-Dohalice,50.28297,15.69577,HK
-Doksy,50.57359,14.64705,CL
-Dolany n.Vltavou,50.22437,14.34881,ME
-Dolní Beřkovice,50.38964,14.43583,ME
-Dolní Bousov,50.44157,15.13235,MB
-Dolní Březinka,49.66143,15.38054,HB
-Dolní Břežany-Jarov,49.9472,14.39692,PZ
-Dolní Dobrouč,50.01252,16.47432,UO
-Dolní Libchavy,49.98939,16.3971,UO
-Dolní Ostrovec,49.4139,14.11308,PI
-Dolní Zálezly,50.59684,14.04826,UL
-Domanice,49.30062,13.91562,ST
-Domašín,49.715,14.83697,BN
-Domažlice,49.43518,12.94293,DO
-Domoušice,50.233,13.72257,LN
-Drahobudice,49.93662,15.06261,KO
-Dresden Hbf,51.04041,13.73158,
-Dresden-Neustadt,51.0659,13.7406,
-Dřetovice,50.18919,14.2015,KD
-Dřísy,50.24277,14.63435,PH
-Dubany,50.39874,14.01259,LT
-Dubičná,50.60994,14.35952,LT
-Eggenburg,48.63789,15.81396,
-Ejpovice,49.75171,13.5111,RO
-Františkov n.Ploučnicí,50.72396,14.33183,DC
-Františkovy Lázně,50.1244,12.35529,CH
-Freistadt,48.49529,14.48149,
-Furth im Wald,49.30993,12.83917,
-Gmünd NÖ,48.76418,14.98547,
-Golčův Jeníkov město,49.82183,15.47349,HB
-Golčův Jeníkov,49.83667,15.46805,HB
-Göpfritz an der Wild,48.72977,15.3944,
-Hamry n.Sázavou,49.56741,15.89653,ZR
-Hamry-Hojsova Stráž,49.21147,13.17498,KT
-Hatě,49.9138,15.058,KH
-Havířov,49.79163,18.41199,KA
-Havlíčkův Brod,49.59823,15.58885,HB
-Havlíčkův Brod-Perknov,49.6142,15.53966,HB
-Heřmaň,49.24449,14.13947,PI
-Heřmaničky,49.60194,14.58451,BN
-Hleďsebe,50.36369,14.56252,ME
-Hlízov,49.98177,15.29356,KH
-Hluboký Důl,50.00226,15.21857,KO
-Hněvčeves,50.31202,15.72153,HK
-Hněvice,50.4531,14.36151,LT
-Hodkov zast.,49.77776,15.15419,KH
-Hodkov,49.78592,15.16383,KH
-Hojsova Stráž-Brčálník,49.19143,13.22264,KT
-Holedeček,50.28496,13.5587,LN
-Holoubkov,49.77401,13.69989,RO
-Holýšov,49.59727,13.10131,PJ
-Horka n.Sázavou,49.7388,15.12895,KH
-Horky u Čáslavi,49.87191,15.44294,KH
-Horní Beřkovice,50.35719,14.35522,LT
-Horní Branná,50.59672,15.58702,TU
-Horní Ledeč,49.6959,15.28345,HB
-Horní Lideč,49.18895,18.05842,VS
-Horní Nerestce,49.49791,14.05662,PI
-Horní Nová Ves,50.45041,15.57223,JC
-Horní Počaply,50.4226,14.38672,ME
-Horní Police,50.70613,14.40001,CL
-Horní Řepčice,50.55776,14.26703,LT
-Hořátev,50.15274,15.02857,NB
-Hořesedly,50.16826,13.64126,RA
-Hořetice,50.37906,13.50377,LN
-Hořice v Podkrkonoší,50.35622,15.63477,JC
-Hořovice,49.84333,13.8992,BE
-Hostinné město,50.5392,15.7202,TU
-Hostinné,50.53672,15.73777,TU
-Hostivice,50.08414,14.25844,PZ
-Hostivice-Litovice,50.07172,14.22458,PZ
-Hostivice-Sadová,50.07705,14.26478,PZ
-Hostivice-U hřbitova,50.08418,14.23055,PZ
-Hostomice p.Brdy,49.83141,14.04723,BE
-Hostouň u Prahy,50.10482,14.20915,PZ
-Hoštka,50.49151,14.32758,LT
-Hovorčovice,50.18053,14.52769,PH
-Hradec Králové hl.n.,50.21457,15.81014,HK
-Hranice na Moravě,49.56545,17.74158,PR
-Hrdly,50.48515,14.17428,LT
-Hrdoňovice,50.49041,15.26444,JC
-Hrobce,50.45795,14.22983,LT
-Hrubá Skála,50.55054,15.21277,SM
-Hřivice,50.28546,13.72517,LN
-Hudčice,49.52768,13.92855,PB
-Hulín,49.31649,17.47637,KM
-Hvězdonice,49.8725,14.77176,BN
-Hýskov,49.98885,14.04475,BE
-Chabeřice,49.74957,15.06261,KH
-Chalupki,49.92549,18.31165,
-Cham(Oberpf),49.2219,12.6566,
-Cheb,50.07372,12.38097,CH
-Chlum u Rakovníka,50.07607,13.77743,RA
-Chlumčany u Dobřan,49.62292,13.29207,PJ
-Chlumčany u Loun,50.34439,13.84556,LN
-Chlumec n.Cidlinou,50.16356,15.45728,HK
-Chlumín,50.26728,14.45656,ME
-Chmeliště,49.89579,15.05629,KH
-Choceň,49.9941,16.22377,UO
-Chocerady,49.8699,14.80593,BN
-Chodov,50.23154,12.75372,SO
-Chomutov město,50.47006,13.4142,CV
-Chomutov,50.45676,13.39941,CV
-Chotěšov p.Hazmburkem,50.44202,14.07033,LT
-Chotětov,50.33956,14.81028,MB
-Chotěvice,50.51898,15.75989,TU
-Chotouchov,49.97046,15.12128,KO
-Chotoviny,49.47293,14.6686,TA
-Chotutice,50.07153,14.99644,KO
-Chrást n.Sázavou,49.83963,14.57696,BN
-Chrášťany,50.14192,13.66341,RA
-Chroustov,50.06502,14.99721,KO
-Chřenovice,49.71228,15.19466,HB
-Chřenovice-Podhradí,49.70789,15.2356,HB
-Chvaletice,50.03747,15.41863,PA
-Chvatěruby,50.23989,14.33772,ME
-Chýně jih,50.05177,14.22097,PZ
-Chýně,50.05893,14.212,PZ
-Chyše,50.11112,13.2479,KV
-Jablonné n.Orlicí,50.02567,16.59382,UO
-Jamné n.Orlicí,50.03994,16.60261,UO
-Janovice n.Úhlavou,49.35263,13.20381,KT
-Jaroměř,50.34184,15.91039,NA
-Jedlová,50.84272,14.57034,DC
-Jeneč zast.,50.09463,14.21333,PZ
-Jeneč,50.09433,14.21154,PZ
-Jeřice,50.34283,15.67663,JC
-Jesenice,50.09311,13.4718,RA
-Jesenný,50.65163,15.3278,SM
-Jestřebí,50.61415,14.60028,CL
-Ješetice,49.57778,14.59673,BN
-Jičín zast.,50.45036,15.38081,JC
-Jičín,50.43067,15.36131,JC
-Jičíněves,50.37407,15.33685,JC
-Jihlava město,49.40388,15.58338,JI
-Jihlava,49.4155,15.59912,JI
-Jihlava-Bosch Diesel,49.44373,15.60842,JI
-Jíkev,50.2392,15.0519,NB
-Jílové u Prahy,49.87803,14.49997,PZ
-Jimlín,50.32661,13.75108,LN
-Jince,49.78222,13.98726,PB
-Jinočany,50.02898,14.26279,PZ
-Jinolice,50.47898,15.33515,JC
-Jirkov zast.,50.48547,13.44755,CV
-Jirkov,50.49231,13.44884,CV
-Jiřice,50.23887,14.54676,ME
-Jivany,50.51373,15.29884,JC
-Kácov zast.,49.77576,15.031,KH
-Kácov,49.78682,15.01865,KH
-Kačice,50.15642,13.99534,KD
-Kadaň-Prunéřov,50.41136,13.25834,CV
-Kamenná,49.50735,15.6552,JI
-Kamenné Zboží,50.18895,15.00298,NB
-Kamenné Žehrovice,50.14024,14.03812,KD
-Kamenný Most u Kralup n.Vlt.,50.23929,14.20589,KD
-Kamenný Přívoz,49.86657,14.51711,PZ
-Kanina,50.41574,14.61486,ME
-Kaplice,48.77514,14.46869,CK
-Karlovice-Sedmihorky,50.56181,15.19637,SM
-Karlovy Vary,50.23555,12.86681,KV
-Karlštejn,49.93201,14.17534,BE
-Karviná hl.n.,49.85555,18.52681,KA
-Kařez,49.8218,13.77864,RO
-Kařízek,49.80079,13.76787,RO
-Katusice,50.44304,14.77706,MB
-Kefermarkt,48.43703,14.53814,
-Klabava,49.74916,13.53818,RO
-Kladno město,50.14198,14.08373,KD
-Kladno,50.12796,14.1136,KD
-"Kladno,A.Škváry",50.14917,14.0853,KD
-"Kladno,Bresson",50.14534,14.07741,KD
-"Kladno,U nemocnice",50.14249,14.08766,KD
-Kladno-Dubí,50.16342,14.12979,KD
-Kladno-Ostrovec,50.1475,14.08692,KD
-Kladno-Rozdělov,50.1318,14.06704,KD
-Kladno-Švermov,50.16147,14.11482,KD
-Kladno-Vrapice,50.16628,14.15386,KD
-Klášterec n.Ohří,50.38506,13.19612,CV
-Klášterská Lhota,50.55865,15.66067,TU
-Klatovy,49.40147,13.27416,KT
-Kleneč,50.39435,14.24686,LT
-Klínec,49.89678,14.35966,PZ
-Klobuky v Čechách,50.29828,13.99658,KD
-Klučov,50.09429,14.90375,KO
-Kněžnice,50.49284,15.32016,JC
-Kojetice u Prahy,50.23736,14.49918,ME
-Kojice,50.04079,15.39727,PA
-Kojovice,50.30719,14.65641,MB
-Kolín dílny,50.01143,15.23431,KO
-Kolín místní n.,50.01546,15.22304,KO
-Kolín zast.,50.03074,15.19516,KO
-Kolín,50.02538,15.21464,KO
-Kolín-Zálabí,50.03741,15.21008,KO
-Kolomuty,50.40662,14.97779,MB
-Konětopy,50.2681,13.72659,LN
-Kopidlno,50.33397,15.26044,JC
-Kořenice,49.97316,15.13859,KO
-Kosobody,50.10732,13.51878,RA
-Kosova Hora,49.65926,14.48019,PB
-Kostelec n.Labem,50.22109,14.58069,ME
-Kostěnice,50.0129,15.89756,PA
-Kostomlaty n.Labem,50.18595,14.96205,NB
-Kostomlaty p.Řípem,50.38042,14.33015,LT
-Košátky,50.31742,14.67072,MB
-Koštice n.Ohří,50.40043,13.95412,LN
-Kounov,50.21606,13.66521,RA
-Kouřim,50.00562,14.98787,KO
-Kovač,50.39231,15.46953,JC
-Královice u Zlonic,50.25974,14.0683,KD
-Kralupy n.Vlt.-Minice,50.22444,14.29794,ME
-Kralupy n.Vlt.předm.,50.23186,14.28352,ME
-Kralupy n.Vltavou,50.23839,14.3133,ME
-Králův Dvůr,49.94298,14.04076,BE
-Králův Dvůr-Popovice,49.92804,14.02013,BE
-Krásná Lípa,50.91908,14.51221,DC
-Krasoňovice,49.87708,15.22379,KH
-Kravaře v Čechách,50.62898,14.40466,CL
-Krhanice,49.84888,14.55326,BN
-Krnsko,50.3766,14.86916,MB
-Kropáčova Vrutice,50.32347,14.70184,MB
-Krty,50.09003,13.43369,RA
-Krupá,50.16971,13.72294,RA
-Křesín,50.39779,13.98143,LT
-Křešice u Litoměřic,50.52622,14.21564,LT
-Křinec,50.26598,15.14362,NB
-Křivoklát,50.03831,13.86878,RA
-Křižanov,49.38476,16.08032,ZR
-Ktová,50.52785,15.24709,SM
-Kunčice n.Labem,50.58387,15.62284,TU
-Kuřim,49.30098,16.53463,BO
-Kutná Hora hl.n.,49.96156,15.3014,KH
-Kutná Hora město,49.94989,15.27731,KH
-Kutná Hora předm.,49.93719,15.26773,KH
-Kutná Hora-Sedlec,49.95765,15.29033,KH
-Kúty,48.66196,17.04737,
-Kyje u Jičína,50.49999,15.3762,JC
-Kynšperk n.Ohří,50.12584,12.5194,SO
-Landshut(Bay)Hbf,48.54753,12.13588,
-Lasberg-St. Oswald,48.46088,14.52159,
-Lašovice,50.06547,13.8,RA
-Laziště,49.72997,15.15967,KH
-Lázně Bělohrad,50.42622,15.57724,JC
-Lázně Kynžvart,49.99331,12.61408,CH
-Lázně Toušeň,50.16852,14.71162,PH
-Ledeč n.Sázavou,49.69807,15.27022,HB
-Ledečko,49.84734,14.93225,KH
-Ledečky,50.2842,15.18602,NB
-Leipzig Hbf,51.34576,12.38221,
-Lenešice,50.37753,13.77355,LN
-Leština u Světlé,49.76122,15.39876,HB
-Letohrad,50.03148,16.50775,UO
-Letovice,49.55609,16.57084,BK
-Ležky,50.11916,13.35418,LN
-Lhota p.Přeloučí,50.0366,15.52694,PA
-Lhota Veselka,49.72101,14.81513,BN
-Lhotka u Mělníka z.,50.3734,14.55095,ME
-Lhotka u Mělníka,50.38211,14.54185,ME
-Libčice n.Vltavou,50.19922,14.36517,PZ
-Libčice n.Vltavou-Letky,50.18957,14.37277,PZ
-Liběchov,50.41441,14.43577,ME
-Liběšice,50.57206,14.285,LT
-Libice n.Cidlinou,50.12771,15.18299,NB
-Libkovice,50.13051,13.27,LN
-Libochovany,50.56398,14.04078,LT
-Libochovice město,50.40755,14.03728,LT
-Libochovice,50.41047,14.05492,LT
-Libomyšl,49.87553,13.99192,BE
-Libošovice,50.4861,15.16353,JC
-Libuň zast.,50.50015,15.30054,JC
-Libuň,50.48962,15.30383,JC
-Lichkov,50.0974,16.65948,UO
-Líny,50.44622,14.81038,MB
-Linz Hbf,48.29005,14.29169,
-Lipník n.Bečvou,49.52969,17.57368,PR
-Liteň,49.90341,14.15531,BE
-Litochovice n.Labem,50.55862,14.03335,LT
-Litoměřice Cihelna,50.53706,14.11816,LT
-Litoměřice horní n.,50.54102,14.13152,LT
-Litoměřice město,50.53259,14.139,LT
-Litvínov město,50.59135,13.61398,MO
-Lobkovice,50.25093,14.53067,ME
-Loděnice,49.99344,14.16381,BE
-Lochovice,49.84641,13.97432,BE
-Lom u Mostu zast.,50.59702,13.64934,MO
-Lomnice n.Popelkou,50.52684,15.37443,SM
-Louka u Litvínova,50.59311,13.63133,MO
-Loukov u Mn.Hradiště,50.55871,15.05652,MB
-Louny město,50.35027,13.79641,LN
-Louny střed,50.35366,13.80628,LN
-Louny,50.36118,13.8228,LN
-Lovčice obec,50.17044,15.38232,HK
-Lovosice město,50.52176,14.04549,LT
-Lovosice závod,50.51053,14.08124,LT
-Lovosice,50.50969,14.05962,LT
-Lštění,49.86373,14.71542,BN
-Lubenec zast.,50.12951,13.3069,LN
-Lubenec,50.12633,13.32742,LN
-Luhačovice,49.09886,17.75193,ZL
-Luhov,50.0348,13.02929,KV
-Luka p.Medníkem,49.86576,14.46181,PZ
-Lukavec,50.50302,14.09221,LT
-Luštěnice,50.32059,14.94495,MB
-Lužany,49.5483,13.31458,PJ
-Lužná u Rakovníka,50.14486,13.77028,RA
-Lysá n.Labem,50.19562,14.84225,NB
-Lysá n.Labem-Dvorce,50.20022,14.80161,NB
-Mačkov,49.40152,13.88604,ST
-Majdalena,48.95058,14.86815,JH
-Malá Bělá,50.48699,14.9228,MB
-Malá Hraštice,49.80951,14.26905,PB
-Malá Skála,50.63401,15.1921,JN
-Malá Veleň,50.74228,14.27254,DC
-Malé Svatoňovice,50.52967,16.05063,TU
-Malé Žernoseky,50.53844,14.05641,LT
-Malechovice,50.49345,15.18727,JC
-Malešov,49.90726,15.23083,KH
-Malměřice,50.11367,13.38128,LN
-Malovidy,49.82196,14.93211,KH
-Malý Újezd,50.33316,14.52617,ME
-Mariánské Lázně,49.95683,12.69462,CH
-Martinice v Krkonoších,50.5807,15.54109,SM
-Maxhütte-Haidhof,49.19847,12.10776,
-Měchenice,49.91092,14.3839,PZ
-Měcholupy,50.26668,13.53216,LN
-Mělnická Vrutice,50.34434,14.5465,ME
-Mělník,50.353,14.49244,ME
-Mělník-Mlazice,50.37523,14.46777,ME
-Městec Králové,50.21065,15.30022,NB
-Městečko u Benešova,49.73082,14.80525,BN
-Městečko u Křivoklátu,50.05018,13.85712,RA
-Měšice u Prahy,50.20451,14.51363,PH
-Mezno,49.53667,14.65436,BN
-Milín,49.63237,14.02197,PB
-Milostín,50.20255,13.66757,RA
-Milovice,50.22918,14.88175,NB
-Minartice,49.66702,14.53934,BN
-Mirošovice u Prahy,49.90965,14.7209,PH
-Mirošovice u Rataj n.Sáz.,49.86035,15.00478,KH
-Mirovice,49.5099,14.03432,PI
-Mírovka,49.57942,15.61852,HB
-Mitrov,49.86582,15.04787,KH
-Mladá Boleslav hl.n.,50.40734,14.8872,MB
-Mladá Boleslav město,50.41929,14.91569,MB
-Mladá Boleslav-Debř,50.44806,14.88729,MB
-Mladějov v Čechách,50.481,15.22632,JC
-Mladkov,50.09215,16.62985,UO
-Mlčechvosty,50.31914,14.34768,ME
-Mlýnec,50.3177,15.22079,JC
-Mnetěš,50.35992,14.27599,LT
-Mnichovice,49.93259,14.70717,PH
-Mnichovo Hradiště,50.51834,14.97816,MB
-Mníšek p.Brdy,49.85377,14.2698,PZ
-Mohelnice,49.77676,16.94298,SU
-Mokrovraty,49.79653,14.23649,PB
-Moravany,50.00219,15.94646,PA
-Most,50.51151,13.65801,MO
-Most-Kopisty,50.54331,13.62213,MO
-Most-Minerva,50.5644,13.62352,MO
-Mrač,49.83244,14.69798,BN
-Mrzkovice,49.65704,15.37363,HB
-Mstětice,50.13665,14.69141,PH
-Mšeno,50.43575,14.64079,ME
-Mutějovice zast.,50.18751,13.7025,RA
-Mutějovice,50.21715,13.70444,RA
-Myslíč,49.76476,14.72333,BN
-Myslín,49.52957,14.02393,PI
-Mýto,49.78349,13.74033,RO
-Návsí (Nawsie),49.58982,18.75457,FM
-Nebužely,50.3862,14.58967,ME
-Nelahozeves zámek,50.26271,14.30244,ME
-Nelahozeves,50.28338,14.30872,ME
-Nemyčeves,50.38726,15.3605,JC
-Nepřevázka,50.37413,14.91133,MB
-Neratovice město,50.25591,14.52189,ME
-Neratovice sídl.,50.25769,14.50756,ME
-Neratovice,50.26269,14.51757,ME
-Nesvačily,49.87471,14.12854,BE
-Netřeba,50.26009,14.42237,ME
-Neufahrn(Niederbay),48.72976,12.19042,
-Neuměřice,50.24057,14.21792,KD
-Neumětely,49.85005,14.01188,BE
-Nižbor,50.00335,13.99836,BE
-Nížkov,49.55535,15.79864,ZR
-Noutonice,50.16,14.27803,PZ
-Nová Huť v Luž.horách,50.83072,14.58586,CL
-Nová Paka město,50.49461,15.51259,JC
-Nová Paka,50.48667,15.52304,JC
-Nová Ves n.Popelkou,50.51892,15.40796,SM
-Nová Ves p.Pleší,49.82741,14.27007,PB
-Nová Ves u Kolína,50.05513,15.15055,KO
-Nová Ves u Leštiny,49.7835,15.40423,HB
-Nové Kopisty,50.4973,14.12014,LT
-Nové Mesto n.Váhom,48.75105,17.83586,
-Nové Ouholice,50.30157,14.3166,ME
-Nové Strašecí,50.15197,13.8818,RA
-Nový Bor,50.76065,14.54731,CL
-Nový Bydžov,50.24487,15.48584,HK
-Nučice zast.,50.01516,14.21278,PZ
-Nučice,50.02401,14.22504,PZ
-Nymburk hl.n.,50.19339,15.04557,NB
-Nymburk město,50.18453,15.03347,NB
-Nýrsko,49.29721,13.15327,KT
-Obrnice,50.50449,13.70009,MO
-Ohnišťany,50.33363,15.50703,HK
-Okna,50.52724,14.67445,CL
-Okrouhlice,49.6307,15.48703,HB
-Olbramovice,49.66673,14.62399,BN
-Oleško,50.47771,14.1943,LT
-Olomouc hl.n.,49.59261,17.27849,OC
-Olovnice zast.,50.24681,14.25372,ME
-Olovnice,50.2326,14.24501,ME
-Opava východ,49.93468,17.90831,OP
-Opočno u Loun,50.31248,13.73387,LN
-Oráčov,50.10721,13.54456,RA
-Osek město,50.62589,13.68496,TP
-Oskořínek,50.24168,15.08612,NB
-Osov,49.8363,14.0817,BE
-Ostrá,50.18781,14.89171,NB
-Ostrava hl.n.,49.85001,18.26403,OV
-Ostrava-Stodolní,49.83492,18.28058,OV
-Ostrava-Svinov,49.82114,18.21027,OV
-Ostroměř,50.36901,15.54466,JC
-Ostrov n.Ohří,50.30163,12.95774,KV
-Ostrov u Tochovic,49.61496,14.00872,PB
-Otradovice,50.20607,14.74625,MB
-Otročín,50.03907,12.8872,KV
-Otrokovice,49.20263,17.53126,ZL
-Otvovice,50.2102,14.27012,KD
-Ovčáry,50.25372,14.61426,ME
-Páleček,50.29089,14.02936,KD
-Pardubice hl.n.,50.0317,15.75637,PA
-Pardubice-Černá za Bory,50.02747,15.83043,PA
-Pardubice-Opočínek,50.03043,15.66965,PA
-Pardubice-Pardubičky,50.03121,15.78889,PA
-Pardubice-Svítkov,50.03193,15.72366,PA
-Pátek,50.37685,13.93639,LN
-Pavlov,50.09507,14.16561,KD
-Pecerady,49.83363,14.62582,BN
-Pečky,50.08983,15.02712,KO
-Peruc,50.33593,13.95882,LN
-Petrov u Prahy,49.87936,14.42853,PZ
-Petrov-Chlomek,49.87654,14.41074,PZ
-Piešťany,48.59631,17.81474,
-Pilníkov,50.53418,15.81287,TU
-Písek zast.,49.3126,14.13604,PI
-Písek,49.29634,14.14306,PI
-Písek-Dobešice,49.3275,14.1101,PI
-Planá n.Lužnicí,49.35395,14.70626,TA
-Planá u Mar.Lázní,49.86173,12.73013,TC
-Plaňany zast.,50.04548,15.02419,KO
-Plaňany,50.04936,15.01602,KO
-Plavy,50.70144,15.31769,JN
-Ploskovice,50.54983,14.20578,LT
-Plotiště n.Labem,50.23494,15.79263,HK
-Ploužnice,50.51422,15.38679,SM
-Plužiny,49.87844,14.87521,BN
-Plzeň hl.n.,49.7437,13.38801,PM
-Plzeň zast.,49.73679,13.37487,PM
-Plzeň-Doubravka,49.75869,13.41626,PM
-Plzeň-Doudlevce,49.72167,13.38308,PM
-Plzeň-Jižní Předměstí,49.74033,13.36773,PM
-Poděbrady,50.14933,15.12429,NB
-Podlešín,50.21824,14.15575,KD
-Pohled,49.6003,15.65707,HB
-Pohleď,49.65107,15.45624,HB
-Polepy,50.51099,14.26753,LT
-Polerady n.Labem,50.20481,14.60995,PH
-Poličany,49.9237,15.25855,KH
-Poříčany,50.11119,14.92237,KO
-Poříčí n.Sáz.-Svárov,49.84177,14.65162,BN
-Poříčí n.Sázavou,49.83741,14.67661,BN
-Poseč,50.03538,12.93306,KV
-Postoloprty,50.36046,13.69165,LN
-Postupice,49.73804,14.78232,BN
-Považská Bystrica,49.12276,18.43176,
-Prackovice n.Labem,50.57261,14.03638,LT
-Praha hl.n.,50.08298,14.43595,AB
-Praha Masarykovo n.,50.08775,14.43438,AB
-Praha-Běchovice střed,50.08359,14.61495,AB
-Praha-Běchovice,50.0823,14.59849,AB
-Praha-Braník,50.02787,14.40689,AB
-Praha-Bubny,50.10238,14.43928,AB
-Praha-Cibulka,50.06457,14.36216,AB
-Praha-Čakovice,50.14887,14.51953,AB
-Praha-Dejvice,50.09687,14.3995,AB
-Praha-Dolní Počernice,50.0886,14.56812,AB
-Praha-Eden,50.06568,14.47204,AB
-Praha-Hlubočepy,50.04064,14.39398,AB
-Praha-Holešovice zast.,50.10599,14.43738,AB
-Praha-Holešovice,50.11064,14.43971,AB
-Praha-Holyně,50.03288,14.34863,AB
-Praha-Hor.Měcholupy,50.04799,14.56565,AB
-Praha-Hor.Počernice,50.11668,14.61275,AB
-Praha-Hostivař,50.05506,14.53825,AB
-Praha-Jinonice,50.05571,14.37174,AB
-Praha-Kačerov,50.04249,14.46336,AB
-Praha-Kbely,50.13494,14.55587,AB
-Praha-Klánovice,50.08714,14.66368,AB
-Praha-Kolovraty,50.01363,14.62636,AB
-Praha-Komořany,49.99052,14.40436,AB
-Praha-Krč,50.03407,14.44606,AB
-Praha-Kyje,50.09696,14.54512,AB
-Praha-Libeň,50.10077,14.5017,AB
-Praha-Modřany zast.,50.00348,14.40307,AB
-Praha-Podbaba,50.11228,14.39571,AB
-Praha-Radotín,49.98595,14.36424,AB
-Praha-Ruzyně,50.0845,14.3128,AB
-Praha-Řeporyje,50.03248,14.3081,AB
-Praha-Satalice,50.12298,14.57098,AB
-Praha-Sedlec,50.13186,14.39466,AB
-Praha-Smíchov sev.n.,50.06152,14.40686,AB
-Praha-Smíchov,50.06111,14.40808,AB
-Praha-Stodůlky,50.06131,14.34104,AB
-Praha-Uhříněves,50.03379,14.59129,AB
-Praha-Veleslavín,50.09499,14.3463,AB
-Praha-Velká Chuchle,50.01133,14.3889,AB
-Praha-Vršovice,50.06456,14.44764,AB
-Praha-Vysočany,50.11228,14.49736,AB
-Praha-Zahradní Město,50.06221,14.50316,AB
-Praha-Zbraslav,49.97062,14.39974,AB
-Praha-Zličín,50.06434,14.29747,AB
-Praha-Žvahov,50.04723,14.40476,AB
-Praskolesy,49.86875,13.92938,BE
-Pregarten,48.35593,14.52238,
-Prosečné,50.54748,15.69632,TU
-Prosečnice,49.86381,14.53247,BN
-Protivec,50.08961,13.20705,KV
-Protivín zast.,49.19642,14.22251,PI
-Protivín,49.21254,14.21184,PI
-Předbořice,49.85556,15.22454,KH
-Přelouč,50.0396,15.57462,PA
-Přerov,49.44707,17.44498,PR
-Přeštice,49.57518,13.32254,PJ
-Přeštice-Zastávka,49.60073,13.29911,PJ
-Převýšov,50.15266,15.40736,HK
-Příbram sídliště,49.67413,14.00111,PB
-Příbram,49.68892,14.00324,PB
-Přibyslav zast.,49.57935,15.71772,HB
-Přibyslav,49.5697,15.74271,HB
-Příšovice,50.57909,15.07872,LI
-Pševes,50.34525,15.29568,JC
-Pšovlky,50.10435,13.59808,RA
-Pučery,49.96742,15.10622,KO
-Púchov,49.11391,18.32726,
-Pustověty,50.05499,13.81691,RA
-Putim,49.26403,14.13163,PI
-Pyšely,49.86131,14.69885,BN
-Račice n.Berounkou,50.02485,13.92321,RA
-Radim,50.07353,15.00749,KO
-Radomyšl zast.,49.31327,13.9326,ST
-Radomyšl,49.32024,13.94853,ST
-Radouš,49.83828,14.01754,BE
-Rakovník západ,50.10147,13.71428,RA
-Rakovník zast.,50.10571,13.74975,RA
-Rakovník,50.09906,13.7361,RA
-Rataje n.Sáz.,49.84385,14.95034,KH
-Rataje n.Sáz.-Ivaň,49.83991,14.94111,KH
-Rataje n.Sáz.předm.,49.8496,14.9789,KH
-Rataje n.Sáz.zast.,49.84437,14.94796,KH
-Ratboř,49.98156,15.16035,KO
-Regensburg Hbf,49.01169,12.09971,
-Regenstauf,49.12187,12.12516,
-Rejkovice,49.80902,13.97057,PB
-Riesa,51.30969,13.28784,
-Roding,49.21446,12.51579,
-Rohatsko,50.4371,15.1074,MB
-Rojice,49.34834,13.95025,ST
-Rokycany,49.74017,13.59184,RO
-Ronov n.Doubravou z.,49.89266,15.5434,CR
-Ronov n.Doubravou,49.89484,15.52822,CR
-Ronov n.Sázavou,49.56618,15.77435,HB
-Rostoklaty,50.07868,14.80617,KO
-Roudnice n.L.-Bezděkov,50.42863,14.28203,LT
-Roudnice n.L.-Hrach.,50.41696,14.253,LT
-Roudnice n.L.město,50.42167,14.25872,LT
-Roudnice n.Labem,50.42638,14.26549,LT
-Rovensko p.Troskami,50.53143,15.26424,SM
-Roztoky u Jilemnice,50.55462,15.49003,SM
-Roztoky u Křivoklátu,50.02354,13.87397,RA
-Roztoky u Prahy,50.15948,14.39842,PZ
-Roztoky-Žalov,50.16806,14.365,PZ
-Rožďalovice,50.29917,15.18031,NB
-Rtyně v Podkrkonoší,50.51566,16.07313,TU
-Rudná u Prahy,50.03939,14.24264,PZ
-Rudná zast.,50.03188,14.23361,PZ
-Rumburk,50.95689,14.55074,DC
-Rybník,48.64946,14.43169,CK
-Rybnik(PL),50.08897,18.54773,
-Rybniště,50.88303,14.50985,DC
-Rychnovek,50.36073,15.96961,NA
-Rymaně,49.85722,14.28165,PZ
-Rynholec,50.13899,13.92628,RA
-Řečany n.Labem,50.03174,15.47881,PA
-Řepice,49.27809,13.91402,ST
-Řepov,50.40691,14.95557,MB
-Řevnice,49.91653,14.23884,PZ
-Řevničov,50.1491,13.83292,RA
-Řež,50.17916,14.35533,PZ
-Říčany,49.99746,14.66391,PH
-Sadová,50.29546,15.6939,HK
-Sadská,50.13137,14.98661,NB
-Samechov,49.88611,14.83515,BN
-Samopše,49.86096,14.91638,BN
-Sány,50.13009,15.24106,NB
-Sázava u Žďáru,49.56289,15.84759,ZR
-Sázava zast.,49.86927,14.89376,BN
-Sázava,49.87521,14.90631,BN
-Sázavka,49.72983,15.39867,HB
-Sebuzín,50.59293,14.05339,UL
-Sedlčany,49.65587,14.43419,PB
-Sedlice město,49.37821,13.94457,ST
-Sedlice,49.38461,13.93652,ST
-Sedlíšťka,49.99015,16.06482,UO
-Semínova Lhota,50.51798,15.28095,JC
-Senohraby,49.89705,14.72752,PH
-Senomaty,50.09556,13.64668,RA
-Sezimovo Ústí,49.3796,14.69735,TA
-Schwandorf,49.32633,12.10377,
-Schwarzenau im Waldviertel,48.74629,15.26724,
-Sigmundsherberg,48.68598,15.74424,
-Skalice n.Svitavou,49.48012,16.60984,BK
-Skalice u Čes.Lípy,50.74159,14.52157,CL
-Skalsko,50.43214,14.75544,MB
-Skochovice,49.92487,14.37617,PZ
-Skovice,49.90574,15.46013,KH
-Skramouš,50.44326,14.66451,ME
-Skřivany,50.27193,15.4988,HK
-Skuhrov p.Brdy,49.88854,14.14772,BE
-Slaný předm.,50.22625,14.1022,KD
-Slaný,50.22854,14.07574,KD
-Slatina p.Hazmburkem,50.42988,14.06096,LT
-Slavětín n.Ohří,50.36035,13.90069,LN
-Slavětín u Březnice,49.52293,13.895,PB
-Slibovice,50.17508,15.36672,NB
-Smetanova Lhota,49.44588,14.08154,PI
-Smidary,50.29504,15.49548,HK
-Smilov,50.04958,13.05059,KV
-Smiřice,50.30039,15.85816,HK
-Smrčná,49.66063,15.34909,HB
-Sobčice,50.37537,15.51864,JC
-Soběslav,49.25537,14.72594,TA
-Soběšín,49.78974,14.95976,KH
-Sobotka,50.46545,15.16795,JC
-Sokolov,50.18611,12.64462,SO
-Solopysky,50.2515,13.74811,LN
-Srbsko,49.93695,14.13115,BE
-Srní u Čes.Lípy,50.63697,14.58445,CL
-Sruby,49.98985,16.17097,UO
-Stará Boleslav,50.20978,14.69238,PH
-Stará Huť,49.78568,14.19862,PB
-Stará Paka,50.51617,15.48678,JC
-Staré Město u Uh.Hrad.,49.0764,17.42295,UH
-Staré Místo u Jičína,50.40611,15.35298,JC
-Staré Splavy,50.58701,14.62956,CL
-Starkoč,50.41111,16.10077,NA
-Starý Kolín,50.01104,15.29543,KO
-Starý Šachov,50.7208,14.37502,DC
-Stašov,49.88604,13.95962,BE
-Stochov,50.14122,13.96553,KD
-Strakonice,49.25518,13.91635,ST
-Strančice,49.9495,14.67774,PH
-Straškov,50.36182,14.24227,LT
-Stratov,50.18744,14.9075,NB
-Struhařov,49.76211,14.74864,BN
-Stružnice,50.69835,14.44994,CL
-Středokluky,50.12449,14.25455,PZ
-Střechov n.Sázavou,49.76027,15.02196,KH
-Střezimíř,49.54361,14.62137,BN
-Stříbrná Skalice,49.88331,14.85721,BN
-Stříbrné Hory,49.59724,15.68291,HB
-Stříbro,49.74112,13.00061,TC
-Střítež u Jihlavy,49.45895,15.62577,JI
-Studénka,49.70754,18.06648,NJ
-Stvolínky,50.62974,14.43761,CL
-Stvořidla,49.67042,15.31953,HB
-Sudoměř u Ml.Boleslavi,50.438,14.74479,MB
-Sudoměřice u Tábora,49.50732,14.65972,TA
-Suchdol n.Lužnicí z.,48.8922,14.88032,JH
-Suchdol n.Odrou,49.6421,17.93851,NJ
-Sulejovice,50.49939,14.03603,LT
-Summerau,48.55726,14.44884,
-Světice,49.9702,14.65797,PH
-Světlá n.Sázavou m.,49.66917,15.40134,HB
-Světlá n.Sázavou,49.6704,15.41742,HB
-Světlá n.Sázavou-Josefodol,49.69042,15.4242,HB
-Svitavy,49.75926,16.47966,SY
-Svojetín,50.19827,13.63231,RA
-Svojkovice,49.75507,13.65571,RO
-Svor,50.79054,14.59249,CL
-Syřenov,50.51348,15.43678,SM
-Šanov,50.09182,13.62873,RA
-Šárovcova Lhota,50.40787,15.56111,JC
-Šlapanov,49.54524,15.65265,HB
-Špičák,49.16163,13.22262,KT
-Štědrá,50.04982,13.1201,KV
-Štětí,50.45653,14.39391,LT
-Štětkovice,49.66676,14.51686,PB
-Štipoklasy,49.82795,15.20791,KH
-Švihov u Jesenice,50.10725,13.56701,RA
-Švihov u Klatov,49.47375,13.29078,KT
-Tábor,49.41382,14.67736,TA
-Tample,50.546,15.46507,SM
-Tanvald,50.74232,15.31035,JN
-Tatce,50.09917,14.98597,KO
-Těchonín,50.06886,16.60811,UO
-Telce,50.3119,13.97168,LN
-Teplice v Čechách,50.64653,13.82934,TP
-Tišice,50.26767,14.55706,ME
-Tišnov,49.3475,16.41746,BO
-Točník,49.42944,13.30933,KT
-Tochovice zast.,49.59529,13.99443,PB
-Tochovice,49.5887,13.98767,PB
-Tomice,49.69838,14.65218,BN
-Touchovice u Loun,50.30177,13.72839,LN
-Toužim,50.05056,12.99129,KV
-Trenčianska Teplá,48.93793,18.11369,
-Trenčín,48.89672,18.05177,
-Trnava,48.36978,17.5852,
-Trnová,50.44465,14.7187,MB
-Trnovany u Litoměřic,50.54327,14.17614,LT
-Trutnov hl.n.,50.56527,15.91098,TU
-Trutnov střed,50.57777,15.94496,TU
-Trutnov-Volanov,50.5606,15.88711,TU
-Třebestovice,50.12568,14.9608,NB
-Třebešice,49.93145,15.34152,KH
-Třeboň lázně,49.0073,14.77778,JH
-Třeboň,49.01529,14.76074,JH
-Třebovětice,50.3273,15.70386,JC
-Třemošnice,49.87202,15.57641,CR
-Třinec (Trzyniec),49.68729,18.66188,FM
-Třinec centrum (Trzyniec centrum),49.6717,18.68,FM
-Tuchoměřice,50.13647,14.26858,PZ
-Tuklaty,50.07703,14.77061,KO
-Tulln,48.32732,16.06505,
-Turnov město,50.57966,15.15186,SM
-Turnov,50.58702,15.13834,SM
-Týnec n.Labem,50.03783,15.35982,KO
-Týnec n.Sázavou,49.8341,14.59286,BN
-Týniště,49.88605,15.23533,KH
-Uherské Hradiště,49.0668,17.45724,UH
-Uhersko,49.98742,16.01467,CR
-Uherský Brod,49.02182,17.64353,UH
-Uhlířské Janovice,49.88227,15.0598,KH
-Úholičky,50.16996,14.35203,PZ
-Újezd n.Zbečnem,50.04577,13.89257,RA
-Újezdec u Luhačovic,49.03283,17.6853,UH
-Unhošť,50.10523,14.13606,KD
-Úpohlavy,50.46581,14.03762,LT
-Ústí n.L.hl.n.,50.65944,14.04446,UL
-Ústí n.L.-Střekov,50.65001,14.0486,UL
-Ústí n.L.západ,50.65815,14.0297,UL
-Ústí n.Orlicí město,49.96888,16.39447,UO
-Ústí n.Orlicí,49.97158,16.37773,UO
-Ústí u Staré Paky,50.51616,15.45753,JC
-Úštěk,50.58551,14.33506,LT
-Úvaly,50.07474,14.72299,PH
-Úžice,50.25644,14.37641,ME
-Valašské Meziříčí,49.47449,17.96083,VS
-Valy u Přelouče,50.03196,15.61412,PA
-Veleliby,50.21453,15.02353,NB
-Velešín město,48.83644,14.45321,CK
-Veletice,50.29677,13.57249,LN
-Velim,50.06762,15.12477,KO
-Velká Bučina,50.2674,14.23984,KD
-Velká Turná,49.33685,13.95681,ST
-Velké Hamry město,50.71944,15.31344,JN
-Velké Svatoňovice,50.5405,16.02229,TU
-Velké Zboží,50.16461,15.10095,NB
-Velké Žernoseky,50.52616,14.08047,LT
-Velký Borek,50.34669,14.51575,ME
-Velký Osek,50.10192,15.1935,KO
-Veltěže,50.35954,13.8644,LN
-Veltruby,50.07384,15.19995,KO
-Velvary,50.28222,14.24329,KD
-Verměřovice,50.01146,16.55766,UO
-Veselí n.Lužnicí,49.19369,14.71685,TA
-Veselí n.Moravou,48.94877,17.38248,HO
-Vilémovice,49.68453,15.30897,HB
-Vitiněves,50.39922,15.38079,JC
-Vitis,48.753,15.17281,
-Vižina,49.85482,14.10026,BE
-Vlastějovice,49.72879,15.172,KH
-Vlašim,49.70044,14.89751,BN
-Vlčice,50.5467,15.83455,TU
-Vlkaneč,49.80409,15.4051,KH
-Vlkovec,49.87482,14.81429,BN
-Voděrady,50.33683,14.94725,MB
-Vojice,50.38445,15.49792,JC
-Voračice,49.66151,14.55661,BN
-Votice,49.63802,14.61961,BN
-Vraňany,50.33524,14.37179,ME
-Vrané n.Vltavou,49.93856,14.38114,PZ
-Vranice,49.78986,14.98641,KH
-Vrátno,50.44309,14.68675,MB
-Vráž u Berouna,49.98362,14.12355,BE
-Vráž u Písku,49.39191,14.12461,PI
-Vražkov,50.36739,14.26434,LT
-Vrbčany,50.05469,15.00038,KO
-Vrbičany,50.30965,14.00068,KD
-Vrbno n.Lesy,50.32727,13.90595,LN
-Vrdy-Koudelov,49.91472,15.43043,KH
-Vrchotovy Janovice,49.65849,14.5793,BN
-Vrútky,49.11507,18.9245,
-Vsetín,49.33543,17.99336,VS
-Všejany,50.25703,14.95791,MB
-Všenory,49.93288,14.30514,PZ
-Všeradice,49.8675,14.10741,BE
-Všestary,50.25271,15.76433,HK
-Všetaty,50.2822,14.58499,ME
-Wien Franz-Josefs-Bahnhof,48.22625,16.36121,
-Wien Heiligenstadt,48.24892,16.36582,
-Wien Spittelau,48.23559,16.35814,
-Wodzislaw Sl.,50.00787,18.47626,
-Záboří n.Labem,50.03093,15.34887,KH
-Zábřeh na Moravě,49.87217,16.88709,SU
-Zadní Třebaň,49.9188,14.20323,BE
-Záhořice,50.07835,13.19336,KV
-Zahrádky u Čes.Lípy,50.63726,14.50616,CL
-Zachrašťany,50.21428,15.48986,HK
-Zákolany,50.19972,14.25165,KD
-Zalešany,50.03493,15.00834,KO
-Záluží,50.45686,14.32556,LT
-Zámrsk,49.995,16.10864,UO
-Závišín,49.47676,13.8662,ST
-Závratec,49.87727,15.5625,CR
-Zbečno,50.03599,13.91846,RA
-Zbraslavice,49.81568,15.18943,KH
-Zbuzany,50.02636,14.2809,PZ
-Zdětín u Chotětova,50.31587,14.78666,MB
-Zdice,49.90783,13.97974,BE
-Zelená Lhota,49.2495,13.1788,KT
-Zeleneč,50.13039,14.66617,PH
-Zeměchy,50.23334,14.26689,ME
-Zlenice,49.87944,14.73332,BN
-Zlín střed,49.22653,17.65851,ZL
-Zliv,49.06641,14.36055,CB
-Zlonice,50.28493,14.07817,KD
-Zlonín,50.215,14.50738,PH
-Znosim,49.69971,14.86948,BN
-Zruč n.Sázavou z.,49.74294,15.08552,KH
-Zruč n.Sázavou,49.73926,15.10364,KH
-Zvoleněves,50.23058,14.18389,KD
-Žabonosy,50.03968,15.02433,KO
-Žalhostice,50.52489,14.09655,LT
-Žandov,50.71206,14.38982,CL
-Žatec,50.3366,13.55529,LN
-Žďár n.Sázavou,49.55374,15.93926,ZR
-Želeč,50.24184,13.55723,LN
-Železná Ruda centrum,49.13634,13.2369,KT
-Železná Ruda město,49.14328,13.22938,KT
-Železná Ruda-Alžbětín,49.12175,13.20975,KT
-Železnice,50.46249,15.37586,JC
-Železný Brod,50.64001,15.26565,JN
-Želivec,49.75536,15.14085,KH
-Žilina,49.227,18.74663,
-Žitětín,50.3614,15.32455,JC
-Živonín,50.3941,14.61309,ME
-Žiželice,50.36456,13.54193,LN
-Žlebské Chvalovice,49.88339,15.55562,CR
-Žleby zast.,49.89429,15.48993,KH
-Žleby,49.89033,15.47734,KH
-Žloukovice,50.01593,13.95604,BE
-Žlutice,50.08458,13.15938,KV

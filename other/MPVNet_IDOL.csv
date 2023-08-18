@@ -86,10 +86,12 @@
 "Bílá,Hradčany,č.10",50.6391678,15.0193577,LI
 "Bílá,Hradčany,odb.Chvalčovice",50.64902,15.0112324,LI
 "Bílá,Hradčany,ves",50.639637,15.0163469,LI
+"Bílá,Chvalčovice",50.6441727,15.0334406,LI
 "Bílá,Klamorna",50.630497,15.0406666,LI
 "Bílá,Klamorna",50.6305161,15.0405731,LI
 "Bílá,Klamorna",50.63048,15.0406713,LI
 "Bílá,Kohoutovice",50.65693,15.0553122,LI
+"Bílá,Letařovice",50.631897,15.0035534,LI
 "Bílá,Letařovice,odb.",50.6284142,15.0021505,LI
 "Bílá,Letařovice,odb.",50.628376,15.0023746,LI
 "Bílá,Petrašovice",50.6659355,15.0571756,LI
@@ -360,6 +362,7 @@ Bystrá n.Jiz.,50.6072,15.3906641,SM
 "Česká Lípa,,Tovární",50.6771927,14.5274858,CL
 "Česká Lípa,,Tovární",50.6773338,14.5276613,CL
 "Česká Lípa,,U Jatek",50.6769753,14.5254173,CL
+"Česká Lípa,,U Jezu",50.68319,14.5391207,CL
 "Česká Lípa,,U Jezu",50.68306,14.5386953,CL
 "Česká Lípa,,U Jezu",50.6830444,14.5391235,CL
 "Česká Lípa,,U Jezu",50.68304,14.5394211,CL
@@ -489,13 +492,20 @@ Dětřichov,50.8926773,15.0368834,LI
 "Doksy,,aut.st.",50.56359,14.6535616,CL
 "Doksy,,aut.st.",50.5635643,14.6536579,CL
 "Doksy,,aut.st.",50.5636139,14.6539183,CL
-"Doksy,,Bílá Labuť",50.56801,14.6533623,CL
 "Doksy,,Bílá Labuť",50.5680046,14.653327,CL
+"Doksy,,Lipové nám.",50.5675354,14.6578474,CL
+"Doksy,,Lipové nám.",50.56759,14.6578007,CL
+"Doksy,,Mimoňská",50.5656,14.6658754,CL
+"Doksy,,Mimoňská",50.5655327,14.6659527,CL
 "Doksy,,rozc.Kruh",50.5021,14.6668835,CL
 "Doksy,,rozc.Kruh",50.5020866,14.666976,CL
 "Doksy,,škola",50.5668068,14.65225,CL
 "Doksy,,žel.st.",50.5726547,14.6470451,CL
 "Doksy,,žel.st.",50.5726242,14.6469927,CL
+"Doksy,Břehyně,II",50.5842133,14.6945248,CL
+"Doksy,Břehyně,II",50.58426,14.6947412,CL
+"Doksy,Břehyně,rybník",50.5755,14.6924276,CL
+"Doksy,Břehyně,rybník",50.5752525,14.6922827,CL
 "Doksy,Obora",50.5447273,14.6718264,CL
 "Doksy,Obora",50.54523,14.6716528,CL
 "Doksy,Staré Splavy,hl.sil.",50.5856056,14.6274767,CL
@@ -1091,15 +1101,15 @@ Hrubá Skála,50.54093,15.2006435,SM
 "Jablonec n.Nisou,Kokonín,IMP",50.699028,15.1673,JN
 "Jablonec n.Nisou,Kokonín,IMP",50.6990471,15.16757,JN
 "Jablonec n.Nisou,Kokonín,IMP",50.6991959,15.1675835,JN
+"Jablonec n.Nisou,Kokonín,Krkonošská",50.7076378,15.185401,JN
 "Jablonec n.Nisou,Kokonín,Krkonošská",50.70763,15.1854219,JN
-"Jablonec n.Nisou,Kokonín,pošta",50.70367,15.185544,JN
-"Jablonec n.Nisou,Kokonín,pošta",50.70309,15.1855526,JN
 "Jablonec n.Nisou,Kokonín,pošta",50.70305,15.1860027,JN
 "Jablonec n.Nisou,Kokonín,pošta",50.7033,15.1858168,JN
 "Jablonec n.Nisou,Kokonín,pošta",50.70383,15.18601,JN
 "Jablonec n.Nisou,Kokonín,pošta",50.7039566,15.1853008,JN
 "Jablonec n.Nisou,Kokonín,sokolovna",50.700676,15.1776466,JN
 "Jablonec n.Nisou,Kokonín,sokolovna",50.7007523,15.176939,JN
+"Jablonec n.Nisou,Kokonín,sokolovna",50.7007751,15.17883,JN
 "Jablonec n.Nisou,Lukášov,Cihelná",50.7458,15.1400013,JN
 "Jablonec n.Nisou,Lukášov,Cihelná",50.74586,15.1397619,JN
 "Jablonec n.Nisou,Lukášov,Cihelná",50.74576,15.1401958,JN
@@ -1431,15 +1441,19 @@ Kobyly,50.60997,15.00469,LI
 "Košťálov,,nám.",50.57208,15.4037313,SM
 "Košťálov,,u Kosinů",50.5749435,15.3913155,SM
 "Košťálov,,u Kosinů",50.5749,15.3913183,SM
+"Košťálov,,záv.Trevos",50.5721321,15.41023,SM
 "Košťálov,,záv.Trevos",50.57209,15.4101524,SM
 "Košťálov,,záv.Trevos",50.5721779,15.4103174,SM
 "Košťálov,,žel.st.",50.5688667,15.4029512,SM
 "Košťálov,Čikvásky,Bosna",50.5794678,15.3700638,SM
 "Košťálov,Čikvásky,Bosna",50.57959,15.370039,SM
+"Košťálov,Kundratice,dol.část",50.58129,15.4256992,SM
 "Košťálov,Kundratice,dol.část",50.5813026,15.4257326,SM
 "Košťálov,Kundratice,dol.část",50.58129,15.4256611,SM
+"Košťálov,Kundratice,hor.část",50.5835,15.4458666,SM
 "Košťálov,Kundratice,hor.část",50.5835228,15.445859,SM
 "Košťálov,Kundratice,hor.část",50.58348,15.4458876,SM
+"Košťálov,Kundratice,střed",50.5843353,15.4361191,SM
 "Košťálov,Kundratice,střed",50.5843658,15.4361258,SM
 "Košťálov,Kundratice,střed",50.5843163,15.4361248,SM
 "Kozly,,dolní",50.6501846,14.4587545,CL
@@ -1786,6 +1800,7 @@ Líšný,50.649128,15.21006,JN
 "Lomnice n.Pop.,,aut.nádr.",50.53303,15.3714924,SM
 "Lomnice n.Pop.,,aut.nádr.",50.53321,15.3712368,SM
 "Lomnice n.Pop.,,aut.nádr.",50.5330238,15.3717766,SM
+"Lomnice n.Pop.,,aut.nádr.",50.5331535,15.371583,SM
 "Lomnice n.Pop.,,aut.nádr.",50.53328,15.3713961,SM
 "Lomnice n.Pop.,,aut.nádr.",50.5327759,15.3719311,SM
 "Lomnice n.Pop.,,Hoření Lomnice",50.52291,15.3567686,SM
@@ -1811,6 +1826,7 @@ Líšný,50.649128,15.21006,JN
 "Lomnice n.Pop.,Karlov",50.5282822,15.3687735,SM
 "Lomnice n.Pop.,Karlov",50.528244,15.3687868,SM
 "Lomnice n.Pop.,Košov",50.5178642,15.3519115,SM
+"Lomnice n.Pop.,Ploužnice",50.5133667,15.3873043,SM
 "Lomnice n.Pop.,Ploužnice",50.51338,15.3873568,SM
 "Lomnice n.Pop.,Ploužnice",50.5133476,15.3872824,SM
 "Lomnice n.Pop.,Rváčov",50.53573,15.3389807,SM
@@ -1998,6 +2014,7 @@ Modřišice,50.57393,15.1193886,SM
 Modřišice,50.573925,15.1193848,SM
 "Modřišice,,Podhájí",50.56532,15.12561,SM
 "Modřišice,,Podhájí",50.5653534,15.1255655,SM
+"Mříčná,,křiž.",50.601017,15.4695492,SM
 "Mříčná,,křiž.",50.6006622,15.4688311,SM
 "Mříčná,,křiž.",50.60076,15.4690533,SM
 "Mříčná,,křiž.",50.6014252,15.46911,SM
@@ -2350,6 +2367,8 @@ Radimovice,50.62588,15.0830507,LI
 "Ralsko,Boreček,háj.",50.6406,14.7164555,CL
 "Ralsko,Hradčany",50.61768,14.7066593,CL
 "Ralsko,Hradčany",50.61741,14.7066107,CL
+"Ralsko,Hradčany,háj.",50.6038475,14.71705,CL
+"Ralsko,Hradčany,háj.",50.60383,14.7169752,CL
 "Ralsko,Hvězdov,1",50.6380539,14.7727318,CL
 "Ralsko,Hvězdov,1",50.6380272,14.7727776,CL
 "Ralsko,Hvězdov,2",50.6380234,14.78291,CL
@@ -2361,7 +2380,6 @@ Radimovice,50.62588,15.0830507,LI
 "Ralsko,Ploužnice",50.63139,14.7521591,CL
 "Ralsko,Ploužnice",50.63072,14.7524815,CL
 "Ralsko,Ploužnice",50.6311455,14.7531662,CL
-"Ralsko,Ploužnice",50.6309166,14.7524424,CL
 "Ralsko,Ploužnice,školka",50.6344757,14.7652292,CL
 "Ralsko,Ploužnice,školka",50.6344566,14.7653236,CL
 "Ralsko,Ploužnice,školka",50.6344337,14.7651377,CL
@@ -3101,6 +3119,7 @@ Vrchovany,50.55301,14.57105,CL
 "Všeň,Malá Strana",50.56145,15.1048555,SM
 "Všeň,Malá Strana",50.5614281,15.1047192,SM
 Vyskeř,50.52844,15.1588736,SM
+"Vyskeř,,Pleskotský Mlýn",50.5143242,15.1677513,SM
 "Vyskeř,Mladostov",50.5428925,15.1489372,SM
 "Vyskeř,Mladostov",50.5432358,15.1489,SM
 "Vyskeř,Poddoubí",50.52739,15.145503,SM
@@ -3261,8 +3280,8 @@ Záhoří,50.61283,15.2717314,SM
 "Železný Brod,,Terminál u žel.st.",50.63966,15.2654047,JN
 "Železný Brod,,Terminál u žel.st.",50.639637,15.2656536,JN
 "Železný Brod,,Terminál u žel.st.",50.6397362,15.2644243,JN
-"Železný Brod,Bzí,kostel",50.65897,15.225853,JN
-"Železný Brod,Bzí,rozc.",50.6600723,15.2369881,JN
+"Železný Brod,Bzí,rozc.",50.66006,15.2372847,JN
+"Železný Brod,Bzí,rozc.",50.6599655,15.2373543,JN
 "Železný Brod,Dvírka",50.6449776,15.2337742,JN
 "Železný Brod,Dvírka",50.6450424,15.2336121,JN
 "Železný Brod,Dvírka",50.64492,15.23396,JN
@@ -3288,151 +3307,3 @@ Záhoří,50.61283,15.2717314,SM
 "Žernov,Křečovice",50.5480843,15.2830734,SM
 "Žernov,Sýkořice,rozc.",50.5495338,15.2660408,SM
 "Žernov,Sýkořice,rozc.",50.5493774,15.266057,SM
-Antonínov,50.77161,15.2493668,JN
-Bělá u Staré Paky z.,50.53383,15.4456968,SM
-Bělá u Staré Paky,50.5325851,15.4424868,SM
-Bezděz,50.5161,14.7294149,MB
-Bílý Kostel n.Nisou,50.82119,14.9183578,LI
-Bílý Potok p.Smrkem,50.87608,15.2060165,LI
-Blíževedly,50.6134453,14.3955107,CL
-Borek p.Troskami,50.5357628,15.2318687,SM
-Brniště,50.7166252,14.728816,CL
-Černousy,51.0078545,15.03753,LI
-Česká Lípa hl.n.,50.67515,14.5332355,CL
-Česká Lípa střelnice,50.6917343,14.533185,CL
-Česká Lípa-Holý vrch,50.68236,14.5229,CL
-Desná,50.7535,15.3089552,JN
-Desná-Pustinská,50.7640457,15.3352909,JN
-Desná-Riedlova vila,50.75924,15.3139973,JN
-Doksy,50.5735855,14.6470451,CL
-Dolánky,50.60385,15.17118,SM
-Dolní Polubný,50.7605553,15.3236141,JN
-Doubí u Turnova,50.6079254,15.1018772,LI
-Filipovka,50.9898643,15.0250559,LI
-Frýdlant v Čechách předm.,50.9268265,15.076438,LI
-Frýdlant v Čechách,50.91898,15.07344,LI
-Hajniště,50.9287529,15.1969347,LI
-Harrachov,50.7715645,15.3930779,JN
-Hejnice,50.87961,15.1849079,LI
-Hodkovice n.Mohelkou,50.667347,15.1005955,LI
-Horka u St.Paky,50.52676,15.5683117,SM
-Horní Branná,50.59672,15.587019,TU
-Horní Police,50.7061272,14.4000111,CL
-Horní Řasnice,50.95198,15.1976986,LI
-Horní Sytová,50.63226,15.4618626,SM
-Hrabačov,50.6232338,15.5013618,SM
-Hrádek n.Nisou,50.8557663,14.8466377,LI
-Hrubá Skála,50.5505447,15.2127714,SM
-Chotyně,50.83776,14.870944,LI
-Chrastava,50.81331,14.95216,LI
-Chrastava-Anděl.Hora,50.7971458,14.95805,LI
-Jablonec n.J.-Hradsko,50.6806526,15.4512892,SM
-Jablonec n.Jizerou,50.7004051,15.4352074,SM
-Jablonec n.N.centrum,50.72087,15.1738806,JN
-Jablonec n.N.dol.n.,50.72628,15.1491957,JN
-Jablonec n.N.zast.,50.72039,15.1864538,JN
-Jablonec n.Nisou,50.7209244,15.1607924,JN
-Jablonecké Paseky,50.7315445,15.1903458,JN
-Jablonné v Podještědí,50.7694244,14.7581377,LI
-Jeřmanice,50.7073822,15.0865126,LI
-Jesenný,50.65163,15.3278008,SM
-Jestřebí,50.61415,14.6002779,CL
-Jilemnice,50.6044044,15.5137844,SM
-Jindřichovice p.Smrkem,50.9587555,15.2543068,LI
-Jindřichovice p.Smrkem-Skanzen,50.9591026,15.22819,LI
-Jiřetín p.Bukovou,50.7569771,15.26392,JN
-Josefův Důl,50.7794762,15.24026,JN
-Kamenický Šenov,50.782795,14.4645481,CL
-Karlov p.Ještědem,50.7737274,14.9837189,LI
-Karlovice-Sedmihorky,50.5618134,15.1963692,SM
-Kořenov zast.,50.76215,15.346736,JN
-Kořenov,50.7700844,15.3653831,JN
-Košťálov,50.5688248,15.4036522,SM
-Krásná Studánka,50.8013649,15.0382423,LI
-Krásný Les bažant.,50.9307938,15.1090326,LI
-Krásný Les,50.9376869,15.1285152,LI
-Kravaře v Čechách,50.6289825,14.4046593,CL
-Kryštofovo Údolí,50.7720871,14.9419765,LI
-Křižany,50.75143,14.9185429,LI
-Ktová,50.5278473,15.2470913,SM
-Levínská Olešnice,50.524395,15.5312119,SM
-Liberec,50.7613754,15.0455742,LI
-Liberec-Horní Růžodol,50.7535439,15.0328884,LI
-Liberec-Rochlice,50.74727,15.0616579,LI
-Libštát,50.55634,15.4173136,SM
-Líšný,50.64724,15.2122583,JN
-Lomnice n.Popelkou,50.52684,15.3744268,SM
-Lučany n.Nisou,50.7395248,15.225503,JN
-Luh p.Smrkem,50.89179,15.1519222,LI
-Lužec p.Smrkem,50.88648,15.1646738,LI
-Lvová,50.7810059,14.7878523,LI
-Machnín hrad,50.7877159,14.9714394,LI
-Machnín,50.7873764,14.9843092,LI
-Malá Skála,50.6340141,15.1920986,JN
-Martinice v Krkonoších,50.5806961,15.541091,SM
-Mimoň,50.6580048,14.7145863,CL
-Minkovice,50.95063,15.02899,LI
-Mníšek u Liberce,50.8324127,15.0651035,LI
-Návarov,50.6761742,15.3193626,JN
-Nedvězí,50.5841827,15.3520679,SM
-Nová Huť v Luž.horách,50.8307228,14.5858631,CL
-Nová Ves n.Nisou,50.7239227,15.1937876,JN
-Nová Ves n.Popelkou,50.5189171,15.40796,SM
-Nové Město p.Smrkem,50.92483,15.2242212,LI
-Novina,50.7600174,14.9416981,LI
-Nový Bor,50.76065,14.5473118,CL
-Okna,50.52724,14.6744452,CL
-Oldřichov v Hájích,50.8553543,15.0917149,LI
-Ostašov,50.76333,15.0128508,LI
-Pertoltice p.Ralskem,50.6776428,14.7181187,CL
-Pilínkov,50.72725,15.0354519,LI
-Plavy,50.7014351,15.3176908,JN
-Ploužnice,50.51422,15.3867893,SM
-Poniklá zast.,50.6667442,15.4510431,SM
-Poniklá,50.64864,15.4569941,SM
-Proseč n.Nisou,50.72834,15.1157064,LI
-Příšovice,50.57909,15.0787182,LI
-Rádlo,50.6943169,15.1084156,JN
-Raspenava,50.8965149,15.1312828,LI
-Rovensko p.Troskami,50.53143,15.2642441,SM
-Roztoky u Jilemnice,50.5546227,15.4900293,SM
-Rychnov u Jabl.n.Nisou,50.6838646,15.1439238,JN
-Rynoltice,50.78701,14.8267851,LI
-Řasnice zast.,50.9395523,15.163228,LI
-Řasnice,50.93889,15.1510992,LI
-Sedlejovice,50.6366348,15.0990887,LI
-Semily,50.6034737,15.324,SM
-Skalice u Čes.Lípy,50.74159,14.5215731,CL
-Smržovka dolní n.,50.7348,15.2804441,JN
-Smržovka střed,50.7319565,15.2546864,JN
-Smržovka,50.74035,15.2441168,JN
-Smržovka-Luční,50.73509,15.2495508,JN
-Spálov,50.6340332,15.3007116,SM
-Srní u Čes.Lípy,50.6369667,14.58445,CL
-Staré Splavy,50.58701,14.6295633,CL
-Stráž n.Nisou,50.78856,15.0256777,LI
-Stružnice,50.69835,14.44994,CL
-Stvolínky,50.6297379,14.4376059,CL
-Svor,50.79054,14.5924911,CL
-Sychrov,50.6293526,15.078351,LI
-Syřenov,50.51348,15.43678,SM
-Tample,50.5459976,15.4650669,SM
-Tanvald zast.,50.7370033,15.3052244,JN
-Tanvald,50.7423248,15.3103466,JN
-Tanvaldský Špičák,50.7609,15.267539,JN
-Turnov město,50.57966,15.1518612,SM
-Turnov,50.5870247,15.1383362,SM
-Velké Hamry město,50.7194366,15.3134413,JN
-Velké Hamry,50.71161,15.3137817,JN
-Velký Grunov,50.6985931,14.7284184,CL
-Velký Valtinov,50.7426949,14.7334061,CL
-Vesec u Liberce,50.74322,15.0813808,LI
-Víchová n.Jizerou,50.6271744,15.4840021,SM
-Višňová,50.9731941,15.0284777,LI
-Vlčí Důl-Dobranov,50.67119,14.6073227,CL
-Vratislavice n.Nisou,50.74013,15.0935278,LI
-Zahrádky u Čes.Lípy,50.6372643,14.50616,CL
-Zákupy-Božíkov,50.678688,14.6499491,CL
-Zdislava,50.77014,14.8767738,LI
-Žandov,50.71206,14.3898163,CL
-Železný Brod,50.6400146,15.2656479,JN

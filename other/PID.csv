@@ -328,7 +328,9 @@ Bělušice,50.0688324,15.3214769,KO
 "Benátky n.Jiz.,Vaněčkova",50.2929077,14.8294439,MB
 "Benátky n.Jiz.,Vaněčkova",50.29293,14.8293247,MB
 "Benecko,Dolní Štěpanice,host.u Šmídů",50.6375771,15.5170689,SM
+"Benecko,Dolní Štěpanice,host.u Šmídů",50.63754,15.5169525,SM
 "Benecko,Dolní Štěpanice,u mostu",50.6312447,15.51884,SM
+"Benecko,Dolní Štěpanice,u mostu",50.63088,15.5185318,SM
 "Benešov,Antuškova",49.7868271,14.6888714,BN
 "Benešov,Antuškova",49.78684,14.6889954,BN
 "Benešov,Baba",49.7953758,14.71138,BN
@@ -584,6 +586,12 @@ Bílá Hora,50.0755577,14.32408,AB
 "Praha,Bílá Hora",50.0755577,14.32408,AB
 Bílá Hora,50.0754,14.3215,AB
 "Praha,Bílá Hora",50.0754,14.3215,AB
+Bílá Hora,50.0754356,14.3280725,AB
+"Praha,Bílá Hora",50.0754356,14.3280725,AB
+Bílá Hora,50.0754242,14.327486,AB
+"Praha,Bílá Hora",50.0754242,14.327486,AB
+Bílá Hora,50.07462,14.3239632,AB
+"Praha,Bílá Hora",50.07462,14.3239632,AB
 Bílá labuť,50.090168,14.4354715,AB
 "Praha,Bílá labuť",50.090168,14.4354715,AB
 Bílá labuť,50.09035,14.4362621,AB
@@ -641,8 +649,14 @@ Blatce,50.505722,14.5982218,CL
 Blatce,50.5057678,14.598237,CL
 "Blatce,Blatečky",50.49437,14.5914135,CL
 "Blatce,Blatečky",50.49441,14.5914679,CL
+"Blatce,Houska,Dolní Houska",50.4972343,14.615881,CL
+"Blatce,Houska,Dolní Houska",50.4972725,14.6158495,CL
+"Blatce,Houska,Horní Houska",50.49043,14.6327639,CL
+"Blatce,Houska,Horní Houska",50.4904633,14.6327114,CL
 "Blatce,Konrádov",50.47793,14.6061144,CL
 "Blatce,Konrádov",50.47793,14.60608,CL
+"Blatce,pod Beškovem",50.51099,14.5787516,CL
+"Blatce,pod Beškovem",50.51096,14.5789137,CL
 "Blatce,rozc.",50.5024033,14.5792236,CL
 "Blatce,rozc.",50.5024033,14.579092,CL
 "Blatce,Tubož",50.4893951,14.5997629,CL
@@ -758,7 +772,7 @@ Bohutín,49.655983,13.9467754,PB
 "Bohutín,Vysoká Pec,zahrádky",49.6723557,13.9727306,PB
 "Bohutín,Vysoká Pec,zahrádky",49.67015,13.9692583,PB
 "Bohutín,zbrojnice",49.6560364,13.9437685,PB
-"Bohutín,zbrojnice",49.6558151,13.9431829,PB
+"Bohutín,zbrojnice",49.65582,13.9431782,PB
 "Bojanovice,Chaty",49.8581238,14.3517485,PZ
 "Bojanovice,Chaty",49.85964,14.3550739,PZ
 "Bojanovice,Malá Lečice",49.8215981,14.3366308,PZ
@@ -832,6 +846,8 @@ Bořislavka,50.0985222,14.36455,AB
 "Praha,Bořislavka",50.0985222,14.36455,AB
 Bořislavka,50.098568,14.36378,AB
 "Praha,Bořislavka",50.098568,14.36378,AB
+Bořislavka,50.0987167,14.3641415,AB
+"Praha,Bořislavka",50.0987167,14.3641415,AB
 Bořislavka,50.0990524,14.364686,AB
 "Praha,Bořislavka",50.0990524,14.364686,AB
 Bořislavka,50.09868,14.3635969,AB
@@ -844,6 +860,8 @@ Bořislavka,50.09765,14.3644352,AB
 "Praha,Bořislavka",50.09765,14.3644352,AB
 Bořislavka,50.0982056,14.3649759,AB
 "Praha,Bořislavka",50.0982056,14.3649759,AB
+Bořislavka,50.0983238,14.36258,AB
+"Praha,Bořislavka",50.0983238,14.36258,AB
 Bořislavka,50.098362,14.3635454,AB
 "Praha,Bořislavka",50.098362,14.3635454,AB
 Bořislavka,50.09832,14.3621206,AB
@@ -1507,6 +1525,7 @@ Cukrovar Modřany,50.0000458,14.405118,AB
 "Čáslav,Balkán",49.9172478,15.388978,KH
 "Čáslav,Balkán",49.91736,15.3888054,KH
 "Čáslav,Budín",49.9208679,15.3832874,KH
+"Čáslav,Budín",49.9206467,15.383173,KH
 "Čáslav,Filipov",49.9000053,15.4224987,KH
 "Čáslav,Filipov",49.9000854,15.4224482,KH
 "Čáslav,Filipov,VÚ",49.9021835,15.4145708,KH
@@ -1515,12 +1534,14 @@ Cukrovar Modřany,50.0000458,14.405118,AB
 "Čáslav,Hudební škola",49.90702,15.3964586,KH
 "Čáslav,Chrudimská",49.9126625,15.4042873,KH
 "Čáslav,Chrudimská",49.9122543,15.4018154,KH
+"Čáslav,Kalabousek",49.9281464,15.3652658,KH
 "Čáslav,Kalabousek",49.92859,15.3646269,KH
 "Čáslav,nem.",49.9046822,15.3996687,KH
 "Čáslav,nem.",49.9048271,15.3992329,KH
 "Čáslav,obchodní centrum",49.90264,15.4046564,KH
 "Čáslav,U Čápa",49.9064674,15.385973,KH
 "Čáslav,U Čápa",49.9063034,15.3859768,KH
+"Čáslav,u hřbitova",49.9229927,15.3860073,KH
 "Čáslav,u hřbitova",49.9229469,15.3858366,KH
 "Čáslav,u mostu",49.91188,15.3872547,KH
 "Čáslav,u mostu",49.91191,15.3871288,KH
@@ -1798,6 +1819,10 @@ Cukrovar Modřany,50.0000458,14.405118,AB
 "Praha,Červený Vrch",50.09684,14.352972,AB
 Červený Vrch,50.09682,14.3523121,AB
 "Praha,Červený Vrch",50.09682,14.3523121,AB
+Červený Vrch,50.09686,14.353548,AB
+"Praha,Červený Vrch",50.09686,14.353548,AB
+Červený Vrch,50.097187,14.3538818,AB
+"Praha,Červený Vrch",50.097187,14.3538818,AB
 "Česká Lípa,aut.nádr.",50.67752,14.5356817,CL
 "Česká Lípa,Borská",50.6944351,14.5414772,CL
 "Česká Lípa,Borská",50.69491,14.54116,CL
@@ -2299,6 +2324,7 @@ Dobřichov,50.0779343,15.0322142,KO
 Dobřichov,50.07797,15.0318651,KO
 "Dobřichovice,Nádraží",49.92714,14.28823,PZ
 "Dobřichovice,Nádraží",49.92718,14.28806,PZ
+"Dobřichovice,Nádraží",49.9275627,14.2891712,PZ
 "Dobřichovice,Pod Vinicí",49.93115,14.27588,PZ
 "Dobřichovice,Pod Vinicí",49.93141,14.27629,PZ
 "Dobřichovice,Pošta",49.92738,14.27456,PZ
@@ -2335,6 +2361,8 @@ Dobřichov,50.07797,15.0318651,KO
 "Dobříš,Svatá Anna",49.7728043,14.1417408,PB
 "Dobříš,Trnová,Dvůr",49.79407,14.1348934,PB
 "Dobříš,Trnová,Dvůr",49.7940063,14.1346445,PB
+"Dobříš,U Pivovaru",49.7878838,14.1784067,PB
+"Dobříš,U Pivovaru",49.788002,14.179472,PB
 "Dobříš,U Slovanky",49.7864571,14.1659126,PB
 "Dobříš,U Slovanky",49.78632,14.1656094,PB
 "Dobříš,Větrník",49.78927,14.1771345,PB
@@ -2369,8 +2397,7 @@ Dobšín,50.4830322,15.1119471,MB
 Doksy,50.11866,14.0482893,KD
 Doksy,50.1187134,14.0484209,KD
 "Doksy,aut.st.",50.5635757,14.65366,CL
-"Doksy,Bílá Labuť",50.5672455,14.6536236,CL
-"Doksy,Bílá Labuť",50.5672569,14.6535416,CL
+"Doksy,aut.st.",50.5636635,14.6537018,CL
 "Doksy,Břehyně,II",50.5842552,14.6947317,CL
 "Doksy,Břehyně,II",50.5842133,14.6944809,CL
 "Doksy,Břehyně,rybník",50.57525,14.6922865,CL
@@ -2381,12 +2408,19 @@ Doksy,50.1187134,14.0484209,KD
 "Doksy,Mimoňská",50.5656166,14.6658869,CL
 "Doksy,most",50.11658,14.0405846,KD
 "Doksy,most",50.11663,14.0395632,KD
+"Doksy,Obora",50.54464,14.671916,CL
+"Doksy,Obora",50.5452347,14.6716251,CL
+"Doksy,rozc.Kruh",50.5021,14.6667957,CL
+"Doksy,rozc.Kruh",50.5020752,14.6668777,CL
 "Doksy,rozcestí",50.1298065,14.0427189,KD
 "Doksy,rozcestí",50.12981,14.0424719,KD
 "Doksy,rozcestí",50.1302032,14.0419359,KD
+"Doksy,Staré Splavy,otočka",50.58551,14.6281919,CL
 "Doksy,Zbyny,křiž.",50.5564461,14.61528,CL
 "Doksy,Zbyny,křiž.",50.5564842,14.6151857,CL
 "Doksy,Zbyny,náves",50.5554,14.6170177,CL
+"Doksy,Žďár",50.5034866,14.6762524,CL
+"Doksy,Žďár",50.50358,14.6769085,CL
 "Doksy,žel.st.",50.57263,14.6470451,CL
 "Doksy,žel.st.",50.57263,14.6470451,CL
 Dolany,50.11587,14.1493673,KD
@@ -2725,8 +2759,14 @@ Dřísy,50.2565041,14.644865,PH
 "Dubá,Bukovec",50.5072479,14.4881773,CL
 "Dubá,Deštná",50.52299,14.5173178,CL
 "Dubá,Deštná",50.52288,14.5170565,CL
+"Dubá,Horecký Důl",50.539505,14.5799456,CL
+"Dubá,Horecký Důl",50.5395432,14.5799484,CL
 "Dubá,Horky,odb.",50.55484,14.588542,CL
 "Dubá,Horky,odb.",50.55498,14.5883675,CL
+"Dubá,Korce",50.5386467,14.6027985,CL
+"Dubá,Korce",50.5387459,14.6025581,CL
+"Dubá,Křenov",50.5220261,14.5622654,CL
+"Dubá,Křenov",50.52208,14.5622492,CL
 "Dubá,Nedamov",50.53093,14.5706615,CL
 "Dubá,Nedamov",50.5308838,14.570715,CL
 "Dubá,Nedamov,koupaliště",50.53651,14.5557833,CL
@@ -2737,6 +2777,10 @@ Dřísy,50.2565041,14.644865,PH
 "Dubá,Nový Berštejn",50.5504761,14.5435095,CL
 "Dubá,Nový Berštejn,střelnice",50.549263,14.55108,CL
 "Dubá,Nový Berštejn,střelnice",50.5493,14.5506563,CL
+"Dubá,Rozprechtice háj.",50.5299644,14.5455017,CL
+"Dubá,Rozprechtice háj.",50.5300026,14.54555,CL
+"Dubá,Rozprechtice křiž.",50.5259171,14.5480871,CL
+"Dubá,Rozprechtice křiž.",50.52604,14.547781,CL
 "Dubá,školka",50.5382729,14.543788,CL
 "Dubá,školka",50.5382233,14.543973,CL
 "Dubá,Zakšín",50.5195045,14.4982042,CL
@@ -2991,6 +3035,10 @@ Hanspaulka,50.1042061,14.372982,AB
 "Praha,Hanspaulka",50.1042061,14.372982,AB
 Hanspaulka,50.1051674,14.3730669,AB
 "Praha,Hanspaulka",50.1051674,14.3730669,AB
+Harfa,50.1016922,14.5055265,AB
+"Praha,Harfa",50.1016922,14.5055265,AB
+Harfa,50.1018372,14.504364,AB
+"Praha,Harfa",50.1018372,14.504364,AB
 "Harrachov,aut.nádr.",50.76964,15.4357738,JN
 "Harrachov,centrum",50.7752724,15.4253473,JN
 "Harrachov,centrum",50.7750778,15.4256506,JN
@@ -3863,6 +3911,10 @@ Choceradská,50.0431442,14.4902639,AB
 Chocerady,49.87207,14.8026428,BN
 "Chocerady,Komorní Hrádek",49.8664169,14.7985926,BN
 "Chocerady,Komorní Hrádek",49.866394,14.7985125,BN
+"Chocerady,Vestec",49.8594131,14.8246346,BN
+"Chocerady,Vestec",49.8593826,14.8247757,BN
+"Chocerady,Vestec,osada",49.8631668,14.8214054,BN
+"Chocerady,Vestec,osada",49.86323,14.8214188,BN
 "Chocerady,žel.zast.",49.8698463,14.8060913,BN
 "Chocerady,žel.zast.",49.8698,14.8061275,BN
 Chocnějovice,50.5763931,14.9728308,MB
@@ -3992,6 +4044,10 @@ Chotilsko,49.769413,14.3527479,PB
 "Chotilsko,Záborná Lhota",49.7691422,14.3199615,PB
 "Chotilsko,Záborná Lhota",49.7692566,14.3200016,PB
 "Chotilsko,Živohošť",49.7581978,14.4229536,PB
+Chotkovy sady,50.0950241,14.4090662,AB
+"Praha,Chotkovy sady",50.0950241,14.4090662,AB
+Chotkovy sady,50.0953064,14.4090214,AB
+"Praha,Chotkovy sady",50.0953064,14.4090214,AB
 Choťovice,50.1412849,15.3204556,KO
 Choťovice,50.14142,15.3203917,KO
 "Chotovice,hl.sil.",50.7432175,14.5512991,CL
@@ -4146,6 +4202,10 @@ Chýstovice,49.58546,15.0775928,PE
 "Chýstovice,rozc.Chyšná",49.5779076,15.092267,PE
 "Chyšky,Hněvanice,rozc.Hrazánky 1.4",49.5131,14.35917,PI
 "Chyšky,Hněvanice,rozc.Hrazánky 1.4",49.5132256,14.35933,PI
+I. P. Pavlova,50.07554,14.4305944,AB
+"Praha,I. P. Pavlova",50.07554,14.4305944,AB
+I. P. Pavlova,50.0754051,14.4316893,AB
+"Praha,I. P. Pavlova",50.0754051,14.4316893,AB
 I. P. Pavlova,50.07636,14.4319963,AB
 "Praha,I. P. Pavlova",50.07636,14.4319963,AB
 I. P. Pavlova,50.0757332,14.4320393,AB
@@ -4362,8 +4422,12 @@ Jestřabí Lhota,50.0898361,15.2605095,KO
 Jestřabí Lhota,50.0899162,15.2605991,KO
 "Jestřabí v Krk.,Křížlice,host.",50.6628647,15.5261,SM
 "Jestřabí v Krkonoších,Jestřabí v Krk.,Křížlice,host.",50.6628647,15.5261,SM
+"Jestřabí v Krk.,Křížlice,host.",50.6623344,15.5272322,SM
+"Jestřabí v Krkonoších,Jestřabí v Krk.,Křížlice,host.",50.6623344,15.5272322,SM
 "Jestřabí v Krk.,Křížlice,myslivna",50.6503067,15.5210466,SM
 "Jestřabí v Krkonoších,Jestřabí v Krk.,Křížlice,myslivna",50.6503067,15.5210466,SM
+"Jestřabí v Krk.,Křížlice,myslivna",50.6505,15.5208969,SM
+"Jestřabí v Krkonoších,Jestřabí v Krk.,Křížlice,myslivna",50.6505,15.5208969,SM
 "Jestřebí,křiž.",50.60947,14.5797672,CL
 "Jestřebí,křiž.",50.6095161,14.5793171,CL
 "Jestřebí,Podolec",50.59048,14.5520887,CL
@@ -4699,6 +4763,10 @@ Kabešova,50.1024628,14.5082712,AB
 "Praha,Kabešova",50.1024628,14.5082712,AB
 Kabešova,50.1023178,14.5080624,AB
 "Praha,Kabešova",50.1023178,14.5080624,AB
+Kabešova,50.10249,14.5081863,AB
+"Praha,Kabešova",50.10249,14.5081863,AB
+Kabešova,50.10234,14.5087614,AB
+"Praha,Kabešova",50.10234,14.5087614,AB
 Kablo,50.06209,14.5383654,AB
 "Praha,Kablo",50.06209,14.5383654,AB
 Kablo,50.0622177,14.5383673,AB
@@ -4875,6 +4943,8 @@ Karlovo náměstí,50.0753021,14.4191093,AB
 "Praha,Karlovo náměstí",50.0753021,14.4191093,AB
 Karlovo náměstí,50.0764771,14.4192562,AB
 "Praha,Karlovo náměstí",50.0764771,14.4192562,AB
+Karlovo náměstí,50.0759,14.4196119,AB
+"Praha,Karlovo náměstí",50.0759,14.4196119,AB
 Karlovo náměstí,50.0750046,14.41882,AB
 "Praha,Karlovo náměstí",50.0750046,14.41882,AB
 Karlovo náměstí,50.0770721,14.4210072,AB
@@ -5129,6 +5199,7 @@ Khodlova,50.1102867,14.6040707,AB
 "Kladno,Poldi",50.1505775,14.1174526,KD
 "Kladno,Pražská křiž.",50.1361237,14.1261806,KD
 "Kladno,Pražská křiž.",50.1359,14.1258774,KD
+"Kladno,Pražská křiž.",50.1353073,14.1248808,KD
 "Kladno,Průmyslová",50.15591,14.1164026,KD
 "Kladno,Průmyslová",50.15696,14.1158657,KD
 "Kladno,Rakovnická",50.1363754,14.0594635,KD
@@ -5152,18 +5223,19 @@ Khodlova,50.1102867,14.6040707,AB
 "Kladno,Školská",50.1427,14.1172581,KD
 "Kladno,U Bondyho",50.14461,14.1099463,KD
 "Kladno,U Bondyho",50.14424,14.1105852,KD
+"Kladno,U Hvězdy",50.1327553,14.1133184,KD
+"Kladno,U Hvězdy",50.13279,14.1143112,KD
 "Kladno,u Kauflandu",50.1290245,14.1160564,KD
 "Kladno,u Kauflandu",50.1291237,14.11589,KD
 "Kladno,U Knotků",50.1637878,14.1068249,KD
 "Kladno,U Knotků",50.1636772,14.1069717,KD
 "Kladno,u kostela",50.1408844,14.0720549,KD
 "Kladno,u kostela",50.14066,14.0708838,KD
-"Kladno,U Meisnerů",50.13975,14.1166162,KD
-"Kladno,U Meisnerů",50.1397476,14.1164541,KD
 "Kladno,u nemocnice",50.14282,14.0880356,KD
 "Kladno,u nemocnice",50.1427231,14.088583,KD
 "Kladno,u Tesca",50.1257324,14.1180372,KD
 "Kladno,u Tesca",50.12693,14.1165009,KD
+"Kladno,u tržnice",50.1329422,14.1250782,KD
 "Kladno,učiliště",50.1634026,14.1502066,KD
 "Kladno,učiliště",50.1635132,14.1502867,KD
 "Kladno,Újezd",50.1525764,14.123517,KD
@@ -5181,8 +5253,6 @@ Khodlova,50.1102867,14.6040707,AB
 "Kladno,žel.zast.město",50.1412659,14.0835838,KD
 "Kladno,žel.zast.město",50.14062,14.08132,KD
 "Kladno,žel.zast.město",50.1412926,14.08461,KD
-Kladruby,49.72181,14.94912,BN
-Kladruby,49.7218132,14.94902,BN
 "Kladruby,rehab.ústav",49.72012,14.9610529,BN
 "Kladruby,rehab.ústav",49.72022,14.9603262,BN
 "Kladruby,rozc.",49.72142,14.95392,BN
@@ -5671,6 +5741,7 @@ Koněprusy,49.9211426,14.0661278,BE
 Koněprusy,49.9210968,14.0659485,BE
 "Koněprusy,jeskyně",49.9139671,14.0755367,BE
 "Koněprusy,jeskyně",49.91396,14.0753994,BE
+"Koněprusy,jeskyně",49.91614,14.0721483,BE
 "Koněprusy,rozc.1.5",49.928318,14.081811,BE
 "Koněprusy,rozc.1.5",49.92826,14.0816307,BE
 "Koněprusy,u hřbitova I",49.9251633,14.0708694,BE
@@ -5810,6 +5881,12 @@ Kosova Hora,49.6540947,14.4715958,PB
 "Kostelec n.L.,U Starého Labe",50.2438278,14.5940084,ME
 "Kostelec n.L.,Žel.st.",50.222,14.5825348,ME
 "Kostelec n.L.,Žel.st.",50.2213669,14.5819674,ME
+Kostelec n.Vlt.,49.4995651,14.2131023,PI
+"Kostelec n.Vlt.,Přílepov,rozc.1.5",49.48645,14.2539692,PI
+"Kostelec n.Vlt.,Sobědraž,rozc.s.19",49.4897575,14.2412777,PI
+"Kostelec n.Vlt.,U rybníka",49.5013351,14.2121572,PI
+"Kostelec n.Vlt.,Zahrádka",49.49284,14.2267952,PI
+"Kostelec n.Vlt.,Zahrádka,rozc.",49.4948463,14.2312651,PI
 Kostelec u Křížků,49.9069,14.5581789,PH
 Kostelec u Křížků,49.90702,14.5580807,PH
 "Kostelec u Křížků,Škola",49.9096527,14.5634737,PH
@@ -6050,8 +6127,16 @@ Královice,50.03715,14.6356134,AB
 Královice,50.26214,14.05663,KD
 Královice,50.2622,14.0567131,KD
 "Královice,dvůr",50.2641,14.0578585,KD
+"Kralovice,Mariánský Týnec",49.9860039,13.465476,PS
+"Kralovice,Mariánský Týnec",49.98595,13.46545,PS
 "Královice,rozc.",50.2593,14.0717335,KD
 "Královice,rozc.",50.2591934,14.0719881,KD
+"Kralovice,Řemešín,rozc.",49.98202,13.3890467,PS
+"Kralovice,Řemešín,rozc.",49.9819641,13.3890381,PS
+"Kralovice,Trojany",49.9841728,13.4060249,PS
+"Kralovice,Trojany",49.98411,13.4062309,PS
+"Kralovice,Trojany,rozc.",49.98565,13.427022,PS
+"Kralovice,Trojany,rozc.",49.9855881,13.4270344,PS
 Královická,50.0649834,14.5158,AB
 "Praha,Královická",50.0649834,14.5158,AB
 Královická,50.065567,14.51525,AB
@@ -6119,8 +6204,6 @@ Královský letohrádek,50.094265,14.4045286,AB
 "Kralupy n.Vlt.,U Jízku",50.23957,14.3037195,ME
 "Kralupy n.Vlt.,U Jízku",50.23973,14.3033695,ME
 "Kralupy n.Vlt.,U Parku",50.2522278,14.3087893,ME
-"Kralupy n.Vlt.,u požárního domu",50.24036,14.29684,ME
-"Kralupy n.Vlt.,u požárního domu",50.24046,14.29688,ME
 "Kralupy n.Vlt.,V Luhu",50.2445374,14.30723,ME
 "Kralupy n.Vlt.,V Zátiší",50.2388573,14.30429,ME
 "Kralupy n.Vlt.,V Zátiší",50.23892,14.30417,ME
@@ -6661,6 +6744,7 @@ Kyselova,50.1261368,14.4639206,AB
 Kyšice,50.0912781,14.1058111,KD
 Kyšice,50.091568,14.1058617,KD
 "Kytín,Náves",49.84999,14.2184744,PZ
+"Kytín,Náves",49.84999,14.21849,PZ
 "Kytín,U Hřbitova",49.84726,14.22542,PZ
 "Kytín,U Hřbitova",49.8474579,14.2247829,PZ
 Labe,50.0138,14.4209337,AB
@@ -6805,6 +6889,8 @@ Lehovec,50.1069641,14.54728,AB
 "Praha,Lehovec",50.1069641,14.54728,AB
 Lehovec,50.1073036,14.547967,AB
 "Praha,Lehovec",50.1073036,14.547967,AB
+Lehovec,50.1073036,14.546999,AB
+"Praha,Lehovec",50.1073036,14.546999,AB
 Lešanská,50.0458336,14.4829006,AB
 "Praha,Lešanská",50.0458336,14.4829006,AB
 Lešanská,50.0460358,14.4830151,AB
@@ -6904,8 +6990,8 @@ Lhotky,50.3959579,15.0558081,MB
 "Lhotky,Řehnice",50.3795,15.0565166,MB
 "Lhotky,Řehnice",50.3795128,15.0566874,MB
 "Libáň,aut.st.",50.3742561,15.2161331,JC
-"Libáň,Kozodírky",50.36625,15.1914539,JC
-"Libáň,Kozodírky",50.3663521,15.1914244,JC
+"Libáň,Kozodírky",50.37599,15.1915407,JC
+"Libáň,Kozodírky",50.3760452,15.19155,JC
 "Libáň,Křešice",50.33884,15.2005348,JC
 "Libáň,Křešice",50.3388023,15.2006044,JC
 "Libáň,Psinice,kostel",50.3546181,15.2145157,JC
@@ -7040,6 +7126,15 @@ Libomyšl,49.8708344,13.9977531,BE
 "Libomyšl,u mostu",49.8743668,13.9964561,BE
 "Libomyšl,u mostu",49.8742867,13.9965687,BE
 "Libomyšl,Želkovice",49.8774529,14.03535,BE
+"Libošovice,Podkost,hrad Kost",50.4902763,15.13676,JC
+"Libošovice,Podkost,Pomníky",50.4985046,15.1214714,JC
+"Libošovice,Podkost,Pomníky",50.49854,15.1216145,JC
+"Libošovice,Podkost,Semtín dvůr",50.4872665,15.1452932,JC
+"Libošovice,Podkost,Semtín dvůr",50.48722,15.1453114,JC
+"Libošovice,Vesec u Sobotky",50.4815445,15.1571493,JC
+"Libošovice,Vesec u Sobotky",50.48158,15.1572208,JC
+"Libošovice,Vesec u Sobotky,rozc.",50.4794235,15.1613846,JC
+"Libošovice,Vesec u Sobotky,rozc.",50.47946,15.1614323,JC
 Libošovická,50.1109,14.5999012,AB
 "Praha,Libošovická",50.1109,14.5999012,AB
 Libošovická,50.1114845,14.5990849,AB
@@ -7355,11 +7450,14 @@ Luka,50.04598,14.3208284,AB
 "Praha,Luka",50.04598,14.3208284,AB
 Luka,50.0453644,14.3218555,AB
 "Praha,Luka",50.0453644,14.3218555,AB
+"Luka,odb.1.0",50.5172043,14.6781969,CL
+"Luka,odb.1.0",50.51708,14.6782646,CL
 Lukášova,50.0882378,14.4583836,AB
 "Praha,Lukášova",50.0882378,14.4583836,AB
 Lukášova,50.0879059,14.4568024,AB
 "Praha,Lukášova",50.0879059,14.4568024,AB
 Lukavec,49.5661926,14.9905891,PE
+Lukavec,49.5661659,14.9904089,PE
 "Lukavec,Bezděkov",49.5730476,14.9686079,PE
 "Lukavec,Bezděkov",49.5731125,14.9686031,PE
 "Lukavec,Velká Ves",49.5683632,14.9536629,PE
@@ -7583,6 +7681,14 @@ Malý Újezd,50.3312035,14.5330057,ME
 "Malý Újezd,Jelenice",50.3368,14.5408449,ME
 "Malý Újezd,Vavřineč",50.3239632,14.5507278,ME
 "Malý Újezd,Vavřineč",50.3241539,14.5507822,ME
+"Manětín,Česká Doubravice,rozc.",49.9758568,13.2717857,PS
+"Manětín,Česká Doubravice,rozc.",49.9757576,13.2716579,PS
+"Manětín,nám.",49.9922066,13.2334385,PS
+"Manětín,nám.",49.9916267,13.2308788,PS
+"Manětín,Újezd,rozc.1.0",49.9944077,13.1986113,PS
+"Manětín,Újezd,rozc.1.0",49.9943542,13.19864,PS
+"Manětín,Vladměřice,rozcestí",49.9758644,13.2599478,PS
+"Manětín,Vladměřice,rozcestí",49.9757233,13.2602053,PS
 Maniny,50.1033478,14.4526577,AB
 "Praha,Maniny",50.1033478,14.4526577,AB
 Maniny,50.1032448,14.4538717,AB
@@ -7806,8 +7912,6 @@ Mezno,49.53462,14.6442156,BN
 "Mezno,žel.st.",49.53673,14.6548929,BN
 Mezouň,50.0045853,14.2140779,BE
 Mezouň,50.0048256,14.2139988,BE
-"Mezouň,Letník",50.00547,14.2190428,BE
-"Mezouň,Letník",50.00551,14.2193346,BE
 Michelangelova,50.0700722,14.5098219,AB
 "Praha,Michelangelova",50.0700722,14.5098219,AB
 Michelangelova,50.0703773,14.5094032,AB
@@ -7945,7 +8049,6 @@ Milý,50.23213,13.8675756,RA
 "Mimoň,aut.st.",50.6614723,14.7218637,CL
 "Mimoň,aut.st.",50.66138,14.7217779,CL
 "Mimoň,aut.st.",50.66138,14.7217779,CL
-"Mimoň,aut.st.",50.6612625,14.7227812,CL
 "Mimoň,kino",50.65506,14.7253485,CL
 "Mimoň,kino",50.65506,14.7253485,CL
 "Mimoň,lesní závod",50.6368561,14.7471809,CL
@@ -7954,6 +8057,7 @@ Milý,50.23213,13.8675756,RA
 "Mimoň,Malá",50.65622,14.725544,CL
 "Mimoň,Pražská",50.65146,14.7349777,CL
 "Mimoň,Pražská",50.6509552,14.735158,CL
+"Mimoň,žel.st.",50.65789,14.7152061,CL
 "Mimoň,žel.st.",50.65789,14.7152061,CL
 "Mimoň,Žitavská",50.6662254,14.7267466,CL
 "Mimoň,Žitavská",50.6663742,14.7265625,CL
@@ -8118,6 +8222,11 @@ Mládí,50.0500336,14.3216333,AB
 "Praha,Mládí",50.0500336,14.3216333,AB
 Mládí,50.05015,14.3232,AB
 "Praha,Mládí",50.05015,14.3232,AB
+Mladotice,49.9854774,13.3640671,PS
+Mladotice,49.9853821,13.3643188,PS
+"Mladotice,zastávka",49.97413,13.3417091,PS
+"Mladotice,zastávka",49.97405,13.3415728,PS
+"Mladotice,žel.st.",49.9864159,13.3643665,PS
 "Mladý Smolivec,Starý Smolivec,I",49.52766,13.751276,PJ
 "Mladý Smolivec,Starý Smolivec,II",49.5288544,13.75189,PJ
 Mnetěš,50.3660278,14.2828894,LT
@@ -8696,6 +8805,7 @@ Na Vypichu,50.084053,14.3398943,AB
 "Praha,Na Vypichu",50.084053,14.3398943,AB
 Nábřeží Kapitána Jaroše,50.09632,14.4312992,AB
 "Praha,Nábřeží Kapitána Jaroše",50.09632,14.4312992,AB
+Načeradec,49.61074,14.9061747,BN
 Načeradec,49.6105766,14.9060869,BN
 Načeradec,49.610218,14.906229,BN
 Načeradec,49.6100273,14.9061766,BN
@@ -8799,6 +8909,10 @@ Nad Trojou,50.12033,14.4388819,AB
 "Praha,Nad Trojou",50.12033,14.4388819,AB
 Nad Trojou,50.1203766,14.4397917,AB
 "Praha,Nad Trojou",50.1203766,14.4397917,AB
+Nad Turbovou,50.06653,14.3723173,AB
+"Praha,Nad Turbovou",50.06653,14.3723173,AB
+Nad Turbovou,50.06637,14.37231,AB
+"Praha,Nad Turbovou",50.06637,14.37231,AB
 Nad Závistí,49.98052,14.4042006,AB
 "Praha,Nad Závistí",49.98052,14.4042006,AB
 Nad Zlíchovem,50.0452652,14.4042215,AB
@@ -8817,10 +8931,6 @@ Nadějkov,49.50285,14.4788914,TA
 "Nadějkov,Kaliště,rozc.1.0",49.5164146,14.4858675,TA
 "Nadějkov,Petříkovice",49.4957542,14.4857025,TA
 "Nadějkov,Petříkovice",49.4958572,14.485671,TA
-Nademlejnská,50.10383,14.5241747,AB
-"Praha,Nademlejnská",50.10383,14.5241747,AB
-Nademlejnská,50.1038,14.5250587,AB
-"Praha,Nademlejnská",50.1038,14.5250587,AB
 Nádraží Běchovice,50.0810165,14.599597,AB
 "Praha,Nádraží Běchovice",50.0810165,14.599597,AB
 Nádraží Běchovice,50.0812759,14.59818,AB
@@ -8931,6 +9041,8 @@ Nádraží Libeň,50.1011734,14.5025644,AB
 "Praha,Nádraží Libeň",50.1011734,14.5025644,AB
 Nádraží Libeň,50.10155,14.5032349,AB
 "Praha,Nádraží Libeň",50.10155,14.5032349,AB
+Nádraží Libeň,50.10301,14.5032005,AB
+"Praha,Nádraží Libeň",50.10301,14.5032005,AB
 Nádraží Modřany,50.00458,14.403307,AB
 "Praha,Nádraží Modřany",50.00458,14.403307,AB
 Nádraží Modřany,50.00394,14.4033718,AB
@@ -8981,6 +9093,12 @@ Nádraží Veleslavín,50.09539,14.3463945,AB
 "Praha,Nádraží Veleslavín",50.09539,14.3463945,AB
 Nádraží Veleslavín,50.09543,14.3471212,AB
 "Praha,Nádraží Veleslavín",50.09543,14.3471212,AB
+Nádraží Veleslavín,50.0961838,14.3496475,AB
+"Praha,Nádraží Veleslavín",50.0961838,14.3496475,AB
+Nádraží Veleslavín,50.0955772,14.3450384,AB
+"Praha,Nádraží Veleslavín",50.0955772,14.3450384,AB
+Nádraží Veleslavín,50.0953751,14.3450956,AB
+"Praha,Nádraží Veleslavín",50.0953751,14.3450956,AB
 Nádraží Veleslavín,50.0961571,14.3488684,AB
 "Praha,Nádraží Veleslavín",50.0961571,14.3488684,AB
 Nádraží Veleslavín,50.0955658,14.3477917,AB
@@ -9005,6 +9123,8 @@ Nádraží Zahradní Město,50.06171,14.503953,AB
 "Praha,Nádraží Zahradní Město",50.06171,14.503953,AB
 Nádraží Zbraslav,49.9728661,14.4001169,AB
 "Praha,Nádraží Zbraslav",49.9728661,14.4001169,AB
+Nádraží Zbraslav,49.97191,14.3991394,AB
+"Praha,Nádraží Zbraslav",49.97191,14.3991394,AB
 Nádraží Žvahov - Prosluněná,50.0449028,14.402256,AB
 "Praha,Nádraží Žvahov - Prosluněná",50.0449028,14.402256,AB
 Nádraží Žvahov - V Násypu,50.04467,14.4026289,AB
@@ -9156,6 +9276,15 @@ Nečín,49.69825,14.2334223,PB
 "Nečín,Skalice",49.7175751,14.1897993,PB
 "Nečín,Žebrák",49.7036552,14.2495689,PB
 "Nečín,Žebrák",49.70378,14.2496605,PB
+Nečtiny,49.9756966,13.1643715,PS
+Nečtiny,49.9753532,13.1646509,PS
+"Nečtiny,Doubravice,rozc.",49.98109,13.1679583,PS
+"Nečtiny,Doubravice,rozc.",49.98108,13.1681089,PS
+"Nečtiny,Hamr",49.98777,13.1833963,PS
+"Nečtiny,Hamr",49.9877319,13.18345,PS
+"Nečtiny,Hrad Nečtiny",49.9571075,13.1562672,PS
+"Nečtiny,Lešovice,rozc.0.3",49.99116,13.1907873,PS
+"Nečtiny,Lešovice,rozc.0.3",49.9911537,13.1909533,PS
 "Nedomice,Křížek",50.2608566,14.6128674,ME
 "Nedomice,Škola",50.2570839,14.61584,ME
 "Nedomice,Škola",50.25724,14.6157055,ME
@@ -9205,8 +9334,6 @@ Nechvalice,49.57535,14.3973494,PB
 "Nechvalice,Mokřany",49.5689354,14.4078913,PB
 "Nechvalice,Ředice",49.57063,14.4334593,PB
 "Nechvalice,Ředice",49.5705757,14.433507,PB
-Nelahozeves,50.2608337,14.29902,ME
-Nelahozeves,50.26173,14.3012,ME
 "Nelahozeves,Lešany",50.25618,14.2852993,ME
 "Nelahozeves,Lešany,Rozc.",50.25682,14.29698,ME
 "Nelahozeves,Lešany,Rozc.",50.25686,14.29657,ME
@@ -9214,8 +9341,6 @@ Nelahozeves,50.26173,14.3012,ME
 "Nelahozeves,Tukové záv.",50.27588,14.3095694,ME
 "Nelahozeves,U Kaštanu",50.2809,14.31477,ME
 "Nelahozeves,U Kaštanu",50.28119,14.3148794,ME
-"Nelahozeves,U Nadjezdu",50.267128,14.30282,ME
-"Nelahozeves,U Nadjezdu",50.26674,14.3029881,ME
 "Nelahozeves,U Nadjezdu",50.2679672,14.303,ME
 Němčice,50.3466034,14.9248133,MB
 Němčice,50.0842133,15.2941551,KO
@@ -9464,6 +9589,7 @@ Nezabudice,50.0125237,13.8200769,RA
 Nezabudice,50.012413,13.8201027,RA
 "Nezabudice,přívoz",50.0134773,13.8292332,RA
 "Nezabudice,přívoz",50.0133324,13.8295164,RA
+"Nezabudice,U Rozvědčíka",50.00484,13.8200607,RA
 "Nezabudice,U Rozvědčíka",50.0048981,13.8212242,RA
 Niměřice,50.3959351,14.808032,MB
 Niměřice,50.395813,14.8081245,MB
@@ -9523,11 +9649,9 @@ Nová Ves u Bakova n.Jiz.,50.4897537,14.9284163,MB
 "Nová Ves,Miřejovice,Most",50.2809372,14.3159,ME
 "Nová Ves,Nové Ouholice",50.3028145,14.31685,ME
 "Nová Ves,Nové Ouholice",50.3027,14.3165331,ME
-"Nová Ves,Nové Ouholice,U Havlínů",50.3034172,14.3176832,ME
 "Nová Ves,Rozc.",50.30875,14.3142834,ME
 "Nová Ves,Rozc.",50.30868,14.3145,ME
 "Nová Ves,Staré Ouholice",50.29003,14.3218832,ME
-"Nová Ves,Vepřek,U Fary",50.30845,14.3238668,ME
 Nové Butovice,50.0511436,14.3532515,AB
 "Praha,Nové Butovice",50.0511436,14.3532515,AB
 Nové Butovice,50.0507355,14.3533335,AB
@@ -9804,7 +9928,6 @@ Nušlova,50.05467,14.3468838,AB
 "Nymburk,Nám.",50.1855354,15.0416756,NB
 "Nymburk,Nám.",50.184864,15.03998,NB
 "Nymburk,Nemocnice",50.189,15.0377026,NB
-"Nymburk,Nemocnice",50.18813,15.0376663,NB
 "Nymburk,Poliklinika",50.1869659,15.0252142,NB
 "Nymburk,Poliklinika",50.18683,15.0250463,NB
 "Nymburk,Pražská",50.1778946,15.0391607,NB
@@ -9996,6 +10119,8 @@ Ohrobec,49.9436455,14.4317627,PZ
 "Ohrobec,U Rybníka",49.9424,14.4314709,PZ
 "Ohrobec,Zvolská",49.9391174,14.4273367,PZ
 "Ohrobec,Zvolská",49.93945,14.4279585,PZ
+"Okna,obec",50.52954,14.6716185,CL
+"Okna,obec",50.5297928,14.6717224,CL
 Okoř,50.1627541,14.257802,PZ
 "Okoř,Křižovatka",50.1615562,14.2485266,PZ
 Okořská,50.1359062,14.4314823,AB
@@ -10023,6 +10148,7 @@ Olbramovice,49.6714859,14.6389494,BN
 Olbramovice,49.6715546,14.6389713,BN
 Olbramovice,49.6731567,14.6385212,BN
 Olbramovice,49.67337,14.6386976,BN
+Olbramovice,49.67139,14.6432285,BN
 "Olbramovice,Křešice",49.6597748,14.6098871,BN
 "Olbramovice,Křešice",49.65985,14.6098509,BN
 "Olbramovice,parcely",49.67147,14.6314287,BN
@@ -10310,6 +10436,13 @@ Paceřická,50.1196022,14.6110249,AB
 "Praha,Paceřická",50.1196022,14.6110249,AB
 Paceřická,50.11941,14.6108389,AB
 "Praha,Paceřická",50.11941,14.6108389,AB
+"Pacov,aut.nádr.",49.4700966,15.0035591,PE
+"Pacov,aut.nádr.",49.4700851,15.0036955,PE
+"Pacov,Hrádek SOMPO",49.4942474,15.0323448,PE
+"Pacov,Hrádek SOMPO",49.4941673,15.0322647,PE
+"Pacov,Hrádek statek",49.49187,15.0255213,PE
+"Pacov,Hrádek statek",49.4918556,15.0256491,PE
+"Pacov,žel.st.",49.46026,15.0174637,PE
 Palackého náměstí,50.07323,14.415247,AB
 "Praha,Palackého náměstí",50.07323,14.415247,AB
 Palackého náměstí,50.0732765,14.4143248,AB
@@ -10423,8 +10556,6 @@ Pavlišovská,50.111393,14.6225395,AB
 "Praha,Pavlišovská",50.111393,14.6225395,AB
 "Pavlov,žel.zast.",50.09582,14.1668005,KD
 "Pavlov,žel.zast.",50.0955353,14.1668339,KD
-Pavlovice,49.7156754,14.9356756,BN
-Pavlovice,49.7157974,14.9355574,BN
 "Pavlovice,rozc.",49.7145538,14.9294462,BN
 "Pavlovice,rozc.",49.7145424,14.9292583,BN
 "Pavlovice,rozc.",49.7136574,14.9293976,BN
@@ -10836,6 +10967,8 @@ Pod Šafránkou,50.0734,14.3490667,AB
 "Praha,Pod Šafránkou",50.0734,14.3490667,AB
 Pod Školou,50.0686035,14.3674774,AB
 "Praha,Pod Školou",50.0686035,14.3674774,AB
+Pod Školou,50.06898,14.3686972,AB
+"Praha,Pod Školou",50.06898,14.3686972,AB
 Pod Šmukýřkou,50.06095,14.3755836,AB
 "Praha,Pod Šmukýřkou",50.06095,14.3755836,AB
 Pod Šmukýřkou,50.0614166,14.3752842,AB
@@ -10953,6 +11086,10 @@ Podkovářská,50.10295,14.5134544,AB
 "Praha,Podkovářská",50.10295,14.5134544,AB
 Podkovářská,50.1029663,14.5143747,AB
 "Praha,Podkovářská",50.1029663,14.5143747,AB
+Podkovářská,50.103054,14.5137825,AB
+"Praha,Podkovářská",50.103054,14.5137825,AB
+Podkovářská,50.10291,14.5146942,AB
+"Praha,Podkovářská",50.10291,14.5146942,AB
 "Podlesí,Nové",49.7025,13.9785137,PB
 "Podlesí,Nové",49.7025757,13.978734,PB
 "Podlesí,Nové háj.",49.704895,13.9705753,PB
@@ -11002,6 +11139,7 @@ Pohořelec,50.0879,14.3881292,AB
 "Praha,Pohořelec",50.0879,14.3881292,AB
 Pohoří,49.9005775,14.5250053,PZ
 Pohoří,49.90053,14.5250044,PZ
+Pohoří,49.9001961,14.5250731,PZ
 "Pohoří,Chotouň",49.900383,14.5116463,PZ
 "Pohoří,Chotouň",49.9004669,14.5119076,PZ
 "Pohoří,Markvart",49.89211,14.5506706,PZ
@@ -11436,7 +11574,7 @@ Příborská,50.1313858,14.51113,AB
 "Příbram,aut.nádr.",49.6896172,14.0035219,PB
 "Příbram,aut.nádr.",49.68957,14.0035505,PB
 "Příbram,aut.nádr.",49.68941,14.00361,PB
-"Příbram,aut.nádr.",49.69017,14.0038576,PB
+"Příbram,aut.nádr.",49.6908875,14.0033007,PB
 "Příbram,Balbínova",49.6887932,14.02078,PB
 "Příbram,Brod",49.6609573,14.0148668,PB
 "Příbram,Brod",49.6619835,14.0137081,PB
@@ -11862,17 +12000,13 @@ Rakovice,49.47204,14.0550718,PI
 "Rakovník,židovský hřbitov",50.09877,13.7428627,RA
 "Ralsko,Boreček",50.63337,14.7168865,CL
 "Ralsko,Boreček",50.6332245,14.716404,CL
-"Ralsko,Boreček",50.63337,14.7168865,CL
 "Ralsko,Boreček,háj.",50.6406021,14.7164927,CL
 "Ralsko,Boreček,háj.",50.64041,14.7162733,CL
-"Ralsko,Boreček,háj.",50.6406021,14.7164927,CL
 "Ralsko,Hradčany",50.6176949,14.706708,CL
 "Ralsko,Hradčany",50.6174049,14.7065344,CL
-"Ralsko,Hradčany",50.6176949,14.706708,CL
 "Ralsko,Kuřívody",50.58604,14.8039122,CL
 "Ralsko,Ploužnice",50.6313667,14.7521715,CL
 "Ralsko,Ploužnice",50.63073,14.7525177,CL
-"Ralsko,Ploužnice",50.630825,14.7517958,CL
 "Ralsko,Skelná Huť",50.60837,14.7739468,CL
 "Ralsko,Skelná Huť",50.6084251,14.7737741,CL
 Rápošovská,50.0771561,14.6550207,AB
@@ -12820,6 +12954,8 @@ Sídliště Červený Vrch,50.09798,14.3591881,AB
 "Praha,Sídliště Červený Vrch",50.09798,14.3591881,AB
 Sídliště Červený Vrch,50.09807,14.3592873,AB
 "Praha,Sídliště Červený Vrch",50.09807,14.3592873,AB
+Sídliště Červený Vrch,50.09802,14.3600836,AB
+"Praha,Sídliště Červený Vrch",50.09802,14.3600836,AB
 Sídliště Čimice,50.14319,14.4313145,AB
 "Praha,Sídliště Čimice",50.14319,14.4313145,AB
 Sídliště Čimice,50.1442337,14.43215,AB
@@ -12976,6 +13112,8 @@ Sídliště Zličín,50.0604553,14.2929688,AB
 "Praha,Sídliště Zličín",50.0604553,14.2929688,AB
 Sídliště Zličín,50.06004,14.2935324,AB
 "Praha,Sídliště Zličín",50.06004,14.2935324,AB
+Sídliště Zličín,50.05958,14.2913837,AB
+"Praha,Sídliště Zličín",50.05958,14.2913837,AB
 Sídlištní,50.12695,14.3782558,AB
 "Praha,Sídlištní",50.12695,14.3782558,AB
 Sídlištní,50.1271324,14.3784914,AB
@@ -13353,6 +13491,8 @@ Sobín,50.0684242,14.2633514,AB
 "Praha,Sobín",50.0684242,14.2633514,AB
 Sobín,50.06814,14.2633858,AB
 "Praha,Sobín",50.06814,14.2633858,AB
+"Sobotka,koupaliště",50.4749832,15.169157,JC
+"Sobotka,koupaliště",50.4749336,15.16908,JC
 "Sobotka,Lavice,Šalanda",50.4590378,15.21377,JC
 "Sobotka,Lavice,Šalanda",50.4598045,15.2118387,JC
 "Sobotka,Na Syrovandě",50.4644547,15.1685047,JC
@@ -13361,6 +13501,8 @@ Sobín,50.06814,14.2633858,AB
 "Sobotka,nám.",50.46765,15.1763258,JC
 "Sobotka,Staňkova Lhota",50.4652367,15.1945925,JC
 "Sobotka,Staňkova Lhota",50.4652519,15.1946936,JC
+"Sobotka,škola",50.4677963,15.1814175,JC
+"Sobotka,škola",50.46786,15.182045,JC
 "Sobotka,škola",50.4677963,15.1814175,JC
 "Sobotka,škola",50.46786,15.182045,JC
 Sojovice,50.22195,14.7605762,MB
@@ -13483,6 +13625,8 @@ Staňkovice,49.87592,15.01742,KH
 "Staňkovice,Smilovice",49.8679771,14.9885035,KH
 "Staňkovice,Smilovice,rozc.",49.8788,14.9906073,KH
 "Staňkovice,Smilovice,rozc.",49.8790779,14.9906635,KH
+Stará Holyně,50.03017,14.3573847,AB
+"Praha,Stará Holyně",50.03017,14.3573847,AB
 "Stará Huť,Knínská",49.78524,14.2065783,PB
 "Stará Huť,Knínská",49.78506,14.2065811,PB
 "Stará Huť,Žel.zast.",49.7855339,14.1983919,PB
@@ -13563,6 +13707,12 @@ Starý Hloubětín,50.1047058,14.5307112,AB
 "Praha,Starý Hloubětín",50.1047058,14.5307112,AB
 Starý Hloubětín,50.1043472,14.5299129,AB
 "Praha,Starý Hloubětín",50.1043472,14.5299129,AB
+Starý Hloubětín,50.10424,14.52995,AB
+"Praha,Starý Hloubětín",50.10424,14.52995,AB
+Starý Hloubětín,50.10474,14.5299835,AB
+"Praha,Starý Hloubětín",50.10474,14.5299835,AB
+Starý Hloubětín,50.1043129,14.5293026,AB
+"Praha,Starý Hloubětín",50.1043129,14.5293026,AB
 Starý Kolín,50.0095253,15.2933712,KO
 Starý Kolín,50.00977,15.2936554,KO
 Starý Kolín,50.0096779,15.2948971,KO
@@ -14230,6 +14380,8 @@ Sýkořice,50.0346069,13.9311314,RA
 "Šlapanice,Budeničky",50.31908,14.0998459,KD
 "Šlapanice,křižovatka",50.3134422,14.1090212,KD
 "Šlapanice,křižovatka",50.313427,14.109148,KD
+Šmukýřka,50.064167,14.3704834,AB
+"Praha,Šmukýřka",50.064167,14.3704834,AB
 Šmukýřka,50.0643654,14.37075,AB
 "Praha,Šmukýřka",50.0643654,14.37075,AB
 Špejchar,50.09734,14.4102974,AB
@@ -14260,6 +14412,10 @@ Sýkořice,50.0346069,13.9311314,RA
 "Praha,Štěchovická",50.07203,14.50101,AB
 Štěchovická,50.07216,14.5005341,AB
 "Praha,Štěchovická",50.07216,14.5005341,AB
+Štěpánská,50.0756874,14.4224319,AB
+"Praha,Štěpánská",50.0756874,14.4224319,AB
+Štěpánská,50.0756,14.4233189,AB
+"Praha,Štěpánská",50.0756,14.4233189,AB
 Štěpánská,50.07552,14.424449,AB
 "Praha,Štěpánská",50.07552,14.424449,AB
 Štěpařská,50.032032,14.3734837,AB
@@ -14296,6 +14452,10 @@ Sýkořice,50.0346069,13.9311314,RA
 "Štětkovice,Sedlečko",49.6671143,14.5153084,PB
 "Štíhlice,Doubravčická",50.00841,14.7777309,PH
 "Štíhlice,Doubravčická",50.0085,14.7775354,PH
+"Štichovice,Křečov",49.9720459,13.3222437,PS
+"Štichovice,Křečov",49.9719849,13.3222666,PS
+"Štichovice,rozc.",49.9729919,13.3031359,PS
+"Štichovice,rozc.",49.972908,13.3030529,PS
 Štipoklasy,49.82448,15.2133055,KH
 Štipoklasy,49.82459,15.2132368,KH
 Štorkánova,50.06166,14.3934011,AB
@@ -14367,6 +14527,8 @@ Sýkořice,50.0346069,13.9311314,RA
 "Tachlovice,Jakubská náves",50.0108681,14.2433605,PZ
 "Tachlovice,Na vrškách",50.01438,14.2409105,PZ
 "Tachlovice,Na vrškách",50.0137177,14.2414188,PZ
+Tachov,50.5432,14.6381807,CL
+Tachov,50.54326,14.638092,CL
 Tachovské náměstí,50.0871849,14.4522734,AB
 "Praha,Tachovské náměstí",50.0871849,14.4522734,AB
 Tachovské náměstí,50.0873871,14.4523869,AB
@@ -14944,6 +15106,10 @@ U Elektry,50.1034622,14.5185566,AB
 "Praha,U Elektry",50.1034622,14.5185566,AB
 U Elektry,50.1034737,14.5194426,AB
 "Praha,U Elektry",50.1034737,14.5194426,AB
+U Elektry,50.10358,14.5187588,AB
+"Praha,U Elektry",50.10358,14.5187588,AB
+U Elektry,50.1034775,14.5208406,AB
+"Praha,U Elektry",50.1034775,14.5208406,AB
 U Háje,50.0412445,14.4222269,AB
 "Praha,U Háje",50.0412445,14.4222269,AB
 U Háje,50.0431824,14.4187508,AB
@@ -15321,8 +15487,6 @@ Urxova,50.0952148,14.4570971,AB
 "Praha,Ústavy Akademie věd",50.0179329,14.46695,AB
 Ústavy Akademie věd,50.0180168,14.4668179,AB
 "Praha,Ústavy Akademie věd",50.0180168,14.4668179,AB
-Ústavy Akademie věd,50.0172577,14.46805,AB
-"Praha,Ústavy Akademie věd",50.0172577,14.46805,AB
 Ústřední,50.06904,14.543499,AB
 "Praha,Ústřední",50.06904,14.543499,AB
 Ústřední,50.0699158,14.5422449,AB
@@ -15333,6 +15497,8 @@ Urxova,50.0952148,14.4570971,AB
 "Praha,Ústřední dílny DP",50.07429,14.5323524,AB
 Ústřední dílny DP,50.0746574,14.53242,AB
 "Praha,Ústřední dílny DP",50.0746574,14.53242,AB
+Útěchovice p.Stražištěm,49.539772,15.0296307,PE
+Útěchovice p.Stražištěm,49.53989,15.0298386,PE
 "Úvaly,Elektromechanika",50.0794144,14.7125616,PH
 "Úvaly,Elektromechanika",50.07959,14.7124863,PH
 "Úvaly,Hodov",50.08559,14.718338,PH
@@ -15591,6 +15757,10 @@ Velká Dobrá,50.1105156,14.0768127,KD
 Velká Chmelištná,50.0635872,13.5509529,RA
 Velká Chuchle,50.01215,14.3807335,AB
 "Praha,Velká Chuchle",50.01215,14.3807335,AB
+Velká Chyška,49.51164,15.0370321,PE
+Velká Chyška,49.5117073,15.0372219,PE
+"Velká Chyška,samota",49.5244179,15.0276213,PE
+"Velká Chyška,samota",49.52449,15.0277319,PE
 Velká Lečice,49.81631,14.32437,PB
 Velká Ohrada,50.0353737,14.3358765,AB
 "Praha,Velká Ohrada",50.0353737,14.3358765,AB
@@ -15886,12 +16056,19 @@ Vítězné náměstí,50.0997925,14.3956871,AB
 "Vitice,U Školy",50.0326576,14.9180574,KO
 "Vitice,U Školy",50.03258,14.9179268,KO
 "Vítkovice,Dolní Mísečky",50.729866,15.546237,SM
+"Vítkovice,Dolní Mísečky",50.7298126,15.5461369,SM
+"Vítkovice,Horní Mísečky",50.7352,15.5696135,SM
 "Vítkovice,hotel Praha",50.69323,15.5304537,SM
+"Vítkovice,hotel Praha",50.6930923,15.5303707,SM
 "Vítkovice,hotel Skála",50.71016,15.5344467,SM
+"Vítkovice,hotel Skála",50.7100525,15.5342226,SM
 "Vítkovice,myslivna",50.704525,15.5303984,SM
+"Vítkovice,myslivna",50.7045364,15.530282,SM
 "Vítkovice,ObÚ",50.6756935,15.5348654,SM
+"Vítkovice,ObÚ",50.67558,15.5349312,SM
 "Vítkovice,SEBA",50.67404,15.5346727,SM
 "Vítkovice,škola",50.6797256,15.5319452,SM
+"Vítkovice,škola",50.6796646,15.5315285,SM
 Vižina,49.8575745,14.1021214,BE
 Vižina,49.85752,14.1022472,BE
 "Vlačice,rozc.",49.9400826,15.4374876,KH
@@ -16065,6 +16242,10 @@ Vodochody,50.20601,14.3987713,PH
 "Vodochody,U Školy",50.2076,14.396781,PH
 "Vodochody,U Školy",50.20755,14.3966064,PH
 Vodranty,49.8906021,15.3364286,KH
+Vodslivy,49.8495941,14.8368635,BN
+Vodslivy,49.8496323,14.836935,BN
+"Vodslivy,rozc.",49.8432274,14.8365622,BN
+"Vodslivy,rozc.",49.84317,14.8360252,BN
 Vojenská nemocnice,50.0917358,14.360301,AB
 "Praha,Vojenská nemocnice",50.0917358,14.360301,AB
 Vojenská nemocnice,50.0917625,14.35979,AB
@@ -16479,6 +16660,10 @@ Vychovatelna,50.1183052,14.4644241,AB
 "Praha,Vychovatelna",50.1183052,14.4644241,AB
 Vykáň,50.1202354,14.81711,NB
 Vykáň,50.11928,14.8168163,NB
+"Vyklantice,Kateřinky",49.55383,15.02516,PE
+"Vyklantice,Kateřinky",49.5539055,15.025218,PE
+"Vyklantice,rozc.1.0",49.5516434,15.0372725,PE
+"Vyklantice,rozc.1.0",49.5517578,15.0374317,PE
 Vypich,50.07984,14.34757,AB
 "Praha,Vypich",50.07984,14.34757,AB
 Vypich,50.07974,14.3466778,AB

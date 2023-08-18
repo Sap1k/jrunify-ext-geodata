@@ -103,14 +103,15 @@
 "Bílá,,chata Třeštík",49.40245,18.3858547,FM
 "Bílá,,Konečná st.hr.",49.4528,18.5222073,FM
 "Bílá,,Konečná st.hr.",49.4527969,18.5223541,FM
-"Bílá,,Mezivodí",49.4253044,18.41026,FM
-"Bílá,,Mezivodí",49.4252472,18.4103584,FM
+"Bílá,,Mezivodí",49.42537,18.4101524,FM
+"Bílá,,Mezivodí",49.42537,18.4101524,FM
 "Bílá,,Slaná",49.43223,18.4217,FM
 "Bílá,,Slaná",49.4322968,18.4217072,FM
 "Bílá,,střed",49.44317,18.4571743,FM
 "Bílá,,střed",49.4429779,18.45727,FM
 "Bílá,,zámeček",49.44088,18.44712,FM
 "Bílá,,zámeček",49.4409561,18.4470081,FM
+"Bílá,Bumbálka,st.hr.",49.3991547,18.4097519,FM
 "Bílá,Bumbálka,st.hr.",49.3992653,18.4094048,FM
 "Bílá,Bumbálka,st.hr.",49.3991661,18.4098454,FM
 "Bílá,Hlavatá,kaple",49.41651,18.37354,FM
@@ -336,6 +337,7 @@ Branka u Opavy,49.88779,17.8779449,OP
 "Bravantice,,u mostu",49.7659836,18.0838623,NJ
 "Bravantice,,u mostu",49.7660255,18.08416,NJ
 "Brno,,Benešova tř.hotel GRAND",49.1934967,16.6144352,BM
+"Brno,,ÚAN Zvonařka",49.1858139,16.61664,BM
 "Brno,,ÚAN Zvonařka",49.1858139,16.61664,BM
 "Brno,,ÚAN Zvonařka",49.1858139,16.61664,BM
 "Brno,,ÚAN Zvonařka",49.1858139,16.61664,BM
@@ -756,17 +758,17 @@ Branka u Opavy,49.88779,17.8779449,OP
 "Dívčí Hrad,,Životice",50.2547722,17.6273785,BR
 "Dívčí Hrad,,Životice",50.2548027,17.627388,BR
 "Dlouhá Loučka,,radnice",49.81795,17.1895123,OC
-"Dlouhá Loučka,,radnice",49.81785,17.1892433,OC
-"Dlouhá Loučka,,radnice",49.81798,17.1881638,OC
+"Dlouhá Loučka,,radnice",49.8184853,17.1897259,OC
+"Dlouhá Loučka,,radnice",49.8184853,17.1897259,OC
 "Dlouhá Loučka,,rest.U Hvězdy",49.8160477,17.17899,OC
-"Dlouhá Loučka,,rest.U Hvězdy",49.8159866,17.1779213,OC
-"Dlouhá Loučka,,rest.U Hvězdy",49.8160248,17.17925,OC
-"Dlouhá Loučka,,rozc.",49.82078,17.1998653,OC
-"Dlouhá Loučka,,rozc.",49.8203354,17.198595,OC
+"Dlouhá Loučka,,rest.U Hvězdy",49.8159752,17.1738338,OC
+"Dlouhá Loučka,,rest.U Hvězdy",49.8159752,17.1738338,OC
+"Dlouhá Loučka,,rozc.",49.82155,17.1984043,OC
+"Dlouhá Loučka,,rozc.",49.8212929,17.19832,OC
 "Dlouhá Loučka,,rozc.",49.8202248,17.2006416,OC
 "Dlouhá Loučka,,rozc.",49.82023,17.2004585,OC
-"Dlouhá Loučka,,u spálené hospody",49.8118439,17.16693,OC
-"Dlouhá Loučka,,u spálené hospody",49.8119049,17.1659374,OC
+"Dlouhá Loučka,,u spálené hospody",49.81382,17.1663017,OC
+"Dlouhá Loučka,,u spálené hospody",49.81382,17.1663017,OC
 "Dlouhá Loučka,Křivá",49.83658,17.1992912,OC
 "Dlouhá Loučka,Křivá",49.8365326,17.199297,OC
 "Dlouhá Loučka,Křivá",49.8366547,17.199234,OC
@@ -1441,8 +1443,8 @@ Dolní Lhota,49.8367,18.08907,OV
 "Havířov,Šumbark,2.etapa Letní",49.80436,18.4213,KA
 "Havířov,Šumbark,2.etapa Orlí",49.7997,18.4235573,KA
 "Havířov,Šumbark,2.etapa Orlí",49.8001976,18.4237213,KA
-"Havířov,Šumbark,2.etapa u hřbitova",49.79799,18.41975,KA
 "Havířov,Šumbark,2.etapa u hřbitova",49.79812,18.41906,KA
+"Havířov,Šumbark,2.etapa u hřbitova",49.79799,18.41975,KA
 "Havířov,Šumbark,bazén",49.7932243,18.412077,KA
 "Havířov,Šumbark,bazén",49.7931747,18.4123535,KA
 "Havířov,Šumbark,H.Malířové",49.7968674,18.3970337,KA
@@ -2824,6 +2826,7 @@ Luboměř p.Strážnou,49.6880531,17.66469,PR
 "Luhačovice,,zotavovna Fontána",49.1151848,17.7721024,ZL
 Lutonina,49.2393227,17.8827629,ZL
 Lutonina,49.2392349,17.8827572,ZL
+"Makov,,Bumbálka št.hr.CLO",49.39911,18.4098034,FM
 "Makov,,št.hr.CLO",49.38298,18.41074,
 "Malá Morávka,,horní",50.0416374,17.3078671,BR
 "Malá Morávka,,horní",50.0414238,17.3076134,BR
@@ -3402,7 +3405,6 @@ Nové Heřminovy,50.01854,17.54556,BR
 "Olomouc,,Chválkovická-Epava",49.6071358,17.28221,OC
 "Olomouc,,Na Pile",49.60415,17.2797184,OC
 "Olomouc,,Na Pile",49.60467,17.2799454,OC
-"Olomouc,,Na Špici",49.59898,17.2743855,OC
 "Olomouc,,Pasteurova",49.5991974,17.2719879,OC
 "Olomouc,,Pionýrská",49.57792,17.2384739,OC
 "Olomouc,Týneček",49.6224174,17.2956028,OC
@@ -4192,7 +4194,7 @@ Nové Heřminovy,50.01854,17.54556,BR
 "Plzeň,,CAN",49.7465324,13.3629789,PM
 "Plzeň,,CAN",49.7465324,13.3629789,PM
 "Plzeň,,CAN",49.7465324,13.3629789,PM
-"Plzeň,,CAN",49.7465324,13.3629789,PM
+"Poděbrady,,žel.st.",50.14884,15.12377,NB
 "Polom,,pošta",49.5776443,17.8429871,PR
 "Polom,,rozc.k žel.st.",49.5765724,17.8569374,PR
 "Polom,,rozc.k žel.st.",49.5764847,17.8566532,PR
@@ -4207,6 +4209,7 @@ Nové Heřminovy,50.01854,17.54556,BR
 "Pozlovice,,Lipská",49.1239243,17.7942257,ZL
 "Pozlovice,,Nad přehradou",49.12067,17.7804375,ZL
 "Pozlovice,,Nad přehradou",49.1211052,17.7810936,ZL
+"Praha,,Černý Most",50.1090622,14.5770454,AB
 "Praha,,Roztyly",50.0380325,14.4763422,AB
 "Praha,,ÚAN Florenc",50.0894279,14.4408064,AB
 "Praha,,ÚAN Florenc",50.0894279,14.4408064,AB
@@ -4219,13 +4222,14 @@ Nové Heřminovy,50.01854,17.54556,BR
 "Praha,,ÚAN Florenc",50.0894279,14.4408064,AB
 "Praha,,ÚAN Florenc",50.0894279,14.4408064,AB
 "Praha,,ÚAN Florenc",50.0894279,14.4408064,AB
+"Praha,,Želivského",50.07842,14.4742537,AB
 "Pražmo,,Obecník",49.6079063,18.4939327,FM
 "Pražmo,,Obecník",49.6078339,18.49383,FM
-"Prostějov,,aut.st.",49.47444,17.1277866,PV
 "Prostřední Bečva,,hotel Zavadilka",49.43763,18.2643166,VS
 "Prostřední Bečva,,hotel Zavadilka",49.43772,18.2648964,VS
 "Prostřední Bečva,,požární dům",49.4371758,18.2523,VS
 "Prostřední Bečva,,požární dům",49.43703,18.2525387,VS
+"Prostřední Bečva,,Pustevny konečná",49.4871063,18.26431,VS
 "Prostřední Bečva,,rozc.Nová",49.43964,18.2376881,VS
 "Prostřední Bečva,,rozc.Nová",49.43951,18.2378349,VS
 "Prostřední Bečva,,U Šírů",49.44615,18.2515,VS
@@ -5061,6 +5065,7 @@ Slezské Pavlovice,50.3098259,17.7004337,BR
 "Tachov,,aut.nádr.",49.801075,12.635704,TC
 "Tachov,,aut.nádr.",49.801075,12.635704,TC
 "Těrlicko,,čekárna",49.7671356,18.4872875,KA
+"Těrlicko,,Dlouhá",49.75235,18.47215,KA
 "Těrlicko,,Dlouhá",49.7524033,18.4719563,KA
 "Těrlicko,,hřbitov",49.7562447,18.47908,KA
 "Těrlicko,,hřbitov",49.75722,18.4769287,KA
@@ -5482,8 +5487,8 @@ Slezské Pavlovice,50.3098259,17.7004337,BR
 "Uničov,,žel.st.",49.7787361,17.1167755,OC
 "Uničov,Dolní Sukolom,rest.",49.78938,17.1345387,OC
 "Uničov,Dolní Sukolom,rest.",49.78934,17.13432,OC
-"Uničov,Horní Sukolom,rest.",49.80212,17.1392841,OC
-"Uničov,Horní Sukolom,rest.",49.8020058,17.1388,OC
+"Uničov,Horní Sukolom,rest.",49.8020859,17.137928,OC
+"Uničov,Horní Sukolom,rest.",49.8020859,17.137928,OC
 "Ústí,,rozc.",49.3104,18.00536,VS
 "Úvalno,,Dolní rozcestí",50.0481224,17.7514839,BR
 "Úvalno,,Dolní rozcestí",50.0481758,17.75145,BR
@@ -5884,231 +5889,3 @@ Vršovice,49.8861923,17.9336033,OP
 "Životice u N.Jičína,,obecní úřad",49.55846,18.0467358,NJ
 "Životice u N.Jičína,,u Jana",49.5652351,18.0435829,NJ
 "Životice u N.Jičína,,u Jana",49.5650978,18.04348,NJ
-Albrechtice u Č.Těš.,49.79285,18.5245953,KA
-Amalín,50.2161179,17.6635551,BR
-Baška,49.6510658,18.3691425,FM
-Bělotín,49.5836868,17.8000183,PR
-Bílovec,49.75337,18.0139351,NJ
-Bocanovice (Boconowice),49.56409,18.7409782,FM
-Bohumín,49.9006653,18.35947,KA
-Bohušov,50.2402344,17.7149658,BR
-Bolatice,49.963253,18.07308,OP
-Branka u Opavy,49.8891945,17.8779984,OP
-Brantice,50.0520477,17.6116257,BR
-Brno hl.n.,49.1905,16.6128139,BM
-Brno-Královo Pole,49.2308159,16.5968761,BM
-Bruntál,49.99341,17.4744148,BR
-Brzeg,50.8528671,17.4710026,
-Břeclav,48.75377,16.8930244,BV
-Břidličná lesy,49.9179459,17.4028034,BR
-Břidličná zast.,49.9123344,17.3698864,BR
-Břidličná,49.9133263,17.3826523,BR
-Budišov n.Budišovkou,49.7958069,17.6139641,OP
-Bystřice (Bystrzyca),49.63638,18.7171631,FM
-Cieszyn,49.75124,18.6363258,
-Čadca,49.4448853,18.7874527,
-Čeladná,49.5529747,18.3343544,FM
-Čermná ve Slezsku,49.7883224,17.7084866,OP
-Česká Třebová,49.8971558,16.4465618,UO
-Česká Ves bazén,50.2599144,17.227932,JE
-Český Těšín (Czeski Cieszyn),49.7436867,18.6225262,KA
-Děhylov,49.87951,18.17226,OP
-Dětmarovice,49.9002876,18.4664974,KA
-Dětřichov n.Bystřicí,49.8384476,17.3949223,BR
-Dívčí Hrad,50.2324867,17.6446953,BR
-Dobrá u Frýdku-Místku,49.670845,18.41443,FM
-Dobratice p.Prašivou,49.6697121,18.4728489,FM
-Dolní Benešov,49.9231033,18.1193523,OP
-Dolní Benešov-Zábřeh,49.92436,18.0824051,OP
-Dolní Lutyně,49.9124756,18.4142952,KA
-Domašov n.Bystřicí,49.740284,17.4447918,OC
-Františkovy Lázně,50.1244049,12.35529,CH
-Frenštát p.Radhoštěm město,49.5451164,18.2065163,NJ
-Frenštát p.Radhoštěm,49.54192,18.2242527,NJ
-Frýdek-Místek,49.6775131,18.3539543,FM
-Frýdlant n.Ostr.,49.5888443,18.35471,FM
-Frýdlant n.Ostr.-N.Dědina,49.5697556,18.3606987,FM
-Frýdlant n.Ostr.zast.,49.5849571,18.3607635,FM
-Fulnek,49.7135,17.9128265,NJ
-Gliwice,50.30122,18.67694,
-Glucholazy,50.3304138,17.3945923,
-Háj ve Slezsku,49.9012642,18.09309,OP
-Havířov střed,49.7879,18.4404144,KA
-Havířov,49.7916336,18.4119854,KA
-Havířov-Suchá,49.7907562,18.4602451,KA
-Heřmánky,49.71348,17.7582951,NJ
-Hladké Životice m.n.,49.6797943,17.9509754,NJ
-Hladké Životice,49.67773,17.9845829,NJ
-Hlučín,49.90101,18.19382,OP
-Hnojník,49.678688,18.5389862,FM
-Hodonín,48.855423,17.1201382,HO
-Holasovice,50.00039,17.8038177,OP
-Horní Povelice,50.22579,17.6547871,BR
-Horní Suchá,49.7928963,18.4880314,KA
-Horní Tošanovice,49.6812859,18.5038071,FM
-Hostašovice,49.5209541,18.0166931,NJ
-Hradec n.Moravicí,49.8774948,17.8759384,OP
-Hradec-Nová Ves,50.28655,17.2745514,JE
-Hrádek (Gródek),49.6135674,18.73952,FM
-Hranice na Moravě,49.56545,17.7415848,PR
-Chalupki,49.9254875,18.3116455,
-Cheb,50.0737228,12.3809662,CH
-Chotěbuz (Kocobedz),49.7814751,18.5982151,KA
-Chuchelná,49.98873,18.11312,OP
-Jakubčovice n.Odrou,49.69685,17.7886314,NJ
-Jamartice,49.9340858,17.3180485,BR
-Jeseník n.Odrou,49.6157532,17.9024181,NJ
-Jeseník,50.22768,17.1933632,JE
-Jilešovice,49.8977966,18.1414051,OP
-Jindřichov ve Slezsku,50.24856,17.5386353,BR
-Jistebník,49.7489967,18.1508369,NJ
-Karlovice zast.,50.10762,17.4276657,BR
-Karlovice,50.1048241,17.4393539,BR
-Karlovy Vary,50.2355537,12.8668146,KV
-Karviná hl.n.,49.855545,18.5268135,KA
-Kedzierzyn Kozle,50.3448372,18.2046757,
-Kepno,51.2918549,18.0008583,
-Klokočov,49.73731,17.7693462,NJ
-Kluczbork,50.9709244,18.2006836,
-Knurow,50.21732,18.6883373,
-Koberno,50.22798,17.6989689,BR
-Kojetín,49.34543,17.30482,PR
-Kolín,50.02538,15.2146406,KO
-Kopřivnice zast.,49.6040039,18.14947,NJ
-Kopřivnice,49.5958824,18.1477,NJ
-Kozmice,49.91054,18.15376,OP
-Krásné Loučky,50.1255,17.63812,BR
-Kravaře ve Slezsku,49.9351234,18.0099182,OP
-Kravaře-Kouty,49.9309654,18.0391426,OP
-Krnov,50.0893974,17.6832771,BR
-Krnov-Cvilín,50.0939522,17.7128315,BR
-Kunčice p.Ondřej.,49.53481,18.2951889,FM
-Kunov,50.03737,17.5159283,BR
-Kúty,48.66196,17.0473747,
-Kuznia Raciborska,50.20079,18.2985554,
-Kylešovice,49.92507,17.9089737,OP
-Lázně Kynžvart,49.9933052,12.6140823,CH
-Legnica,51.21406,16.16881,
-Lhota u Opavy,49.90721,18.0469685,OP
-Linhartovy,50.1364136,17.614048,BR
-Lipová Lázně zast.,50.2295647,17.1607513,JE
-Lipová Lázně,50.2283669,17.1307774,JE
-Liptaň,50.22356,17.6087189,BR
-Lískovec u Frýdku,49.69797,18.3285942,FM
-Lomnice u Rýmařova,49.87317,17.41932,BR
-Louky n.Olší,49.7952347,18.5867729,KA
-Lubliniec,50.67293,18.6905689,
-Malé Hoštice,49.9321861,17.9457932,OP
-Mankovice,49.6357651,17.8758831,NJ
-Mariánské Lázně,49.9568253,12.694623,CH
-Město Albrechtice,50.1681137,17.5787144,BR
-Mikolow,50.17299,18.8994217,
-Mikulovice,50.3024826,17.3202572,JE
-Milotice n.Opavou,50.0142021,17.5574,BR
-Mokré Lazce,49.9094543,18.0309448,OP
-Moravský Beroun,49.7844162,17.4324322,OC
-Mořkov hl.trať,49.5288048,18.06843,NJ
-Mosty u Jablunkova (Mosty kolo Jabl.),49.5243,18.751276,FM
-Mosty u Jablunkova z. (Mosty kolo J.pr.),49.50794,18.7511826,FM
-"Mošnov,Ostrava Airport",49.69362,18.1190624,NJ
-Návsí (Nawsie),49.58982,18.7545662,FM
-Nezamyslice,49.3357124,17.1615257,PV
-Nové Heřminovy,50.0247421,17.5268517,BR
-Nový Jičín město,49.5988235,18.0091019,NJ
-Odry,49.6696663,17.8337669,NJ
-Odry-Loučky,49.6851768,17.8092232,NJ
-Olesno Slaskie,50.88227,18.4246559,
-Olomouc hl.n.,49.5926132,17.2784863,OC
-Opava východ,49.9346848,17.90831,OP
-Opava západ,49.93864,17.88848,OP
-Opava zast.,49.92925,17.9347782,OP
-Opava-Komárov,49.9177742,17.9592323,OP
-Opole Glowne,50.6618156,17.9260349,
-Osoblaha,50.26812,17.72247,BR
-Ostrava hl.n.,49.8500137,18.2640324,OV
-Ostrava střed,49.8289642,18.2829285,OV
-Ostrava-Bartovice,49.7789421,18.34033,OV
-Ostrava-Kunčice,49.790123,18.2915382,OV
-Ostrava-Kunčičky,49.80947,18.2967987,OV
-Ostrava-Mar.Hory,49.8368378,18.2392254,OV
-Ostrava-Stodolní,49.83492,18.28058,OV
-Ostrava-Svinov,49.82114,18.2102737,OV
-Ostrava-Třebovice,49.8420639,18.1957417,OV
-Ostrava-Vítkovice,49.8014832,18.26238,OV
-Ostravice zast.,49.55072,18.3801365,FM
-Ostravice,49.5378151,18.39358,FM
-Otrokovice,49.20263,17.5312614,ZL
-Pardubice hl.n.,50.0317,15.7563667,PA
-Paskov,49.73638,18.3032818,FM
-Petrovice u Karviné,49.89429,18.5493641,KA
-Písečná,50.2788124,17.25992,JE
-Planá u Mar.Lázní,49.86173,12.7301292,TC
-Plzeň hl.n.,49.7437,13.388011,PM
-Plzeň-Jižní Předměstí,49.7403336,13.367734,PM
-Pocheň,50.0750046,17.4482346,BR
-Polanka n.Odrou,49.7791862,18.1901112,OV
-Polom,49.5742722,17.85584,PR
-Praha hl.n.,50.0829773,14.43595,AB
-Praha-Libeň,50.1007729,14.5017023,AB
-Praha-Smíchov,50.06111,14.4080753,AB
-Praha-Vršovice,50.06456,14.4476423,AB
-Pržno,49.6170044,18.3618469,FM
-Přerov,49.4470673,17.4449768,PR
-Příbor,49.6359329,18.1422367,NJ
-Raciborz,50.0905037,18.2266235,
-Ropice (Ropica),49.71244,18.61643,FM
-Ropice zast. (Ropica przystanek),49.7166328,18.6263981,FM
-Ropice-Zálesí (Ropica-Zalesie),49.6937141,18.596426,FM
-Rybnik(PL),50.0889664,18.5477333,
-Rýmařov,49.92971,17.28433,BR
-Sedlnice,49.6761971,18.08936,NJ
-Skotnice,49.656147,18.1290016,NJ
-Skrbovice,50.0521164,17.4843349,BR
-Skrochovice,50.0182533,17.7771053,OP
-Slezské Rudoltice,50.21195,17.6830559,BR
-Sokolov,50.18611,12.6446161,SO
-Stachovice,49.6942253,17.93187,NJ
-Staré Město u Uh.Hrad.,49.0763969,17.4229527,UH
-Stříbro,49.7411232,13.0006065,TC
-Střítež u Čes.Těšína,49.67887,18.5692863,FM
-Studénka,49.7075424,18.0664845,NJ
-Studénka-město,49.71638,18.065052,NJ
-Suchdol n.Odrou,49.6421,17.9385128,NJ
-Svatoňovice,49.79922,17.6677151,OP
-Svrčinovec zast.,49.47987,18.7890053,
-Šenov u Nového Jičína,49.61133,17.9935322,NJ
-Šenov,49.77664,18.3708115,OV
-Široká Niva,50.0665932,17.4734421,BR
-Štěpánkovice,49.9506035,18.034584,OP
-Štítina,49.913,18.00576,OP
-Štramberk,49.58299,18.1325169,NJ
-Třemešná ve Slezsku,50.19979,17.5738525,BR
-Třinec (Trzyniec),49.6872978,18.6618786,FM
-Třinec centrum (Trzyniec centrum),49.6717,18.68,FM
-Třinec-Konská (Trzyniec-Konska),49.7018776,18.6414089,FM
-Ústí n.Orlicí město,49.9688835,16.39447,UO
-Ústí n.Orlicí,49.97158,16.3777332,UO
-Úvalno,50.0492325,17.7550831,BR
-Valašské Meziříčí,49.4744949,17.9608288,VS
-Valšov,49.9334679,17.4370975,BR
-Vávrovice,49.97512,17.8582611,OP
-Velká Štáhle,49.9309044,17.3522224,BR
-Velké Albrechtice,49.74857,18.0311565,NJ
-Velké Hoštice,49.9382133,17.9691925,OP
-Vendryně (Wedrynia),49.6564674,18.6960449,FM
-Veřovice,49.5369263,18.1332417,NJ
-Vítkov,49.7741432,17.7474842,OP
-Vratimov,49.7697,18.30365,OV
-Vrbno p.Pradědem zast.,50.1109352,17.4064312,BR
-Vrbno p.Pradědem,50.11785,17.3878441,BR
-Vrútky,49.11507,18.9244976,
-Vyškov na Moravě,49.2785568,16.9915733,VY
-Wodzislaw Sl.,50.0078735,18.4762554,
-Wroclaw Glowny,51.0980148,17.0378437,
-Zabrze,50.30531,18.7871,
-Zábřeh na Moravě,49.87217,16.8870888,SU
-Zátor,50.03937,17.5962639,BR
-Závada,49.8976173,18.5093269,KA
-Zebrzydowice,49.8703766,18.6232071,
-Ženklava,49.5647926,18.1310234,NJ
-Žilina,49.227,18.7466316,
