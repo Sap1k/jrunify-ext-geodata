@@ -328,6 +328,13 @@ def plzen_download_stops():
             pre_urls=["https://opendata.plzen.eu/public/opendata/detail/9"]))
 
 
+def zdarns_download_stops():
+    resp = requests.get("https://mhdzdar.kdyprijede.cz/stops")
+    for stop in resp.json()["stops"]:
+        yield Stop("Žďár n.Sáz.," + re.sub(r" *\[.*\]", "", stop[2]),
+                   stop[4] / 1000000, stop[3] / 1000000)
+
+
 def write_stops_csv(outfile, stops):
     stops = add_missing_regions(stops)
     w = csv.writer(outfile.open("w"))
@@ -430,6 +437,10 @@ def download_all(outdir):
     print("Downloading other/Plzen.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "Plzen.csv",
         plzen_download_stops())
+
+    print("Downloading other/ZdarNS.csv", file=sys.stderr)
+    write_stops_csv(outdir / "other" / "ZdarNS.csv",
+        zdarns_download_stops())
 
 
 if __name__ == "__main__":
