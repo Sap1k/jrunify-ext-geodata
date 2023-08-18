@@ -282,8 +282,9 @@ def karlovarsky_kraj_download_stops():
         ["PrvekNaz"])
     kv_stops_nonum = []
     for stop in kv_stops:
-        name = re.sub(r'^("?)[0-9]* *', r'\1', stop.name)
-        name = re.sub(r" *\([0-9]+\)$", "", name)
+        name = re.sub(r'^("?)[0-9x]* *', r'\1', stop.name)
+        name = re.sub(r" *\(.+\)$", "", name)
+        name = re.sub(r" +(NÁSTUP|VÝSTUP)$", "", name)
         if name == "": continue
         kv_stops_nonum.append(Stop(name, stop.lat, stop.lon))
     return kv_stops_nonum
