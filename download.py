@@ -27,6 +27,7 @@ class Stop:
     lat: float
     lon: float
     region: str | None = None
+    country: str | None = None
 
 # See https://stackoverflow.com/a/73519818
 class LegacyHttpAdapter(requests.adapters.HTTPAdapter):
@@ -48,7 +49,7 @@ legacy_session.mount("https://", LegacyHttpAdapter())
 # towns.json and regions.json are derived from data by ČÚZK:
 # https://geoportal.cuzk.cz/Default.aspx?mode=TextMeta&side=dSady_RUIAN_vse&metadataID=CZ-00025712-CUZK_SERIES-MD_RUIAN-STATY-SHP&head_tab=sekce-02-gp&menu=3327
 def load_towns():
-    towns_file = pathlib.Path(__file__).parent / "towns.json.gz"
+    towns_file = pathlib.Path(__file__).parent / "data" / "towns.json.gz"
     towns = {}
     with gzip.open(towns_file) as f:
         for feat in json.load(f)["features"]:
@@ -59,18 +60,27 @@ def load_towns():
 towns = load_towns()
 
 
-def load_regions():
-    regions_file = pathlib.Path(__file__).parent / "regions.json.gz"
-    regions = []
-    region_codes = []
-    with gzip.open(regions_file) as f:
+def load_polygon_tree(path, code_attr):
+    features = []
+    feature_codes = []
+    with gzip.open(path) as f:
         for feat in json.load(f)["features"]:
-            code = feat["properties"]["code"]
-            region_codes.append(code)
+            code = feat["properties"][code_attr]
+            feature_codes.append(code)
             shape = shapely.geometry.shape(feat["geometry"])
-            regions.append(shape)
-    return region_codes, shapely.STRtree(regions)
-region_codes, regions = load_regions()
+            features.append(shape)
+    return feature_codes, shapely.STRtree(features)
+
+
+region_codes, regions = load_polygon_tree(
+    pathlib.Path(__file__).parent / "data" / "regions.json.gz",
+    "code")
+
+# countries.json is derived from data by Natural Earth:
+# https://www.naturalearthdata.com/downloads/10m-cultural-vectors/
+country_codes, countries = load_polygon_tree(
+    pathlib.Path(__file__).parent / "data" / "countries.json.gz",
+    "code")
 
 
 def add_missing_town(stops):
@@ -94,7 +104,20 @@ def add_missing_regions(stops):
         regions_idx = regions.query(point, predicate="within").tolist()
         if len(regions_idx) == 1:
             yield Stop(stop.name, stop.lat, stop.lon,
-                       region_codes[regions_idx[0]])
+                       region_codes[regions_idx[0]], "CZ")
+        else:
+            yield stop
+
+def add_missing_countries(stops):
+    for stop in stops:
+        if stop.country:
+            yield stop
+            continue
+        point = shapely.Point(stop.lon, stop.lat)
+        countries_idx = countries.query(point, predicate="within").tolist()
+        if len(countries_idx) == 1:
+            yield Stop(stop.name, stop.lat, stop.lon, stop.region,
+                       country_codes[countries_idx[0]])
         else:
             yield stop
 
@@ -341,10 +364,17 @@ def zdarns_download_stops():
 
 def write_stops_csv(outfile, stops):
     stops = add_missing_regions(stops)
+    stops = add_missing_countries(stops)
     w = csv.writer(outfile.open("w"))
     for stop in stops:
         if stop.lat == 0 and stop.lon == 0: continue
-        w.writerow([stop.name, stop.lat, stop.lon, stop.region or ""])
+        w.writerow([
+            stop.name,
+            stop.lat,
+            stop.lon,
+            stop.region or "",
+            stop.country or "",
+        ])
 
 
 def download_all(outdir):
