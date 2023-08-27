@@ -29,6 +29,15 @@ class Stop:
     region: str | None = None
     country: str | None = None
 
+COUNTRY_OVERRIDES = {
+    # These border crossing stops sometimes end up on the wrong side of a
+    # simplified border line, for now just fix them manually.
+    "Drasenhofen,,ZOLL": (None, "AT"),
+    "Reitzenhain,Wendeschleife": (None, "DE"),
+    "Reitzenhain,ZOLL": (None, "DE"),
+    "Wullowitz,,ZOLL": (None, "AT"),
+}
+
 # See https://stackoverflow.com/a/73519818
 class LegacyHttpAdapter(requests.adapters.HTTPAdapter):
     def __init__(self, **kwargs):
@@ -367,6 +376,10 @@ def write_stops_csv(outfile, stops):
     stops = add_missing_countries(stops)
     w = csv.writer(outfile.open("w"))
     for stop in stops:
+        override = COUNTRY_OVERRIDES.get(stop.name)
+        if override:
+            stop.region = override[0]
+            stop.country = override[1]
         if stop.lat == 0 and stop.lon == 0: continue
         w.writerow([
             stop.name,
