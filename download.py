@@ -173,10 +173,16 @@ def mapaduk_download_stops():
     resp = requests.post(URL, json={})
     stops = resp.json()["ItemL"]
 
-    for stop in stops:
+    # Sometimes there are multiple entries for stops, and only one is
+    # identified correctly as a train stop
+    for (lat, lng), stops in \
+            itertools.groupby(stops, lambda s: (s["Lat"], s["Lng"])):
+        stops = list(stops)
         # These look like train stops
-        if stop["PostNote"] == "žst.": continue
-        yield Stop(stop["Name"], stop["Lat"], stop["Lng"])
+        if any(s["PostNote"] in ["žst.", "žel.zast."] for s in stops):
+            continue
+        for stop in stops:
+            yield Stop(stop["Name"], lat, lng)
 
 
 def tmapy_download_stops(url):
