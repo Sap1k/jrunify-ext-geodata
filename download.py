@@ -266,17 +266,11 @@ def jihocesky_kraj_download_stops():
          shapefile.Reader(shp=shp_file, dbf=dbf_file, encoding="UTF-8") as shp:
         stops = []
         for shrec in shp.shapeRecords():
+            if shrec.record["TYP"] == "vlak": continue
             lat, lon = transformer.transform(*shrec.shape.points[0])
             name = shrec.record["POPIS_LONG"]
             stops.append(Stop(name, lat, lon))
-        stops_agg = []
-        # Collapse stops with the same names
-        for stop_grp in itertools.groupby(stops, lambda s: s.name):
-            stops = list(stop_grp[1])
-            lat = statistics.mean(s.lat for s in stops)
-            lon = statistics.mean(s.lon for s in stops)
-            stops_agg.append(Stop(stop_grp[0], lat, lon))
-        return stops_agg
+        return stops
 
 
 def liberecky_kraj_download_stops():
