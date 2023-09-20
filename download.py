@@ -11,7 +11,6 @@ import pathlib
 import urllib3
 import zipfile
 import itertools
-import statistics
 import datetime as dt
 from dataclasses import dataclass
 import pyproj
@@ -406,10 +405,13 @@ def download_all(outdir):
 
     print("-- Downloading other/MoravskoslezskyKraj.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "MoravskoslezskyKraj.csv",
-        arcgis_download_stops(
+        (s for s in arcgis_download_stops(
             "https://gis.msk.cz/arcgis/rest/services/public/dsh_bus/MapServer",
             0,
-            ["OBEC", "OBEC_CAST", "BLIZSI_MIS"]))
+            ["OBEC", "OBEC_CAST", "BLIZSI_MIS"])
+         # The coordinates in this dataset point elsewhere than other available
+         # data (and it doesn't matter much, no stops actually stop here)
+         if s.name != "Bohumín,,CLO"))
 
     print("-- Downloading other/UsteckyKraj.csv", file=sys.stderr)
     write_stops_csv(outdir / "other" / "UsteckyKraj.csv",
