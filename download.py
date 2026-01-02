@@ -388,110 +388,66 @@ def write_stops_csv(outfile, stops):
             stop.country or "",
         ])
 
-
-def download_all(outdir):
-    (outdir / "other").mkdir(exist_ok=True)
-
-    print("-- Downloading other/KarlovarskyKraj.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "KarlovarskyKraj.csv",
-        karlovarsky_kraj_download_stops())
-
-    print("-- Downloading other/KrajVysocina.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "KrajVysocina.csv",
-        arcgis_download_stops(
-            "https://mapy.kr-vysocina.cz/arcgis/rest/services/Doprava/SchemaLinek/MapServer",
-            7,
-            ["OBEC", "OBEC_CAST", "BLIZSI_MIS"]))
-
-    print("-- Downloading other/MoravskoslezskyKraj.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "MoravskoslezskyKraj.csv",
-        (s for s in arcgis_download_stops(
+SOURCES = {
+    "other/KarlovarskyKraj.csv": karlovarsky_kraj_download_stops,
+    "other/KrajVysocina.csv": lambda: arcgis_download_stops(
+        "https://mapy.kr-vysocina.cz/arcgis/rest/services/Doprava/SchemaLinek/MapServer",
+        7,
+        ["OBEC", "OBEC_CAST", "BLIZSI_MIS"],
+    ),
+    "other/MoravskoslezskyKraj.csv": lambda: (
+        s
+        for s in arcgis_download_stops(
             "https://gis.msk.cz/arcgis/rest/services/public/dsh_bus/MapServer",
             0,
-            ["OBEC", "OBEC_CAST", "BLIZSI_MIS"])
-         # The coordinates in this dataset point elsewhere than other available
-         # data (and it doesn't matter much, no stops actually stop here)
-         if s.name != "Bohumín,,CLO"))
+            ["OBEC", "OBEC_CAST", "BLIZSI_MIS"],
+        )
+        # The coordinates in this dataset point elsewhere than other available
+        # data (and it doesn't matter much, no stops actually stop here)
+        if s.name != "Bohumín,,CLO"
+    ),
+    "other/UsteckyKraj.csv": lambda: arcgis_download_stops(
+        "https://ags.kr-ustecky.cz/arcgis/rest/services/Doprava/zastavky/MapServer",
+        0,
+        ["NAZEV"],
+    ),
+    "other/Mapa_IDSJMK.csv": mapa_idsjmk_download_stops,
+    "other/IDSJMK.csv": idsjmk_download_stops,
+    "other/PlzenskyKraj.csv": lambda: arcgis_download_stops(
+        "https://mapy.plzensky-kraj.cz/ArcGIS/rest/services/zastavky/MapServer",
+        1,
+        ["OZNACENI"],
+    ),
+    "other/MapaDUK.csv": mapaduk_download_stops,
+    "other/MapaIREDO.csv": lambda: tmapy_download_stops("https://tabule.oredo.cz"),
+    "other/MapaIDSOK.csv": lambda: tmapy_download_stops("https://cestujok.cz"),
+    "other/MPVNet_PID.csv": lambda: mpvnet_download_stops("PID"),
+    "other/MPVNet_Zlin.csv": lambda: mpvnet_download_stops("ZLIN"),
+    "other/MPVNet_IDOL.csv": lambda: mpvnet_download_stops("IDOL"),
+    "other/JihoceskyKraj.csv": jihocesky_kraj_download_stops,
+    "other/LibereckyKraj.csv": liberecky_kraj_download_stops,
+    "other/PID.csv": pid_download_stops,
+    "other/Most": most_download_stops,
+    "other/Ostrava.csv": ostrava_download_stops,
+    "other/Plzen.csv": plzen_download_stops,
+    "other/ZdarNS.csv": zdarns_download_stops,
+}
 
-    print("-- Downloading other/UsteckyKraj.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "UsteckyKraj.csv",
-        arcgis_download_stops(
-            "https://ags.kr-ustecky.cz/arcgis/rest/services/Doprava/zastavky/MapServer",
-            0,
-            ["NAZEV"]))
 
-    print("Downloading other/Mapa_IDSJMK.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "Mapa_IDSJMK.csv",
-        mapa_idsjmk_download_stops())
-
-    print("Downloading other/IDSJMK.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "IDSJMK.csv",
-        idsjmk_download_stops())
-
-    print("-- Downloading other/PlzenskyKraj.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "PlzenskyKraj.csv",
-        arcgis_download_stops(
-            "https://mapy.plzensky-kraj.cz/ArcGIS/rest/services/zastavky/MapServer",
-            1,
-            ["OZNACENI"]))
-
-    print("Downloading other/MapaDUK.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "MapaDUK.csv",
-        mapaduk_download_stops())
-
-    print("Downloading other/MapaIREDO.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "MapaIREDO.csv",
-        tmapy_download_stops("https://tabule.oredo.cz"))
-
-    print("Downloading other/MapaIDSOK.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "MapaIDSOK.csv",
-        tmapy_download_stops("https://cestujok.cz"))
-
-    print("Downloading other/MPVNet_PID.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "MPVNet_PID.csv",
-        mpvnet_download_stops("PID"))
-
-    print("Downloading other/MPVNet_ODIS.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "MPVNet_ODIS.csv",
-        mpvnet_download_stops("ODIS"))
-
-    print("Downloading other/MPVNet_Zlin.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "MPVNet_Zlin.csv",
-        mpvnet_download_stops("ZLIN"))
-
-    print("Downloading other/MPVNet_IDOL.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "MPVNet_IDOL.csv",
-        mpvnet_download_stops("IDOL"))
-
-    print("Downloading other/JihoceskyKraj.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "JihoceskyKraj.csv",
-        jihocesky_kraj_download_stops())
-
-    print("Downloading other/LibereckyKraj.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "LibereckyKraj.csv",
-        liberecky_kraj_download_stops())
-
-    print("Downloading other/PID.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "PID.csv",
-        pid_download_stops())
-
-    print("Downloading other/Most.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "Most.csv",
-        most_download_stops())
-
-    print("Downloading other/Ostrava.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "Ostrava.csv",
-        ostrava_download_stops())
-
-    print("Downloading other/Plzen.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "Plzen.csv",
-        plzen_download_stops())
-
-    print("Downloading other/ZdarNS.csv", file=sys.stderr)
-    write_stops_csv(outdir / "other" / "ZdarNS.csv",
-        zdarns_download_stops())
+def download_all(outdir):
+    for name, fun in SOURCES.items():
+        print(f"-- Downloading {name}", file=sys.stderr)
+        out = outdir / name
+        out.parent.mkdir(exist_ok=True)
+        write_stops_csv(out, fun())
 
 
 if __name__ == "__main__":
     outdir = pathlib.Path(sys.argv[1])
-    download_all(outdir)
+    if len(sys.argv) == 3:
+        name = sys.argv[2]
+        fun = SOURCES[name]
+        out = outdir / name
+        write_stops_csv(out, fun())
+    else:
+        download_all(outdir)
