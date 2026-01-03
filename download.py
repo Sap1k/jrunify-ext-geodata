@@ -184,6 +184,17 @@ def mapaduk_download_stops():
             yield Stop(stop["Name"], lat, lng)
 
 
+def iredo_mapa2_download_stops():
+    resp = requests.post(
+        "https://iredo.online/map/mapData",
+        json={"w": 0, "s": 0, "e": 180, "n": 180, "zoom": 20},
+    )
+    for stop in resp.json()["stops"]:
+        if stop["sourceType"] != "S":
+            continue
+        yield Stop(stop["name"], stop["lat"], stop["lon"])
+
+
 def tmapy_download_stops(url):
     resp = requests.get(url + "/idspublicservices/api/station")
     stops = resp.json()
@@ -420,6 +431,7 @@ SOURCES = {
     ),
     "other/MapaDUK.csv": mapaduk_download_stops,
     "other/MapaIREDO.csv": lambda: tmapy_download_stops("https://tabule.oredo.cz"),
+    "other/MapaIREDO2.csv": iredo_mapa2_download_stops,
     "other/MapaIDSOK.csv": lambda: tmapy_download_stops("https://cestujok.cz"),
     "other/MPVNet_PID.csv": lambda: mpvnet_download_stops("PID"),
     "other/MPVNet_Zlin.csv": lambda: mpvnet_download_stops("ZLIN"),
