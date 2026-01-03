@@ -213,20 +213,19 @@ def mpvnet_download_stops(instance):
     # Whole Czech Rep.
     BBOX = [48.195, 12.000, 51.385, 18.951]
 
-    t = int(time.time() * 1000)
-    date = dt.date.today().strftime("%d.%m.%Y")
-    resp = requests.post(f"{URL}/AXSM/GetViewportObjects?rnd={t}",
+    resp = requests.post(f"{URL}/{instance}/map/mapData",
         json = {
-            "sid": "",
             "s": BBOX[0],
             "w": BBOX[1],
             "n": BBOX[2],
             "e": BBOX[3],
-            "mppx": 14,
-            "mapQuery": f"{instance},{date} *,all",
-            "sOpt": "/z",
+            "zoom": 20,
+            "showStops": True,
+        },
+        headers={
+            "Origin": "https://mpvnet.cz",
         })
-    for stop in resp.json()["S"]:
+    for stop in resp.json()["stops"]:
         # Filter out train stops
         if stop["t"] == "T": continue
         yield Stop(stop["n"], stop["x"], stop["y"])
@@ -433,9 +432,11 @@ SOURCES = {
     "other/MapaIREDO.csv": lambda: tmapy_download_stops("https://tabule.oredo.cz"),
     "other/MapaIREDO2.csv": iredo_mapa2_download_stops,
     "other/MapaIDSOK.csv": lambda: tmapy_download_stops("https://cestujok.cz"),
-    "other/MPVNet_PID.csv": lambda: mpvnet_download_stops("PID"),
-    "other/MPVNet_Zlin.csv": lambda: mpvnet_download_stops("ZLIN"),
-    "other/MPVNet_IDOL.csv": lambda: mpvnet_download_stops("IDOL"),
+    "other/MPVNet_PID.csv": lambda: mpvnet_download_stops("pid"),
+    "other/MPVNet_ODIS.csv": lambda: mpvnet_download_stops("odis"),
+    "other/MPVNet_Zlin.csv": lambda: mpvnet_download_stops("zlin"),
+    "other/MPVNet_IDOL.csv": lambda: mpvnet_download_stops("idol"),
+    "other/MPVNet_JIKORD.csv": lambda: mpvnet_download_stops("jikord"),
     "other/JihoceskyKraj.csv": jihocesky_kraj_download_stops,
     "other/LibereckyKraj.csv": liberecky_kraj_download_stops,
     "other/PID.csv": pid_download_stops,
