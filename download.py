@@ -205,6 +205,15 @@ def mapaduk_download_stops():
             yield Stop(stop["Name"], lat, lng)
 
 
+def qride_download_stops():
+    resp = requests.get("https://tabule.portabo.cz/api/v1-tabule/cis/GetStations")
+    for stop in resp.json()["ItemList"]:
+        if stop["Latitude"] is None or stop["Longitude"] is None:
+            print(f"Skipping stop {stop['Name']} without position")
+            continue
+        yield Stop(stop["Name"], stop["Latitude"], stop["Longitude"])
+
+
 def iredo_mapa2_download_stops():
     resp = requests.post(
         "https://iredo.online/map/mapData",
@@ -433,6 +442,7 @@ SOURCES = {
         "https://tim.abirun.eu/KrajVysocina/TarifniPocitadlo/Mapa"
     ),
     "other/MapaDUK.csv": mapaduk_download_stops,
+    "other/QRideDUK.csv": qride_download_stops,
     "other/MapaIREDO.csv": lambda: tmapy_download_stops("https://tabule.oredo.cz"),
     "other/MapaIREDO2.csv": iredo_mapa2_download_stops,
     "other/MapaIDSOK.csv": lambda: tmapy_download_stops("https://cestujok.cz"),
