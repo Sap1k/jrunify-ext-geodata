@@ -350,9 +350,9 @@ def idsjmk_download_stops():
 
 def most_download_stops():
     stops = arcgis_download_stops(
-        # URL is backing service for https://opendata.mesto-most.cz/datasets/mestomost::zast%C3%A1vky-mhd/explore
-        "https://mapy.mesto-most.cz/server/rest/services/Opendata/Zastavky_MHD_opendata/FeatureServer",
-        0,
+        # URL is backing service for https://opendata.mesto-most.cz/datasets/e91cb7afcf264116bbcb84d98d30580c_32/explore
+        "https://mapy.mesto-most.cz/server/rest/services/Opendata/OpendataProjekty/FeatureServer",
+        32,
         ["NAZEV"])
     return add_missing_town(stops)
 
@@ -440,7 +440,7 @@ SOURCES = {
     "other/JihoceskyKraj.csv": jihocesky_kraj_download_stops,
     "other/LibereckyKraj.csv": liberecky_kraj_download_stops,
     "other/PID.csv": pid_download_stops,
-    "other/Most": most_download_stops,
+    "other/Most.csv": most_download_stops,
     "other/Ostrava.csv": ostrava_download_stops,
     "other/Plzen.csv": plzen_download_stops,
     "other/ZdarNS.csv": zdarns_download_stops,
