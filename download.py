@@ -352,15 +352,6 @@ def karlovarsky_kraj_download_stops():
     return kv_stops_nonum
 
 
-def mapa_idsjmk_download_stops():
-    def inner():
-        stops_json = requests.get("https://mapa.idsjmk.cz/api/stops").json()
-        for stop in stops_json["Stops"]:
-            yield Stop(stop["Name"], stop["Latitude"], stop["Longitude"])
-
-    return add_missing_town(inner())
-
-
 def idsjmk_download_stops():
     stops = arcgis_download_stops( # URL is backing service for https://data.brno.cz/datasets/747a824783044377b6d07a8060e7769d_0/explore
         "https://services6.arcgis.com/fUWVlHWZNxUvTUh8/ArcGIS/rest/services/stops/FeatureServer",
@@ -437,7 +428,6 @@ SOURCES = {
         0,
         ["NAZEV"],
     ),
-    "other/Mapa_IDSJMK.csv": mapa_idsjmk_download_stops,
     "other/IDSJMK.csv": idsjmk_download_stops,
     "other/PlzenskyKraj.csv": lambda: arcgis_download_stops(
         "https://mapy.plzensky-kraj.cz/ArcGIS/rest/services/zastavky/MapServer",
