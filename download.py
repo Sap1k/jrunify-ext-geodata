@@ -11,8 +11,8 @@ import pathlib
 import urllib3
 import zipfile
 import itertools
-import datetime as dt
 from dataclasses import dataclass
+import lxml.html
 import pyproj
 import shapely
 import shapely.geometry
@@ -164,6 +164,27 @@ def arcgis_download_stops(url, layer, name_fields, where="1=1"):
         print("Got", len(stops), "stops", file=sys.stderr)
         if len(stops) != batch: break
         offset += batch
+
+
+def abirun_tim_download_stops(url):
+    sess = requests.session()
+    resp = sess.get(url)
+    homepage = lxml.html.fromstring(resp.content)
+    tariff_id = homepage.xpath("//select[@id='tarifValidity']/option/@value")[0]
+
+    resp = sess.post(f"{url}/ZakladniDataMapy",
+                         json={"platnostTarifuId": tariff_id})
+    zones = resp.json()["zones"]
+
+    for zone in zones:
+        time.sleep(0.1)
+        resp = sess.post(
+            f"{url}/Zastavky",
+            json={"platnostTarifuId": tariff_id, "zonaId": zone["id"]},
+        )
+        for stop in resp.json():
+            if not stop["isBus"]: continue
+            yield Stop(stop["text"], stop["point"]["lat"], stop["point"]["lon"])
 
 
 def mapaduk_download_stops():
@@ -400,11 +421,6 @@ def write_stops_csv(outfile, stops):
 
 SOURCES = {
     "other/KarlovarskyKraj.csv": karlovarsky_kraj_download_stops,
-    "other/KrajVysocina.csv": lambda: arcgis_download_stops(
-        "https://mapy.kr-vysocina.cz/arcgis/rest/services/Doprava/SchemaLinek/MapServer",
-        7,
-        ["OBEC", "OBEC_CAST", "BLIZSI_MIS"],
-    ),
     "other/MoravskoslezskyKraj.csv": lambda: (
         s
         for s in arcgis_download_stops(
@@ -428,6 +444,7 @@ SOURCES = {
         1,
         ["OZNACENI"],
     ),
+    "other/MapaVDV.csv": lambda: abirun_tim_download_stops("https://tim.abirun.eu/KrajVysocina/TarifniPocitadlo/Mapa"),
     "other/MapaDUK.csv": mapaduk_download_stops,
     "other/MapaIREDO.csv": lambda: tmapy_download_stops("https://tabule.oredo.cz"),
     "other/MapaIREDO2.csv": iredo_mapa2_download_stops,
