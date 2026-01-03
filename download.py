@@ -412,16 +412,11 @@ def write_stops_csv(outfile, stops):
 
 SOURCES = {
     "other/KarlovarskyKraj.csv": karlovarsky_kraj_download_stops,
-    "other/MoravskoslezskyKraj.csv": lambda: (
-        s
-        for s in arcgis_download_stops(
-            "https://gis.msk.cz/arcgis/rest/services/public/dsh_bus/MapServer",
-            0,
-            ["OBEC", "OBEC_CAST", "BLIZSI_MIS"],
-        )
-        # The coordinates in this dataset point elsewhere than other available
-        # data (and it doesn't matter much, no stops actually stop here)
-        if s.name != "Bohumín,,CLO"
+    "other/MoravskoslezskyKraj.csv": lambda: arcgis_download_stops(
+        # Backing service for https://data.msk.cz/datasets/17da5e4200744a6e8bfd3a8a31777402_0/explore
+        "https://services8.arcgis.com/jfWD14yYevYeDEj7/arcgis/rest/services/cp_di_zastavky_vhd/FeatureServer",
+        0,
+        ["NAZEV_ZASTAVKY"],
     ),
     "other/UsteckyKraj.csv": lambda: arcgis_download_stops(
         "https://ags.kr-ustecky.cz/arcgis/rest/services/Doprava/zastavky/MapServer",
@@ -434,7 +429,9 @@ SOURCES = {
         1,
         ["OZNACENI"],
     ),
-    "other/MapaVDV.csv": lambda: abirun_tim_download_stops("https://tim.abirun.eu/KrajVysocina/TarifniPocitadlo/Mapa"),
+    "other/MapaVDV.csv": lambda: abirun_tim_download_stops(
+        "https://tim.abirun.eu/KrajVysocina/TarifniPocitadlo/Mapa"
+    ),
     "other/MapaDUK.csv": mapaduk_download_stops,
     "other/MapaIREDO.csv": lambda: tmapy_download_stops("https://tabule.oredo.cz"),
     "other/MapaIREDO2.csv": iredo_mapa2_download_stops,
