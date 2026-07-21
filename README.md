@@ -1,5 +1,61 @@
 This data is used by [JrUnify-cloud](https://gitlab.com/dvdkon/jrunify-cloud)
 
+CSV rows use `name,latitude,longitude,okres,country` and may include a sixth
+precision field: `S` for a stop-level coordinate or `T` for an explicitly
+approximate town coordinate. Five-column files mean `S`. External ISO country
+codes are normalized to the historical JDF identifiers by `download.py`.
+
+Run a complete refresh into staging before replacing checked-in files:
+
+```sh
+python download.py /path/to/empty-staging-directory
+```
+
+The updater validates rows, removes spatially coincident duplicates, stages
+each source atomically, and reports every failed source after attempting the
+full inventory. See [SOURCE_AUDIT.md](SOURCE_AUDIT.md) for the DADOF audit and
+known retired endpoints. Pass the repository's `other` directory to JrUtil;
+the `rail` directory uses the separate SR70 four-column contract.
+
+For residual coordinates, `gapfill.py osm` accepts one or more Overpass
+bounding boxes and caches the batched extracts. Supply a separate
+`--nominatim-cache`; it is consulted only for unique unresolved foreign
+municipalities, sequentially at no more than one request per second, and emits
+town-precision (`T`) rows. OSM candidates without municipality tags may match
+through the preloaded okres index. `gapfill.py mapy` is the final fallback and
+reads its credential only from `MAPY_API_KEY`. Both commands accept an input CSV
+with `stop_id,name,municipality,region,country`, write only unique exact
+normalized matches to the geodata CSV, and put all ambiguous/missing rows in a
+review CSV. Mapy raw responses and rejected candidates are never stored.
+
+For a small residual, prefer `gapfill.py osm-search`: it performs one cached,
+rate-limited Nominatim search per stop instead of serial Overpass boxes. Nearby
+platforms with the same exact identity are emitted as one stop-place centroid;
+distant or competing clusters remain in review. `--context-overrides` applies
+the checked `gapfill-context-overrides.csv` parent-municipality corrections to
+either `osm-search` or `mapy`. Mapy can additionally write a structured
+`--candidate-review` CSV containing candidate labels and coordinates, but no
+raw responses or credential.
+
+`gapfill.py audit GTFS_DIRECTORY MERGED_JDF_ZIP OUTPUT.csv` builds that input
+from an existing bundle, so refreshing coordinates does not require another
+JrUtil conversion. Run Mapy only on the review/residual left by the open-data
+and OSM stages.
+
+After enabling JrUtil's `regional-adjacent` route policy, build the actionable
+post-filter work list without another conversion or a JrUtil cache:
+
+```sh
+python residual_plan.py GTFS_DIRECTORY MERGED_JDF_ZIP AUDIT.csv WORKLIST.csv \
+  --external-geodata other
+```
+
+The utility uses the emitted GTFS trip set for service validity, applies the
+same international-route distance rules to the merged JDF, and removes only
+exact refreshed-source matches with compatible geography and a candidate
+cluster under one kilometre. The resulting CSV includes source stop IDs, route
+distinctions, route names and the recommended next matching stage.
+
 # Railway sources
 
 ## SR70.csv

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.tmp
+cache/
+*-review.csv
+

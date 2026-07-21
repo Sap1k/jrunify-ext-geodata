@@ -1,0 +1,20 @@
+stop_id,municipality,reason
+jdf:stop:27851:unspecified,Bruntál,MHD route 855851/855852 consists of Bruntál calls
+jdf:stop:37135:unspecified,Karlovy Vary,MHD route 425020 terminates at Karlovy Vary Lázně I
+jdf:stop:9407:unspecified,Plzeň,Route 445050 starts at Plzeň NC Černice
+jdf:stop:5204:unspecified,Vysoká nad Labem,MHD route 615018/615020 endpoint and route name identify Vysoká nad Labem
+jdf:stop:22374:unspecified,Hradec Králové,MHD THV1/THV2 route name identifies Hradec Králové Muzeum
+jdf:stop:24645:unspecified,Tirschenreuth,OSM places Lodermühl within Tirschenreuth
+jdf:stop:24646:unspecified,Bärnau,Route context and Mapy place Grün Haus Nr. 5 within Bärnau
+jdf:stop:24647:unspecified,Bärnau,OSM places Schwarzenbach b. Tirschenreuth within Bärnau
+jdf:stop:24650:unspecified,Bärnau,OSM places Heimhof within Bärnau
+jdf:stop:33438:unspecified,Most,Čepirohy is a part of Most
+jdf:stop:33439:unspecified,Most,Čepirohy is a part of Most
+jdf:stop:34141:unspecified,Velhartice,Nemilkov is a part of Velhartice
+jdf:stop:34143:unspecified,Most,Čepirohy is a part of Most
+jdf:stop:34338:unspecified,Běleč nad Orlicí,HK region identifies Běleč nad Orlicí
+jdf:stop:34682:unspecified,Drosendorf-Zissersdorf,OSM places Drosendorf within Drosendorf-Zissersdorf
+jdf:stop:36804:unspecified,Bayerisch Eisenstein,OSM places Arber Bergbahn within Bayerisch Eisenstein
+jdf:stop:36805:unspecified,Bayerisch Eisenstein,OSM places Thurnhoflift within Bayerisch Eisenstein
+jdf:stop:36806:unspecified,Bayerisch Eisenstein,OSM places Brennes within Bayerisch Eisenstein
+jdf:stop:37529:unspecified,Furth im Wald,Expanded JDF abbreviation
