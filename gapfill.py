@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Conservative one-shot OSM and Mapy coordinate gap filling.
+"""One-shot OSM and Mapy coordinate gap filling.
 
 The input is a UTF-8 CSV with ``stop_id,name,municipality,region,country``.
-Only unique exact normalized identities are accepted automatically. Everything
-else is written to a review CSV; raw service responses are cached only for OSM
+Mapy may also refine route-derived estimated coordinates. Its name matching is
+deliberately permissive, but candidates must still pass the same scheduled-time
+distance ceiling used by JrUtil. Raw service responses are cached only for OSM
 maintenance and are never retained for Mapy.
 """
 
@@ -41,6 +42,12 @@ class StopQuery:
     municipality: str
     region: str
     country: str
+    coordinate_status: str = "missing"
+    latitude: float | None = None
+    longitude: float | None = None
+    coordinate_source: str = ""
+    route_occurrences: int = 0
+    route_contexts: tuple[dict, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -54,6 +61,8 @@ class Candidate:
     region: str = ""
     source: str = ""
     rank: int = 0
+    label: str = ""
+    query: str = ""
 
 
 ABBREVIATIONS = {
@@ -63,12 +72,21 @@ ABBREVIATIONS = {
     "cint": "cintorin",
     "dw aut": "dworzec autobusowy",
     "hl nadr": "hlavni nadrazi",
+    "odb": "odbocka",
     "kriz": "krizovatka",
     "nam": "namesti",
     "nem": "nemocnice",
     "razc": "razcestie",
     "zel st": "zeleznicni stanice",
 }
+
+QUERY_ABBREVIATIONS = (
+    (re.compile(r"\bodb\.?", re.IGNORECASE), "odbočka"),
+    (re.compile(r"\bkřiž(?:\.|\b)", re.IGNORECASE), "křižovatka"),
+    (re.compile(r"\bkriz(?:\.|\b)", re.IGNORECASE), "křižovatka"),
+    (re.compile(r"\baut\.?\s*n(?:á|a)dr\.?", re.IGNORECASE), "autobusové nádraží"),
+    (re.compile(r"\bžel\.?\s*st\.?", re.IGNORECASE), "železniční stanice"),
+)
 
 MUNICIPALITY_ALIASES = {
     "bayer eisenstein": "bayerisch eisenstein",
@@ -83,7 +101,9 @@ MUNICIPALITY_ALIASES = {
 
 
 def normalize_text(value: str) -> str:
-    value = value.casefold().translate(str.maketrans({"ł": "l", "ø": "o", "đ": "d", "ß": "ss"}))
+    value = value.casefold().translate(
+        str.maketrans({"ł": "l", "ø": "o", "đ": "d", "ß": "ss"})
+    )
     value = unicodedata.normalize("NFKD", value)
     value = "".join(char for char in value if not unicodedata.combining(char))
     value = value.replace("&", " a ")
@@ -98,15 +118,60 @@ def stop_name_identities(stop: StopQuery) -> set[str]:
     identities = {normalize_text(stop.name)}
     if components:
         identities.add(normalize_text(components[-1]))
-    if stop.municipality and components and normalize_text(components[0]) == normalize_text(
+    if (
         stop.municipality
+        and components
+        and normalize_text(components[0]) == normalize_text(stop.municipality)
     ):
         identities.add(normalize_text(" ".join(components[1:])))
     if stop.municipality and (
-        not components or normalize_text(components[0]) != normalize_text(stop.municipality)
+        not components
+        or normalize_text(components[0]) != normalize_text(stop.municipality)
     ):
         identities.add(normalize_text(f"{stop.municipality},{stop.name}"))
     return identities - {""}
+
+
+def component_identities(value: str) -> set[str]:
+    """Return full and locality-qualified suffix identities for a stop name."""
+    components = [part.strip() for part in value.split(",") if part.strip()]
+    identities = {normalize_text(value)}
+    identities.update(
+        normalize_text(" ".join(components[index:])) for index in range(len(components))
+    )
+    return identities - {""}
+
+
+def exact_name_matches(stop: StopQuery, candidate: Candidate) -> bool:
+    expected = {
+        variant
+        for name in stop_name_identities(stop)
+        for variant in identity_variants(name)
+    }
+    actual = {
+        variant
+        for name in candidate.names
+        for identity in component_identities(name)
+        for variant in identity_variants(identity)
+    }
+    return bool(expected.intersection(actual))
+
+
+def expanded_query(value: str) -> str:
+    for pattern, replacement in QUERY_ABBREVIATIONS:
+        value = pattern.sub(replacement, value)
+    return " ".join(value.split())
+
+
+def mapy_query_variants(stop: StopQuery) -> tuple[str, ...]:
+    components = [part.strip() for part in stop.name.split(",") if part.strip()]
+    variants = [stop.name, expanded_query(stop.name)]
+    if components:
+        for index in range(1, len(components)):
+            suffix = ", ".join(components[index:])
+            variants.extend((suffix, f"{suffix}, {stop.municipality or components[0]}"))
+        variants.append(f"{components[-1]}, {stop.municipality or components[0]}")
+    return tuple(dict.fromkeys(value.strip() for value in variants if value.strip()))
 
 
 def identity_variants(value: str) -> set[str]:
@@ -117,6 +182,27 @@ def identity_variants(value: str) -> set[str]:
 def normalized_municipality(value: str) -> str:
     normalized = normalize_text(value)
     return MUNICIPALITY_ALIASES.get(normalized, normalized)
+
+
+def municipality_matches(stop: StopQuery, candidate: Candidate) -> bool:
+    expected = normalized_municipality(stop.municipality or stop.name.split(",", 1)[0])
+    actual = normalized_municipality(candidate.municipality)
+    if not expected:
+        return True
+    if not actual:
+        return bool(stop.region and candidate.region == stop.region)
+    if actual == expected:
+        return True
+    stop_components = {
+        normalized_municipality(part) for part in stop.name.split(",") if part.strip()
+    }
+    candidate_components = {
+        normalized_municipality(part)
+        for name in candidate.names
+        for part in name.split(",")
+        if part.strip()
+    }
+    return actual in stop_components or expected in candidate_components
 
 
 def _country_matches(expected: str, actual: str) -> bool:
@@ -132,25 +218,28 @@ def distance_metres(left: Candidate, right: Candidate) -> float:
     return math.hypot(north, east)
 
 
-def choose_exact_candidate(stop: StopQuery, candidates: list[Candidate]) -> Candidate | None:
-    identities = {variant for name in stop_name_identities(stop) for variant in identity_variants(name)}
-    municipality = normalized_municipality(stop.municipality or stop.name.split(",", 1)[0])
+def choose_exact_candidate(
+    stop: StopQuery, candidates: list[Candidate]
+) -> Candidate | None:
+    municipality = normalized_municipality(
+        stop.municipality or stop.name.split(",", 1)[0]
+    )
     accepted = []
     for candidate in candidates:
         if candidate.kind != "stop":
             continue
         if not _country_matches(stop.country, candidate.country):
             continue
-        if municipality:
-            if candidate.municipality:
-                if normalized_municipality(candidate.municipality) != municipality:
-                    continue
-            elif not stop.region or candidate.region != stop.region:
-                continue
-        candidate_identities = {
-            variant for name in candidate.names for variant in identity_variants(name)
-        }
-        if not identities.intersection(candidate_identities):
+        if (
+            municipality
+            and not municipality_matches(stop, candidate)
+            and not (
+                stop.coordinate_status == "estimated"
+                and exact_name_matches(stop, candidate)
+            )
+        ):
+            continue
+        if not exact_name_matches(stop, candidate):
             continue
         accepted.append(candidate)
     unique_positions = {(item.latitude, item.longitude): item for item in accepted}
@@ -165,7 +254,11 @@ def choose_exact_candidate(stop: StopQuery, candidates: list[Candidate]) -> Cand
         return platform_centroid(positions)
     clusters: list[list[Candidate]] = []
     for position in positions:
-        matching = [cluster for cluster in clusters if any(distance_metres(position, item) <= 500 for item in cluster)]
+        matching = [
+            cluster
+            for cluster in clusters
+            if any(distance_metres(position, item) <= 500 for item in cluster)
+        ]
         if not matching:
             clusters.append([position])
         else:
@@ -195,40 +288,25 @@ def platform_centroid(positions: list[Candidate]) -> Candidate:
     )
 
 
-def choose_town_candidate(stop: StopQuery, candidates: list[Candidate]) -> Candidate | None:
-    municipality = normalized_municipality(stop.municipality or stop.name.split(",", 1)[0])
-    accepted = [
-        candidate
-        for candidate in candidates
-        if candidate.kind == "town"
-        and _country_matches(stop.country, candidate.country)
-        and normalized_municipality(candidate.names[0]) == municipality
-    ]
-    unique_positions = {(item.latitude, item.longitude): item for item in accepted}
-    if len(unique_positions) == 1:
-        return next(iter(unique_positions.values()))
-    same_region = [
-        item for item in unique_positions.values() if stop.region and item.region == stop.region
-    ]
-    if len(same_region) == 1:
-        return same_region[0]
-    bounded_first = [item for item in accepted if item.source == "mapy-town-bbox" and item.rank == 0]
-    return bounded_first[0] if len(bounded_first) == 1 else None
-
-
 def choose_fuzzy_candidate(
     stop: StopQuery, candidates: list[Candidate], threshold: float
 ) -> Candidate | None:
-    municipality = normalized_municipality(stop.municipality or stop.name.split(",", 1)[0])
+    municipality = normalized_municipality(
+        stop.municipality or stop.name.split(",", 1)[0]
+    )
     targets = stop_name_identities(stop)
     scored_positions: dict[tuple[float, float], tuple[float, Candidate]] = {}
     for candidate in candidates:
-        if candidate.kind != "stop" or not _country_matches(stop.country, candidate.country):
+        if candidate.kind != "stop" or not _country_matches(
+            stop.country, candidate.country
+        ):
             continue
-        if candidate.municipality and normalized_municipality(candidate.municipality) != municipality:
+        if municipality and not municipality_matches(stop, candidate):
             continue
         score = max(
-            difflib.SequenceMatcher(None, normalize_text(target), normalize_text(name)).ratio()
+            difflib.SequenceMatcher(
+                None, normalize_text(target), normalize_text(name)
+            ).ratio()
             for target in targets
             for name in candidate.names
         )
@@ -243,6 +321,89 @@ def choose_fuzzy_candidate(
     return ranked[0][1]
 
 
+def candidate_name_score(stop: StopQuery, candidate: Candidate) -> float:
+    targets = stop_name_identities(stop)
+    return max(
+        difflib.SequenceMatcher(
+            None, normalize_text(target), normalize_text(name)
+        ).ratio()
+        for target in targets
+        for name in candidate.names
+    )
+
+
+def coordinate_distance_metres(
+    latitude: float, longitude: float, other_latitude: float, other_longitude: float
+) -> float:
+    middle_latitude = math.radians((latitude + other_latitude) / 2)
+    north = (latitude - other_latitude) * 111_320
+    east = (longitude - other_longitude) * 111_320 * math.cos(middle_latitude)
+    return math.hypot(north, east)
+
+
+def route_feasibility(
+    stop: StopQuery, candidate: Candidate
+) -> tuple[bool, str, float | None]:
+    distance_from_estimate = (
+        coordinate_distance_metres(
+            stop.latitude, stop.longitude, candidate.latitude, candidate.longitude
+        )
+        if stop.latitude is not None and stop.longitude is not None
+        else None
+    )
+    if stop.coordinate_status != "estimated":
+        return True, "not_estimated", distance_from_estimate
+
+    anchors = []
+    for context in stop.route_contexts:
+        anchors.extend(
+            anchor
+            for anchor in (context.get("previous"), context.get("following"))
+            if anchor
+        )
+    for anchor in anchors:
+        elapsed = float(anchor["elapsed_minutes"])
+        distance = coordinate_distance_metres(
+            candidate.latitude,
+            candidate.longitude,
+            float(anchor["latitude"]),
+            float(anchor["longitude"]),
+        )
+        # This is intentionally identical to JdfFixups.rejectImplausibleMatches:
+        # 2 km local slack plus a deliberately generous 150 km/h.
+        maximum = 2_000 + elapsed * 2_500
+        if elapsed < 0 or distance > maximum:
+            return False, "route_time_impossible", distance_from_estimate
+    if anchors:
+        return True, "route_time_feasible", distance_from_estimate
+    if (
+        distance_from_estimate is not None
+        and distance_from_estimate <= 2_000
+        and municipality_matches(stop, candidate)
+    ):
+        return True, "estimate_within_2km", distance_from_estimate
+    return False, "no_route_context_or_nearby_match", distance_from_estimate
+
+
+def candidate_geography(
+    stop: StopQuery, candidate: Candidate
+) -> tuple[bool, str, float | None]:
+    if candidate.kind != "stop":
+        return False, "not_public_transport_stop", None
+    if not _country_matches(stop.country, candidate.country):
+        return False, "wrong_country", None
+    route_accepted, route_reason, distance = route_feasibility(stop, candidate)
+    if not route_accepted:
+        return False, route_reason, distance
+    if not municipality_matches(stop, candidate):
+        if stop.coordinate_status == "estimated" and exact_name_matches(
+            stop, candidate
+        ):
+            return True, "route_exact_locality_alias", distance
+        return False, "municipality_mismatch", distance
+    return True, route_reason, distance
+
+
 def load_queries(path: Path) -> list[StopQuery]:
     with path.open(encoding="utf-8-sig", newline="") as stream:
         rows = csv.DictReader(stream)
@@ -255,58 +416,194 @@ def load_queries(path: Path) -> list[StopQuery]:
             raise ValueError(
                 f"{path} must contain {', '.join(sorted(required))} and stop_id or stop_ids"
             )
-        return [
-            StopQuery(
-                (row.get("stop_id") or row.get("stop_ids") or "").strip(),
-                row["name"].strip(),
-                row["municipality"].strip(),
-                row["region"].strip(),
-                row["country"].strip(),
+        queries = []
+        for row in rows:
+            contexts = json.loads(row.get("route_contexts") or "[]")
+            queries.append(
+                StopQuery(
+                    (row.get("stop_id") or row.get("stop_ids") or "").strip(),
+                    row["name"].strip(),
+                    row["municipality"].strip(),
+                    row["region"].strip(),
+                    row["country"].strip(),
+                    (row.get("coordinate_status") or "missing").strip(),
+                    _optional_float(row.get("current_latitude")),
+                    _optional_float(row.get("current_longitude")),
+                    (row.get("coordinate_source") or "").strip(),
+                    int(row.get("route_occurrences") or 0),
+                    tuple(contexts),
+                )
             )
-            for row in rows
-        ]
-
-
-def apply_context_overrides(queries: list[StopQuery], path: Path | None) -> list[StopQuery]:
-    if path is None:
         return queries
-    with path.open(encoding="utf-8-sig", newline="") as stream:
+
+
+def _optional_float(value: str | None) -> float | None:
+    return float(value) if value and value.strip() else None
+
+
+def load_stop_metadata(path: Path) -> dict[str, dict]:
+    try:
+        import pyarrow.parquet as parquet
+    except ImportError as error:
+        raise RuntimeError(
+            "Reading estimated coordinates requires PyArrow; run with "
+            "`uv run --with pyarrow --with requests python gapfill.py ...`"
+        ) from error
+    return {row["gtfs_stop_id"]: row for row in parquet.read_table(path).to_pylist()}
+
+
+def _clock_minutes(value: str) -> float | None:
+    if not value:
+        return None
+    hours, minutes, seconds = value.split(":")
+    return int(hours) * 60 + int(minutes) + int(seconds) / 60
+
+
+def _stop_place_id(row: dict[str, str]) -> str:
+    return row.get("parent_station") or row["stop_id"]
+
+
+def _route_anchor(
+    calls: list[tuple[str, float | None]],
+    index: int,
+    direction: int,
+    target_time: float,
+    coordinates: dict[str, tuple[float, float]],
+    precisions: dict[str, str],
+) -> dict | None:
+    cursor = index + direction
+    while 0 <= cursor < len(calls):
+        stop_id, anchor_time = calls[cursor]
+        point = coordinates.get(stop_id)
+        if (
+            anchor_time is not None
+            and point is not None
+            and precisions.get(stop_id) == "stop"
+        ):
+            elapsed = (
+                (target_time - anchor_time)
+                if direction < 0
+                else (anchor_time - target_time)
+            )
+            if elapsed >= 0:
+                return {
+                    "stop_id": stop_id,
+                    "elapsed_minutes": round(elapsed, 6),
+                    "latitude": point[0],
+                    "longitude": point[1],
+                }
+        cursor += direction
+    return None
+
+
+def scan_route_contexts(
+    stop_times_path: Path,
+    boarding_to_place: dict[str, str],
+    targets: set[str],
+    coordinates: dict[str, tuple[float, float]],
+    precisions: dict[str, str],
+) -> tuple[set[str], dict[str, int], dict[str, list[dict]]]:
+    referenced: set[str] = set()
+    occurrences: dict[str, int] = defaultdict(int)
+    contexts: dict[str, dict[str, dict]] = defaultdict(dict)
+
+    def process(trip_id: str, calls: list[tuple[str, float | None]]) -> None:
+        # A one-distinct-stop trip is invalid and is ignored even when auditing
+        # an older bundle produced before JrUtil learned to drop it.
+        if len({stop_id for stop_id, _ in calls}) < 2:
+            return
+        referenced.update(stop_id for stop_id, _ in calls)
+        for index, (stop_id, call_time) in enumerate(calls):
+            if stop_id not in targets:
+                continue
+            occurrences[stop_id] += 1
+            if call_time is None:
+                continue
+            previous = _route_anchor(
+                calls, index, -1, call_time, coordinates, precisions
+            )
+            following = _route_anchor(
+                calls, index, 1, call_time, coordinates, precisions
+            )
+            if previous is None and following is None:
+                continue
+            context = {
+                "sample_trip_id": trip_id,
+                "previous": previous,
+                "following": following,
+            }
+            key = json.dumps(
+                {"previous": previous, "following": following}, sort_keys=True
+            )
+            existing = contexts[stop_id].get(key)
+            if existing is None:
+                context["occurrences"] = 1
+                contexts[stop_id][key] = context
+            else:
+                existing["occurrences"] += 1
+
+    with stop_times_path.open(encoding="utf-8-sig", newline="") as stream:
         rows = csv.DictReader(stream)
-        required = {"stop_id", "municipality"}
-        if not rows.fieldnames or not required.issubset(rows.fieldnames):
-            raise ValueError(f"{path} must contain stop_id and municipality")
-        overrides = {
-            row["stop_id"].strip(): row["municipality"].strip()
-            for row in rows
-            if row["stop_id"].strip() and row["municipality"].strip()
-        }
-    return [
-        StopQuery(
-            query.stop_id,
-            query.name,
-            overrides.get(query.stop_id, query.municipality),
-            query.region,
-            query.country,
-        )
-        for query in queries
-    ]
+        current_trip = ""
+        calls: list[tuple[str, float | None]] = []
+        for row in rows:
+            trip_id = row["trip_id"]
+            if current_trip and trip_id != current_trip:
+                process(current_trip, calls)
+                calls = []
+            current_trip = trip_id
+            calls.append(
+                (
+                    boarding_to_place.get(row["stop_id"], row["stop_id"]),
+                    _clock_minutes(
+                        row.get("arrival_time") or row.get("departure_time") or ""
+                    ),
+                )
+            )
+        if current_trip:
+            process(current_trip, calls)
+    return (
+        referenced,
+        occurrences,
+        {stop_id: list(values.values()) for stop_id, values in contexts.items()},
+    )
 
 
 def run_audit(args) -> None:
-    with (args.gtfs / "stop_times.txt").open(encoding="utf-8-sig", newline="") as stream:
-        referenced = {row["stop_id"] for row in csv.DictReader(stream)}
     with (args.gtfs / "stops.txt").open(encoding="utf-8-sig", newline="") as stream:
         stops = list(csv.DictReader(stream))
-    unresolved = {
+    stop_places = {
         row["stop_id"]: row
         for row in stops
-        if row["stop_id"] in referenced
-        and float(row["stop_lat"]) == 0
-        and float(row["stop_lon"]) == 0
+        if row.get("location_type", "") == "1" or not row.get("parent_station")
     }
-    unreferenced = [
-        row for row in stops if row.get("location_type", "") != "1" and row["stop_id"] not in referenced
-    ]
+    boarding_to_place = {row["stop_id"]: _stop_place_id(row) for row in stops}
+    coordinates = {
+        stop_id: (float(row["stop_lat"]), float(row["stop_lon"]))
+        for stop_id, row in stop_places.items()
+        if float(row["stop_lat"]) != 0 or float(row["stop_lon"]) != 0
+    }
+    metadata_path = args.metadata or args.gtfs.parent / "source_stop_metadata.parquet"
+    metadata = load_stop_metadata(metadata_path)
+    precisions = {
+        stop_id: row["coordinate_precision"] for stop_id, row in metadata.items()
+    }
+    wanted = (
+        {"missing", "estimated"}
+        if args.coordinate_status == "all"
+        else {args.coordinate_status}
+    )
+    targets = {
+        stop_id for stop_id, precision in precisions.items() if precision in wanted
+    }
+    referenced, occurrences, contexts = scan_route_contexts(
+        args.gtfs / "stop_times.txt",
+        boarding_to_place,
+        targets,
+        coordinates,
+        precisions,
+    )
+    selected = sorted(targets.intersection(referenced))
     with zipfile.ZipFile(args.jdf) as archive:
         rows = csv.reader(archive.read("Zastavky.txt").decode("cp1250").splitlines())
         source_stops = {}
@@ -324,15 +621,29 @@ def run_audit(args) -> None:
     with args.output.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.DictWriter(
             stream,
-            fieldnames=["stop_id", "name", "municipality", "region", "country"],
+            fieldnames=[
+                "stop_id",
+                "name",
+                "municipality",
+                "region",
+                "country",
+                "coordinate_status",
+                "current_latitude",
+                "current_longitude",
+                "coordinate_source",
+                "route_occurrences",
+                "route_contexts",
+            ],
             lineterminator="\n",
         )
         writer.writeheader()
-        for stop_id in sorted(unresolved):
-            match = re.match(r"jdf:stop:(\d+)", stop_id)
+        for stop_id in selected:
+            match = re.fullmatch(r"jdf:stop:(\d+)", stop_id)
             if not match or match.group(1) not in source_stops:
                 raise ValueError(f"Cannot join GTFS stop to merged JDF: {stop_id}")
             source = source_stops[match.group(1)]
+            point = coordinates.get(stop_id)
+            meta = metadata[stop_id]
             writer.writerow(
                 {
                     "stop_id": stop_id,
@@ -340,16 +651,26 @@ def run_audit(args) -> None:
                     "municipality": source.municipality,
                     "region": source.region,
                     "country": source.country,
+                    "coordinate_status": meta["coordinate_precision"],
+                    "current_latitude": point[0] if point else "",
+                    "current_longitude": point[1] if point else "",
+                    "coordinate_source": meta.get("coordinate_source") or "",
+                    "route_occurrences": occurrences.get(stop_id, 0),
+                    "route_contexts": json.dumps(
+                        contexts.get(stop_id, []),
+                        ensure_ascii=False,
+                        separators=(",", ":"),
+                    ),
                 }
             )
     print(
         json.dumps(
             {
                 "emitted_stops": len(stops),
-                "referenced_boarding_stops": len(referenced),
-                "unreferenced_boarding_stops": len(unreferenced),
-                "referenced_missing_coordinates": len(unresolved),
-                "referenced_with_coordinates": len(referenced) - len(unresolved),
+                "coordinate_status": args.coordinate_status,
+                "referenced_selected_coordinates": len(selected),
+                "referenced_stop_places": len(referenced),
+                "referenced_with_other_coordinates": len(referenced) - len(selected),
             },
             sort_keys=True,
         )
@@ -373,13 +694,27 @@ def write_results(
                     candidate.longitude,
                     stop.region,
                     normalize_country_code(stop.country) or "CZ",
-                    "S" if candidate.kind == "stop" else "T",
                 ]
             )
     with review_path.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.writer(stream, lineterminator="\n")
         writer.writerow(
-            ["stop_id", "name", "municipality", "region", "country", "reason", "candidates"]
+            [
+                "stop_id",
+                "name",
+                "municipality",
+                "region",
+                "country",
+                "coordinate_status",
+                "current_latitude",
+                "current_longitude",
+                "coordinate_source",
+                "route_occurrences",
+                "route_contexts",
+                "query_variants",
+                "reason",
+                "candidates",
+            ]
         )
         for stop, reason, count in sorted(review, key=lambda item: item[0].stop_id):
             writer.writerow(
@@ -389,6 +724,15 @@ def write_results(
                     stop.municipality,
                     stop.region,
                     stop.country,
+                    stop.coordinate_status,
+                    stop.latitude if stop.latitude is not None else "",
+                    stop.longitude if stop.longitude is not None else "",
+                    stop.coordinate_source,
+                    stop.route_occurrences,
+                    json.dumps(
+                        stop.route_contexts, ensure_ascii=False, separators=(",", ":")
+                    ),
+                    " | ".join(mapy_query_variants(stop)),
                     reason,
                     count,
                 ]
@@ -412,7 +756,9 @@ class JsonHttpClient:
                 last_error = error
                 if attempt + 1 < self.retries:
                     time.sleep(self.delay * 2**attempt)
-        raise RuntimeError(f"Request failed after {self.retries} attempts") from last_error
+        raise RuntimeError(
+            f"Request failed after {self.retries} attempts"
+        ) from last_error
 
 
 class OverpassClient(JsonHttpClient):
@@ -420,7 +766,9 @@ class OverpassClient(JsonHttpClient):
         super().__init__(**kwargs)
         self.endpoint = endpoint
 
-    def extract(self, bbox: str, cache: Path, cached_only: bool = False) -> list[dict] | None:
+    def extract(
+        self, bbox: str, cache: Path, cached_only: bool = False
+    ) -> list[dict] | None:
         cache.mkdir(parents=True, exist_ok=True)
         cache_file = cache / (re.sub(r"[^0-9.-]+", "_", bbox) + ".json")
         if cache_file.exists():
@@ -434,11 +782,16 @@ class OverpassClient(JsonHttpClient):
             '[amenity="bus_station"]',
             '[type="public_transport"][public_transport="stop_area"]',
         )
-        query = "[out:json][timeout:180];(" + "".join(
-            f"nwr{selector}({bbox});" for selector in selectors
-        ) + ");out tags center;"
+        query = (
+            "[out:json][timeout:180];("
+            + "".join(f"nwr{selector}({bbox});" for selector in selectors)
+            + ");out tags center;"
+        )
         payload = self.request(
-            "POST", self.endpoint, data={"data": query}, headers={"User-Agent": USER_AGENT}
+            "POST",
+            self.endpoint,
+            data={"data": query},
+            headers={"User-Agent": USER_AGENT},
         )
         cache_file.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
         return payload["elements"]
@@ -455,15 +808,23 @@ def osm_candidates(
             if tags.get(key):
                 names.append(tags[key])
         if tags.get("alt_name"):
-            names.extend(part.strip() for part in tags["alt_name"].split(";") if part.strip())
+            names.extend(
+                part.strip() for part in tags["alt_name"].split(";") if part.strip()
+            )
         position = element.get("center", element)
         if not names or "lat" not in position or "lon" not in position:
             continue
         municipality = next(
-            (tags.get(key, "") for key in ("addr:city", "is_in:city", "is_in") if tags.get(key)),
+            (
+                tags.get(key, "")
+                for key in ("addr:city", "is_in:city", "is_in")
+                if tags.get(key)
+            ),
             fallback_municipality,
         )
-        country = tags.get("addr:country", tags.get("is_in:country_code", fallback_country))
+        country = tags.get(
+            "addr:country", tags.get("is_in:country_code", fallback_country)
+        )
         result.append(
             Candidate(
                 tuple(names),
@@ -471,14 +832,19 @@ def osm_candidates(
                 float(position["lon"]),
                 municipality,
                 country,
-                region=region_for_coordinates(float(position["lat"]), float(position["lon"])) or "",
+                region=region_for_coordinates(
+                    float(position["lat"]), float(position["lon"])
+                )
+                or "",
             )
         )
     return result
 
 
 class NominatimClient(JsonHttpClient):
-    def municipality(self, name: str, country: str, cache: Path) -> tuple[float, float] | None:
+    def municipality(
+        self, name: str, country: str, cache: Path
+    ) -> tuple[float, float] | None:
         cache.mkdir(parents=True, exist_ok=True)
         key = normalize_text(f"{country}-{name}").replace(" ", "-")
         cached = cache / f"{key}.json"
@@ -498,13 +864,17 @@ class NominatimClient(JsonHttpClient):
                 headers={"User-Agent": USER_AGENT},
             )
             cached.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
-        return (float(payload[0]["lat"]), float(payload[0]["lon"])) if len(payload) == 1 else None
+        return (
+            (float(payload[0]["lat"]), float(payload[0]["lon"]))
+            if len(payload) == 1
+            else None
+        )
 
     def search(self, stop: StopQuery, cache: Path) -> list[Candidate]:
         cache.mkdir(parents=True, exist_ok=True)
-        key = normalize_text(f"stop-{stop.country}-{stop.name}-{stop.municipality}").replace(
-            " ", "-"
-        )
+        key = normalize_text(
+            f"stop-{stop.country}-{stop.name}-{stop.municipality}"
+        ).replace(" ", "-")
         cached = cache / f"{key}.json"
         if cached.exists():
             payload = json.loads(cached.read_text(encoding="utf-8"))
@@ -515,7 +885,9 @@ class NominatimClient(JsonHttpClient):
                 NOMINATIM_URL,
                 params={
                     "q": f"{stop.name}, {stop.municipality}",
-                    "countrycodes": (iso_country_code(stop.country) or stop.country).lower(),
+                    "countrycodes": (
+                        iso_country_code(stop.country) or stop.country
+                    ).lower(),
                     "format": "jsonv2",
                     "addressdetails": 1,
                     "namedetails": 1,
@@ -545,20 +917,16 @@ class NominatimClient(JsonHttpClient):
             )
             category = item.get("category", "")
             result_type = item.get("type", "")
-            is_stop = category in {"highway", "public_transport", "railway"} or result_type in {
+            is_stop = category in {
+                "highway",
+                "public_transport",
+                "railway",
+            } or result_type in {
                 "bus_stop",
                 "platform",
                 "station",
                 "halt",
                 "tram_stop",
-            }
-            is_town = category in {"place", "boundary"} and result_type in {
-                "city",
-                "town",
-                "village",
-                "municipality",
-                "hamlet",
-                "administrative",
             }
             candidates.append(
                 Candidate(
@@ -567,8 +935,11 @@ class NominatimClient(JsonHttpClient):
                     float(item["lon"]),
                     municipality,
                     address.get("country_code", stop.country),
-                    "stop" if is_stop else "town" if is_town else "poi",
-                    region=region_for_coordinates(float(item["lat"]), float(item["lon"])) or "",
+                    "stop" if is_stop else "poi",
+                    region=region_for_coordinates(
+                        float(item["lat"]), float(item["lon"])
+                    )
+                    or "",
                     source="nominatim-search",
                 )
             )
@@ -636,27 +1007,6 @@ def gtfs_municipality_centers(
     }
 
 
-def foreign_town_candidates(
-    stop: StopQuery,
-    client: NominatimClient,
-    cache: Path,
-    memo: dict[tuple[str, str], list[Candidate]],
-) -> list[Candidate]:
-    country = normalize_country_code(stop.country) or "CZ"
-    municipality = stop.municipality.strip()
-    if country == "CZ" or not municipality:
-        return []
-    key = (country, normalize_text(municipality))
-    if key not in memo:
-        position = client.municipality(municipality, country, cache)
-        memo[key] = (
-            [Candidate((municipality,), *position, municipality, country, "town")]
-            if position is not None
-            else []
-        )
-    return memo[key]
-
-
 class MapyClient(JsonHttpClient):
     def __init__(self, api_key: str, municipality_centers=None, **kwargs):
         super().__init__(**kwargs)
@@ -666,6 +1016,8 @@ class MapyClient(JsonHttpClient):
         self.municipality_centers = municipality_centers or {}
 
     def municipality_center(self, stop: StopQuery) -> tuple[float, float] | None:
+        if stop.latitude is not None and stop.longitude is not None:
+            return stop.latitude, stop.longitude
         country = normalize_country_code(stop.country) or "CZ"
         name = normalize_text(stop.municipality)
         exact = self.municipality_centers.get((country, name, stop.region))
@@ -673,62 +1025,75 @@ class MapyClient(JsonHttpClient):
             return exact
         matches = [
             center
-            for (center_country, center_name, _), center in self.municipality_centers.items()
+            for (
+                center_country,
+                center_name,
+                _,
+            ), center in self.municipality_centers.items()
             if center_country == country and center_name == name
         ]
         return matches[0] if len(matches) == 1 else None
 
+    @staticmethod
+    def preference_radius(stop: StopQuery) -> int:
+        budgets = [
+            2_000 + float(anchor["elapsed_minutes"]) * 2_500
+            for context in stop.route_contexts
+            for anchor in (context.get("previous"), context.get("following"))
+            if anchor
+        ]
+        return round(min(20_000, max([2_000, *budgets])))
+
     def geocode(self, stop: StopQuery) -> list[Candidate]:
         country_locality = iso_country_code(stop.country) or "CZ"
         center = self.municipality_center(stop)
-        stop_locality = (
-            mapy_bbox(center)
-            if center is not None
-            else ", ".join(value for value in (stop.municipality, country_locality) if value)
-        )
-        queries = [(stop.name, "poi", stop_locality)]
-        components = [part.strip() for part in stop.name.split(",") if part.strip()]
-        if components:
-            queries.append(
-                (f"{components[-1]}, {stop.municipality or components[0]}", "poi", stop_locality)
-            )
-        if stop.municipality:
-            queries.append(
-                (
-                    stop.municipality,
-                    "regional.municipality",
-                    mapy_bbox(center) if center is not None else country_locality,
-                )
-            )
         candidates = []
-        for query, entity_filter, locality in dict.fromkeys(queries):
+        for query in mapy_query_variants(stop):
+            params = {
+                "query": query,
+                "lang": "cs",
+                "limit": 5,
+                "type": "poi",
+                "locality": country_locality,
+            }
+            if center is not None:
+                params.update(
+                    {
+                        "preferNear": f"{center[1]:.7f},{center[0]:.7f}",
+                        "preferNearPrecision": self.preference_radius(stop),
+                    }
+                )
             payload = self.request(
                 "GET",
                 MAPY_URL,
-                params={
-                    "query": query,
-                    "lang": "cs",
-                    "limit": 5,
-                    "type": entity_filter,
-                    "locality": locality,
-                },
+                params=params,
                 headers={"X-MAPY-API-KEY": self.api_key, "User-Agent": USER_AGENT},
             )
-            for rank, entity in enumerate(payload.get("items", payload.get("entities", []))[:5]):
+            for rank, entity in enumerate(
+                payload.get("items", payload.get("entities", []))[:5]
+            ):
                 regional = entity.get("regionalStructure", [])
                 municipality = next(
-                    (part.get("name", "") for part in regional if part.get("type") == "regional.municipality"),
+                    (
+                        part.get("name", "")
+                        for part in regional
+                        if part.get("type") == "regional.municipality"
+                    ),
                     "",
                 )
                 country = next(
-                    (part.get("isoCode", "") for part in regional if part.get("type") == "regional.country"),
+                    (
+                        part.get("isoCode", "")
+                        for part in regional
+                        if part.get("type") == "regional.country"
+                    ),
                     "",
                 )
                 position = entity.get("position", {})
                 if "lat" not in position or "lon" not in position:
                     continue
-                entity_type = entity.get("type", "")
-                label = normalize_text(entity.get("label", ""))
+                label_text = entity.get("label", "")
+                label = normalize_text(label_text)
                 stop_labels = (
                     "zastav",
                     "station",
@@ -738,13 +1103,7 @@ class MapyClient(JsonHttpClient):
                     "przystanek",
                     "stanica",
                 )
-                kind = (
-                    "town"
-                    if entity_type == "regional.municipality"
-                    else "stop"
-                    if any(value in label for value in stop_labels)
-                    else "poi"
-                )
+                kind = "stop" if any(value in label for value in stop_labels) else "poi"
                 candidates.append(
                     Candidate(
                         (entity.get("name", ""),),
@@ -757,12 +1116,10 @@ class MapyClient(JsonHttpClient):
                             float(position["lat"]), float(position["lon"])
                         )
                         or "",
-                        source=(
-                            "mapy-town-bbox"
-                            if entity_filter == "regional.municipality" and center is not None
-                            else "mapy"
-                        ),
+                        source="mapy",
                         rank=rank,
+                        label=label_text,
+                        query=query,
                     )
                 )
         return candidates
@@ -780,15 +1137,7 @@ def run_osm(args) -> None:
             print(f"Overpass batch failed for {bbox}: {error}", file=sys.stderr)
     if not candidates and failures:
         raise RuntimeError(f"All {len(failures)} Overpass batches failed")
-    nominatim = NominatimClient(retries=args.retries)
-    town_memo: dict[tuple[str, str], list[Candidate]] = {}
-    resolve(
-        args,
-        lambda _stop: candidates,
-        town_provider=lambda stop: foreign_town_candidates(
-            stop, nominatim, args.nominatim_cache, town_memo
-        ),
-    )
+    resolve(args, lambda _stop: candidates)
     if failures:
         print(json.dumps({"failed_bboxes": failures}, sort_keys=True), file=sys.stderr)
 
@@ -814,15 +1163,24 @@ def run_osm_auto(args) -> None:
             same_name_centers = [
                 center
                 for (center_country, center_name, _), center in known_centers.items()
-                if center_country == country and center_name == normalize_text(stop.municipality)
+                if center_country == country
+                and center_name == normalize_text(stop.municipality)
             ]
             if len(same_name_centers) == 1:
                 position = same_name_centers[0]
         if position is None:
-            position = nominatim.municipality(stop.municipality, country, args.nominatim_cache)
+            position = nominatim.municipality(
+                stop.municipality, country, args.nominatim_cache
+            )
         if position is None:
             candidates_by_municipality[key] = []
-            failures.append({"municipality": stop.municipality, "country": country, "reason": "center_not_found"})
+            failures.append(
+                {
+                    "municipality": stop.municipality,
+                    "country": country,
+                    "reason": "center_not_found",
+                }
+            )
             continue
         bbox = municipality_bbox(position, args.radius_degrees)
         try:
@@ -830,7 +1188,11 @@ def run_osm_auto(args) -> None:
             if elements is None:
                 candidates_by_municipality[key] = []
                 failures.append(
-                    {"municipality": stop.municipality, "country": country, "reason": "cache_miss"}
+                    {
+                        "municipality": stop.municipality,
+                        "country": country,
+                        "reason": "cache_miss",
+                    }
                 )
                 continue
             candidates_by_municipality[key] = osm_candidates(
@@ -840,7 +1202,13 @@ def run_osm_auto(args) -> None:
             )
         except RuntimeError:
             candidates_by_municipality[key] = []
-            failures.append({"municipality": stop.municipality, "country": country, "reason": "overpass_failed"})
+            failures.append(
+                {
+                    "municipality": stop.municipality,
+                    "country": country,
+                    "reason": "overpass_failed",
+                }
+            )
         if args.overpass_delay:
             time.sleep(args.overpass_delay)
 
@@ -856,7 +1224,12 @@ def run_osm_auto(args) -> None:
         ),
     )
     if failures:
-        print(json.dumps({"municipality_failures": failures}, ensure_ascii=False, sort_keys=True), file=sys.stderr)
+        print(
+            json.dumps(
+                {"municipality_failures": failures}, ensure_ascii=False, sort_keys=True
+            ),
+            file=sys.stderr,
+        )
 
 
 def run_mapy(args) -> None:
@@ -867,23 +1240,27 @@ def run_mapy(args) -> None:
         else {}
     )
     client = MapyClient(key, municipality_centers=centers, retries=args.retries)
-    resolve(args, client.geocode, allow_town=True)
+    resolve(args, client.geocode)
 
 
 def run_osm_search(args) -> None:
     client = NominatimClient(retries=args.retries, delay=max(1.0, args.delay))
-    resolve(args, lambda stop: client.search(stop, args.cache), allow_town=True)
+    resolve(args, lambda stop: client.search(stop, args.cache))
 
 
 def geodata_row_key(row: list[str]) -> tuple[str, str, str]:
-    return normalize_text(row[0]), row[3].strip(), normalize_country_code(row[4]) or "CZ"
+    return (
+        normalize_text(row[0]),
+        row[3].strip(),
+        normalize_country_code(row[4]) or "CZ",
+    )
 
 
 def run_merge(args) -> None:
     def load(path: Path) -> list[list[str]]:
         with path.open(encoding="utf-8-sig", newline="") as stream:
             rows = [row for row in csv.reader(stream) if row]
-        if any(len(row) not in {5, 6} for row in rows):
+        if any(len(row) != 5 for row in rows):
             raise ValueError(f"{path} contains an invalid geodata row")
         return rows
 
@@ -943,30 +1320,33 @@ def run_merge(args) -> None:
     )
 
 
-def resolve(args, candidate_provider, allow_town: bool = False, town_provider=None) -> None:
+def resolve(args, candidate_provider) -> None:
     accepted = []
     review = []
     candidate_review = []
-    queries = apply_context_overrides(
-        load_queries(args.input), getattr(args, "context_overrides", None)
-    )
+    queries = load_queries(args.input)
     for stop in queries:
         candidates = candidate_provider(stop)
-        chosen = choose_exact_candidate(stop, candidates)
+        assessments = [
+            (candidate, *candidate_geography(stop, candidate))
+            for candidate in candidates
+        ]
+        plausible = [candidate for candidate, accepted, _, _ in assessments if accepted]
+        chosen = choose_exact_candidate(stop, plausible)
         fuzzy_threshold = getattr(args, "fuzzy_threshold", 0.0)
         if chosen is None and fuzzy_threshold:
-            chosen = choose_fuzzy_candidate(stop, candidates, fuzzy_threshold)
-        if chosen is None and allow_town:
-            chosen = choose_town_candidate(stop, candidates)
-        if chosen is None and town_provider is not None:
-            town_candidates = town_provider(stop)
-            candidates.extend(town_candidates)
-            chosen = choose_town_candidate(stop, town_candidates)
+            chosen = choose_fuzzy_candidate(stop, plausible, fuzzy_threshold)
         if chosen:
             accepted.append((stop, chosen))
         else:
-            review.append((stop, "ambiguous" if candidates else "not_found", len(candidates)))
-            candidate_review.extend((stop, candidate) for candidate in candidates)
+            if not candidates:
+                reason = "not_found"
+            elif not plausible:
+                reason = "geography_rejected"
+            else:
+                reason = "ambiguous_or_weak_name"
+            review.append((stop, reason, len(candidates)))
+            candidate_review.extend((stop, *assessment) for assessment in assessments)
         if args.delay:
             time.sleep(args.delay)
     write_results(args.output, args.review, accepted, review)
@@ -980,31 +1360,53 @@ def resolve(args, candidate_provider, allow_town: bool = False, town_provider=No
                     "stop_id",
                     "query_name",
                     "candidate_names",
+                    "query",
+                    "label",
                     "latitude",
                     "longitude",
+                    "distance_from_estimate_metres",
                     "municipality",
                     "country",
                     "kind",
                     "source",
                     "rank",
+                    "name_score",
+                    "route_feasible",
+                    "rejection_reason",
                 ]
             )
-            for stop, candidate in candidate_review:
+            for (
+                stop,
+                candidate,
+                feasible,
+                reason,
+                distance_from_estimate,
+            ) in candidate_review:
                 writer.writerow(
                     [
                         stop.stop_id,
                         stop.name,
                         " | ".join(candidate.names),
+                        candidate.query,
+                        candidate.label,
                         candidate.latitude,
                         candidate.longitude,
+                        round(distance_from_estimate, 1)
+                        if distance_from_estimate is not None
+                        else "",
                         candidate.municipality,
                         candidate.country,
                         candidate.kind,
                         candidate.source,
                         candidate.rank,
+                        round(candidate_name_score(stop, candidate), 6),
+                        feasible,
+                        "" if feasible else reason,
                     ]
                 )
-    print(json.dumps({"accepted": len(accepted), "review": len(review)}, sort_keys=True))
+    print(
+        json.dumps({"accepted": len(accepted), "review": len(review)}, sort_keys=True)
+    )
 
 
 def parser() -> argparse.ArgumentParser:
@@ -1014,6 +1416,17 @@ def parser() -> argparse.ArgumentParser:
     audit.add_argument("gtfs", type=Path)
     audit.add_argument("jdf", type=Path)
     audit.add_argument("output", type=Path)
+    audit.add_argument(
+        "--coordinate-status",
+        choices=("missing", "estimated", "all"),
+        default="missing",
+        help="select bundle coordinate precision values to audit",
+    )
+    audit.add_argument(
+        "--metadata",
+        type=Path,
+        help="source_stop_metadata.parquet (defaults to the parent of the GTFS directory)",
+    )
     audit.set_defaults(handler=run_audit)
     merge = commands.add_parser("merge")
     merge.add_argument("primary", type=Path)
@@ -1034,20 +1447,21 @@ def parser() -> argparse.ArgumentParser:
         command.add_argument("--review", type=Path, required=True)
         command.add_argument("--retries", type=int, default=3)
         command.add_argument(
-            "--delay", type=float, default=0.25 if name == "mapy" else (1.0 if name == "osm-search" else 0.0)
+            "--delay",
+            type=float,
+            default=0.25 if name == "mapy" else (1.0 if name == "osm-search" else 0.0),
         )
         if name == "mapy":
             command.add_argument("--gtfs", type=Path)
             command.add_argument("--jdf", type=Path)
-            command.add_argument("--fuzzy-threshold", type=float, default=0.0)
+            command.add_argument("--fuzzy-threshold", type=float, default=0.7)
             command.add_argument("--candidate-review", type=Path)
-        if name in {"mapy", "osm-search"}:
-            command.add_argument("--context-overrides", type=Path)
         command.set_defaults(handler=handler)
         if name == "osm":
-            command.add_argument("--bbox", action="append", required=True, help="south,west,north,east")
+            command.add_argument(
+                "--bbox", action="append", required=True, help="south,west,north,east"
+            )
             command.add_argument("--cache", type=Path, required=True)
-            command.add_argument("--nominatim-cache", type=Path, required=True)
             command.add_argument("--overpass-url", default=OVERPASS_URL)
         elif name == "osm-auto":
             command.add_argument("--cache", type=Path, required=True)

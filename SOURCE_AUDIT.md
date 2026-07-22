@@ -46,9 +46,9 @@ alias `OL` as boundary-data code `OC`, and DPMO participated in five matches.
 The broad serial Overpass strategy proved unsuitable for the small residual:
 one endpoint timed out and a second run spent minutes walking municipality
 boxes. It was replaced by cached, one-request-per-second targeted Nominatim
-searches. The completed regional-adjacent work list contains 116 identities:
-14 are in `osm-gapfill.csv`, 100 in `mapy-gapfill.csv`, and 2 exact rows recovered
-from refreshed regional catalogues are in `source-recovered-gapfill.csv`.
-Reconciliation leaves zero unresolved work-list identities. Mapy raw responses
-and the credential were not retained; the one POI-only manual acceptance
-(`Březina,škola`) is explicitly town precision.
+searches. All accepted residual coordinates from targeted OSM, Mapy, and
+refreshed regional catalogues are consolidated in `other/gapfill.csv`; the file
+now contains 336 stop-level name/region/country identities. Reconciliation of the
+original regional-adjacent work list left zero unresolved identities. Mapy raw
+responses and the credential were not retained. Approximate town-coordinate
+rows were removed when JrUtil adopted route-derived estimates for unresolved stops.

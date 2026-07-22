@@ -25,31 +25,43 @@ class DownloadTests(unittest.TestCase):
         self.assertEqual("CZ", download.normalize_country_code("CZ"))
         self.assertEqual("PL", download.normalize_country_code("PL"))
         observed_iso = {
-            "AT": "A", "BE": "B", "DE": "D", "EE": "EST", "ES": "E",
-            "FR": "F", "HU": "H", "IT": "I", "LI": "FL", "ME": "MNE",
-            "NO": "N", "RS": "SRB", "SE": "S", "SI": "SLO",
+            "AT": "A",
+            "BE": "B",
+            "DE": "D",
+            "EE": "EST",
+            "ES": "E",
+            "FR": "F",
+            "HU": "H",
+            "IT": "I",
+            "LI": "FL",
+            "ME": "MNE",
+            "NO": "N",
+            "RS": "SRB",
+            "SE": "S",
+            "SI": "SLO",
         }
         self.assertEqual(
             observed_iso,
             {code: download.normalize_country_code(code) for code in observed_iso},
         )
-        self.assertEqual("D", download.normalize_country_code(download.normalize_country_code("DE")))
+        self.assertEqual(
+            "D", download.normalize_country_code(download.normalize_country_code("DE"))
+        )
         self.assertEqual("DE", download.iso_country_code("D"))
         self.assertEqual("DE", download.iso_country_code("DE"))
         self.assertEqual("CZ", download.iso_country_code("CZ"))
 
-    def test_writer_uses_five_columns_for_stop_precision_and_six_for_town(self):
+    def test_writer_uses_the_stop_only_five_column_contract(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "stops.csv"
-            download.write_stops_csv(output, [
-                download.Stop("Stop", 50.0, 14.0, "AB", "DE"),
-                download.Stop("Town", 49.0, 15.0, "BE", "CZ", "T"),
-            ])
+            download.write_stops_csv(
+                output,
+                [download.Stop("Stop", 50.0, 14.0, "AB", "DE")],
+            )
             with output.open(newline="") as stream:
                 rows = list(csv.reader(stream))
 
         self.assertEqual(["Stop", "50.0", "14.0", "AB", "D"], rows[0])
-        self.assertEqual(["Town", "49.0", "15.0", "BE", "CZ", "T"], rows[1])
 
     def test_known_town_is_added_once(self):
         stops = [

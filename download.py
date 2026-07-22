@@ -21,6 +21,7 @@ import requests
 import requests.adapters
 import shapefile
 
+
 @dataclass
 class Stop:
     name: str
@@ -28,7 +29,6 @@ class Stop:
     lon: float
     region: str | None = None
     country: str | None = None
-    precision: str = "S"
 
 
 # JDF country identifiers intentionally retain historical values. External
@@ -79,21 +79,36 @@ def normalize_country_code(country):
     country = country.strip().upper()
     normalized = COUNTRY_CODES_TO_JDF.get(country)
     if normalized is None:
-        print(f"Unknown country code {country!r}; leaving it unchanged", file=sys.stderr)
+        print(
+            f"Unknown country code {country!r}; leaving it unchanged", file=sys.stderr
+        )
         return country
     return normalized
 
 
 JDF_COUNTRY_CODES_TO_ISO = {
-    "A": "AT", "B": "BE", "D": "DE", "E": "ES", "EST": "EE",
-    "F": "FR", "FL": "LI", "H": "HU", "I": "IT", "L": "LU",
-    "MNE": "ME", "N": "NO", "S": "SE", "SLO": "SI", "SRB": "RS",
+    "A": "AT",
+    "B": "BE",
+    "D": "DE",
+    "E": "ES",
+    "EST": "EE",
+    "F": "FR",
+    "FL": "LI",
+    "H": "HU",
+    "I": "IT",
+    "L": "LU",
+    "MNE": "ME",
+    "N": "NO",
+    "S": "SE",
+    "SLO": "SI",
+    "SRB": "RS",
 }
 
 
 def iso_country_code(country):
     normalized = normalize_country_code(country)
     return JDF_COUNTRY_CODES_TO_ISO.get(normalized, normalized)
+
 
 COUNTRY_OVERRIDES = {
     # These border crossing stops sometimes end up on the wrong side of a
@@ -104,6 +119,7 @@ COUNTRY_OVERRIDES = {
     "Wullowitz,,ZOLL": (None, "AT"),
 }
 
+
 # See https://stackoverflow.com/a/73519818
 class LegacyHttpAdapter(requests.adapters.HTTPAdapter):
     def __init__(self, **kwargs):
@@ -113,8 +129,11 @@ class LegacyHttpAdapter(requests.adapters.HTTPAdapter):
 
     def init_poolmanager(self, connections, maxsize, block=False):
         self.poolmanager = urllib3.poolmanager.PoolManager(
-            num_pools=connections, maxsize=maxsize,
-            block=block, ssl_context=self.ssl_context)
+            num_pools=connections,
+            maxsize=maxsize,
+            block=block,
+            ssl_context=self.ssl_context,
+        )
 
 
 legacy_session = requests.session()
@@ -132,6 +151,8 @@ def load_towns():
             shape = shapely.geometry.shape(feat["geometry"])
             towns[name] = shape
     return towns
+
+
 towns = load_towns()
 
 
@@ -148,8 +169,8 @@ def load_polygon_tree(path, code_attr):
 
 
 region_codes, regions = load_polygon_tree(
-    pathlib.Path(__file__).parent / "data" / "regions.json.gz",
-    "code")
+    pathlib.Path(__file__).parent / "data" / "regions.json.gz", "code"
+)
 
 
 def region_for_coordinates(latitude, longitude):
@@ -157,11 +178,12 @@ def region_for_coordinates(latitude, longitude):
     matches = regions.query(point, predicate="within").tolist()
     return region_codes[matches[0]] if len(matches) == 1 else None
 
+
 # countries.json is derived from data by Natural Earth:
 # https://www.naturalearthdata.com/downloads/10m-cultural-vectors/
 country_codes, countries = load_polygon_tree(
-    pathlib.Path(__file__).parent / "data" / "countries.json.gz",
-    "code")
+    pathlib.Path(__file__).parent / "data" / "countries.json.gz", "code"
+)
 
 
 def add_missing_town(stops):
@@ -182,8 +204,9 @@ def add_known_town(stops, town):
         if stop.name.startswith(prefix):
             yield stop
         else:
-            yield Stop(prefix + stop.name, stop.lat, stop.lon,
-                       stop.region, stop.country, stop.precision)
+            yield Stop(
+                prefix + stop.name, stop.lat, stop.lon, stop.region, stop.country
+            )
 
 
 def add_missing_regions(stops):
@@ -197,6 +220,7 @@ def add_missing_regions(stops):
         else:
             yield stop
 
+
 def add_missing_countries(stops):
     for stop in stops:
         if stop.country:
@@ -205,8 +229,13 @@ def add_missing_countries(stops):
         point = shapely.Point(stop.lon, stop.lat)
         countries_idx = countries.query(point, predicate="within").tolist()
         if len(countries_idx) == 1:
-            yield Stop(stop.name, stop.lat, stop.lon, stop.region,
-                       country_codes[countries_idx[0]])
+            yield Stop(
+                stop.name,
+                stop.lat,
+                stop.lon,
+                stop.region,
+                country_codes[countries_idx[0]],
+            )
         else:
             yield stop
 
@@ -222,20 +251,24 @@ def arcgis_download_stops(url, layer, name_fields, where="1=1"):
     offset = 0
     while True:
         print("Downloading with offset", offset, file=sys.stderr)
-        resp = requests.post(f"{url}/{layer}/query", data={
+        resp = requests.post(
+            f"{url}/{layer}/query",
+            data={
                 "f": "json",
                 "where": where,
-                "outSR": "4326", # WGS84
+                "outSR": "4326",  # WGS84
                 "outFields": ",".join(name_fields),
                 "resultRecordCount": batch,
                 "resultOffset": offset,
-            })
+            },
+        )
         resp.raise_for_status()
         try:
             payload = resp.json()
             if "error" in payload:
                 raise RuntimeError(
-                    f"ArcGIS error for {url}/{layer}: {payload['error']}")
+                    f"ArcGIS error for {url}/{layer}: {payload['error']}"
+                )
             stops = payload["features"]
         except Exception:
             print("Failed decoding response:", resp.text)
@@ -248,7 +281,8 @@ def arcgis_download_stops(url, layer, name_fields, where="1=1"):
             yield Stop(name, geom["y"], geom["x"])
 
         print("Got", len(stops), "stops", file=sys.stderr)
-        if len(stops) != batch: break
+        if len(stops) != batch:
+            break
         offset += batch
 
 
@@ -258,8 +292,7 @@ def abirun_tim_download_stops(url):
     homepage = lxml.html.fromstring(resp.content)
     tariff_id = homepage.xpath("//select[@id='tarifValidity']/option/@value")[0]
 
-    resp = sess.post(f"{url}/ZakladniDataMapy",
-                         json={"platnostTarifuId": tariff_id})
+    resp = sess.post(f"{url}/ZakladniDataMapy", json={"platnostTarifuId": tariff_id})
     zones = resp.json()["zones"]
 
     for zone in zones:
@@ -269,7 +302,8 @@ def abirun_tim_download_stops(url):
             json={"platnostTarifuId": tariff_id, "zonaId": zone["id"]},
         )
         for stop in resp.json():
-            if not stop["isBus"]: continue
+            if not stop["isBus"]:
+                continue
             yield Stop(stop["text"], stop["point"]["lat"], stop["point"]["lon"])
 
 
@@ -281,8 +315,7 @@ def mapaduk_download_stops():
 
     # Sometimes there are multiple entries for stops, and only one is
     # identified correctly as a train stop
-    for (lat, lng), stops in \
-            itertools.groupby(stops, lambda s: (s["Lat"], s["Lng"])):
+    for (lat, lng), stops in itertools.groupby(stops, lambda s: (s["Lat"], s["Lng"])):
         stops = list(stops)
         # These look like train stops
         if any(s["PostNote"] in ["žst.", "žel.zast."] for s in stops):
@@ -329,8 +362,9 @@ def mpvnet_download_stops(instance):
     # Whole Czech Rep.
     BBOX = [48.195, 12.000, 51.385, 18.951]
 
-    resp = requests.post(f"{URL}/{instance}/map/mapData",
-        json = {
+    resp = requests.post(
+        f"{URL}/{instance}/map/mapData",
+        json={
             "s": BBOX[0],
             "w": BBOX[1],
             "n": BBOX[2],
@@ -340,10 +374,12 @@ def mpvnet_download_stops(instance):
         },
         headers={
             "Origin": "https://mpvnet.cz",
-        })
+        },
+    )
     for stop in resp.json()["stops"]:
         # Filter out train stops
-        if stop["t"] == "T": continue
+        if stop["t"] == "T":
+            continue
         yield Stop(stop["n"], stop["x"], stop["y"])
 
 
@@ -384,14 +420,17 @@ def jihocesky_kraj_download_stops():
     shp_name = next(n for n in zip.namelist() if n.endswith(".shp"))
     dbf_name = next(n for n in zip.namelist() if n.endswith(".dbf"))
 
-    transformer = pyproj.Transformer.from_crs(5514, 4326) # Křovák -> WGS 84
+    transformer = pyproj.Transformer.from_crs(5514, 4326)  # Křovák -> WGS 84
 
-    with zip.open(shp_name) as shp_file, \
-         zip.open(dbf_name) as dbf_file, \
-         shapefile.Reader(shp=shp_file, dbf=dbf_file, encoding="UTF-8") as shp:
+    with (
+        zip.open(shp_name) as shp_file,
+        zip.open(dbf_name) as dbf_file,
+        shapefile.Reader(shp=shp_file, dbf=dbf_file, encoding="UTF-8") as shp,
+    ):
         stops = []
         for shrec in shp.shapeRecords():
-            if shrec.record["TYP"] == "vlak": continue
+            if shrec.record["TYP"] == "vlak":
+                continue
             lat, lon = transformer.transform(*shrec.shape.points[0])
             name = shrec.record["POPIS_LONG"]
             stops.append(Stop(name, lat, lon))
@@ -407,9 +446,11 @@ def liberecky_kraj_download_stops():
     shp_name = next(n for n in zip.namelist() if n.endswith(".shp"))
     dbf_name = next(n for n in zip.namelist() if n.endswith(".dbf"))
 
-    with zip.open(shp_name) as shp_file, \
-         zip.open(dbf_name) as dbf_file, \
-         shapefile.Reader(shp=shp_file, dbf=dbf_file, encoding="cp1250") as shp:
+    with (
+        zip.open(shp_name) as shp_file,
+        zip.open(dbf_name) as dbf_file,
+        shapefile.Reader(shp=shp_file, dbf=dbf_file, encoding="cp1250") as shp,
+    ):
         stops = []
         for shrec in shp.shapeRecords():
             lon, lat = shrec.shape.points[0]
@@ -429,20 +470,27 @@ def pid_download_stops():
             lon = stop["lon"]
             yield Stop(group["name"], lat, lon, group["districtCode"])
             if group["municipality"] not in group["name"]:
-                yield Stop(group["municipality"] + "," + group["name"],
-                           lat, lon, group["districtCode"])
+                yield Stop(
+                    group["municipality"] + "," + group["name"],
+                    lat,
+                    lon,
+                    group["districtCode"],
+                )
+
 
 def karlovarsky_kraj_download_stops():
     kv_stops = arcgis_download_stops(
         "https://geoportal.kr-karlovarsky.cz/arcgis/rest/services/UAP/UAP_Kompletni_obsah/MapServer",
         [296, 297, 298],
-        ["PrvekNaz"])
+        ["PrvekNaz"],
+    )
     kv_stops_nonum = []
     for stop in kv_stops:
-        name = re.sub(r'^("?)[0-9x]* *', r'\1', stop.name)
+        name = re.sub(r'^("?)[0-9x]* *', r"\1", stop.name)
         name = re.sub(r" *\(.+\)$", "", name)
         name = re.sub(r" +(NÁSTUP|VÝSTUP)$", "", name)
-        if name == "": continue
+        if name == "":
+            continue
         # The source currently labels a point on Hornická street in Chlum
         # Svaté Maří as plain Kaceřov. It is well outside the Kaceřov stop
         # cluster and makes the real stop identity ambiguous.
@@ -457,10 +505,11 @@ def is_known_bad_karlovarsky_point(name, lat, lon):
 
 
 def idsjmk_download_stops():
-    stops = arcgis_download_stops( # URL is backing service for https://data.brno.cz/datasets/747a824783044377b6d07a8060e7769d_0/explore
+    stops = arcgis_download_stops(  # URL is backing service for https://data.brno.cz/datasets/747a824783044377b6d07a8060e7769d_0/explore
         "https://services6.arcgis.com/fUWVlHWZNxUvTUh8/ArcGIS/rest/services/stops/FeatureServer",
         0,
-        ["stop_name"])
+        ["stop_name"],
+    )
     return add_missing_town(stops)
 
 
@@ -469,7 +518,8 @@ def most_download_stops():
         # URL is backing service for https://opendata.mesto-most.cz/datasets/e91cb7afcf264116bbcb84d98d30580c_32/explore
         "https://mapy.mesto-most.cz/server/rest/services/Opendata/OpendataProjekty/FeatureServer",
         32,
-        ["NAZEV"])
+        ["NAZEV"],
+    )
     return add_missing_town(stops)
 
 
@@ -477,7 +527,9 @@ def ostrava_download_stops():
     return add_missing_town(
         zipped_geojson_download_stops(
             "https://mapy.ostrava.cz/opendata/data/opendata/zastavky_MHD_WGS84_gjson.zip",
-            "zast_jm"))
+            "zast_jm",
+        )
+    )
 
 
 def plzen_download_stops():
@@ -486,14 +538,19 @@ def plzen_download_stops():
             "https://opendata.plzen.eu/public/opendata/detail/9?detail-fileId=18&do=detail-downloadFile",
             "NAZEV",
             # The website requires some cookies for downloading?
-            pre_urls=["https://opendata.plzen.eu/public/opendata/detail/9"]))
+            pre_urls=["https://opendata.plzen.eu/public/opendata/detail/9"],
+        )
+    )
 
 
 def zdarns_download_stops():
     resp = requests.get("https://mhdzdar.kdyprijede.cz/stops")
     for stop in resp.json()["stops"]:
-        yield Stop("Žďár n.Sáz.," + re.sub(r" *\[.*\]", "", stop[2]),
-                   stop[4] / 1000000, stop[3] / 1000000)
+        yield Stop(
+            "Žďár n.Sáz.," + re.sub(r" *\[.*\]", "", stop[2]),
+            stop[4] / 1000000,
+            stop[3] / 1000000,
+        )
 
 
 def gtfs_download_stops(url, name_mapper=None):
@@ -521,7 +578,7 @@ def dpmlj_stop_name(row, name):
     if zones == {"2"}:
         prefix = "Jablonec n.N.,"
         if name.startswith(prefix):
-            name = name[len(prefix):].strip()
+            name = name[len(prefix) :].strip()
         return f"Jablonec n.Nisou,,{name}"
     if zones == {"1", "2"}:
         if name.casefold() == "vratislavická kyselka":
@@ -541,9 +598,15 @@ def write_stops_csv(outfile, stops):
             if not stop.name:
                 skipped_blank += 1
                 continue
-            if (not math.isfinite(stop.lat) or not math.isfinite(stop.lon)
-                    or not -90 <= stop.lat <= 90 or not -180 <= stop.lon <= 180):
-                raise ValueError(f"Invalid coordinates for {stop.name!r}: {stop.lat}, {stop.lon}")
+            if (
+                not math.isfinite(stop.lat)
+                or not math.isfinite(stop.lon)
+                or not -90 <= stop.lat <= 90
+                or not -180 <= stop.lon <= 180
+            ):
+                raise ValueError(
+                    f"Invalid coordinates for {stop.name!r}: {stop.lat}, {stop.lon}"
+                )
             if stop.lat == 0 and stop.lon == 0:
                 continue
             yield stop
@@ -570,24 +633,22 @@ def write_stops_csv(outfile, stops):
             if dedup_key in seen:
                 continue
             seen.add(dedup_key)
-            row = [
-                stop.name,
-                stop.lat,
-                stop.lon,
-                stop.region or "",
-                country,
-            ]
-            if stop.precision != "S":
-                if stop.precision != "T":
-                    raise ValueError(f"Unknown stop precision {stop.precision!r}")
-                row.append(stop.precision)
-            w.writerow(row)
+            w.writerow(
+                [
+                    stop.name,
+                    stop.lat,
+                    stop.lon,
+                    stop.region or "",
+                    country,
+                ]
+            )
             row_count += 1
     if row_count == 0:
         raise RuntimeError(f"Source produced no positioned stops: {outfile}")
     if skipped_blank:
         print(f"Skipped {skipped_blank} unnamed positioned rows", file=sys.stderr)
     return row_count
+
 
 SOURCES = {
     "other/MoravskoslezskyKraj.csv": lambda: arcgis_download_stops(
@@ -632,10 +693,11 @@ SOURCES = {
         ["nazev"],
     ),
     "other/DPMLJ.csv": lambda: gtfs_download_stops(
-        "https://www.dpmlj.cz/gtfs.zip", dpmlj_stop_name),
+        "https://www.dpmlj.cz/gtfs.zip", dpmlj_stop_name
+    ),
     "other/DPMO.csv": lambda: add_known_town(
-        gtfs_download_stops("https://www.dpmo.cz/doc/dpmo-olomouc-cz.zip"),
-        "Olomouc"),
+        gtfs_download_stops("https://www.dpmo.cz/doc/dpmo-olomouc-cz.zip"), "Olomouc"
+    ),
 }
 
 
