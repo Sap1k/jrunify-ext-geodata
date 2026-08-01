@@ -89,12 +89,23 @@ distinctions, route names and the recommended next matching stage.
 
 Extract from [official
 SR70](https://provoz.spravazeleznic.cz/Portal/ViewArticle.aspx?oid=34462) made with
-`sr70_process.py`.
+`sr70_download.py`. The current checked snapshot was generated from
+`Číselník SR70 od 15. srpna 2026.xlsx`, effective 2026-08-15, with source
+SHA-256
+`6adac3d1ebce48ee09f6cf75032d09c43ad9a957cf938c37a59872499971c6f0`.
+
+Regenerate both rail snapshots atomically from the same downloaded workbook:
+
+```sh
+python sr70_download.py --output-dir rail "/path/to/Číselník SR70.xlsx"
+```
 
 ## SR70\_Nazev20.csv
 
 Variant of `SR70.csv` with names from column `NÁZEV20`. Intended for matching
-GRAPP names.
+GRAPP names and for compact passenger-facing CZPTT fallback route endpoints.
+Official values are retained verbatim; presentation-specific cleanup such as
+removing the standalone terminal ` z` or ` nz` happens in the consumer.
 
 # Other sources
 
