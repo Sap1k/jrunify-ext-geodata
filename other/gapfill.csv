@@ -1,4 +1,8 @@
+"Absetz,Gh.Tanneneck",49.22741,13.02162,,D
+Abzw.Ottenzell,49.203775,13.00327,,D
 "Arber Bergbahn,Talstation",49.12147,13.14215,,D
+"Arnbruck,Dorfplatz",49.12932,12.99756,,D
+"Arrach,Bahnhof",49.19559,13.00248,,D
 "Bad Leonfelden,Stadtplatz",48.5223,14.29393,,A
 "Bärnau,Post",49.80978,12.43138,,D
 "Bayer.Eisenstein,Arbersee",49.09903,13.15914,,D
@@ -23,7 +27,10 @@ Běleč,50.1975961,15.9421532,HK,CZ
 "Bodenmais,Cafe Winklstüberl",49.067333,13.1096273,,D
 "Bodenmais,Hochstraße Abzweig Rodelbahn",49.07003,13.13082,,D
 "Bodenmais,Hotel Waldeck",49.0673379,13.1113927,,D
+"Bodenmais,Joska Arkaden",49.06959,13.09505,,D
+"Bodenmais,Mooshof",49.07542,13.079885,,D
 "Bodenmais,Rathaus",49.06763,13.10356,,D
+"Bodenmais,Seniorenresidenz",49.07369,13.08633,,D
 "Bodenmais,Silberberg Sesselbahn Talstation",49.0617,13.11808,,D
 "Bohdalice-Pavlovice,Pavlovice",49.21196,17.05991,VY,CZ
 "Bor,Nová Hospoda,restaurace",49.74683,12.77561,TC,CZ
@@ -46,6 +53,7 @@ Běleč,50.1975961,15.9421532,HK,CZ
 "Brno,U buku",49.27637,16.63033,BM,CZ
 "Brno,U jezírka",49.26983,16.62912,BM,CZ
 "Brumov,rozc.3.0",49.46573,16.456,BO,CZ
+Buchetbühl,49.21147,13.03027,,D
 "Bystřice,přeložka",49.74176,14.66557,BN,CZ
 "Čebín,Drásovská",49.317,16.47456,BO,CZ
 "Čepirohy,areál ALTAMEX",50.47203,13.61756,MO,CZ
@@ -55,6 +63,8 @@ Běleč,50.1975961,15.9421532,HK,CZ
 "Česká Lípa,U Hřbitova",50.67171,14.59048,CL,CZ
 "České Budějovice,Haklovy Dvory - křižovatka",48.99288,14.41326,CB,CZ
 "České Budějovice,Kněžské Dvory - škola",49.00046,14.47595,CB,CZ
+"České Budějovice,Kněžské Dvory - sokolovna",49.008106,14.47708755,CB,CZ
+"České Budějovice,Letiště České Budějovice-Terminál",48.9502528,14.4358689,CB,CZ
 "České Budějovice,U Jižní zastávky",48.95886,14.47602,CB,CZ
 "Cheb,Podhradská depo rozc.",50.06799,12.38734,CH,CZ
 "Chlumčany,Hradčany,rozcestí",49.63055,13.32875,PJ,CZ
@@ -67,15 +77,22 @@ Běleč,50.1975961,15.9421532,HK,CZ
 "Děpoltovice,rozcestí koupaliště",50.28929,12.82031,KV,CZ
 "Dobřany,Šlovice,na vršku",49.66715,13.34666,PJ,CZ
 "Doubravník,Prudká rozc.1.0",49.42198,16.37005,BO,CZ
+"Drachselsried,Dorfplatz",49.10668,13.01158,,D
 "Drásov,závod",49.3273,16.47688,BO,CZ
 "Dražovice,ZŠ",49.19368,16.94631,VY,CZ
+"Drietoma,Jednota",48.8935327,17.9542715,TN,SK
 "Duchcov,Nové sady",50.62074,13.74026,TP,CZ
 "Dušníky,teletník",50.41499,14.19398,LT,CZ
+Eck,49.163775,12.9901,,D
+Engelshütt,49.20685,13.03124,,D
 "Falkenstein im Weinviertel,Marktplatz",48.72031,16.58522,,A
 "Francova Lhota,Pulčín",49.22011,18.07685,VS,CZ
+Frathau,49.09687,13.03115,,D
 "Frýdek-Místek,Místek,osmá ZŠ",49.67829,18.33534,FM,CZ
 "Frýdek-Místek,Místek,ul.17.listopadu",49.67823,18.33203,FM,CZ
 "Grün,Haus Nr.5",49.849109999999996,12.371715,,D
+Haberbühl,49.08982,13.04386,,D
+Haibühl,49.204745,13.007545,,D
 "Havlíčkův Brod,Baštínov",49.5784781906889,15.6062198579203,HB,CZ
 "Havlíčkův Brod,Občiny",49.5915003,15.5481125,HB,CZ
 Heimhof (Ri Schwarzenbach),49.8118868,12.4129215,,D
@@ -102,17 +119,22 @@ Heimhof (Ri Schwarzenbach),49.8118868,12.4129215,,D
 "Hradec Králové,Lochenice zastávka",50.26699,15.81654,HK,CZ
 "Hradec Králové,OD TESCO a ATRIUM",50.21367,15.81875,HK,CZ
 "Hradec Králové,Plotiště škola",50.2259,15.80375,HK,CZ
+"Hradec Králové,Předměřice PANELÁRNA",50.2566703,15.818929,HK,CZ
+"Hradec Králové,Předměřice pošta",50.2588351,15.8144534,HK,CZ
 "Hradec Králové,Rusek - Jednota",50.25468,15.85109,HK,CZ
+"Hradec Králové,SLEZSKÉ PŘ.- CIHELNA",50.221197,15.864335,HK,CZ
 "Hradec Králové,Slezské Př.- nádraží",50.22114,15.85944,HK,CZ
 "Hradec Králové,Stěžery CIS",50.21602,15.74792,HK,CZ
 "Hradec Králové,Stěžery kostel",50.21455,15.75023,HK,CZ
 "Hradec Králové,Stěžery zastávka",50.2217,15.74874,HK,CZ
 "Hradec Králové,STĚŽÍRKY",50.22476,15.73754,HK,CZ
 "Hradec Králové,U Lupínků",50.23472,15.85128,HK,CZ
+"Hradec Králové,Vysoká hostinec",50.1550126,15.8178724,HK,CZ
 "Hranice,pod školou",50.30636,12.17647,CH,CZ
 "Humpolec,Rozkoš,rozc.Vilémov",49.53596,15.384,PE,CZ
 "Hustopeče,Kaufland",48.94945,16.72464,BV,CZ
 Hvožďany,49.50046,12.76749,DO,CZ
+Irlsaign,49.20682,13.02074,,D
 "Istebna,Bucznik",49.57429,18.89371,,PL
 "Istebna,Centrum",49.56382,18.8958,,PL
 "Istebna,Kubalonka",49.60353,18.90174,,PL
@@ -134,8 +156,10 @@ Hvožďany,49.50046,12.76749,DO,CZ
 "Jihlava,V.Beranov,zast.",49.4019,15.67221,JI,CZ
 "Jirkov,Kaufland",50.48482,13.44304,CV,CZ
 "Kadaň,Prunéřov 1",50.40159,13.27738,CV,CZ
+"Kadaň,Prunéřov 2",50.4113,13.25744,CV,CZ
 KARLA,50.00771,17.47393,BR,CZ
 "Karlovy Vary,Globus",50.21777,12.80647,KV,CZ
+"Karlovy Vary,hotel Thermal",50.22979,12.87524,KV,CZ
 "Karlovy Vary,Kpt.Jaroše",50.22536,12.83913,KV,CZ
 "Karlovy Vary,Mattoniho nábřeží",50.23941,12.88913,KV,CZ
 "Karlovy Vary,Na Pasece",50.25251,12.88242,KV,CZ
@@ -148,8 +172,10 @@ KARLA,50.00771,17.47393,BR,CZ
 "Kladno,pod mostem",50.15743,14.13266,KD,CZ
 "Klatovy,Městské lázně",49.40006,13.27643,KT,CZ
 "Klučenice,ObÚ",49.553,14.21207,PB,CZ
+"Kořenov,Příchovice,U Čápa",50.74134,15.34708,JN,CZ
 "Kostelec,Lšelín",49.6678,13.00776,TC,CZ
 "Kostelec n.Orl.,Technické služby",50.11787,16.23133,RK,CZ
+"Kostolná-Záriečie,nová štvrť",48.8791063,17.9671341,TN,SK
 "Kotovice,u rybníka",49.67214,13.15445,PJ,CZ
 "Kovářská,Elektropřístroj",50.43483,13.04966,CV,CZ
 "Kravaře,Kouty,žel.st.",49.93119,18.03832,OP,CZ
@@ -160,10 +186,16 @@ KARLA,50.00771,17.47393,BR,CZ
 "Kuřim,Knínická",49.29524,16.52305,BO,CZ
 "Kuřim,kult.dům",49.30767,16.5318,BO,CZ
 "Kuřimská Nová Ves,Prosatín,rozc.1.0",49.33908,16.29407,BO,CZ
+"Lam,Abzw Bahnhof",49.19343,13.05373,,D
+"Lam,Bahnhof I",49.19149,13.05167,,D
+"Lam,Marktplatz",49.19876,13.0486,,D
+"Lam,Postamt",49.19587,13.05318,,D
+Lázně I,50.21953,12.88097,KV,CZ
 "Leszna Górna,CLO",49.70026,18.71383,,PL
 "Lidečko,Pulčín lom",49.2163,18.06595,VS,CZ
 "Lidečko,Pulčín Spina",49.21226,18.07341,VS,CZ
 "Lipovec,dolní konec",49.39196,16.7978,BK,CZ
+"Litoměřice,Koupaliště",50.53056,14.12266,LT,CZ
 "Litoměřice,Lodní náměstí",50.53092,14.13072,LT,CZ
 "Litomyšl,Z.Kopala",49.86211,16.31095,SY,CZ
 "Litvínov,Chudeřín,Janáčkova",50.59587,13.5889,MO,CZ
@@ -172,11 +204,15 @@ KARLA,50.00771,17.47393,BR,CZ
 Lodermühl,49.8584449,12.3538413,,D
 Loket,49.6548,15.1134,BN,CZ
 "Loket,Alberovice",49.64552,15.10595,BN,CZ
+"Loket,u dálnice",49.67513,15.1189,BN,CZ
+"Loket,Všebořice",49.6953207,15.1485978,BN,CZ
 "Loučná n.Des.,Kouty n.Des.,žel.st.",50.08824,17.09137,SU,CZ
 "Loučná n.Des.,Rejhotice,žel.st.",50.08824,17.09137,SU,CZ
 "Lovčice,prostř.zast.",49.06728,17.0624,HO,CZ
 "Mackovice,rozc.2.6",48.90082,16.29337,ZN,CZ
+Mais,49.07905,13.0682,,D
 "Malý Háj,Lesná,rozc.",50.57942447854943,13.420452296736428,MO,CZ
+"Mariánské Lázně,Antoníčkův pramen",49.9509369,12.7156308,CH,CZ
 "Mariánské Lázně,Dopravní podnik",49.94878,12.71096,CH,CZ
 "Mariánské Lázně,Klimentov",49.96445,12.66534,CH,CZ
 "Mariánské Lázně,Klimentov sídliště",49.96451,12.672,CH,CZ
@@ -184,10 +220,13 @@ Loket,49.6548,15.1134,BN,CZ
 "Mariánské Lázně,Sídliště",49.9503,12.70952,CH,CZ
 "Mariánské Lázně,Úšovice,škola",49.95294,12.70989,CH,CZ
 "Mariánské Lázně,Velká Hleďsebe - Růžek",49.96198,12.66764,CH,CZ
+"Marklowice,Kępka",49.882854,18.5849082,,PL
+"Marklowice,Pętla",49.884941,18.5771203,,PL
 Mastník,49.18144,15.82564,TR,CZ
 "Měnín,obch.stř.",49.07967,16.69353,BO,CZ
 "Milevsko,Nádraží ČD",49.44196,14.37724,PI,CZ
 "Milevsko,Nádražní",49.4438,14.372,PI,CZ
+"Milevsko,U věžáku",49.4430322,14.3726609,PI,CZ
 "Mirošov,Spojovací",49.68767,13.66761,RO,CZ
 "Mladý Smolivec,rozc.Chloumek",49.49848,13.73747,PJ,CZ
 "Mníšek p.Brdy,závod",49.87239,14.2717,PZ,CZ
@@ -196,6 +235,8 @@ NC Černice,49.69949,13.42689,PM,CZ
 "Němčice,hrad Nový Herštejn",49.40773,13.06942,DO,CZ
 "Němčovice,Pařezová",49.87726,13.56651,RO,CZ
 "Nemilkov,rozc.1.0",49.25399,13.37738,MO,CZ
+Neurittsteig,49.24133,13.05247,,D
+"Oberried,Kindergarten",49.09771,13.03851,,D
 "Oleksovice,host.",48.90176,16.2504,ZN,CZ
 "Osek,Nový Dvůr,rozcestí",49.78985,13.58745,RO,CZ
 "Ostopovice,U Kaple",49.16109,16.54564,BO,CZ
@@ -217,11 +258,14 @@ Plazy,50.41465,14.97461,MB,CZ
 "Podbřežice,rozc.1.0",49.20813,16.92055,VY,CZ
 "Poysdorf,Dreifaltigkeitsplatz",48.66831,16.62952,,A
 "Prace,Aloise Slováka",49.13479,16.76457,BO,CZ
+"Praha,Dvořákovo nábřeží",50.0923712,14.41927405,AB,CZ
+"Praha,U Waltrovky",50.0563299,14.3693472,AB,CZ
 "Praha,Za Hanspaulkou",50.10649,14.37694,AB,CZ
 "Psáře,u dálnice",49.75098,14.97387,BN,CZ
 "Ráby,křižovatka",50.07063,15.80201,PA,CZ
 "Račice-Pístovice,Pístovice",49.27382,16.89519,VY,CZ
 "Říčky v Orl.h.,Perla",50.20941,16.4686,RK,CZ
+"Rittsteig,Dorfplatz",49.24979,13.04428,,D
 "Rojetín,rozc.0.5",49.37043,16.25446,BO,CZ
 "Rosice,kamenolom",49.20488,16.3416,BO,CZ
 "Rosice,Litostrovská",49.18749,16.3757,BO,CZ
@@ -259,12 +303,17 @@ Srbsko,49.93711,14.13124,BE,CZ
 "Tišnov,Hájek,rozc.1.4",49.37288,16.46556,BO,CZ
 "Tišnovská Nová Ves,rozc.2.0",49.36792,16.31826,BO,CZ
 "Třebíč,Marie Majerové",49.22214,15.88268,TR,CZ
+"Trenčín,Hasičská",48.89632,18.04141,TN,SK
+"Trenčín,Old Herold",48.8991456,18.0298906,TN,SK
+"Trenčín,Záblatie,cint.",48.9084991,18.0343203,TN,SK
 "Tři Sekery,střed",49.94011,12.61963,CH,CZ
 "Tupesy,u hřiště",49.08993,17.37565,UH,CZ
 "Tymákov,garáž ČSAD konečná",49.71759,13.51637,PM,CZ
 Údlice,50.43963,13.46036,CV,CZ
 "Újezd nade Mží,rozcestí",49.80443,13.20667,PS,CZ
 "Unkovice,rozc.0.5",49.01552,16.60467,BO,CZ
+Unterrehberg,49.10163,13.02362,,D
+"Unterried,Gh.Köppl",49.09326,13.04286,,D
 "Ústí nad Labem,Předlice Jateční",50.66173,14.0041,UL,CZ
 "Ústí nad Labem,Stradov",50.69374,13.9214,UL,CZ
 "Ústí nad Labem,U Pomníku",50.69022,13.91091,UL,CZ
@@ -278,8 +327,10 @@ Srbsko,49.93711,14.13124,BE,CZ
 "Velký Valtinov,Paseky",50.73919,14.7392,CL,CZ
 "Věžná,Jabloňov",49.46125,16.25556,ZR,CZ
 "Věžná,rozc.Bor",49.44599,16.28789,ZR,CZ
+"Vlašim,Terminál",49.70022,14.89838,BN,CZ
 "Vlašim,u kozla",49.70891,14.90053,BN,CZ
 "Vranov,křiž.",49.31022,16.61236,BO,CZ
+"Vranov n.Dyjí,pláž",48.91455,15.81216,ZN,CZ
 "Vranov n.Dyjí,zámek parkoviště",48.89725,15.8086,ZN,CZ
 "Výrovice,host.",48.92865,16.12023,ZN,CZ
 "Výrovice,rozc.2.0",48.91696,16.10341,ZN,CZ
@@ -291,6 +342,11 @@ Srbsko,49.93711,14.13124,BE,CZ
 "Wisla,Oaza",49.64731353333334,18.867641133333333,,PL
 "Záluží,areál Hlubina",50.5771231947013,13.6018908353803,MO,CZ
 "Záluží,Důl Julius IV",50.5485139239494,13.6108384216478,MO,CZ
+"Zebrzydowice,Jagodowa",49.88061,18.59118,,PL
+"Zebrzydowice,Poziomkowa",49.8953818,18.6027365,,PL
+"Zebrzydowice,Skotnica",49.8778439,18.5992767,,PL
+"Zebrzydowice,Skrzyżowanie",49.879128,18.602187,,PL
+"Zebrzydowice,Słowicza",49.8903452,18.6012826,,PL
 "Želešice,host.",49.11682,16.58154,BO,CZ
 "Zlín,Bratří Jaroňků",49.22551,17.67585,ZL,CZ
 "Zlín,Díly II.",49.22723,17.67924,ZL,CZ
@@ -323,6 +379,7 @@ Srbsko,49.93711,14.13124,BE,CZ
 "Zlín,Příluky,Cecilka",49.22301,17.71906,ZL,CZ
 "Zlín,Příluky,nová zast.",49.22063,17.71439,ZL,CZ
 "Zlín,Příluky,Průmyslová zóna točna",49.22581,17.73205,ZL,CZ
+"Zlín,Příluky,točna",49.2257859,17.7320053,ZL,CZ
 "Zlín,Randýskové",49.21839,17.64355,ZL,CZ
 "Zlín,U Majáku,Ke Křibům",49.20173,17.65495,ZL,CZ
 "Zlín,U Majáku,točna",49.20188,17.653,ZL,CZ

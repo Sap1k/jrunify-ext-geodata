@@ -70,7 +70,7 @@ class GapfillTests(unittest.TestCase):
                             "name": "Lodermühl",
                             "display_name": "Lodermühl, Tirschenreuth, Deutschland",
                             "address": {"town": "Tirschenreuth", "country_code": "de"},
-                            "namedetails": {"name": "Lodermühl"},
+                            "namedetails": None,
                         }
                     ]
                 )
@@ -102,15 +102,57 @@ class GapfillTests(unittest.TestCase):
                             "address": {"village": "Kaceřov", "country_code": "cz"},
                         }
                     ]
-                )
+                ),
+                FakeResponse([]),
+                FakeResponse([]),
+                FakeResponse([]),
             ]
         )
         stop = gapfill.StopQuery("1", "Kaceřov", "Kaceřov", "SO", "CZ")
-        with TemporaryDirectory() as directory:
+        with (
+            TemporaryDirectory() as directory,
+            patch.object(gapfill.time, "sleep"),
+        ):
             candidates = gapfill.NominatimClient(
                 session=session, retries=1, delay=0
             ).search(stop, Path(directory))
         self.assertEqual("poi", candidates[0].kind)
+
+    def test_nominatim_continues_after_unrelated_results(self):
+        unrelated = {
+            "osm_type": "node",
+            "osm_id": 1,
+            "lat": "49.8580",
+            "lon": "12.3530",
+            "category": "tourism",
+            "type": "hotel",
+            "name": "Lodermühl Hotel",
+            "display_name": "Lodermühl Hotel, Tirschenreuth, Deutschland",
+            "address": {"town": "Tirschenreuth", "country_code": "de"},
+        }
+        transit_stop = {
+            "osm_type": "node",
+            "osm_id": 2,
+            "lat": "49.8584449",
+            "lon": "12.3538413",
+            "category": "highway",
+            "type": "bus_stop",
+            "name": "Lodermühl",
+            "display_name": "Lodermühl, Tirschenreuth, Deutschland",
+            "address": {"town": "Tirschenreuth", "country_code": "de"},
+        }
+        session = FakeSession([FakeResponse([unrelated]), FakeResponse([transit_stop])])
+        stop = gapfill.StopQuery("1", "Lodermühl", "Tirschenreuth", "", "D")
+        with (
+            TemporaryDirectory() as directory,
+            patch.object(gapfill.time, "sleep"),
+        ):
+            candidates = gapfill.NominatimClient(
+                session=session, retries=1, delay=0
+            ).search(stop, Path(directory))
+
+        self.assertEqual(["poi", "stop"], [candidate.kind for candidate in candidates])
+        self.assertEqual(2, len(session.calls))
 
     def test_unique_exact_last_component_is_accepted(self):
         candidate = gapfill.Candidate(
@@ -244,6 +286,33 @@ class GapfillTests(unittest.TestCase):
         accepted, reason, _ = gapfill.candidate_geography(stop, distant)
         self.assertFalse(accepted)
         self.assertEqual("route_time_impossible", reason)
+
+    def test_route_estimate_resolves_one_clearly_better_foreign_candidate(self):
+        stop = replace(
+            self.stop("Altenberg,Bahnhof"),
+            country="D",
+            coordinate_status="estimated",
+            latitude=50.72,
+            longitude=13.76,
+            route_contexts=(),
+        )
+        near = gapfill.Candidate(
+            ("Altenberg Bahnhof",),
+            50.765,
+            13.755,
+            "Altenberg",
+            "DE",
+            "stop",
+        )
+        far = replace(
+            near,
+            names=("Dresden Flughafen",),
+            latitude=50.80,
+            longitude=13.68,
+        )
+        self.assertEqual(
+            near, gapfill.choose_route_supported_candidate(stop, [near, far])
+        )
 
     def test_exact_locality_alias_can_override_bad_jdf_municipality(self):
         stop = gapfill.StopQuery(
@@ -464,8 +533,7 @@ class GapfillTests(unittest.TestCase):
                         ]
                     }
                 ),
-                FakeResponse({"items": []}),
-                FakeResponse({"items": []}),
+                *[FakeResponse({"items": []}) for _ in range(10)],
             ]
         )
         client = gapfill.MapyClient("secret", session=session, retries=1)
@@ -498,8 +566,7 @@ class GapfillTests(unittest.TestCase):
                         ]
                     }
                 ),
-                FakeResponse({"items": []}),
-                FakeResponse({"items": []}),
+                *[FakeResponse({"items": []}) for _ in range(10)],
             ]
         )
         stop = gapfill.StopQuery(
@@ -532,7 +599,7 @@ class GapfillTests(unittest.TestCase):
                         ]
                     }
                 ),
-                FakeResponse({"items": []}),
+                *[FakeResponse({"items": []}) for _ in range(10)],
             ]
         )
         stop = gapfill.StopQuery("1", "KARLA", "Bruntál", "BR", "CZ")
@@ -547,9 +614,7 @@ class GapfillTests(unittest.TestCase):
     def test_mapy_uses_known_municipality_center_as_bbox(self):
         session = FakeSession(
             [
-                FakeResponse({"items": []}),
-                FakeResponse({"items": []}),
-                FakeResponse({"items": []}),
+                *[FakeResponse({"items": []}) for _ in range(10)],
             ]
         )
         stop = gapfill.StopQuery("1", "Loket,u dálnice", "Loket", "BN", "CZ")
@@ -584,6 +649,14 @@ class GapfillTests(unittest.TestCase):
                 "invalid,09:00:00,09:00:00,jdf:stop:3:unspecified,1\n",
                 encoding="utf-8",
             )
+            (gtfs / "trips.txt").write_text(
+                "route_id,service_id,trip_id\nr,service,valid\nr,service,invalid\n",
+                encoding="utf-8",
+            )
+            (gtfs / "routes.txt").write_text(
+                "route_id,route_short_name,route_long_name\nr,R,Test route\n",
+                encoding="utf-8",
+            )
             jdf = root / "jdf.zip"
             with zipfile.ZipFile(jdf, "w") as archive:
                 archive.writestr(
@@ -615,6 +688,8 @@ class GapfillTests(unittest.TestCase):
                 output=output,
                 metadata=None,
                 coordinate_status="estimated",
+                minimum_run_length=None,
+                include_unresolved_termini=False,
             )
             with patch.object(gapfill, "load_stop_metadata", return_value=metadata):
                 gapfill.run_audit(args)
@@ -622,10 +697,29 @@ class GapfillTests(unittest.TestCase):
                 rows = list(gapfill.csv.DictReader(stream))
         self.assertEqual(["jdf:stop:1"], [row["stop_id"] for row in rows])
         self.assertEqual("1", rows[0]["route_occurrences"])
+        self.assertEqual("1", rows[0]["maximum_consecutive_unresolved"])
+        self.assertEqual("true", rows[0]["unresolved_terminus"])
+        self.assertEqual("r", rows[0]["route_ids"])
         self.assertEqual(
             "jdf:stop:2",
             gapfill.json.loads(rows[0]["route_contexts"])[0]["following"]["stop_id"],
         )
+
+    def test_audit_prioritizes_long_runs_and_unresolved_termini(self):
+        calls = [
+            ("anchor-a", 0),
+            ("gap-1", 1),
+            ("gap-2", 2),
+            ("gap-3", 3),
+            ("gap-4", 4),
+            ("anchor-b", 5),
+            ("terminal", 6),
+        ]
+        targets = {"gap-1", "gap-2", "gap-3", "gap-4", "terminal"}
+        collapsed, impacts = gapfill.unresolved_run_impacts(calls, targets)
+        self.assertEqual(calls, collapsed)
+        self.assertEqual((4, False), impacts["gap-1"])
+        self.assertEqual((1, True), impacts["terminal"])
 
     def test_mapy_errors_do_not_disclose_secret(self):
         client = gapfill.MapyClient(

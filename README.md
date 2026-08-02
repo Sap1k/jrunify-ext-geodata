@@ -42,6 +42,10 @@ JrUtil conversion. Its default is `--coordinate-status missing`. Use
 `--metadata`) rather than relying on the rendered GTFS name suffix and therefore
 require PyArrow. The audit embeds deduplicated preceding/following timed anchors
 and ignores degenerate trips with fewer than two distinct stop places.
+Use `--minimum-run-length 5 --include-unresolved-termini` to produce a focused
+quality work list. Its additional columns identify the longest consecutive
+unresolved run, terminal involvement, affected trips and routes. These fields
+prioritize review; they do not weaken candidate validation.
 
 For example, refine estimated coordinates without making Mapy a live build
 dependency:
@@ -61,9 +65,14 @@ python gapfill.py merge other/gapfill.csv accepted.csv merged.csv
 
 Mapy searches only POIs, hard-restricts the country, and prefers the current
 estimate. Full names, expanded JDF abbreviations, and locality-qualified name
-variants are tried. Exact and fuzzy matches (default threshold `0.70`, with a
+variants are tried. Foreign OSM/Nominatim searches additionally try localized
+stop/station terminology and retain `name:de`, `name:pl` and `name:sk` aliases.
+Exact and fuzzy matches (default threshold `0.70`, with a
 `0.10` winner margin) may be accepted, but a candidate for an estimated stop
 must satisfy the same 2 km plus 150 km/h scheduled-time ceiling as JrUtil.
+When normal name selection remains ambiguous, an estimated stop may use one
+clearly dominant route-supported candidate within 10 km; it requires at least
+`0.55` name similarity and a `0.12` combined name/distance margin.
 Exact locality suffixes may repair a bad JDF municipality only when that route
 check succeeds. Town/address/unrelated POIs and distant same-name stops remain
 in review. Accepted rows use the five-column stop contract; merge them into the

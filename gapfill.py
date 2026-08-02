@@ -171,6 +171,17 @@ def mapy_query_variants(stop: StopQuery) -> tuple[str, ...]:
             suffix = ", ".join(components[index:])
             variants.extend((suffix, f"{suffix}, {stop.municipality or components[0]}"))
         variants.append(f"{components[-1]}, {stop.municipality or components[0]}")
+    locality = stop.municipality or (components[0] if components else "")
+    identity = components[-1] if components else stop.name
+    country = normalize_country_code(stop.country) or "CZ"
+    transport_words = {
+        "D": ("Haltestelle", "Bushaltestelle", "Bahnhof"),
+        "A": ("Haltestelle", "Bushaltestelle", "Bahnhof"),
+        "PL": ("przystanek", "dworzec autobusowy"),
+        "SK": ("zastávka", "autobusová stanica"),
+        "CZ": ("zastávka", "autobusové nádraží"),
+    }.get(country, ("bus stop", "station"))
+    variants.extend(f"{identity} {word}, {locality}" for word in transport_words)
     return tuple(dict.fromkeys(value.strip() for value in variants if value.strip()))
 
 
@@ -400,8 +411,41 @@ def candidate_geography(
             stop, candidate
         ):
             return True, "route_exact_locality_alias", distance
+        if (
+            stop.coordinate_status == "estimated"
+            and distance is not None
+            and distance <= 5_000
+            and candidate_name_score(stop, candidate) >= 0.75
+        ):
+            return True, "route_fuzzy_locality_alias", distance
         return False, "municipality_mismatch", distance
     return True, route_reason, distance
+
+
+def choose_route_supported_candidate(
+    stop: StopQuery, candidates: list[Candidate]
+) -> Candidate | None:
+    if (
+        stop.coordinate_status != "estimated"
+        or stop.latitude is None
+        or stop.longitude is None
+    ):
+        return None
+    ranked = []
+    for candidate in candidates:
+        score = candidate_name_score(stop, candidate)
+        distance = coordinate_distance_metres(
+            stop.latitude, stop.longitude, candidate.latitude, candidate.longitude
+        )
+        if score < 0.55 or distance > 10_000:
+            continue
+        ranked.append((score - min(distance / 40_000, 0.25), score, distance, candidate))
+    ranked.sort(key=lambda item: (item[0], item[1], -item[2]), reverse=True)
+    if not ranked or ranked[0][0] < 0.55:
+        return None
+    if len(ranked) > 1 and ranked[0][0] - ranked[1][0] < 0.12:
+        return None
+    return ranked[0][3]
 
 
 def load_queries(path: Path) -> list[StopQuery]:
@@ -496,23 +540,67 @@ def _route_anchor(
     return None
 
 
+def unresolved_run_impacts(
+    calls: list[tuple[str, float | None]], targets: set[str]
+) -> tuple[list[tuple[str, float | None]], dict[str, tuple[int, bool]]]:
+    collapsed: list[tuple[str, float | None]] = []
+    for call in calls:
+        if collapsed and collapsed[-1][0] == call[0]:
+            continue
+        collapsed.append(call)
+    impacts: dict[str, tuple[int, bool]] = {}
+    cursor = 0
+    while cursor < len(collapsed):
+        if collapsed[cursor][0] not in targets:
+            cursor += 1
+            continue
+        end = cursor
+        while end + 1 < len(collapsed) and collapsed[end + 1][0] in targets:
+            end += 1
+        run_length = end - cursor + 1
+        for index in range(cursor, end + 1):
+            stop_id = collapsed[index][0]
+            terminal = index == 0 or index == len(collapsed) - 1
+            old_length, old_terminal = impacts.get(stop_id, (0, False))
+            impacts[stop_id] = max(old_length, run_length), old_terminal or terminal
+        cursor = end + 1
+    return collapsed, impacts
+
+
 def scan_route_contexts(
     stop_times_path: Path,
     boarding_to_place: dict[str, str],
     targets: set[str],
     coordinates: dict[str, tuple[float, float]],
     precisions: dict[str, str],
-) -> tuple[set[str], dict[str, int], dict[str, list[dict]]]:
+) -> tuple[set[str], dict[str, int], dict[str, list[dict]], dict[str, dict]]:
     referenced: set[str] = set()
     occurrences: dict[str, int] = defaultdict(int)
     contexts: dict[str, dict[str, dict]] = defaultdict(dict)
+    impacts: dict[str, dict] = defaultdict(
+        lambda: {
+            "maximum_consecutive_unresolved": 0,
+            "unresolved_terminus": False,
+            "affected_trip_ids": set(),
+        }
+    )
 
     def process(trip_id: str, calls: list[tuple[str, float | None]]) -> None:
         # A one-distinct-stop trip is invalid and is ignored even when auditing
         # an older bundle produced before JrUtil learned to drop it.
         if len({stop_id for stop_id, _ in calls}) < 2:
             return
+        # Consecutive platform calls at one stop place are one unresolved place,
+        # not an artificial multi-stop gap.
+        calls, trip_impacts = unresolved_run_impacts(calls, targets)
         referenced.update(stop_id for stop_id, _ in calls)
+        for stop_id, (run_length, terminal) in trip_impacts.items():
+            impact = impacts[stop_id]
+            impact["maximum_consecutive_unresolved"] = max(
+                impact["maximum_consecutive_unresolved"], run_length
+            )
+            impact["unresolved_terminus"] |= terminal
+            impact["affected_trip_ids"].add(trip_id)
         for index, (stop_id, call_time) in enumerate(calls):
             if stop_id not in targets:
                 continue
@@ -566,6 +654,7 @@ def scan_route_contexts(
         referenced,
         occurrences,
         {stop_id: list(values.values()) for stop_id, values in contexts.items()},
+        impacts,
     )
 
 
@@ -596,14 +685,35 @@ def run_audit(args) -> None:
     targets = {
         stop_id for stop_id, precision in precisions.items() if precision in wanted
     }
-    referenced, occurrences, contexts = scan_route_contexts(
+    referenced, occurrences, contexts, impacts = scan_route_contexts(
         args.gtfs / "stop_times.txt",
         boarding_to_place,
         targets,
         coordinates,
         precisions,
     )
-    selected = sorted(targets.intersection(referenced))
+    selected_targets = targets.intersection(referenced)
+    minimum_run_length = getattr(args, "minimum_run_length", None)
+    include_termini = getattr(args, "include_unresolved_termini", False)
+    if minimum_run_length is not None or include_termini:
+        selected_targets = {
+            stop_id
+            for stop_id in selected_targets
+            if (
+                minimum_run_length is not None
+                and impacts[stop_id]["maximum_consecutive_unresolved"]
+                >= minimum_run_length
+            )
+            or (include_termini and impacts[stop_id]["unresolved_terminus"])
+        }
+    selected = sorted(selected_targets)
+    with (args.gtfs / "trips.txt").open(encoding="utf-8-sig", newline="") as stream:
+        trip_routes = {row["trip_id"]: row["route_id"] for row in csv.DictReader(stream)}
+    with (args.gtfs / "routes.txt").open(encoding="utf-8-sig", newline="") as stream:
+        route_names = {
+            row["route_id"]: row.get("route_long_name") or row.get("route_short_name") or ""
+            for row in csv.DictReader(stream)
+        }
     with zipfile.ZipFile(args.jdf) as archive:
         rows = csv.reader(archive.read("Zastavky.txt").decode("cp1250").splitlines())
         source_stops = {}
@@ -632,6 +742,11 @@ def run_audit(args) -> None:
                 "current_longitude",
                 "coordinate_source",
                 "route_occurrences",
+                "maximum_consecutive_unresolved",
+                "unresolved_terminus",
+                "affected_trip_count",
+                "route_ids",
+                "route_names",
                 "route_contexts",
             ],
             lineterminator="\n",
@@ -644,6 +759,14 @@ def run_audit(args) -> None:
             source = source_stops[match.group(1)]
             point = coordinates.get(stop_id)
             meta = metadata[stop_id]
+            impact = impacts[stop_id]
+            affected_route_ids = sorted(
+                {
+                    trip_routes[trip_id]
+                    for trip_id in impact["affected_trip_ids"]
+                    if trip_id in trip_routes
+                }
+            )
             writer.writerow(
                 {
                     "stop_id": stop_id,
@@ -656,6 +779,15 @@ def run_audit(args) -> None:
                     "current_longitude": point[1] if point else "",
                     "coordinate_source": meta.get("coordinate_source") or "",
                     "route_occurrences": occurrences.get(stop_id, 0),
+                    "maximum_consecutive_unresolved": impact[
+                        "maximum_consecutive_unresolved"
+                    ],
+                    "unresolved_terminus": str(impact["unresolved_terminus"]).lower(),
+                    "affected_trip_count": len(impact["affected_trip_ids"]),
+                    "route_ids": ";".join(affected_route_ids),
+                    "route_names": ";".join(
+                        sorted({route_names.get(route_id, "") for route_id in affected_route_ids})
+                    ),
                     "route_contexts": json.dumps(
                         contexts.get(stop_id, []),
                         ensure_ascii=False,
@@ -671,6 +803,16 @@ def run_audit(args) -> None:
                 "referenced_selected_coordinates": len(selected),
                 "referenced_stop_places": len(referenced),
                 "referenced_with_other_coordinates": len(referenced) - len(selected),
+                "unresolved_termini": sum(
+                    bool(impact["unresolved_terminus"])
+                    for stop_id, impact in impacts.items()
+                    if stop_id in targets
+                ),
+                "long_unresolved_stops": sum(
+                    impact["maximum_consecutive_unresolved"] >= 5
+                    for stop_id, impact in impacts.items()
+                    if stop_id in targets
+                ),
             },
             sort_keys=True,
         )
@@ -804,7 +946,16 @@ def osm_candidates(
     for element in elements:
         tags = element.get("tags", {})
         names = []
-        for key in ("name", "name:cs", "official_name", "short_name"):
+        for key in (
+            "name",
+            "name:cs",
+            "name:de",
+            "name:pl",
+            "name:sk",
+            "official_name",
+            "local_name",
+            "short_name",
+        ):
             if tags.get(key):
                 names.append(tags[key])
         if tags.get("alt_name"):
@@ -841,6 +992,20 @@ def osm_candidates(
     return result
 
 
+def nominatim_item_is_stop(item: dict) -> bool:
+    return item.get("category", "") in {
+        "highway",
+        "public_transport",
+        "railway",
+    } or item.get("type", "") in {
+        "bus_stop",
+        "platform",
+        "station",
+        "halt",
+        "tram_stop",
+    }
+
+
 class NominatimClient(JsonHttpClient):
     def municipality(
         self, name: str, country: str, cache: Path
@@ -873,34 +1038,47 @@ class NominatimClient(JsonHttpClient):
     def search(self, stop: StopQuery, cache: Path) -> list[Candidate]:
         cache.mkdir(parents=True, exist_ok=True)
         key = normalize_text(
-            f"stop-{stop.country}-{stop.name}-{stop.municipality}"
+            f"stop-v2-{stop.country}-{stop.name}-{stop.municipality}"
         ).replace(" ", "-")
         cached = cache / f"{key}.json"
         if cached.exists():
             payload = json.loads(cached.read_text(encoding="utf-8"))
         else:
-            time.sleep(max(1.0, self.delay))
-            payload = self.request(
-                "GET",
-                NOMINATIM_URL,
-                params={
-                    "q": f"{stop.name}, {stop.municipality}",
-                    "countrycodes": (
-                        iso_country_code(stop.country) or stop.country
-                    ).lower(),
-                    "format": "jsonv2",
-                    "addressdetails": 1,
-                    "namedetails": 1,
-                    "limit": 5,
-                },
-                headers={"User-Agent": USER_AGENT},
+            payload = []
+            seen = set()
+            queries = dict.fromkeys(
+                [f"{stop.name}, {stop.municipality}", *mapy_query_variants(stop)]
             )
+            for query in queries:
+                time.sleep(max(1.0, self.delay))
+                results = self.request(
+                    "GET",
+                    NOMINATIM_URL,
+                    params={
+                        "q": query,
+                        "countrycodes": (
+                            iso_country_code(stop.country) or stop.country
+                        ).lower(),
+                        "format": "jsonv2",
+                        "addressdetails": 1,
+                        "namedetails": 1,
+                        "limit": 10,
+                    },
+                    headers={"User-Agent": USER_AGENT},
+                )
+                for item in results:
+                    identity = item.get("osm_type"), item.get("osm_id")
+                    if identity not in seen:
+                        seen.add(identity)
+                        payload.append(item)
+                if any(nominatim_item_is_stop(item) for item in results):
+                    break
             cached.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
         candidates = []
         for item in payload:
             address = item.get("address", {})
             names = [item.get("name", "")]
-            names.extend(item.get("namedetails", {}).values())
+            names.extend((item.get("namedetails") or {}).values())
             names = tuple(dict.fromkeys(name for name in names if name))
             if not names:
                 continue
@@ -915,19 +1093,6 @@ class NominatimClient(JsonHttpClient):
                 in normalize_text(item.get("display_name", ""))
                 else "",
             )
-            category = item.get("category", "")
-            result_type = item.get("type", "")
-            is_stop = category in {
-                "highway",
-                "public_transport",
-                "railway",
-            } or result_type in {
-                "bus_stop",
-                "platform",
-                "station",
-                "halt",
-                "tram_stop",
-            }
             candidates.append(
                 Candidate(
                     names,
@@ -935,7 +1100,7 @@ class NominatimClient(JsonHttpClient):
                     float(item["lon"]),
                     municipality,
                     address.get("country_code", stop.country),
-                    "stop" if is_stop else "poi",
+                    "stop" if nominatim_item_is_stop(item) else "poi",
                     region=region_for_coordinates(
                         float(item["lat"]), float(item["lon"])
                     )
@@ -1052,7 +1217,7 @@ class MapyClient(JsonHttpClient):
             params = {
                 "query": query,
                 "lang": "cs",
-                "limit": 5,
+                "limit": 10,
                 "type": "poi",
                 "locality": country_locality,
             }
@@ -1070,7 +1235,7 @@ class MapyClient(JsonHttpClient):
                 headers={"X-MAPY-API-KEY": self.api_key, "User-Agent": USER_AGENT},
             )
             for rank, entity in enumerate(
-                payload.get("items", payload.get("entities", []))[:5]
+                payload.get("items", payload.get("entities", []))[:10]
             ):
                 regional = entity.get("regionalStructure", [])
                 municipality = next(
@@ -1336,6 +1501,8 @@ def resolve(args, candidate_provider) -> None:
         fuzzy_threshold = getattr(args, "fuzzy_threshold", 0.0)
         if chosen is None and fuzzy_threshold:
             chosen = choose_fuzzy_candidate(stop, plausible, fuzzy_threshold)
+        if chosen is None:
+            chosen = choose_route_supported_candidate(stop, plausible)
         if chosen:
             accepted.append((stop, chosen))
         else:
@@ -1421,6 +1588,16 @@ def parser() -> argparse.ArgumentParser:
         choices=("missing", "estimated", "all"),
         default="missing",
         help="select bundle coordinate precision values to audit",
+    )
+    audit.add_argument(
+        "--minimum-run-length",
+        type=int,
+        help="emit stops in unresolved runs of at least this many stop places",
+    )
+    audit.add_argument(
+        "--include-unresolved-termini",
+        action="store_true",
+        help="also emit unresolved first or last stop places",
     )
     audit.add_argument(
         "--metadata",
