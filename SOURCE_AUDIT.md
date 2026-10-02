@@ -16,7 +16,7 @@ the updater does not impose a licence gate.
 | Karlovarský kraj | obsolete | listed ArcGIS service now reports that it is stopped; retain the last checked-in snapshot pending a replacement endpoint |
 | Olomoucký kraj | duplicate | IDSOK already covers the regional catalogue; DPMO adds a directly maintained urban catalogue |
 | DPMO GTFS | newly usable | official `https://www.dpmo.cz/doc/dpmo-olomouc-cz.zip`, now `DPMO.csv`; bare urban names are explicitly prefixed with Olomouc |
-| Ústecký kraj / DÚK | integrated | ArcGIS, QRide and live-map catalogues |
+| Ústecký kraj / DÚK | integrated | ArcGIS and QRide catalogues; the live map duplicated QRide positions and was retired when its certificate expired |
 | MPVNet regional maps | integrated | PID, ODIS, IDOL, Zlín and JIKORD catalogues |
 | IDS JMK live maps | integrated | stable stop endpoint; retired BMHD iRIS is obsolete |
 | old IREDO map | obsolete | first-generation endpoint no longer returns JSON and was announced for retirement |
@@ -48,7 +48,40 @@ one endpoint timed out and a second run spent minutes walking municipality
 boxes. It was replaced by cached, one-request-per-second targeted Nominatim
 searches. All accepted residual coordinates from targeted OSM, Mapy, and
 refreshed regional catalogues are consolidated in `other/gapfill.csv`; the file
-now contains 336 stop-level name/region/country identities. Reconciliation of the
+contained 336 stop-level name/region/country identities before the 2026-10-02 pass. Reconciliation of the
 original regional-adjacent work list left zero unresolved identities. Mapy raw
 responses and the credential were not retained. Approximate town-coordinate
 rows were removed when JrUtil adopted route-derived estimates for unresolved stops.
+
+## 2026-10-02 refresh
+
+All sources were attempted. The Moravskoslezský kraj layer moved to a new
+public multipoint FeatureServer (the old service now requires a token), and
+Žďár's kdyPrijede endpoint now rejects the default python-requests User-Agent;
+both were fixed. MapaDUK was retired after verifying that QRide covers every
+referenced name once `Ústí n.L.` is expanded (one renamed stop went to
+`Retained.csv`). CestujOK (IDSOK) and DPMLJ reset the TLS handshake from the
+non-Czech refresh host and the Plzeň portal answered 503; their previous
+snapshots are kept. The MPVNet catalogues shrank by 10-40 % upstream (tiling the
+query returns even fewer stops), so names that disappeared but are still
+referenced by the feed were preserved in `Retained.csv` (319 names).
+
+### Residual gap-fill
+
+The work list was the 155 distinct `[?]` names of the 2026-10-02 bundle, with
+okres codes taken from the CIS JŘ JDF exports (portal.cisjr.cz) and route
+anchors from the bundle's stop times. After the refresh, 65 names have an
+exact name/okres catalogue row. 38 more were added to `gapfill.csv`, which now
+holds 431 rows: 14 local catalogue spelling variants, 10 targeted Nominatim
+bus stops and 14 manually reviewed catalogue variants. Two existing rows were
+corrected: `Nemilkov,rozc.1.0` carried Klatovy coordinates under okres MO, and
+`Těšovice,obecní úřad` was labelled PT instead of SO. The Nominatim stop
+classifier no longer treats roads and squares (`highway=residential`,
+`pedestrian` and similar) as stops; candidates of that kind were rejected.
+
+Thirteen names already had a plausible row before the run (for example
+Nasavrky, Plazy and Mastník), so JrUtil rejected those matches for other
+reasons, most likely travel-time conflicts with neighbouring matches.
+The 38 that still have no row are mostly special or tourist services with
+unusable route estimates (Prague centre, Vranov dam, Brno circuit), factory
+gates and stops with no public catalogue or OSM stop object.

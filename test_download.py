@@ -2,6 +2,7 @@ import csv
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 import download
 
@@ -94,6 +95,24 @@ class DownloadTests(unittest.TestCase):
         for row, name, expected in cases:
             with self.subTest(name=name):
                 self.assertEqual(expected, download.dpmlj_stop_name(row, name))
+
+    def test_arcgis_multipoint_yields_every_post(self):
+        page = {
+            "features": [
+                {
+                    "attributes": {"NAZ_ZAS": "Albrechtice,,střed"},
+                    "geometry": {"points": [[18.525, 49.785], [18.526, 49.786]]},
+                },
+                {"attributes": {"NAZ_ZAS": "Bohumín"}, "geometry": {"x": 18.3, "y": 49.9}},
+            ]
+        }
+        responses = [mock.Mock(json=mock.Mock(return_value=value)) for value in (page, {"features": []})]
+        with mock.patch.object(download.requests, "post", side_effect=responses):
+            stops = list(download.arcgis_download_stops("https://example.invalid", 0, ["NAZ_ZAS"]))
+        self.assertEqual(
+            [("Albrechtice,,střed", 49.785, 18.525), ("Albrechtice,,střed", 49.786, 18.526), ("Bohumín", 49.9, 18.3)],
+            [(stop.name, stop.lat, stop.lon) for stop in stops],
+        )
 
     def test_dpmlj_unknown_zone_fails_loudly(self):
         with self.assertRaisesRegex(ValueError, "Unknown DPMLJ zone"):

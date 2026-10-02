@@ -856,7 +856,7 @@ Libotov,50.40032,15.811374,TU,CZ
 "Libuň,Libunec",50.4933,15.275162,JC,CZ
 "Licibořice,,kostel",49.87681,15.75985,CR,CZ
 "Licibořice,,Šiškovice",49.880203,15.7684355,CR,CZ
-"Lično,,náves",50.17807,16.17204,RK,CZ
+"Lično,,náves",50.17828,16.170765,RK,CZ
 "Lično,,Draha",50.17732,16.16697,RK,CZ
 "Lično,,odb.Černíkovice",50.174755,16.183207,RK,CZ
 "Lično,Ostašovice,odb.Radostovice",50.177395,16.146795,RK,CZ
@@ -879,7 +879,6 @@ Lipec,50.08359,15.364896,KO,CZ
 Lipovec,49.91755,15.543205,CR,CZ
 "Lipovec,Licoměřice",49.9171,15.553993,CR,CZ
 "Bojanov,,kostel",49.844215,15.707919,CR,CZ
-"Bojanov,,lihovar",49.84587,15.723686,CR,CZ
 "Bojanov,,prodejna",49.841866,15.705944,CR,CZ
 "Bojanov,,Technolen",49.83944,15.701911,CR,CZ
 "Bojanov,Horní Bezděkov",49.838123,15.699169,CR,CZ
@@ -910,10 +909,8 @@ Litoboř,50.45057,16.015402,NA,CZ
 "Litomyšl,,Husova čtvrť",49.874355,16.297867,SY,CZ
 "Litomyšl,,DUKOR",49.860954,16.325247,SY,CZ
 "Litomyšl,,sokolovna",49.864502,16.31858,SY,CZ
-"Litomyšl,Nedošín,Teroz",49.882988,16.29469,SY,CZ
 "Litomyšl,Záhradí,socha sv.Prokopa",49.8738,16.321709,SY,CZ
 "Litomyšl,,zámek",49.87192,16.313896,SY,CZ
-"Litomyšl,Kornice",49.8912,16.301529,SY,CZ
 "Litomyšl,Nedošín,hlavní silnice",49.886612,16.281189,SY,CZ
 "Litomyšl,Nová Ves u Litomyšle",49.830376,16.306839,SY,CZ
 "Litomyšl,Pazucha",49.87675,16.366898,SY,CZ
@@ -925,8 +922,6 @@ Litošice,49.98402,15.514023,PA,CZ
 "Lomnice n.Pop.,,rozc.",50.52593,15.378463,SM,CZ
 "Lomnice n.Pop.,,rozc.k žel.st.",50.527733,15.377578,SM,CZ
 "Lomnice n.Pop.,,rozc.ke stadionu",50.53536,15.37476,SM,CZ
-"Lomnice n.Pop.,,u kovárny",50.538105,15.3659935,SM,CZ
-"Lomnice n.Pop.,,u STS",50.54365,15.359354,SM,CZ
 "Lomnice n.Pop.,Ploužnice",50.513374,15.387319,SM,CZ
 "Lomnice n.Pop.,Želechy",50.546852,15.393838,SM,CZ
 "Svatý Jiří,Loučky",49.982136,16.25978,UO,CZ
@@ -1033,7 +1028,7 @@ Bor u Skutče,49.82268,16.127625,CR,CZ
 "Markvartice,Příchvoj,Netolice",50.439404,15.240862,JC,CZ
 "Markvartice,Příchvoj,kaple",50.44067,15.225849,JC,CZ
 "Markvartice,Rakov,Čakan",50.44113,15.211274,JC,CZ
-"Markvartice,Rakov",50.428368,15.219839,JC,CZ
+"Markvartice,Rakov",50.428642,15.220006,JC,CZ
 "Maršov u Úpice,,dolní",50.485737,15.980783,TU,CZ
 "Maršov u Úpice,,garáž",50.482063,15.968227,TU,CZ
 "Maršov u Úpice,,Pustiny",50.483406,15.962314,TU,CZ
@@ -1121,7 +1116,6 @@ Borová,50.38626,16.254986,NA,CZ
 "Miřetice,Krupín",49.840897,15.844688,CR,CZ
 "Miřetice,Krupínské Paseky",49.838158,15.845024,CR,CZ
 "Miřetice,Švihov",49.843334,15.862819,CR,CZ
-"Letohrad,Orlice,Holubina",50.02353,16.547018,UO,CZ
 "Mistrovice,,horní",50.03198,16.572691,UO,CZ
 "Mistrovice,,tělocvična",50.02591,16.569921,UO,CZ
 "Mistrovice,,lom",50.01577,16.57944,UO,CZ
@@ -1715,7 +1709,7 @@ Kobylice,50.24441,15.589696,HK,CZ
 "Praskačka,,ObÚ",50.171383,15.744336,HK,CZ
 "Praskačka,Krásnice",50.141785,15.724172,HK,CZ
 "Praskačka,Sedlice",50.153343,15.729304,HK,CZ
-Urbanice,50.18242,15.724048,HK,CZ
+"Urbanice,,hlavní silnice",50.18242,15.724048,HK,CZ
 "Praskačka,Vlčkovice",50.183224,15.755211,HK,CZ
 Pravy,50.131317,15.62504,PA,CZ
 "Proruby,,dolní",50.071693,16.286959,RK,CZ
@@ -1984,7 +1978,6 @@ Rožnov,50.33786,15.860613,NA,CZ
 "Samšina,Drštěkryje",50.454556,15.250229,JC,CZ
 "Sobotka,Lavice,Šalanda",50.459454,15.212761,JC,CZ
 "Sázava,,dol.",49.89677,16.632366,UO,CZ
-"Sázava,,SZP",49.90088,16.6495,UO,CZ
 "Sázava,,záv.",49.904392,16.637466,UO,CZ
 Sběř,50.314293,15.432231,JC,CZ
 "Sběř,,ObÚ",50.319622,15.425772,JC,CZ
@@ -2153,7 +2146,6 @@ Slepotice,49.991516,15.961142,PA,CZ
 "Sloupnice,,u kina",49.919746,16.324419,SY,CZ
 "Sloupnice,,lihovar",49.92572,16.296263,SY,CZ
 "Sloupnice,,zdrav.stř.",49.921654,16.303968,SY,CZ
-"Litomyšl,Kornice,Končiny",49.90266,16.30346,SY,CZ
 "Sloupnice,Vesnička",49.92704,16.346975,SY,CZ
 "Sloveč,Střihov",50.22502,15.369622,NB,CZ
 Smidary,50.291466,15.476428,HK,CZ
@@ -2170,7 +2162,6 @@ Smidary,50.291466,15.476428,HK,CZ
 "Smiřice,Rodov,hřiště",50.305115,15.825543,HK,CZ
 "Smiřice,Trotina",50.289677,15.831286,HK,CZ
 Smrček,49.866417,15.896424,CR,CZ
-"Smrček,,odb.",49.86483,15.8826885,CR,CZ
 Smržov,50.296947,15.913506,HK,CZ
 "Smržov,Hubiles",50.29041,15.902183,HK,CZ
 "Sněžné,,ObÚ",50.3401,16.274456,RK,CZ
@@ -2253,6 +2244,7 @@ Staré Smrkovice,50.338108,15.49415,JC,CZ
 "Staré Ždánice,,Lihovar",50.115234,15.732159,PA,CZ
 "Staré Ždánice,,střed",50.124065,15.720269,PA,CZ
 "Staré Ždánice,,ZD",50.124462,15.722469,PA,CZ
+Starkoč,49.93739,15.507712,KH,CZ
 "Stárkov,,Frolen",50.52919,16.149212,NA,CZ
 "Stárkov,,mlékárna",50.530724,16.166885,NA,CZ
 "Stárkov,,nám.",50.533592,16.157875,NA,CZ
@@ -2355,7 +2347,6 @@ Sukorady,50.325985,15.582974,JC,CZ
 "Svatojanský Újezd,,náves",50.426373,15.541865,JC,CZ
 "Svatojanský Újezd,,Okrouhle",50.431057,15.545708,JC,CZ
 "Svatý Jiří,,hlavní silnice",49.97434,16.271313,UO,CZ
-"Svatý Jiří,,has.zbroj.",49.970676,16.270956,UO,CZ
 "Svatý Jiří,,Sitiny",49.96541,16.27429,UO,CZ
 "Světí,,střed",50.25691,15.778018,HK,CZ
 "Světí,,odb.",50.255787,15.7853365,HK,CZ
@@ -2683,7 +2674,6 @@ Urbanice,49.97351,15.567642,PA,CZ
 "Ústí n.Orl.,Kerhartice,pošta",49.969994,16.369562,UO,CZ
 "Ústí n.Orl.,Kerhartice,Pod lesem",49.968452,16.374771,UO,CZ
 "Ústí n.Orl.,Kerhartice,střed",49.970814,16.366701,UO,CZ
-"Ústí n.Orl.,Kerhartice,splav",49.972065,16.362915,UO,CZ
 "Ústí n.Orl.,Kerhartice,Pražská",49.97158,16.359472,UO,CZ
 "Ústí n.Orl.,Oldřichovice,Na Tiché Orlici",49.986168,16.417091,UO,CZ
 "Ústí n.Orl.,,nemocnice",49.970737,16.401192,UO,CZ
@@ -2869,7 +2859,6 @@ Vračovice-Orlov,49.95203,16.252722,UO,CZ
 "Vranová Lhota,Hraničky",49.71999,16.79734,SY,CZ
 "Vranová Lhota,Vranová",49.717518,16.825527,SY,CZ
 Vrbatův Kostelec,49.856236,15.940877,CR,CZ
-"Vrbatův Kostelec,,odb.Habroveč",49.84955,15.913372,CR,CZ
 "Vrbatův Kostelec,Louka",49.8467,15.922728,CR,CZ
 Vrbice,50.369198,15.428375,JC,CZ
 "Vrbice,Stříbrnice",50.35602,15.453102,JC,CZ
@@ -3046,7 +3035,6 @@ Zdobín,50.41548,15.704661,TU,CZ
 "Žacléř,,žel.st.",50.663055,15.910148,TU,CZ
 "Žamberk,,aut.nádr.",50.084877,16.460972,UO,CZ
 "Žamberk,,divadlo",50.082466,16.46328,UO,CZ
-"Žamberk,,Bühler",50.073307,16.45436,UO,CZ
 "Žamberk,,Agro",50.073925,16.458298,UO,CZ
 "Žamberk,,koupaliště",50.08596,16.473372,UO,CZ
 "Žamberk,,Masarykovo nám.",50.087208,16.465248,UO,CZ
@@ -3127,7 +3115,6 @@ Vrchovnice,50.32389,15.757878,HK,CZ
 "Čepí,,křiž.",49.98541,15.716339,PA,CZ
 "Vračovice-Orlov,,u Morávků",49.955135,16.249552,UO,CZ
 "Voděrady,Džbánov",49.952168,16.308361,UO,CZ
-"Voděrady,Džbánov,rozc.",49.95221,16.3228,UO,CZ
 "Čermná,,most",50.554256,15.764359,TU,CZ
 "Čermná,,konečná",50.565975,15.76794,TU,CZ
 "Čermná,,ObÚ",50.549416,15.769758,TU,CZ
@@ -3579,6 +3566,7 @@ Petrovičky,50.29927,15.607441,JC,CZ
 "Moravská Třebová,,U komína",49.75794,16.64853,SY,CZ
 "Moravská Třebová,,Lanškrounská",49.76409,16.66433,SY,CZ
 "Nechanice,Suchá,odb.",50.269947,15.63687,HK,CZ
+"Všestary,Bříza,odb.",50.24376,15.772385,HK,CZ
 "Radíkovice,,ZD",50.209007,15.693145,HK,CZ
 "Lhota p.Libčany,,odb.Libčany",50.178993,15.696968,HK,CZ
 "Syrovátka,,cukrovar",50.15386,15.663598,HK,CZ
@@ -4008,10 +3996,12 @@ Běchary,50.313854,15.292748,JC,CZ
 "Nová Ves,,ObÚ",50.129433,16.045635,RK,CZ
 "Polička,,žel.st.",49.718605,16.263859,SY,CZ
 "Náchod,,zámek",50.42059,16.161545,NA,CZ
+"Jičíněves,Keteň",50.366848,15.299783,JC,CZ
 "Vysoké Mýto,Domoradice",49.935303,16.089153,UO,CZ
 "Vysoké Mýto,Domoradice,hor.",49.936188,16.090519,UO,CZ
 "Vysoké Mýto,Domoradice,křiž.Popovec",49.93271,16.087662,UO,CZ
 "Vysoké Mýto,Domoradice,rozc.Popovec-Pěšice",49.93107,16.085451,UO,CZ
+"Urbanice,,náves",50.180515,15.725809,HK,CZ
 "Doubravice,,kaple",50.40583,15.76232,TU,CZ
 "Doubravice,,hájovna",50.411953,15.760577,TU,CZ
 "Doubravice,Velehrádek,farma",50.39608,15.758726,TU,CZ

@@ -155,9 +155,11 @@ Scraped: https://mpvnet.cz/idol/map
 
 Scraped: https://mapa.idsjmk.cz/
 
-## MapaDUK.csv
+## QRideDUK.csv
 
-Scraped: https://provoz.dopravauk.cz/sprinter
+Scraped: https://tabule.portabo.cz/ (DÚK). Abbreviated `Ústí n.L.,` names are
+additionally emitted as `Ústí nad Labem,` to match JDF MHD naming; this replaced
+the former `MapaDUK.csv`, whose stop positions were identical.
 
 ## MapaIREDO.csv
 
@@ -177,7 +179,7 @@ From ArcGIS: http://mapy.plzensky-kraj.cz/ArcGIS/rest/services/zastavky/MapServe
 
 ## MoravskoslezskyKraj.csv
 
-From ArcGIS: https://gis.msk.cz/arcgis/rest/services/public/dsh\_bus/MapServer/6
+From ArcGIS (data.msk.cz): https://services8.arcgis.com/jfWD14yYevYeDEj7/arcgis/rest/services/Zast%C3%A1vky\_ve%C5%99ejn%C3%A9\_hromadn%C3%A9\_dopravy\_v\_Moravskoslezsk%C3%A9m\_kraj/FeatureServer/0
 
 ## KrajVysocina.csv
 
@@ -186,3 +188,11 @@ From ArcGIS: http://geoportal.kr-vysocina.cz/arcgis/rest/services/Trasy\_dopravy
 ## KarlovarskyKraj.csv
 
 From ArcGIS: http://geoportal.kr-karlovarsky.cz/arcgis/rest/services/UAP/UAP\_msd/MapServer
+
+## Retained.csv
+
+Rows that a refreshed catalogue no longer publishes but whose names the current
+feed still references, copied verbatim from the previous snapshot of their
+source. This keeps a refresh from silently dropping coverage when an upstream
+catalogue shrinks (MPVNet, 2026-10) or renames a stop. Drop a row once the JDF
+stops using that name.
