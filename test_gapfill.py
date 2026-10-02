@@ -118,6 +118,23 @@ class GapfillTests(unittest.TestCase):
             ).search(stop, Path(directory))
         self.assertEqual("poi", candidates[0].kind)
 
+    def test_nominatim_roads_are_not_stops(self):
+        for category, kind, expected in (
+            ("highway", "bus_stop", True),
+            ("highway", "platform", True),
+            ("public_transport", "stop_position", True),
+            ("railway", "halt", True),
+            ("highway", "residential", False),
+            ("highway", "pedestrian", False),
+            ("highway", "secondary", False),
+            ("building", "civic", False),
+        ):
+            with self.subTest(category=category, kind=kind):
+                self.assertEqual(
+                    expected,
+                    gapfill.nominatim_item_is_stop({"category": category, "type": kind}),
+                )
+
     def test_nominatim_continues_after_unrelated_results(self):
         unrelated = {
             "osm_type": "node",

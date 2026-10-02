@@ -993,17 +993,17 @@ def osm_candidates(
 
 
 def nominatim_item_is_stop(item: dict) -> bool:
-    return item.get("category", "") in {
-        "highway",
-        "public_transport",
-        "railway",
-    } or item.get("type", "") in {
-        "bus_stop",
-        "platform",
-        "station",
-        "halt",
-        "tram_stop",
-    }
+    # Roads and squares share the highway category with bus stops, so the
+    # category alone must not qualify an item.
+    category = item.get("category", "")
+    kind = item.get("type", "")
+    if category == "public_transport":
+        return True
+    if category == "highway":
+        return kind in {"bus_stop", "platform"}
+    if category == "railway":
+        return kind in {"station", "halt", "tram_stop", "platform", "stop"}
+    return kind in {"bus_stop", "platform", "station", "halt", "tram_stop"}
 
 
 class NominatimClient(JsonHttpClient):
