@@ -414,7 +414,7 @@ Vilsnice,50.7463837,14.1805553,DC,CZ
 "Děčín,Alusuisse",50.7641792297363,14.2030401229858,DC,CZ
 "Děčín,Alusuisse",50.7646484375,14.2030401229858,DC,CZ
 "Děčín,aut.nádr.",50.7707138,14.1987591,DC,CZ
-"Děčín,aut.nádr.",50.7707290649414,14.1985902786255,DC,CZ
+"Děčín,aut.nádr.",50.7707443,14.1985636,DC,CZ
 "Děčín,aut.nádr.",50.7707825,14.1983862,DC,CZ
 "Děčín,aut.nádr.",50.770813,14.198185,DC,CZ
 "Děčín,aut.nádr.",50.7708435,14.1979866,DC,CZ
@@ -679,6 +679,8 @@ Evaň,50.3834229,14.026166,LT,CZ
 "Františkov n.Pl.,pila",50.7198372,14.3371534,DC,CZ
 "Františkov n.Pl.,Valkeřické rozc.",50.719017,14.34864,DC,CZ
 "Františkov n.Pl.,Valkeřické rozc.",50.7190781,14.3486128,DC,CZ
+"Františkov n.Pl.,Valkeřické rozc.",50.7187729,14.3493738,DC,CZ
+"Františkov n.Pl.,Valkeřické rozc.",50.718792,14.3495617,DC,CZ
 "Františkov n.Pl.,záv.",50.724762,14.329586,DC,CZ
 "Františkov n.Pl.,záv.",50.724823,14.3296585,DC,CZ
 "Radonice,Háj",50.28674,13.2424088,CV,CZ
@@ -1642,8 +1644,7 @@ Lhotka n.L.,50.52486,14.0465956,LT,CZ
 "Libčeves,Hnojnice",50.43806,13.87421,LN,CZ
 "Libčeves,Hořenec,rozc.",50.4620171,13.8075047,LN,CZ
 "Libčeves,Hořenec,rozc.",50.4619179,13.8075275,LN,CZ
-"Libčeves,Charvatce",50.42502,13.8091612,LN,CZ
-"Libčeves,Charvatce",50.42501,13.80929,LN,CZ
+"Libčeves,Charvatce",50.4273338,13.8105726,LN,CZ
 "Libčeves,Lahovice,rozc.",50.4581566,13.8516951,LN,CZ
 "Libčeves,Lahovice,rozc.",50.4578972,13.8504457,LN,CZ
 "Libčeves,Mnichov",50.4206123,13.8080912,LN,CZ
@@ -2265,8 +2266,8 @@ Most,50.5112152,13.6582632,MO,CZ
 "Mšené-lázně,lázně",50.364193,14.1316156,LT,CZ
 "Mšené-lázně,Loucká",50.344326,14.1050911,LT,CZ
 "Mšené-lázně,Loucká",50.34437,14.10542,LT,CZ
-"Mšené-lázně,u kapličky",50.3637352,14.1232862,LT,CZ
-"Mšené-lázně,u kapličky",50.3632278,14.1235514,LT,CZ
+"Mšené-lázně,u kapličky",50.3639,14.1229172,LT,CZ
+"Mšené-lázně,u kapličky",50.3636856,14.1230373,LT,CZ
 "Mšené-lázně,křiž.Lázeňská",50.3639,14.12309,LT,CZ
 "Hrobčice,Mukov",50.5039024,13.8374357,TP,CZ
 "Hrobčice,Mukov",50.503952,13.8372545,TP,CZ
@@ -2297,6 +2298,7 @@ Nepomyšl,50.2183037,13.3133106,LN,CZ
 "Nezabylice,Na seníku",50.4232025,13.4726419,CV,CZ
 "Nezabylice,Na seníku",50.4232635,13.4730968,CV,CZ
 "Nezabylice,Na seníku",50.4224472,13.4729376,CV,CZ
+"Nezabylice,Na seníku",50.4223,13.47298,CV,CZ
 Nezabylice,50.4225617,13.4776603,CV,CZ
 Nezabylice,50.4226456,13.4775028,CV,CZ
 Nová Ves,50.2861977,13.8431225,LN,CZ
@@ -2855,6 +2857,7 @@ Sedlec,50.45036,14.0183182,LT,CZ
 "Seifhennersdorf,Grenze Rumburk",50.9393539,14.58646,,D
 "Seifhennersdorf,Zollstr.",50.93047,14.6154308,,D
 "Seifhennersdorf,Zollstr.",50.9305,14.6153383,,D
+"Schmilka,Grenzübergang",50.89202,14.2298708,,D
 "Schmilka,Grenzübergang",50.890686,14.2314081,,D
 Siřejovice,50.479454,14.070569,LT,CZ
 "Skršín,odb.",50.4626846,13.7517948,MO,CZ
@@ -2972,6 +2975,8 @@ Svádov,50.66317,14.1033516,UL,CZ
 "Svinčice,otočka",50.5005875,13.7417774,MO,CZ
 "Svinčice,rozc.1.0",50.49589,13.7363625,MO,CZ
 "Svinčice,rozc.1.0",50.4958267,13.7363491,MO,CZ
+"Svinčice,rozc.1.0",50.4969254,13.7319088,MO,CZ
+"Svinčice,rozc.1.0",50.4965744,13.7319727,MO,CZ
 Široké Třebčice,50.28146,13.38306,CV,CZ
 Široké Třebčice,50.28113,13.3833094,CV,CZ
 Široké Třebčice,50.2804565,13.382844,CV,CZ
@@ -3151,6 +3156,7 @@ vozovna Teplice,50.65653,13.832428,TP,CZ
 "Teplice,Doubravská",50.6487007141113,13.8438396453857,TP,CZ
 "Teplice,Doubravská",50.6485595703125,13.8437004089355,TP,CZ
 "Teplice,Dubská",50.64585,13.8199425,TP,CZ
+"Teplice,Dubská",50.64523,13.8165417,TP,CZ
 "Teplice,Fráni Šrámka",50.6458702087402,13.8487396240234,TP,CZ
 "Teplice,Fráni Šrámka",50.6454391479492,13.8489398956299,TP,CZ
 "Teplice,Gagarinova",50.6536712646484,13.8543996810913,TP,CZ
@@ -3161,8 +3167,7 @@ vozovna Teplice,50.65653,13.832428,TP,CZ
 Teplice v Čechách,50.6465378,13.8290405,TP,CZ
 "Teplice,Hotel de Saxe",50.6434783935547,13.8294200897217,TP,CZ
 "Teplice,Hotel de Saxe",50.6442604064941,13.8304500579834,TP,CZ
-"Teplice,Hřbitovní",50.6435317993164,13.815580368042,TP,CZ
-"Teplice,Hřbitovní",50.6434898376465,13.8153696060181,TP,CZ
+"Teplice,Hřbitovní",50.6434021,13.8153467,TP,CZ
 "Teplice,J.Koziny",50.6581573,13.8475618,TP,CZ
 "Teplice,Jankovcova",50.6469192504883,13.8364000320435,TP,CZ
 "Teplice,Jankovcova",50.6472206115723,13.8357000350952,TP,CZ
@@ -3183,8 +3188,8 @@ Teplice v Čechách,50.6465378,13.8290405,TP,CZ
 "Teplice,Luna",50.6579284667969,13.8418598175049,TP,CZ
 "Teplice,Luna",50.6589698791504,13.8426399230957,TP,CZ
 "Teplice,Luna",50.6575813293457,13.8430995941162,TP,CZ
-"Teplice,Mánesovo nám.",50.6463508605957,13.8235597610474,TP,CZ
-"Teplice,Mánesovo nám.",50.645881652832,13.8239898681641,TP,CZ
+"Teplice,Mánesovo nám.",50.6457672,13.8240051,TP,CZ
+"Teplice,Mánesovo nám.",50.6463242,13.8235922,TP,CZ
 "Teplice,Mariánský dvůr",50.6361694335938,13.8156099319458,TP,CZ
 "Teplice,Mariánský dvůr",50.6365394592285,13.8147602081299,TP,CZ
 "Teplice,Maršovská",50.6594390869141,13.8459596633911,TP,CZ
@@ -3397,109 +3402,209 @@ Tuchořice,50.2848549,13.6628971,LN,CZ
 Úpohlavy,50.46229,14.0354586,LT,CZ
 "Světec,Úpoř",50.5805359,13.8388939,TP,CZ
 "Ústí n.L.,Božtěšice",50.6893578,14.0183783,UL,CZ
+"Ústí nad Labem,Božtěšice",50.6893578,14.0183783,UL,CZ
 "Ústí n.L.,Božtěšice",50.6893425,14.0182037,UL,CZ
+"Ústí nad Labem,Božtěšice",50.6893425,14.0182037,UL,CZ
 "Ústí n.L.,Bukov,městský stadion",50.67497,14.0157919,UL,CZ
+"Ústí nad Labem,Bukov,městský stadion",50.67497,14.0157919,UL,CZ
 "Ústí n.L.,Bukov,městský stadion",50.6763039,14.014164,UL,CZ
+"Ústí nad Labem,Bukov,městský stadion",50.6763039,14.014164,UL,CZ
 "Ústí n.L.,Bukov,sanat.",50.6821861,14.0202694,UL,CZ
+"Ústí nad Labem,Bukov,sanat.",50.6821861,14.0202694,UL,CZ
 "Ústí n.L.,Bukov,sanat.",50.6818275,14.0203266,UL,CZ
+"Ústí nad Labem,Bukov,sanat.",50.6818275,14.0203266,UL,CZ
 "Ústí n.L.,Hostovice",50.6427574,14.0172577,UL,CZ
+"Ústí nad Labem,Hostovice",50.6427574,14.0172577,UL,CZ
 "Ústí n.L.,Hostovice",50.6428,14.0170527,UL,CZ
+"Ústí nad Labem,Hostovice",50.6428,14.0170527,UL,CZ
 "Ústí n.L.,Kočkov",50.68117,14.0372744,UL,CZ
+"Ústí nad Labem,Kočkov",50.68117,14.0372744,UL,CZ
 "Ústí n.L.,Kočkov",50.6812973,14.037385,UL,CZ
+"Ústí nad Labem,Kočkov",50.6812973,14.037385,UL,CZ
 "Ústí n.L.,Kojetice",50.6454048,14.0872993,UL,CZ
+"Ústí nad Labem,Kojetice",50.6454048,14.0872993,UL,CZ
 "Ústí n.L.,Kojetice",50.6451454,14.0876274,UL,CZ
+"Ústí nad Labem,Kojetice",50.6451454,14.0876274,UL,CZ
 "Ústí n.L.,Mojžíř,sídl.",50.6808357,14.1154184,UL,CZ
+"Ústí nad Labem,Mojžíř,sídl.",50.6808357,14.1154184,UL,CZ
 "Ústí n.L.,Mojžíř,sídl.",50.6804733,14.1149654,UL,CZ
+"Ústí nad Labem,Mojžíř,sídl.",50.6804733,14.1149654,UL,CZ
 "Ústí n.L.,Mojžíř,Veselí",50.6774864,14.1280107,UL,CZ
+"Ústí nad Labem,Mojžíř,Veselí",50.6774864,14.1280107,UL,CZ
 "Ústí n.L.,Mojžíř,Veselí",50.67761,14.1279364,UL,CZ
+"Ústí nad Labem,Mojžíř,Veselí",50.67761,14.1279364,UL,CZ
 "Ústí n.L.,Neštěmice,Květ",50.6729431,14.105176,UL,CZ
+"Ústí nad Labem,Neštěmice,Květ",50.6729431,14.105176,UL,CZ
 "Ústí n.L.,Neštěmice,Květ",50.67293,14.1046944,UL,CZ
+"Ústí nad Labem,Neštěmice,Květ",50.67293,14.1046944,UL,CZ
 "Ústí n.L.,Severní Terasa",50.67984,14.0257816,UL,CZ
+"Ústí nad Labem,Severní Terasa",50.67984,14.0257816,UL,CZ
 "Ústí n.L.,Severní Terasa",50.6799965,14.0259142,UL,CZ
+"Ústí nad Labem,Severní Terasa",50.6799965,14.0259142,UL,CZ
 "Ústí n.L.,Severní Terasa",50.6801262,14.0253048,UL,CZ
+"Ústí nad Labem,Severní Terasa",50.6801262,14.0253048,UL,CZ
 "Ústí n.L.,Strážky,obec",50.7065849,14.0155411,UL,CZ
+"Ústí nad Labem,Strážky,obec",50.7065849,14.0155411,UL,CZ
 "Ústí n.L.,Strážky,obec",50.7064972,14.0155439,UL,CZ
+"Ústí nad Labem,Strážky,obec",50.7064972,14.0155439,UL,CZ
 "Ústí n.L.,Všebořice,U Českého Újezdu",50.685997,13.9612341,UL,CZ
+"Ústí nad Labem,Všebořice,U Českého Újezdu",50.685997,13.9612341,UL,CZ
 "Ústí n.L.,Všebořice,U Českého Újezdu",50.68606,13.9610062,UL,CZ
+"Ústí nad Labem,Všebořice,U Českého Újezdu",50.68606,13.9610062,UL,CZ
 "Ústí n.L.,Všebořice,obchodní centrum",50.68955,13.9844608,UL,CZ
+"Ústí nad Labem,Všebořice,obchodní centrum",50.68955,13.9844608,UL,CZ
 "Ústí n.L.,Všebořice,obchodní centrum",50.6899033,13.9810038,UL,CZ
+"Ústí nad Labem,Všebořice,obchodní centrum",50.6899033,13.9810038,UL,CZ
 "Ústí n.L.,Beethovenova",50.6724434,14.0205164,UL,CZ
+"Ústí nad Labem,Beethovenova",50.6724434,14.0205164,UL,CZ
 "Ústí n.L.,Beethovenova",50.6731033,14.0198441,UL,CZ
+"Ústí nad Labem,Beethovenova",50.6731033,14.0198441,UL,CZ
 "Ústí n.L.,Bělehradská",50.67135,14.0338631,UL,CZ
+"Ústí nad Labem,Bělehradská",50.67135,14.0338631,UL,CZ
 "Ústí n.L.,Bělehradská",50.6707039,14.0344067,UL,CZ
+"Ústí nad Labem,Bělehradská",50.6707039,14.0344067,UL,CZ
 "Ústí n.L.,Božtěšická",50.6845,14.01736,UL,CZ
+"Ústí nad Labem,Božtěšická",50.6845,14.01736,UL,CZ
 "Ústí n.L.,Božtěšická",50.68464,14.0175076,UL,CZ
+"Ústí nad Labem,Božtěšická",50.68464,14.0175076,UL,CZ
 "Ústí n.L.,Bukov",50.6789932,14.00919,UL,CZ
+"Ústí nad Labem,Bukov",50.6789932,14.00919,UL,CZ
 "Ústí n.L.,Bukov",50.679348,14.0090017,UL,CZ
+"Ústí nad Labem,Bukov",50.679348,14.0090017,UL,CZ
 "Ústí n.L.,Bukov rondel",50.68052,14.0068769,UL,CZ
+"Ústí nad Labem,Bukov rondel",50.68052,14.0068769,UL,CZ
 "Ústí n.L.,Divadlo",50.6601639,14.0353966,UL,CZ
+"Ústí nad Labem,Divadlo",50.6601639,14.0353966,UL,CZ
 "Ústí n.L.,Divadlo",50.65951,14.0364437,UL,CZ
+"Ústí nad Labem,Divadlo",50.65951,14.0364437,UL,CZ
 "Ústí n.L.,Divadlo",50.6595039,14.03595,UL,CZ
+"Ústí nad Labem,Divadlo",50.6595039,14.03595,UL,CZ
 "Ústí n.L.,Divadlo",50.6594048,14.0361052,UL,CZ
+"Ústí nad Labem,Divadlo",50.6594048,14.0361052,UL,CZ
 "Ústí n.L.,Divadlo",50.6603355,14.0353975,UL,CZ
+"Ústí nad Labem,Divadlo",50.6603355,14.0353975,UL,CZ
 "Ústí n.L.,Divadlo",50.65942,14.0364666,UL,CZ
+"Ústí nad Labem,Divadlo",50.65942,14.0364666,UL,CZ
 "Ústí n.L.,Divadlo",50.6596,14.034483,UL,CZ
+"Ústí nad Labem,Divadlo",50.6596,14.034483,UL,CZ
 "Ústí n.L.,Divadlo",50.6596,14.03429,UL,CZ
+"Ústí nad Labem,Divadlo",50.6596,14.03429,UL,CZ
 "Ústí n.L.,Elba",50.67821,14.0357285,UL,CZ
+"Ústí nad Labem,Elba",50.67821,14.0357285,UL,CZ
 "Ústí n.L.,Elba",50.6783028,14.0361052,UL,CZ
+"Ústí nad Labem,Elba",50.6783028,14.0361052,UL,CZ
 "Ústí n.L.,Hilarova",50.6666756,14.036273,UL,CZ
+"Ústí nad Labem,Hilarova",50.6666756,14.036273,UL,CZ
 "Ústí n.L.,Hilarova",50.666523,14.0364914,UL,CZ
+"Ústí nad Labem,Hilarova",50.666523,14.0364914,UL,CZ
 "Ústí n.L.,hl.nádr.",50.6595154,14.0437155,UL,CZ
+"Ústí nad Labem,hl.nádr.",50.6595154,14.0437155,UL,CZ
 "Ústí n.L.,hl.nádr.",50.6595421,14.0435991,UL,CZ
+"Ústí nad Labem,hl.nádr.",50.6595421,14.0435991,UL,CZ
 "Ústí n. L.,hl. nádr.",50.6595802307129,14.0436401367188,UL,CZ
 Ústí nad Labem hlavní nádraží,50.65949,14.0445786,UL,CZ
 Ústí n.L.hlavní nádr.,50.65949,14.0445786,UL,CZ
 "Ústí n.L.,přístaviště Centrum",50.6590538,14.0453005,UL,CZ
+"Ústí nad Labem,přístaviště Centrum",50.6590538,14.0453005,UL,CZ
 "Ústí n.L.,Hraničář",50.6635971,14.0330677,UL,CZ
+"Ústí nad Labem,Hraničář",50.6635971,14.0330677,UL,CZ
 "Ústí n.L.,Hraničář",50.6630669,14.0334148,UL,CZ
+"Ústí nad Labem,Hraničář",50.6630669,14.0334148,UL,CZ
 "Ústí n.L.,Hraničář",50.6639748,14.0330276,UL,CZ
+"Ústí nad Labem,Hraničář",50.6639748,14.0330276,UL,CZ
 "Ústí n.L.,Hraničář",50.66324,14.0335169,UL,CZ
+"Ústí nad Labem,Hraničář",50.66324,14.0335169,UL,CZ
+"Ústí n.L.,Hraničář",50.66278,14.0337954,UL,CZ
+"Ústí nad Labem,Hraničář",50.66278,14.0337954,UL,CZ
 "Ústí n.L.,Kamenný Vrch",50.6538544,14.0662956,UL,CZ
+"Ústí nad Labem,Kamenný Vrch",50.6538544,14.0662956,UL,CZ
 "Ústí n.L.,Kamenný Vrch",50.65423,14.0662527,UL,CZ
+"Ústí nad Labem,Kamenný Vrch",50.65423,14.0662527,UL,CZ
 "Ústí n.L.,Kamenný Vrch škola",50.65705,14.0610933,UL,CZ
+"Ústí nad Labem,Kamenný Vrch škola",50.65705,14.0610933,UL,CZ
 "Ústí n.L.,Kamenný Vrch škola",50.65738,14.06271,UL,CZ
+"Ústí nad Labem,Kamenný Vrch škola",50.65738,14.06271,UL,CZ
 "Ústí n.L.,Krajský soud",50.65797,14.0486584,UL,CZ
+"Ústí nad Labem,Krajský soud",50.65797,14.0486584,UL,CZ
 "Ústí n.L.,Krajský soud",50.6583,14.0485106,UL,CZ
+"Ústí nad Labem,Krajský soud",50.6583,14.0485106,UL,CZ
 "Ústí n.L.,Lipová",50.6855278,13.9931984,UL,CZ
+"Ústí nad Labem,Lipová",50.6855278,13.9931984,UL,CZ
 "Ústí n.L.,Lipová",50.6857567,13.9931374,UL,CZ
+"Ústí nad Labem,Lipová",50.6857567,13.9931374,UL,CZ
 "Ústí n.L.,Střekov,K Loděnici",50.6583939,14.0688705,UL,CZ
+"Ústí nad Labem,Střekov,K Loděnici",50.6583939,14.0688705,UL,CZ
 "Ústí n.L.,Střekov,K Loděnici",50.6583824,14.0682058,UL,CZ
+"Ústí nad Labem,Střekov,K Loděnici",50.6583824,14.0682058,UL,CZ
 "Ústí n.L.,Malá Hradební",50.6580772,14.0400219,UL,CZ
+"Ústí nad Labem,Malá Hradební",50.6580772,14.0400219,UL,CZ
 "Ústí n.L.,Malá Hradební",50.6581039,14.0396061,UL,CZ
+"Ústí nad Labem,Malá Hradební",50.6581039,14.0396061,UL,CZ
 "Ústí n.L.,Masarykova nem.",50.6804237,14.0230751,UL,CZ
+"Ústí nad Labem,Masarykova nem.",50.6804237,14.0230751,UL,CZ
 "Ústí n.L.,Masarykova nem.",50.68009,14.0231256,UL,CZ
+"Ústí nad Labem,Masarykova nem.",50.68009,14.0231256,UL,CZ
 "Ústí n.L.,Mírové nám.",50.6604767,14.0425539,UL,CZ
+"Ústí nad Labem,Mírové nám.",50.6604767,14.0425539,UL,CZ
 "Ústí n.L.,Mírové nám.",50.66056,14.04326,UL,CZ
+"Ústí nad Labem,Mírové nám.",50.66056,14.04326,UL,CZ
 "Ústí n. L.,Mírové nám.",50.6601715087891,14.041259765625,UL,CZ
 "Ústí n. L.,Mírové nám.",50.6604309082031,14.0426397323608,UL,CZ
 "Ústí n. L.,Mírové nám.",50.6605110168457,14.0432996749878,UL,CZ
 "Ústí n.L.,Na kopečku",50.68463,14.0397091,UL,CZ
+"Ústí nad Labem,Na kopečku",50.68463,14.0397091,UL,CZ
 "Ústí n.L.,Na kopečku",50.6846848,14.0399094,UL,CZ
+"Ústí nad Labem,Na kopečku",50.6846848,14.0399094,UL,CZ
 "Ústí n.L.,Nové Předlice",50.65551,14.002141,UL,CZ
+"Ústí nad Labem,Nové Předlice",50.65551,14.002141,UL,CZ
 "Ústí n.L.,Nové Předlice",50.6556,14.0019474,UL,CZ
+"Ústí nad Labem,Nové Předlice",50.6556,14.0019474,UL,CZ
 "Ústí n.L.,Nové Předlice",50.6561432,14.0016851,UL,CZ
+"Ústí nad Labem,Nové Předlice",50.6561432,14.0016851,UL,CZ
 "Ústí n.L.,Nové Předlice",50.6565857,14.0006161,UL,CZ
+"Ústí nad Labem,Nové Předlice",50.6565857,14.0006161,UL,CZ
 "Ústí n.L.,Olšinky",50.6597176,14.08146,UL,CZ
+"Ústí nad Labem,Olšinky",50.6597176,14.08146,UL,CZ
 "Ústí n.L.,Olšinky",50.6595726,14.0814638,UL,CZ
+"Ústí nad Labem,Olšinky",50.6595726,14.0814638,UL,CZ
 "Ústí n.L.,Všebořice,Havířská",50.6879,13.9682369,UL,CZ
+"Ústí nad Labem,Všebořice,Havířská",50.6879,13.9682369,UL,CZ
 "Ústí n.L.,Všebořice,Havířská",50.6879921,13.9674263,UL,CZ
+"Ústí nad Labem,Všebořice,Havířská",50.6879921,13.9674263,UL,CZ
 "Ústí n.L.,pivovar",50.6657639,14.0771427,UL,CZ
+"Ústí nad Labem,pivovar",50.6657639,14.0771427,UL,CZ
 "Ústí n.L.,pivovar",50.6657333,14.075983,UL,CZ
+"Ústí nad Labem,pivovar",50.6657333,14.075983,UL,CZ
 "Ústí n.L.,pod Holoměří",50.6801872,14.012269,UL,CZ
+"Ústí nad Labem,pod Holoměří",50.6801872,14.012269,UL,CZ
 "Ústí n.L.,pod Holoměří",50.68046,14.0121994,UL,CZ
+"Ústí nad Labem,pod Holoměří",50.68046,14.0121994,UL,CZ
 "Ústí n.L.,pod Holoměří",50.68157,14.0118437,UL,CZ
+"Ústí nad Labem,pod Holoměří",50.68157,14.0118437,UL,CZ
 "Ústí n.L.,pod Holoměří",50.6805534,14.0095806,UL,CZ
+"Ústí nad Labem,pod Holoměří",50.6805534,14.0095806,UL,CZ
 "Ústí n.L.,poliklinika",50.66638,14.03041,UL,CZ
+"Ústí nad Labem,poliklinika",50.66638,14.03041,UL,CZ
 "Ústí n.L.,poliklinika",50.66755,14.0287123,UL,CZ
+"Ústí nad Labem,poliklinika",50.66755,14.0287123,UL,CZ
 "Ústí n.L.,poliklinika",50.6663933,14.0290079,UL,CZ
+"Ústí nad Labem,poliklinika",50.6663933,14.0290079,UL,CZ
 "Ústí n.L.,Pětidomí",50.65639,14.0146894,UL,CZ
+"Ústí nad Labem,Pětidomí",50.65639,14.0146894,UL,CZ
 "Ústí n.L.,Pětidomí",50.6564751,14.0133362,UL,CZ
+"Ústí nad Labem,Pětidomí",50.6564751,14.0133362,UL,CZ
 "Ústí n.L.,Staré Předlice",50.6582222,13.9897184,UL,CZ
+"Ústí nad Labem,Staré Předlice",50.6582222,13.9897184,UL,CZ
 "Ústí n.L.,Staré Předlice",50.6588936,13.9868641,UL,CZ
+"Ústí nad Labem,Staré Předlice",50.6588936,13.9868641,UL,CZ
 "Ústí n.L.,Všebořická",50.68291,13.998147,UL,CZ
+"Ústí nad Labem,Všebořická",50.68291,13.998147,UL,CZ
 "Ústí n.L.,Všebořická",50.6829948,13.9984,UL,CZ
+"Ústí nad Labem,Všebořická",50.6829948,13.9984,UL,CZ
 "Ústí n.L.,západní nádr.",50.65895,14.0300817,UL,CZ
+"Ústí nad Labem,západní nádr.",50.65895,14.0300817,UL,CZ
 "Ústí n.L.,západní nádr.",50.6591263,14.0303736,UL,CZ
+"Ústí nad Labem,západní nádr.",50.6591263,14.0303736,UL,CZ
 Ústí nad Labem západ,50.65815,14.0297108,UL,CZ
 Ústí n.L.západ,50.65815,14.0297108,UL,CZ
 "Úštěk,Brusov",50.6268272,14.3242922,LT,CZ
@@ -4224,7 +4329,7 @@ Měděnec zast.,50.4273376,13.1078224,CV,CZ
 Měcholupy,50.2667351,13.5320005,LN,CZ
 Měcholupy (žst),50.2667351,13.5320005,LN,CZ
 Mělník,50.3530235,14.4923754,ME,CZ
-"Mělník,přístaviště",50.35423,14.4665718,ME,CZ
+"Mělník,přístaviště",50.35278,14.4684486,ME,CZ
 Mělník-Mlazice,50.37521,14.4677248,ME,CZ
 Mikulášovice dolní nádraží,50.9845619,14.3364363,DC,CZ
 Mikulášovice dol.n.,50.9845619,14.3364363,DC,CZ
@@ -4457,7 +4562,9 @@ Schöna Gr.,50.85942,14.2222691,DC,CZ
 "Libkovice p.Řípem,Nad roklí",50.3948479,14.3454533,LT,CZ
 "Libkovice p.Řípem,Nad roklí",50.3951035,14.3456392,LT,CZ
 "Ústí n.L.,Podhoří",50.69145,13.9795742,UL,CZ
+"Ústí nad Labem,Podhoří",50.69145,13.9795742,UL,CZ
 "Ústí n.L.,Podhoří",50.6916161,13.97939,UL,CZ
+"Ústí nad Labem,Podhoří",50.6916161,13.97939,UL,CZ
 "Horní Beřkovice,žel.st.",50.35668,14.3537512,LT,CZ
 "Horní Beřkovice,žel.st.",50.3567467,14.3541632,LT,CZ
 "Dobrná,Brložec",50.7768669,14.31012,DC,CZ
@@ -4538,10 +4645,11 @@ Krásný Dvůr (žst),50.2557373,13.3683023,LN,CZ
 Vysoké Třebušice,50.2605,13.3916922,LN,CZ
 Kaštice,50.26162,13.4179516,LN,CZ
 "Ústí n.L.,Vaňov,přístaviště Vaňov",50.6267853,14.05364,UL,CZ
+"Ústí nad Labem,Vaňov,přístaviště Vaňov",50.6267853,14.05364,UL,CZ
 "Libochovany,přístaviště",50.568058,14.0378342,LT,CZ
 "Velké Žernoseky,přístaviště",50.54028,14.0617476,LT,CZ
 "Lovosice,přístaviště",50.51814,14.0524855,LT,CZ
-"Litoměřice,přístaviště Lodní nám.",50.52997,14.1311665,LT,CZ
+"Litoměřice,přístaviště Lodní nám.",50.529892,14.1308594,LT,CZ
 "Litoměřice,příst. Lodní nám.",50.530468,14.1320686,LT,CZ
 "Křešice,Kolonie",50.5175056,14.2267828,LT,CZ
 "Polepy,u přejezdu",50.50897,14.2716084,LT,CZ
@@ -4560,7 +4668,6 @@ Jestřebí,50.6141243,14.60035,CL,CZ
 "Varnsdorf,Kamenická",50.9163551,14.6134062,DC,CZ
 "Děčín,Ryko",50.7698516845703,14.1955099105835,DC,CZ
 "Děčín,Ryko",50.77001953125,14.1953897476196,DC,CZ
-"Děčín,Ryko",50.7707710266113,14.1942300796509,DC,CZ
 "Varnsdorf,staré nádraží",50.909687,14.612956,DC,CZ
 "Hřensko,přívoz",50.8754425,14.2366934,DC,CZ
 "Hřensko,přívoz",50.87544,14.2368383,DC,CZ
@@ -4570,7 +4677,14 @@ Nová Huť v Lužických horách,50.83087,14.5857592,CL,CZ
 "Louny,,prům.zóna I",50.3418732,13.8200045,LN,CZ
 "Louny,prům.zóna I",50.3418732,13.8200045,LN,CZ
 "Ústí n.L.,Brná,přístaviště Brná - koupaliště",50.6271324,14.0624371,UL,CZ
+"Ústí nad Labem,Brná,přístaviště Brná - koupaliště",50.6271324,14.0624371,UL,CZ
 "Ústí n.L.,Vaňov,přístaviště Vaňov - Kanoistů",50.62584,14.0605,UL,CZ
+"Ústí nad Labem,Vaňov,přístaviště Vaňov - Kanoistů",50.62584,14.0605,UL,CZ
+"Hlinná,Mentaurov",50.5708542,14.1220312,LT,CZ
+"Hlinná,Mentaurov",50.5706673,14.121932,LT,CZ
+"Hlinná,Lbín",50.5805473,14.1277523,LT,CZ
+"Verneřice,,za kostelem",50.6611862,14.3035259,DC,CZ
+"Verneřice,,za kostelem",50.6611862,14.3036089,DC,CZ
 "Trmice,Důl 5.květen",50.64593,13.9833984,UL,CZ
 "Jílové,sídliště",50.76569,14.1106033,DC,CZ
 "Děčín,Nám.5.května",50.7722282409668,14.2135200500488,DC,CZ
@@ -4628,6 +4742,7 @@ Hainewalde Berghäuser,50.8971939,14.6967726,,D
 "Marienberg,Reitzenhainer Str.",50.6473732,13.1604147,,D
 "Marienberg,Markt",50.65119,13.1634941,,D
 "Ústí n.L.,Masarykova zdymadla",50.63975,14.0487614,UL,CZ
+"Ústí nad Labem,Masarykova zdymadla",50.63975,14.0487614,UL,CZ
 "Lovosice,plavební komora",50.5143929,14.0727253,LT,CZ
 "České Kopisty,plavební komora",50.52619,14.1741867,LT,CZ
 "Roudnice n.L.,plavební komora",50.4298134,14.2482176,LT,CZ
@@ -4785,8 +4900,11 @@ Horní nádraží,50.54102,14.1314526,LT,CZ
 "Štětí,Okružní",50.45157,14.3829689,LT,CZ
 "Štětí,Okružní",50.4533,14.3837614,LT,CZ
 "Ústí n.L.,U Vozovny",50.65726,13.99572,UL,CZ
+"Ústí nad Labem,U Vozovny",50.65726,13.99572,UL,CZ
 "Ústí n.L.,U Vozovny",50.65726,13.9969511,UL,CZ
+"Ústí nad Labem,U Vozovny",50.65726,13.9969511,UL,CZ
 "Ústí n.L.,Střekov,žel.st.",50.651,14.047574,UL,CZ
+"Ústí nad Labem,Střekov,žel.st.",50.651,14.047574,UL,CZ
 Žiželice,50.36461,13.5418768,LN,CZ
 Holedeček,50.28496,13.55869,LN,CZ
 Kroučová,50.2068748,13.7828445,RA,CZ
@@ -4832,11 +4950,11 @@ Mutějovice,50.19376,13.70595,RA,CZ
 "Mutějovice,Na Příči",50.1964836,13.70957,RA,CZ
 "Mutějovice,Na Příči",50.1964149,13.709589,RA,CZ
 "Slaný,aut.nádr.",50.22851,14.08796,KD,CZ
-"Slaný,aut.nádr.",50.22868,14.08855,KD,CZ
+"Slaný,aut.nádr.",50.2287711,14.0884828,KD,CZ
 "Slaný,aut.nádr.",50.22857,14.08847,KD,CZ
 "Slaný,aut.nádr.",50.2282257,14.0885229,KD,CZ
+"Slaný,aut.nádr.",50.2284697,14.08844,KD,CZ
 "Slaný,aut.nádr.",50.2282867,14.0886822,KD,CZ
-"Slaný,aut.nádr.",50.2281761,14.0888186,KD,CZ
 "Slaný,Šultysova",50.2301025,14.0835438,KD,CZ
 "Slaný,Šultysova",50.2302856,14.08349,KD,CZ
 "Slaný,Nosačická",50.2341,14.0873318,KD,CZ
@@ -4857,8 +4975,11 @@ Mutějovice,50.19376,13.70595,RA,CZ
 Poštovice,50.3127327,14.1377163,KD,CZ
 Poštovice,50.31267,14.1378431,KD,CZ
 "Ústí n.L.,odb.Neznabohy",50.6966934,14.0182991,UL,CZ
+"Ústí nad Labem,odb.Neznabohy",50.6966934,14.0182991,UL,CZ
 "Ústí n.L.,Sociální péče",50.6772728,14.0283909,UL,CZ
+"Ústí nad Labem,Sociální péče",50.6772728,14.0283909,UL,CZ
 "Ústí n.L.,Sociální péče",50.67794,14.0276985,UL,CZ
+"Ústí nad Labem,Sociální péče",50.67794,14.0276985,UL,CZ
 "Chomutov,Pražská čerp.st.",50.4523773,13.42596,CV,CZ
 "Chomutov,Pražská čerp.st.",50.4521675,13.42633,CV,CZ
 "Droužkovice,Letná",50.4360466,13.4300375,CV,CZ
@@ -4867,6 +4988,7 @@ Poštovice,50.31267,14.1378431,KD,CZ
 "Droužkovice,hřiště",50.4337769,13.42968,CV,CZ
 Droužkovice,50.4263,13.4361954,CV,CZ
 Droužkovice,50.4267769,13.4360189,CV,CZ
+"Březno,Střezov",50.3925667,13.43593,CV,CZ
 "Jáchymov,Klínovec",50.3949966,12.9679,KV,CZ
 "Kadaň,Jana Roháče Šuplík",50.38612,13.2672691,CV,CZ
 "Kadaň,U Nádraží",50.38129,13.2755117,CV,CZ
@@ -4904,6 +5026,8 @@ Brodce,50.3505745,13.2307854,CV,CZ
 Jeníkov-Oldřichov,50.6359863,13.7549725,TP,CZ
 "Jesenice,Tlestky",50.0757561,13.4640636,RA,CZ
 "Jesenice,Tlestky",50.07575,13.464179,RA,CZ
+"Jesenice,Tlestky",50.0745964,13.4645519,RA,CZ
+"Jesenice,Tlestky",50.0745,13.4645691,RA,CZ
 "Jesenice,Podbořánky",50.05234,13.4509354,RA,CZ
 Žďár,50.0581856,13.4590807,RA,CZ
 Žďár,50.05829,13.4591265,RA,CZ
@@ -5642,6 +5766,11 @@ Líský,50.2490425,13.9278927,KD,CZ
 "Kolešovice,otočka",50.1411552,13.6088018,RA,CZ
 "Hořovičky,Vrbice",50.1688881,13.52569,RA,CZ
 "Hořovičky,Vrbice",50.16887,13.5259237,RA,CZ
+"Žandov,Velká Javorská",50.67101,14.3591156,CL,CZ
+"Česká Kamenice,Lužická",50.79659,14.4463205,DC,CZ
+"Česká Kamenice,Lužická",50.7966881,14.4462652,DC,CZ
+Drahouš,50.08036,13.4763012,RA,CZ
+Drahouš,50.08036,13.4763737,RA,CZ
 "Bílina,,5.května",50.5432167,13.7668877,TP,CZ
 "Bílina,5.května",50.5432167,13.7668877,TP,CZ
 "Bílina,,5.května samoobsluha",50.5443649,13.7708549,TP,CZ
@@ -5942,333 +6071,639 @@ Spořice,50.4398842,13.3910465,CV,CZ
 "Teplice,Sukova",50.6413116455078,13.8436803817749,TP,CZ
 "Teplice,V Závětří",50.6442642,13.8568048,TP,CZ
 "Ústí n.L.,Adolfov",50.7356033,13.90604,UL,CZ
+"Ústí nad Labem,Adolfov",50.7356033,13.90604,UL,CZ
 "Petrovice,Krásný Les,Adolfov",50.7356033,13.90604,UL,CZ
 "Ústí n.L.,Anežky České",50.67181,14.07587,UL,CZ
+"Ústí nad Labem,Anežky České",50.67181,14.07587,UL,CZ
 "Ústí n.L.,Anežky České",50.6718521,14.0760412,UL,CZ
+"Ústí nad Labem,Anežky České",50.6718521,14.0760412,UL,CZ
 "Ústí n.L.,Autoškola",50.66603,14.065937,UL,CZ
+"Ústí nad Labem,Autoškola",50.66603,14.065937,UL,CZ
 "Ústí n.L.,Autoškola",50.6664276,14.06609,UL,CZ
+"Ústí nad Labem,Autoškola",50.6664276,14.06609,UL,CZ
 "Ústí n.L.,Bezejmenná",50.66302,13.9941616,UL,CZ
+"Ústí nad Labem,Bezejmenná",50.66302,13.9941616,UL,CZ
 "Ústí n.L.,Bezručova",50.6685524,14.0220757,UL,CZ
+"Ústí nad Labem,Bezručova",50.6685524,14.0220757,UL,CZ
 "Ústí n.L.,Božtěšice obec",50.6892624,14.02001,UL,CZ
+"Ústí nad Labem,Božtěšice obec",50.6892624,14.02001,UL,CZ
 "Ústí n.L.,Božtěšice obec",50.6894379,14.0201464,UL,CZ
+"Ústí nad Labem,Božtěšice obec",50.6894379,14.0201464,UL,CZ
 "Ústí n.L.,Božtěšice,obec",50.6892624,14.02001,UL,CZ
+"Ústí nad Labem,Božtěšice,obec",50.6892624,14.02001,UL,CZ
 "Ústí n.L.,Brná",50.6205978,14.0783367,UL,CZ
+"Ústí nad Labem,Brná",50.6205978,14.0783367,UL,CZ
 "Ústí n.L.,Brná",50.6202927,14.0783587,UL,CZ
+"Ústí nad Labem,Brná",50.6202927,14.0783587,UL,CZ
 "Ústí n.L.,Brná",59.7560959,24.8294525,,
+"Ústí nad Labem,Brná",59.7560959,24.8294525,,
 "Ústí n.L.,Brná,osada",50.62519,14.0742779,UL,CZ
+"Ústí nad Labem,Brná,osada",50.62519,14.0742779,UL,CZ
 "Ústí n.L.,Brná,osada",50.6250343,14.0742,UL,CZ
+"Ústí nad Labem,Brná,osada",50.6250343,14.0742,UL,CZ
 "Ústí n.L.,Církvice",50.5893974,14.0367212,UL,CZ
+"Ústí nad Labem,Církvice",50.5893974,14.0367212,UL,CZ
 "Ústí n.L.,Církvice",50.58941,14.0365267,UL,CZ
+"Ústí nad Labem,Církvice",50.58941,14.0365267,UL,CZ
 "Ústí n.L.,Cukrovar",50.6465874,14.0435228,UL,CZ
+"Ústí nad Labem,Cukrovar",50.6465874,14.0435228,UL,CZ
 "Ústí n.L.,Cukrovar",50.6474342,14.0430593,UL,CZ
+"Ústí nad Labem,Cukrovar",50.6474342,14.0430593,UL,CZ
 "Ústí n.L.,Čajkovského",50.65062,14.0420122,UL,CZ
+"Ústí nad Labem,Čajkovského",50.65062,14.0420122,UL,CZ
 "Ústí n.L.,Čajkovského",50.6509438,14.041748,UL,CZ
+"Ústí nad Labem,Čajkovského",50.6509438,14.041748,UL,CZ
 "Ústí n.L.,Střekov,ČOV",50.659523,14.06002,UL,CZ
+"Ústí nad Labem,Střekov,ČOV",50.659523,14.06002,UL,CZ
 "Ústí n.L.,Střekov,ČOV",50.6590652,14.05811,UL,CZ
+"Ústí nad Labem,Střekov,ČOV",50.6590652,14.05811,UL,CZ
 "Ústí n.L.,Děčínská",50.6549149,14.0488167,UL,CZ
+"Ústí nad Labem,Děčínská",50.6549149,14.0488167,UL,CZ
 "Ústí n.L.,Děčínská",50.6552849,14.04895,UL,CZ
+"Ústí nad Labem,Děčínská",50.6552849,14.04895,UL,CZ
 "Ústí n.L.,Dílny",50.65669,14.0223427,UL,CZ
+"Ústí nad Labem,Dílny",50.65669,14.0223427,UL,CZ
 "Ústí n.L.,Dílny",50.6567879,14.0222759,UL,CZ
+"Ústí nad Labem,Dílny",50.6567879,14.0222759,UL,CZ
 "Ústí n.L.,Dobětice",50.67469,14.0572243,UL,CZ
+"Ústí nad Labem,Dobětice",50.67469,14.0572243,UL,CZ
 "Ústí n.L.,Dobětice",50.6746368,14.0574942,UL,CZ
+"Ústí nad Labem,Dobětice",50.6746368,14.0574942,UL,CZ
 "Ústí n.L.,Dobětice točna",50.67513,14.058609,UL,CZ
+"Ústí nad Labem,Dobětice točna",50.67513,14.058609,UL,CZ
 "Ústí n.L.,Dobětice točna",59.7560959,24.8294525,,
+"Ústí nad Labem,Dobětice točna",59.7560959,24.8294525,,
 "Ústí n.L.,Dolní Zálezly",50.59622,14.0426321,UL,CZ
+"Ústí nad Labem,Dolní Zálezly",50.59622,14.0426321,UL,CZ
+Dolní Zálezly,50.59622,14.0426321,UL,CZ
 "Ústí n.L.,Drážní",59.7560959,24.8294525,,
+"Ústí nad Labem,Drážní",59.7560959,24.8294525,,
 "Ústí n.L.,Dukelských hrdinů",50.6848373,13.9988527,UL,CZ
+"Ústí nad Labem,Dukelských hrdinů",50.6848373,13.9988527,UL,CZ
 "Ústí n.L.,Dukelských hrdinů",50.68452,13.999671,UL,CZ
+"Ústí nad Labem,Dukelských hrdinů",50.68452,13.999671,UL,CZ
 "Ústí n.L.,Důlce",50.6642838,14.0463037,UL,CZ
+"Ústí nad Labem,Důlce",50.6642838,14.0463037,UL,CZ
 "Ústí n.L.,Důlce",50.66425,14.0464773,UL,CZ
+"Ústí nad Labem,Důlce",50.66425,14.0464773,UL,CZ
 "Ústí n.L.,Dvojdomí",50.6710663,14.0670834,UL,CZ
+"Ústí nad Labem,Dvojdomí",50.6710663,14.0670834,UL,CZ
 "Ústí n.L.,Dvojdomí",50.6708527,14.0674381,UL,CZ
+"Ústí nad Labem,Dvojdomí",50.6708527,14.0674381,UL,CZ
 "Ústí n.L.,Edisonova",59.7560959,24.8294525,,
+"Ústí nad Labem,Edisonova",59.7560959,24.8294525,,
 "Trmice,Edisonova",59.7560959,24.8294525,,
 "Ústí n.L.,Fibichova",59.7560959,24.8294525,,
+"Ústí nad Labem,Fibichova",59.7560959,24.8294525,,
 "Ústí n.L.,Gagarinova",50.6817551,14.0249462,UL,CZ
+"Ústí nad Labem,Gagarinova",50.6817551,14.0249462,UL,CZ
 "Ústí n.L.,Gagarinova",50.68198,14.02509,UL,CZ
+"Ústí nad Labem,Gagarinova",50.68198,14.02509,UL,CZ
 "Ústí n.L.,Gogolova",50.6437645,13.9945517,UL,CZ
+"Ústí nad Labem,Gogolova",50.6437645,13.9945517,UL,CZ
 "Ústí n.L.,Gogolova",50.64388,13.9944725,UL,CZ
+"Ústí nad Labem,Gogolova",50.64388,13.9944725,UL,CZ
 "Trmice,Gogolova",50.6437645,13.9945517,UL,CZ
 "Ústí n.L.,Habrovice",50.7020569,14.0027437,UL,CZ
+"Ústí nad Labem,Habrovice",50.7020569,14.0027437,UL,CZ
 "Ústí n.L.,Habrovice",50.702076,14.002903,UL,CZ
+"Ústí nad Labem,Habrovice",50.702076,14.002903,UL,CZ
 "Ústí n.L.,Habrovice koupaliště",50.6952477,14.0028286,UL,CZ
+"Ústí nad Labem,Habrovice koupaliště",50.6952477,14.0028286,UL,CZ
 "Ústí n.L.,Habrovice koupaliště",50.6950874,14.0030489,UL,CZ
+"Ústí nad Labem,Habrovice koupaliště",50.6950874,14.0030489,UL,CZ
 "Ústí n.L.,Habrovice,koupaliště",50.6952477,14.0028286,UL,CZ
+"Ústí nad Labem,Habrovice,koupaliště",50.6952477,14.0028286,UL,CZ
 "Ústí n.L.,Habrovice škola",50.70389,14.001976,UL,CZ
+"Ústí nad Labem,Habrovice škola",50.70389,14.001976,UL,CZ
 "Ústí n.L.,Habrovice škola",50.7039528,14.0020475,UL,CZ
+"Ústí nad Labem,Habrovice škola",50.7039528,14.0020475,UL,CZ
 "Ústí n.L.,Habrovice,škola",50.70389,14.001976,UL,CZ
+"Ústí nad Labem,Habrovice,škola",50.70389,14.001976,UL,CZ
 "Ústí n.L.,Habrovice vily",50.6994858,14.0014839,UL,CZ
+"Ústí nad Labem,Habrovice vily",50.6994858,14.0014839,UL,CZ
 "Ústí n.L.,Habrovice vily",50.6995659,14.0017424,UL,CZ
+"Ústí nad Labem,Habrovice vily",50.6995659,14.0017424,UL,CZ
 "Ústí n.L.,Habrovice,vily",50.6994858,14.0014839,UL,CZ
+"Ústí nad Labem,Habrovice,vily",50.6994858,14.0014839,UL,CZ
 "Ústí n.L.,Habrovická",50.690197,14.0052214,UL,CZ
+"Ústí nad Labem,Habrovická",50.690197,14.0052214,UL,CZ
 "Ústí n.L.,Habrovická",50.69033,14.0052338,UL,CZ
+"Ústí nad Labem,Habrovická",50.69033,14.0052338,UL,CZ
 "Ústí n.L.,Hornická",50.67196,14.0280094,UL,CZ
+"Ústí nad Labem,Hornická",50.67196,14.0280094,UL,CZ
 "Ústí n.L.,Hornická",50.67213,14.0280638,UL,CZ
+"Ústí nad Labem,Hornická",50.67213,14.0280638,UL,CZ
 "Ústí n.L.,Hoření",59.7560959,24.8294525,,
+"Ústí nad Labem,Hoření",59.7560959,24.8294525,,
 "Ústí n.L.,Severní Terasa,Hoření",59.7560959,24.8294525,,
+"Ústí nad Labem,Severní Terasa,Hoření",59.7560959,24.8294525,,
 "Ústí n.L.,Hostovická",50.6500549,14.0213909,UL,CZ
+"Ústí nad Labem,Hostovická",50.6500549,14.0213909,UL,CZ
 "Ústí n.L.,Hostovická",50.6499939,14.0210428,UL,CZ
+"Ústí nad Labem,Hostovická",50.6499939,14.0210428,UL,CZ
 "Ústí n.L.,Hřbitov",50.6235046,14.0662689,UL,CZ
+"Ústí nad Labem,Hřbitov",50.6235046,14.0662689,UL,CZ
 "Ústí n.L.,Hřbitov",50.6234131,14.0664186,UL,CZ
+"Ústí nad Labem,Hřbitov",50.6234131,14.0664186,UL,CZ
 "Ústí n.L.,Jezero Milada",59.7560959,24.8294525,,
+"Ústí nad Labem,Jezero Milada",59.7560959,24.8294525,,
 "Trmice,Jezero Milada",59.7560959,24.8294525,,
 "Ústí n.L.,Jungmannova",50.6656532,14.070817,UL,CZ
+"Ústí nad Labem,Jungmannova",50.6656532,14.070817,UL,CZ
 "Ústí n.L.,Jungmannova",50.66569,14.0698109,UL,CZ
+"Ústí nad Labem,Jungmannova",50.66569,14.0698109,UL,CZ
 "Ústí n.L.,Kampus",50.66703,14.0252113,UL,CZ
+"Ústí nad Labem,Kampus",50.66703,14.0252113,UL,CZ
 "Ústí n.L.,Kampus",50.666378,14.0265741,UL,CZ
+"Ústí nad Labem,Kampus",50.666378,14.0265741,UL,CZ
 "Ústí n.L.,Kanon",50.6696243,14.0902634,UL,CZ
+"Ústí nad Labem,Kanon",50.6696243,14.0902634,UL,CZ
 "Ústí n.L.,Kanon",50.6693878,14.09051,UL,CZ
+"Ústí nad Labem,Kanon",50.6693878,14.09051,UL,CZ
 "Ústí n.L.,Kapitána Jaroše",50.6819725,14.0032768,UL,CZ
+"Ústí nad Labem,Kapitána Jaroše",50.6819725,14.0032768,UL,CZ
 "Ústí n.L.,Kapitána Jaroše",50.6822739,14.0030985,UL,CZ
+"Ústí nad Labem,Kapitána Jaroše",50.6822739,14.0030985,UL,CZ
 "Ústí n.L.,Kpt. Jaroše",50.6819725,14.0032768,UL,CZ
+"Ústí nad Labem,Kpt. Jaroše",50.6819725,14.0032768,UL,CZ
 "Ústí n.L.,Karla IV.",50.6455879,14.0496292,UL,CZ
+"Ústí nad Labem,Karla IV.",50.6455879,14.0496292,UL,CZ
 "Ústí n.L.,Karla IV.",50.64553,14.0497932,UL,CZ
+"Ústí nad Labem,Karla IV.",50.64553,14.0497932,UL,CZ
 "Ústí n.L.,Karla IV.",59.7560959,24.8294525,,
+"Ústí nad Labem,Karla IV.",59.7560959,24.8294525,,
 "Ústí n.L.,Karla Maye",50.609623,14.0766373,UL,CZ
+"Ústí nad Labem,Karla Maye",50.609623,14.0766373,UL,CZ
 "Ústí n.L.,Karla Maye",50.6098862,14.0764637,UL,CZ
+"Ústí nad Labem,Karla Maye",50.6098862,14.0764637,UL,CZ
 "Ústí n.L.,Karolíny Světlé",50.66507,14.0870428,UL,CZ
+"Ústí nad Labem,Karolíny Světlé",50.66507,14.0870428,UL,CZ
 "Ústí n.L.,Kaufland",50.66294,14.0205755,UL,CZ
+"Ústí nad Labem,Kaufland",50.66294,14.0205755,UL,CZ
 "Ústí n.L.,Kaufland",50.6634521,14.0204191,UL,CZ
+"Ústí nad Labem,Kaufland",50.6634521,14.0204191,UL,CZ
 "Ústí n.L.,Klíše,Kaufland",50.66294,14.0205755,UL,CZ
+"Ústí nad Labem,Klíše,Kaufland",50.66294,14.0205755,UL,CZ
 "Ústí n.L.,Keplerova",50.6696358,14.0782022,UL,CZ
+"Ústí nad Labem,Keplerova",50.6696358,14.0782022,UL,CZ
 "Ústí n.L.,Keplerova",50.6702423,14.07853,UL,CZ
+"Ústí nad Labem,Keplerova",50.6702423,14.07853,UL,CZ
 "Ústí n.L.,Klíše Hvězda",50.668,14.0168743,UL,CZ
+"Ústí nad Labem,Klíše Hvězda",50.668,14.0168743,UL,CZ
 "Ústí n.L.,Klíše Hvězda",50.6680145,14.0159111,UL,CZ
+"Ústí nad Labem,Klíše Hvězda",50.6680145,14.0159111,UL,CZ
 "Ústí n.L.,Klíše,Hvězda",50.668,14.0168743,UL,CZ
-"Ústí n.L.,Klíše lázně",50.66523,14.0142946,UL,CZ
+"Ústí nad Labem,Klíše,Hvězda",50.668,14.0168743,UL,CZ
+"Ústí n.L.,Klíše,lázně",50.6653137,14.0144,UL,CZ
+"Ústí nad Labem,Klíše,lázně",50.6653137,14.0144,UL,CZ
 "Ústí n.L.,Klíše lázně",50.6660576,14.0143385,UL,CZ
-"Ústí n.L.,Klíše lázně",59.7560959,24.8294525,,
-"Ústí n.L.,Klíše lázně",50.6656265,14.0153589,UL,CZ
-"Ústí n.L.,Klíše,lázně",50.66523,14.0142946,UL,CZ
+"Ústí nad Labem,Klíše lázně",50.6660576,14.0143385,UL,CZ
+"Ústí n.L.,Klíše,lázně",50.6657257,14.0154457,UL,CZ
+"Ústí nad Labem,Klíše,lázně",50.6657257,14.0154457,UL,CZ
 "Ústí n.L.,Klíšská",50.66366,14.0247231,UL,CZ
+"Ústí nad Labem,Klíšská",50.66366,14.0247231,UL,CZ
 "Ústí n.L.,Klíšská",50.6637421,14.0253592,UL,CZ
+"Ústí nad Labem,Klíšská",50.6637421,14.0253592,UL,CZ
 "Ústí n.L.,Kmochova",50.6718445,14.0518885,UL,CZ
+"Ústí nad Labem,Kmochova",50.6718445,14.0518885,UL,CZ
 "Ústí n.L.,Kmochova",50.67162,14.05191,UL,CZ
+"Ústí nad Labem,Kmochova",50.67162,14.05191,UL,CZ
 "Ústí n.L.,Kojetická",50.6497231,14.0812426,UL,CZ
+"Ústí nad Labem,Kojetická",50.6497231,14.0812426,UL,CZ
 "Ústí n.L.,Kojetická",50.6493225,14.0810232,UL,CZ
+"Ústí nad Labem,Kojetická",50.6493225,14.0810232,UL,CZ
 "Ústí n.L.,Koštov konečná",50.627636,13.9937582,UL,CZ
+"Ústí nad Labem,Koštov konečná",50.627636,13.9937582,UL,CZ
 "Ústí n.L.,Koštov konečná",50.6278572,13.9935141,UL,CZ
+"Ústí nad Labem,Koštov konečná",50.6278572,13.9935141,UL,CZ
 "Koštov,konečná",50.627636,13.9937582,UL,CZ
 "Ústí n.L.,Kotva",50.62646,14.0533485,UL,CZ
+"Ústí nad Labem,Kotva",50.62646,14.0533485,UL,CZ
 "Ústí n.L.,Kotva",50.62626,14.0535955,UL,CZ
+"Ústí nad Labem,Kotva",50.62626,14.0535955,UL,CZ
 "Ústí n.L.,Krásné Březno",50.6659775,14.0790882,UL,CZ
+"Ústí nad Labem,Krásné Březno",50.6659775,14.0790882,UL,CZ
 "Ústí n.L.,Krásné Březno",50.6664162,14.0801916,UL,CZ
+"Ústí nad Labem,Krásné Březno",50.6664162,14.0801916,UL,CZ
 "Ústí n.L.,Krásné Březno",50.6657562,14.08044,UL,CZ
+"Ústí nad Labem,Krásné Březno",50.6657562,14.08044,UL,CZ
 "Ústí n.L.,Krčínova",50.6665955,14.074542,UL,CZ
+"Ústí nad Labem,Krčínova",50.6665955,14.074542,UL,CZ
 "Ústí n.L.,Krčínova",50.66736,14.0740166,UL,CZ
+"Ústí nad Labem,Krčínova",50.66736,14.0740166,UL,CZ
 "Ústí n.L.,Krušnohorská",50.6765137,14.0324049,UL,CZ
+"Ústí nad Labem,Krušnohorská",50.6765137,14.0324049,UL,CZ
 "Ústí n.L.,Krušnohorská",50.6764755,14.033102,UL,CZ
+"Ústí nad Labem,Krušnohorská",50.6764755,14.033102,UL,CZ
 "Ústí n.L.,Lázně",50.6286049,14.0593109,UL,CZ
+"Ústí nad Labem,Lázně",50.6286049,14.0593109,UL,CZ
 "Ústí n.L.,Lázně",50.62855,14.0591078,UL,CZ
+"Ústí nad Labem,Lázně",50.62855,14.0591078,UL,CZ
 "Ústí n.L.,Malátova",50.671154,14.0404749,UL,CZ
+"Ústí nad Labem,Malátova",50.671154,14.0404749,UL,CZ
 "Ústí n.L.,Malátova",50.67162,14.039341,UL,CZ
+"Ústí nad Labem,Malátova",50.67162,14.039341,UL,CZ
 "Ústí n.L.,Malátova",50.6721077,14.0394306,UL,CZ
+"Ústí nad Labem,Malátova",50.6721077,14.0394306,UL,CZ
 "Ústí n.L.,Malátova",50.6713638,14.0404911,UL,CZ
+"Ústí nad Labem,Malátova",50.6713638,14.0404911,UL,CZ
 "Ústí n.L.,Metal",50.6468925,13.9897814,UL,CZ
+"Ústí nad Labem,Metal",50.6468925,13.9897814,UL,CZ
 "Trmice,Metal",50.6468925,13.9897814,UL,CZ
 "Ústí n.L.,Mírová",50.6843834,14.0326872,UL,CZ
+"Ústí nad Labem,Mírová",50.6843834,14.0326872,UL,CZ
 "Ústí n.L.,Mírová",50.6840057,14.0332623,UL,CZ
+"Ústí nad Labem,Mírová",50.6840057,14.0332623,UL,CZ
 "Ústí n.L.,Mírová",50.6837044,14.0340328,UL,CZ
+"Ústí nad Labem,Mírová",50.6837044,14.0340328,UL,CZ
 "Ústí n.L.,Mojžíř",50.679657,14.1228132,UL,CZ
+"Ústí nad Labem,Mojžíř",50.679657,14.1228132,UL,CZ
 "Ústí n.L.,Mojžíř",50.6790466,14.1230021,UL,CZ
+"Ústí nad Labem,Mojžíř",50.6790466,14.1230021,UL,CZ
 "Ústí n.L.,Na Kohoutě",50.6864624,13.9962626,UL,CZ
+"Ústí nad Labem,Na Kohoutě",50.6864624,13.9962626,UL,CZ
 "Ústí n.L.,Na Kohoutě",50.6859779,13.9973345,UL,CZ
+"Ústí nad Labem,Na Kohoutě",50.6859779,13.9973345,UL,CZ
 "Ústí n.L.,Na luhách",50.6563568,14.00897,UL,CZ
+"Ústí nad Labem,Na luhách",50.6563568,14.00897,UL,CZ
 "Ústí n.L.,Na luhách",50.6569,14.0073891,UL,CZ
+"Ústí nad Labem,Na luhách",50.6569,14.0073891,UL,CZ
 "Ústí n.L.,Na Nivách",59.7560959,24.8294525,,
+"Ústí nad Labem,Na Nivách",59.7560959,24.8294525,,
 "Ústí n.L.,Předlice,Na Nivách",59.7560959,24.8294525,,
+"Ústí nad Labem,Předlice,Na Nivách",59.7560959,24.8294525,,
 "Ústí n.L.,Na Popluží",50.6660767,14.01707,UL,CZ
+"Ústí nad Labem,Na Popluží",50.6660767,14.01707,UL,CZ
 "Ústí n.L.,Na Popluží",59.7560959,24.8294525,,
+"Ústí nad Labem,Na Popluží",59.7560959,24.8294525,,
 "Ústí n.L.,Na Rybárně",50.6269341,14.0697,UL,CZ
+"Ústí nad Labem,Na Rybárně",50.6269341,14.0697,UL,CZ
 "Ústí n.L.,Na Rybárně",50.6270447,14.0688467,UL,CZ
+"Ústí nad Labem,Na Rybárně",50.6270447,14.0688467,UL,CZ
 "Ústí n.L.,Na Sklípku",59.7560959,24.8294525,,
+"Ústí nad Labem,Na Sklípku",59.7560959,24.8294525,,
 "Ústí n.L.,Krásné Březno,Na Sklípku",59.7560959,24.8294525,,
+"Ústí nad Labem,Krásné Březno,Na Sklípku",59.7560959,24.8294525,,
 "Ústí n.L.,Na Spálence",50.6699333,14.01643,UL,CZ
+"Ústí nad Labem,Na Spálence",50.6699333,14.01643,UL,CZ
 "Ústí n.L.,Na Spálence",50.6691666,14.0170116,UL,CZ
+"Ústí nad Labem,Na Spálence",50.6691666,14.0170116,UL,CZ
 "Ústí n.L.,Nad zámkem",50.64109,13.9911432,UL,CZ
+"Ústí nad Labem,Nad zámkem",50.64109,13.9911432,UL,CZ
 "Ústí n.L.,Nad zámkem",50.6410179,13.990696,UL,CZ
+"Ústí nad Labem,Nad zámkem",50.6410179,13.990696,UL,CZ
 "Trmice,Nad zámkem",50.64109,13.9911432,UL,CZ
 "Ústí n.L.,Nakléřov",50.745533,13.9771,UL,CZ
+"Ústí nad Labem,Nakléřov",50.745533,13.9771,UL,CZ
 "Ústí n.L.,Neštěmice,sídl.",50.6748772,14.1079693,UL,CZ
+"Ústí nad Labem,Neštěmice,sídl.",50.6748772,14.1079693,UL,CZ
 "Ústí n.L.,Neštěmice,sídl.",50.6745071,14.1075821,UL,CZ
+"Ústí nad Labem,Neštěmice,sídl.",50.6745071,14.1075821,UL,CZ
 "Ústí n.L.,Neštěmická",50.671627,14.0859938,UL,CZ
+"Ústí nad Labem,Neštěmická",50.671627,14.0859938,UL,CZ
 "Ústí n.L.,Neštěmická",50.6716042,14.08633,UL,CZ
+"Ústí nad Labem,Neštěmická",50.6716042,14.08633,UL,CZ
 "Ústí n.L.,Nová Ves",50.64455,14.0706091,UL,CZ
+"Ústí nad Labem,Nová Ves",50.64455,14.0706091,UL,CZ
 "Ústí n.L.,Nové krematorium",50.6523476,14.071353,UL,CZ
+"Ústí nad Labem,Nové krematorium",50.6523476,14.071353,UL,CZ
 "Ústí n.L.,Nové Skorotice",59.7560959,24.8294525,,
+"Ústí nad Labem,Nové Skorotice",59.7560959,24.8294525,,
 "Ústí n.L.,Božtěšice,Nové Skorotice",59.7560959,24.8294525,,
+"Ústí nad Labem,Božtěšice,Nové Skorotice",59.7560959,24.8294525,,
 "Ústí n.L.,Novosedlické náměstí",50.6500168,14.0595951,UL,CZ
+"Ústí nad Labem,Novosedlické náměstí",50.6500168,14.0595951,UL,CZ
 "Ústí n.L.,Novosedlické náměstí",50.65012,14.0603819,UL,CZ
+"Ústí nad Labem,Novosedlické náměstí",50.65012,14.0603819,UL,CZ
 "Ústí n.L.,Novosedlické nám.",50.6500168,14.0595951,UL,CZ
+"Ústí nad Labem,Novosedlické nám.",50.6500168,14.0595951,UL,CZ
 "Ústí n.L.,OC Forum",50.65824,14.0401011,UL,CZ
+"Ústí nad Labem,OC Forum",50.65824,14.0401011,UL,CZ
 "Ústí n.L.,Olešnice",50.66088,14.115737,UL,CZ
+"Ústí nad Labem,Olešnice",50.66088,14.115737,UL,CZ
 "Ústí n.L.,Olešnice",50.66096,14.1157141,UL,CZ
+"Ústí nad Labem,Olešnice",50.66096,14.1157141,UL,CZ
 "Ústí n.L.,Opletalova",50.6703148,14.1026382,UL,CZ
+"Ústí nad Labem,Opletalova",50.6703148,14.1026382,UL,CZ
 "Ústí n.L.,Opletalova",50.6698532,14.1028509,UL,CZ
+"Ústí nad Labem,Opletalova",50.6698532,14.1028509,UL,CZ
 "Ústí n.L.,Orlická",50.6780739,14.0375767,UL,CZ
+"Ústí nad Labem,Orlická",50.6780739,14.0375767,UL,CZ
 "Ústí n.L.,Orlická",50.6785355,14.0371552,UL,CZ
+"Ústí nad Labem,Orlická",50.6785355,14.0371552,UL,CZ
 "Ústí n.L.,Osamělá",50.67004,14.06013,UL,CZ
+"Ústí nad Labem,Osamělá",50.67004,14.06013,UL,CZ
 "Ústí n.L.,Osamělá",50.6700249,14.0605965,UL,CZ
+"Ústí nad Labem,Osamělá",50.6700249,14.0605965,UL,CZ
 "Ústí n.L.,Ovčácká stezka",50.6411247,14.0491962,UL,CZ
+"Ústí nad Labem,Ovčácká stezka",50.6411247,14.0491962,UL,CZ
 "Ústí n.L.,Ovčácká stezka",50.64045,14.0491772,UL,CZ
+"Ústí nad Labem,Ovčácká stezka",50.64045,14.0491772,UL,CZ
 "Ústí n.L.,Pekařská",50.663208,14.0808392,UL,CZ
+"Ústí nad Labem,Pekařská",50.663208,14.0808392,UL,CZ
 "Ústí n.L.,Pekařská",50.66287,14.0787058,UL,CZ
+"Ústí nad Labem,Pekařská",50.66287,14.0787058,UL,CZ
 "Ústí n.L.,Pod Hradem",50.6374,14.0504541,UL,CZ
+"Ústí nad Labem,Pod Hradem",50.6374,14.0504541,UL,CZ
 "Ústí n.L.,Pod Hradem",50.6373444,14.0502872,UL,CZ
+"Ústí nad Labem,Pod Hradem",50.6373444,14.0502872,UL,CZ
 "Ústí n.L.,Pod Svahem",50.6485252,14.0182343,UL,CZ
+"Ústí nad Labem,Pod Svahem",50.6485252,14.0182343,UL,CZ
 "Ústí n.L.,Pod Vyhlídkou",50.66927,14.0973215,UL,CZ
+"Ústí nad Labem,Pod Vyhlídkou",50.66927,14.0973215,UL,CZ
 "Ústí n.L.,Pod Vyhlídkou",50.6690826,14.0973606,UL,CZ
+"Ústí nad Labem,Pod Vyhlídkou",50.6690826,14.0973606,UL,CZ
 "Ústí n.L.,Podlesí",50.6583328,14.0758114,UL,CZ
+"Ústí nad Labem,Podlesí",50.6583328,14.0758114,UL,CZ
 "Ústí n.L.,Podlesí",50.6583557,14.07772,UL,CZ
+"Ústí nad Labem,Podlesí",50.6583557,14.07772,UL,CZ
 "Ústí n.L.,Poláčkova",50.6741142,14.05366,UL,CZ
+"Ústí nad Labem,Poláčkova",50.6741142,14.05366,UL,CZ
 "Ústí n.L.,Poláčkova",50.67401,14.0533991,UL,CZ
+"Ústí nad Labem,Poláčkova",50.67401,14.0533991,UL,CZ
 "Ústí n.L.,Poslední cesta",50.65157,14.0642872,UL,CZ
+"Ústí nad Labem,Poslední cesta",50.65157,14.0642872,UL,CZ
 "Ústí n.L.,Poslední cesta",50.6515121,14.0638371,UL,CZ
+"Ústí nad Labem,Poslední cesta",50.6515121,14.0638371,UL,CZ
 "Ústí n.L.,Pražská",50.6249657,14.0582886,UL,CZ
+"Ústí nad Labem,Pražská",50.6249657,14.0582886,UL,CZ
 "Ústí n.L.,Pražská",50.6249237,14.0580444,UL,CZ
+"Ústí nad Labem,Pražská",50.6249237,14.0580444,UL,CZ
 "Ústí n.L.,Prior",50.668972,14.0725994,UL,CZ
+"Ústí nad Labem,Prior",50.668972,14.0725994,UL,CZ
 "Ústí n.L.,Prior",50.66871,14.0734119,UL,CZ
+"Ústí nad Labem,Prior",50.66871,14.0734119,UL,CZ
 "Ústí n.L.,Prior",50.6687241,14.0753727,UL,CZ
+"Ústí nad Labem,Prior",50.6687241,14.0753727,UL,CZ
 "Ústí n.L.,Průmyslová",50.6595421,14.01192,UL,CZ
+"Ústí nad Labem,Průmyslová",50.6595421,14.01192,UL,CZ
 "Ústí n.L.,Průmyslová",50.65968,14.0117559,UL,CZ
+"Ústí nad Labem,Průmyslová",50.65968,14.0117559,UL,CZ
 "Ústí n.L.,Průmyslový park",59.7560959,24.8294525,,
+"Ústí nad Labem,Průmyslový park",59.7560959,24.8294525,,
 "Ústí n.L.,Předlice Jateční",59.7560959,24.8294525,,
+"Ústí nad Labem,Předlice Jateční",59.7560959,24.8294525,,
 "Ústí n.L.,Předlice,Jateční",59.7560959,24.8294525,,
+"Ústí nad Labem,Předlice,Jateční",59.7560959,24.8294525,,
 "Ústí n.L.,Předlice Kolonie",50.66155,13.9886837,UL,CZ
+"Ústí nad Labem,Předlice Kolonie",50.66155,13.9886837,UL,CZ
 "Ústí n.L.,Předlice,Kolonie",50.66155,13.9886837,UL,CZ
+"Ústí nad Labem,Předlice,Kolonie",50.66155,13.9886837,UL,CZ
 "Ústí n.L.,Předlická",50.66523,13.9816618,UL,CZ
+"Ústí nad Labem,Předlická",50.66523,13.9816618,UL,CZ
 "Ústí n.L.,Přístav",50.66192,14.0568256,UL,CZ
+"Ústí nad Labem,Přístav",50.66192,14.0568256,UL,CZ
 "Ústí n.L.,Přístav",50.6628342,14.0587893,UL,CZ
+"Ústí nad Labem,Přístav",50.6628342,14.0587893,UL,CZ
 "Ústí n.L.,Přístaviště",59.7560959,24.8294525,,
+"Ústí nad Labem,Přístaviště",59.7560959,24.8294525,,
 "Ústí n.L.,Revoluční",50.6594772,14.0371809,UL,CZ
+"Ústí nad Labem,Revoluční",50.6594772,14.0371809,UL,CZ
 "Ústí n.L.,Revoluční",50.6595078,14.0377092,UL,CZ
+"Ústí nad Labem,Revoluční",50.6595078,14.0377092,UL,CZ
 "Ústí n.L.,Ryjice",50.6881332,14.0914984,UL,CZ
+"Ústí nad Labem,Ryjice",50.6881332,14.0914984,UL,CZ
 Ryjice,50.6881332,14.0914984,UL,CZ
 "Ústí n.L.,Ryjice sanatorium",50.68586,14.0911655,UL,CZ
+"Ústí nad Labem,Ryjice sanatorium",50.68586,14.0911655,UL,CZ
 "Ryjice,sanatorium",50.68586,14.0911655,UL,CZ
 "Ústí n.L.,Ryjická",50.678154,14.099164,UL,CZ
+"Ústí nad Labem,Ryjická",50.678154,14.099164,UL,CZ
 "Ústí n.L.,Ryjická",50.6792336,14.0981331,UL,CZ
+"Ústí nad Labem,Ryjická",50.6792336,14.0981331,UL,CZ
 "Ústí n.L.,Sebuzín",50.5943222,14.063098,UL,CZ
+"Ústí nad Labem,Sebuzín",50.5943222,14.063098,UL,CZ
 "Ústí n.L.,Sebuzín",50.5947,14.0641937,UL,CZ
+"Ústí nad Labem,Sebuzín",50.5947,14.0641937,UL,CZ
 "Ústí n.L.,Sebuzín nádraží",50.5940857,14.0562792,UL,CZ
+"Ústí nad Labem,Sebuzín nádraží",50.5940857,14.0562792,UL,CZ
 "Ústí n.L.,Sebuzín nádraží",50.59418,14.0563583,UL,CZ
+"Ústí nad Labem,Sebuzín nádraží",50.59418,14.0563583,UL,CZ
 "Ústí n.L.,Sebuzín,žel.st.",50.5940857,14.0562792,UL,CZ
+"Ústí nad Labem,Sebuzín,žel.st.",50.5940857,14.0562792,UL,CZ
 "Ústí n.L.,Sebuzín přívoz",50.5935173,14.0458355,UL,CZ
+"Ústí nad Labem,Sebuzín přívoz",50.5935173,14.0458355,UL,CZ
 "Ústí n.L.,Sebuzín přívoz",50.5936241,14.0458784,UL,CZ
+"Ústí nad Labem,Sebuzín přívoz",50.5936241,14.0458784,UL,CZ
 "Ústí n.L.,Sebuzín,přívoz",50.5935173,14.0458355,UL,CZ
+"Ústí nad Labem,Sebuzín,přívoz",50.5935173,14.0458355,UL,CZ
 "Ústí n.L.,Sebuzín rozcestí",50.5975838,14.0718575,UL,CZ
+"Ústí nad Labem,Sebuzín rozcestí",50.5975838,14.0718575,UL,CZ
 "Ústí n.L.,Sebuzín rozcestí",50.5975227,14.0715408,UL,CZ
+"Ústí nad Labem,Sebuzín rozcestí",50.5975227,14.0715408,UL,CZ
 "Ústí n.L.,Sebuzín,rozc.",50.5975838,14.0718575,UL,CZ
+"Ústí nad Labem,Sebuzín,rozc.",50.5975838,14.0718575,UL,CZ
 "Ústí n.L.,Sibiřská",50.6813927,14.0935249,UL,CZ
+"Ústí nad Labem,Sibiřská",50.6813927,14.0935249,UL,CZ
 "Ústí n.L.,Sibiřská",50.68159,14.0936766,UL,CZ
+"Ústí nad Labem,Sibiřská",50.68159,14.0936766,UL,CZ
 "Ústí n.L.,Sibiřská sídliště",50.67992,14.0958357,UL,CZ
+"Ústí nad Labem,Sibiřská sídliště",50.67992,14.0958357,UL,CZ
 "Ústí n.L.,Sibiřská sídliště",50.6797638,14.096652,UL,CZ
+"Ústí nad Labem,Sibiřská sídliště",50.6797638,14.096652,UL,CZ
 "Ústí n.L.,Skalka",50.6793137,14.1026659,UL,CZ
+"Ústí nad Labem,Skalka",50.6793137,14.1026659,UL,CZ
 "Ústí n.L.,Skalka",50.6792221,14.1029825,UL,CZ
+"Ústí nad Labem,Skalka",50.6792221,14.1029825,UL,CZ
 "Ústí n.L.,Skorotice",50.6888428,14.0079288,UL,CZ
+"Ústí nad Labem,Skorotice",50.6888428,14.0079288,UL,CZ
 "Ústí n.L.,Skorotice",50.6889458,14.0078373,UL,CZ
+"Ústí nad Labem,Skorotice",50.6889458,14.0078373,UL,CZ
 "Ústí n.L.,Skorotice škola",50.6881638,14.0139818,UL,CZ
+"Ústí nad Labem,Skorotice škola",50.6881638,14.0139818,UL,CZ
 "Ústí n.L.,Skorotice škola",50.6881523,14.0137463,UL,CZ
+"Ústí nad Labem,Skorotice škola",50.6881523,14.0137463,UL,CZ
 "Ústí n.L.,Skorotice,škola",50.6881638,14.0139818,UL,CZ
+"Ústí nad Labem,Skorotice,škola",50.6881638,14.0139818,UL,CZ
 "Ústí n.L.,Solvayova",50.66339,14.0259724,UL,CZ
+"Ústí nad Labem,Solvayova",50.66339,14.0259724,UL,CZ
 "Ústí n.L.,Solvayova",50.66337,14.0252981,UL,CZ
+"Ústí nad Labem,Solvayova",50.66337,14.0252981,UL,CZ
 "Ústí n.L.,Stavbařů",50.6813622,14.0346766,UL,CZ
+"Ústí nad Labem,Stavbařů",50.6813622,14.0346766,UL,CZ
 "Ústí n.L.,Stavbařů",50.68156,14.0348549,UL,CZ
+"Ústí nad Labem,Stavbařů",50.68156,14.0348549,UL,CZ
 "Ústí n.L.,Stavební stroje",50.6618271,14.06304,UL,CZ
+"Ústí nad Labem,Stavební stroje",50.6618271,14.06304,UL,CZ
 "Ústí n.L.,Stavební stroje",50.6617279,14.0641584,UL,CZ
+"Ústí nad Labem,Stavební stroje",50.6617279,14.0641584,UL,CZ
 "Ústí n.L.,Strážky",50.70539,14.0161743,UL,CZ
+"Ústí nad Labem,Strážky",50.70539,14.0161743,UL,CZ
 "Ústí n.L.,Strážky",50.7051964,14.0161257,UL,CZ
+"Ústí nad Labem,Strážky",50.7051964,14.0161257,UL,CZ
 "Ústí n.L.,Střední školy",50.6752129,14.028883,UL,CZ
+"Ústí nad Labem,Střední školy",50.6752129,14.028883,UL,CZ
 "Ústí n.L.,Střední školy",50.67522,14.0292387,UL,CZ
+"Ústí nad Labem,Střední školy",50.67522,14.0292387,UL,CZ
 "Ústí n.L.,Střekov II",50.6522636,14.0696392,UL,CZ
+"Ústí nad Labem,Střekov II",50.6522636,14.0696392,UL,CZ
 "Ústí n.L.,Střekov II",50.6520462,14.0698423,UL,CZ
+"Ústí nad Labem,Střekov II",50.6520462,14.0698423,UL,CZ
 "Ústí n.L.,Střekov,II",50.6522636,14.0696392,UL,CZ
+"Ústí nad Labem,Střekov,II",50.6522636,14.0696392,UL,CZ
 "Ústí n.L.,Střekov osada",50.6344376,14.05329,UL,CZ
+"Ústí nad Labem,Střekov osada",50.6344376,14.05329,UL,CZ
 "Ústí n.L.,Střekov osada",50.6342163,14.053236,UL,CZ
+"Ústí nad Labem,Střekov osada",50.6342163,14.053236,UL,CZ
 "Ústí n.L.,Střekov,osada",50.6344376,14.05329,UL,CZ
+"Ústí nad Labem,Střekov,osada",50.6344376,14.05329,UL,CZ
 "Ústí n.L.,Střekov Rodinova",50.6277046,14.0658731,UL,CZ
+"Ústí nad Labem,Střekov Rodinova",50.6277046,14.0658731,UL,CZ
 "Ústí n.L.,Střekov,Rodinova",50.6277046,14.0658731,UL,CZ
+"Ústí nad Labem,Střekov,Rodinova",50.6277046,14.0658731,UL,CZ
 "Ústí n.L.,Stříbrnická",50.67504,14.0425835,UL,CZ
+"Ústí nad Labem,Stříbrnická",50.67504,14.0425835,UL,CZ
 "Ústí n.L.,Stříbrnická",50.675293,14.0425663,UL,CZ
+"Ústí nad Labem,Stříbrnická",50.675293,14.0425663,UL,CZ
 "Ústí n.L.,Stříbrnické nivy",50.6681824,14.0440216,UL,CZ
+"Ústí nad Labem,Stříbrnické nivy",50.6681824,14.0440216,UL,CZ
 "Ústí n.L.,Stříbrnické nivy",50.6680832,14.0442009,UL,CZ
+"Ústí nad Labem,Stříbrnické nivy",50.6680832,14.0442009,UL,CZ
 "Ústí n.L.,Stříbrníky",50.6741829,14.0486746,UL,CZ
+"Ústí nad Labem,Stříbrníky",50.6741829,14.0486746,UL,CZ
 "Ústí n.L.,Stříbrníky",50.67408,14.0491877,UL,CZ
+"Ústí nad Labem,Stříbrníky",50.67408,14.0491877,UL,CZ
 "Ústí n.L.,Stříbrníky",50.67363,14.0483751,UL,CZ
+"Ústí nad Labem,Stříbrníky",50.67363,14.0483751,UL,CZ
 "Ústí n.L.,Stříbrníky",50.67336,14.04868,UL,CZ
+"Ústí nad Labem,Stříbrníky",50.67336,14.04868,UL,CZ
 "Ústí n.L.,Svádov obec",50.66036,14.1086311,UL,CZ
+"Ústí nad Labem,Svádov obec",50.66036,14.1086311,UL,CZ
 "Svádov,obec",50.66036,14.1086311,UL,CZ
 "Ústí n.L.,Svádovský přívoz",50.6668358,14.0986748,UL,CZ
+"Ústí nad Labem,Svádovský přívoz",50.6668358,14.0986748,UL,CZ
 "Ústí n.L.,Svádovský přívoz",50.6669464,14.0996132,UL,CZ
+"Ústí nad Labem,Svádovský přívoz",50.6669464,14.0996132,UL,CZ
 "Ústí n.L.,Svatopluka Čecha",50.66815,14.0941477,UL,CZ
+"Ústí nad Labem,Svatopluka Čecha",50.66815,14.0941477,UL,CZ
 "Ústí n.L.,Svatopluka Čecha",50.6681328,14.0946465,UL,CZ
+"Ústí nad Labem,Svatopluka Čecha",50.6681328,14.0946465,UL,CZ
 "Ústí n.L.,Šafaříkovo nám.",50.6479378,14.0518036,UL,CZ
+"Ústí nad Labem,Šafaříkovo nám.",50.6479378,14.0518036,UL,CZ
 "Ústí n.L.,Šafaříkovo nám.",50.64803,14.052268,UL,CZ
+"Ústí nad Labem,Šafaříkovo nám.",50.64803,14.052268,UL,CZ
 "Ústí n.L.,Šaldova",50.67002,14.0231361,UL,CZ
+"Ústí nad Labem,Šaldova",50.67002,14.0231361,UL,CZ
 "Ústí n.L.,Šaldova",50.6696854,14.0242882,UL,CZ
+"Ústí nad Labem,Šaldova",50.6696854,14.0242882,UL,CZ
 "Ústí n.L.,Štefánikova",50.67318,14.015686,UL,CZ
+"Ústí nad Labem,Štefánikova",50.67318,14.015686,UL,CZ
 "Ústí n.L.,Štefánikova",50.67369,14.0156612,UL,CZ
+"Ústí nad Labem,Štefánikova",50.67369,14.0156612,UL,CZ
 "Ústí n.L.,Textilní",59.7560959,24.8294525,,
+"Ústí nad Labem,Textilní",59.7560959,24.8294525,,
 "Ústí n.L.,Předlice,Textilní",59.7560959,24.8294525,,
+"Ústí nad Labem,Předlice,Textilní",59.7560959,24.8294525,,
 "Ústí n.L.,Trmická",50.64973,14.0129786,UL,CZ
+"Ústí nad Labem,Trmická",50.64973,14.0129786,UL,CZ
 "Ústí n.L.,Trmická",50.65005,14.0130348,UL,CZ
+"Ústí nad Labem,Trmická",50.65005,14.0130348,UL,CZ
 "Ústí n.L.,Třebízského",50.65266,14.04755,UL,CZ
+"Ústí nad Labem,Třebízského",50.65266,14.04755,UL,CZ
 "Ústí n.L.,U Studánky",50.6704254,14.08465,UL,CZ
+"Ústí nad Labem,U Studánky",50.6704254,14.08465,UL,CZ
 "Ústí n.L.,U Studánky",50.67041,14.0848579,UL,CZ
+"Ústí nad Labem,U Studánky",50.67041,14.0848579,UL,CZ
 "Ústí n.L.,U Vlečky",50.6591759,14.0065165,UL,CZ
+"Ústí nad Labem,U Vlečky",50.6591759,14.0065165,UL,CZ
 "Ústí n.L.,U Vlečky",50.6590843,14.0050716,UL,CZ
+"Ústí nad Labem,U Vlečky",50.6590843,14.0050716,UL,CZ
 "Ústí n.L.,U Vodopádu",50.6331139,14.0475216,UL,CZ
+"Ústí nad Labem,U Vodopádu",50.6331139,14.0475216,UL,CZ
 "Ústí n.L.,U Vodopádu",50.6338425,14.0470667,UL,CZ
+"Ústí nad Labem,U Vodopádu",50.6338425,14.0470667,UL,CZ
 "Ústí n.L.,Uhlozbyt",59.7560959,24.8294525,,
+"Ústí nad Labem,Uhlozbyt",59.7560959,24.8294525,,
 "Ústí n.L.,V Besídkách",50.6653328,14.017601,UL,CZ
+"Ústí nad Labem,V Besídkách",50.6653328,14.017601,UL,CZ
 "Ústí n.L.,V Besídkách",50.6652069,14.0188837,UL,CZ
+"Ústí nad Labem,V Besídkách",50.6652069,14.0188837,UL,CZ
 "Ústí n.L.,V Rokli",50.67361,14.0432415,UL,CZ
+"Ústí nad Labem,V Rokli",50.67361,14.0432415,UL,CZ
 "Ústí n.L.,V Rokli",50.67341,14.0432968,UL,CZ
+"Ústí nad Labem,V Rokli",50.67341,14.0432968,UL,CZ
 "Ústí n.L.,V Zahrádkách",50.6752739,14.0181437,UL,CZ
+"Ústí nad Labem,V Zahrádkách",50.6752739,14.0181437,UL,CZ
 "Ústí n.L.,V Zahrádkách",50.6756439,14.0182333,UL,CZ
+"Ústí nad Labem,V Zahrádkách",50.6756439,14.0182333,UL,CZ
 "Ústí n.L.,V Zeleni",50.64972,14.056118,UL,CZ
+"Ústí nad Labem,V Zeleni",50.64972,14.056118,UL,CZ
 "Ústí n.L.,V Zeleni",50.6497078,14.0564709,UL,CZ
+"Ústí nad Labem,V Zeleni",50.6497078,14.0564709,UL,CZ
 "Ústí n.L.,Vaňov",50.6224174,14.070653,UL,CZ
+"Ústí nad Labem,Vaňov",50.6224174,14.070653,UL,CZ
 "Ústí n.L.,Ve Stromkách",50.68085,14.003252,UL,CZ
+"Ústí nad Labem,Ve Stromkách",50.68085,14.003252,UL,CZ
 "Ústí n.L.,Větrná",50.68493,14.0283079,UL,CZ
+"Ústí nad Labem,Větrná",50.68493,14.0283079,UL,CZ
 "Ústí n.L.,Větrná",50.6848373,14.0286074,UL,CZ
+"Ústí nad Labem,Větrná",50.6848373,14.0286074,UL,CZ
 "Ústí n.L.,Větruše",50.6551933,14.0393705,UL,CZ
+"Ústí nad Labem,Větruše",50.6551933,14.0393705,UL,CZ
 "Ústí n.L.,Vinařská",50.67866,14.0155191,UL,CZ
+"Ústí nad Labem,Vinařská",50.67866,14.0155191,UL,CZ
 "Ústí n.L.,Vinařská",50.6787376,14.0157328,UL,CZ
+"Ústí nad Labem,Vinařská",50.6787376,14.0157328,UL,CZ
 "Ústí n.L.,Vodárna",50.6432266,14.0447626,UL,CZ
+"Ústí nad Labem,Vodárna",50.6432266,14.0447626,UL,CZ
 "Ústí n.L.,Vodárna",50.64307,14.0446129,UL,CZ
+"Ústí nad Labem,Vodárna",50.64307,14.0446129,UL,CZ
 "Ústí n.L.,Vojanova ZOO",50.6651,14.0640421,UL,CZ
+"Ústí nad Labem,Vojanova ZOO",50.6651,14.0640421,UL,CZ
 "Ústí n.L.,Vojanova ZOO",50.66485,14.063777,UL,CZ
+"Ústí nad Labem,Vojanova ZOO",50.66485,14.063777,UL,CZ
 "Ústí n.L.,Vozovna",50.6571541,13.9967813,UL,CZ
-"Ústí n.L.,Vozovna DP",50.66094,13.9964914,UL,CZ
-"Ústí n.L.,Vozovna DP",50.66111,13.9968805,UL,CZ
-"Ústí n.L.,Vozovna DP",59.7560959,24.8294525,,
+"Ústí nad Labem,Vozovna",50.6571541,13.9967813,UL,CZ
+"Ústí n.L.,Vozovna DP",50.66106,13.9965773,UL,CZ
+"Ústí nad Labem,Vozovna DP",50.66106,13.9965773,UL,CZ
+"Ústí n.L.,Vozovna DP",50.6611977,13.9969835,UL,CZ
+"Ústí nad Labem,Vozovna DP",50.6611977,13.9969835,UL,CZ
 "Ústí n.L.,Všebořice",50.6883,13.9933348,UL,CZ
+"Ústí nad Labem,Všebořice",50.6883,13.9933348,UL,CZ
 "Ústí n.L.,Všebořice",50.6889267,13.9925852,UL,CZ
+"Ústí nad Labem,Všebořice",50.6889267,13.9925852,UL,CZ
 "Ústí n.L.,Výstupní",50.6691322,14.067852,UL,CZ
+"Ústí nad Labem,Výstupní",50.6691322,14.067852,UL,CZ
 "Ústí n.L.,Výstupní",50.66912,14.0682611,UL,CZ
+"Ústí nad Labem,Výstupní",50.66912,14.0682611,UL,CZ
 "Ústí n.L.,Za Válcovnou",50.66414,14.0015583,UL,CZ
+"Ústí nad Labem,Za Válcovnou",50.66414,14.0015583,UL,CZ
 "Ústí n.L.,Zahradnictví",50.63104,14.0555735,UL,CZ
+"Ústí nad Labem,Zahradnictví",50.63104,14.0555735,UL,CZ
 "Ústí n.L.,Zahradnictví",50.6304474,14.0559549,UL,CZ
+"Ústí nad Labem,Zahradnictví",50.6304474,14.0559549,UL,CZ
 "Ústí n.L.,Zámecká",50.64542,13.9906988,UL,CZ
+"Ústí nad Labem,Zámecká",50.64542,13.9906988,UL,CZ
 "Ústí n.L.,Zámecká",50.64559,13.9900789,UL,CZ
+"Ústí nad Labem,Zámecká",50.64559,13.9900789,UL,CZ
 "Ústí n.L.,Zdymadla",50.637104,14.0463181,UL,CZ
+"Ústí nad Labem,Zdymadla",50.637104,14.0463181,UL,CZ
 "Ústí n.L.,Zdymadla",50.6369,14.04631,UL,CZ
+"Ústí nad Labem,Zdymadla",50.6369,14.04631,UL,CZ
 "Ústí n.L.,Zimní stadion",59.7560959,24.8294525,,
+"Ústí nad Labem,Zimní stadion",59.7560959,24.8294525,,
 "Ústí n.L.,Bukov,Zimní stadion",59.7560959,24.8294525,,
+"Ústí nad Labem,Bukov,Zimní stadion",59.7560959,24.8294525,,
 "Ústí n.L.,Zoologická zahrada",50.66867,14.0550556,UL,CZ
+"Ústí nad Labem,Zoologická zahrada",50.66867,14.0550556,UL,CZ
 "Ústí n.L.,Zoologická zahrada",50.6676636,14.0556746,UL,CZ
+"Ústí nad Labem,Zoologická zahrada",50.6676636,14.0556746,UL,CZ
 "Ústí n.L.,ZPA",50.6568832,14.0514784,UL,CZ
+"Ústí nad Labem,ZPA",50.6568832,14.0514784,UL,CZ
 "Ústí n.L.,ZPA",50.65712,14.0524855,UL,CZ
+"Ústí nad Labem,ZPA",50.65712,14.0524855,UL,CZ
 "Ústí n.L.,Žežická",50.67264,14.0734262,UL,CZ
+"Ústí nad Labem,Žežická",50.67264,14.0734262,UL,CZ
 "Ústí n.L.,Žežická",50.67266,14.07406,UL,CZ
+"Ústí nad Labem,Žežická",50.67266,14.07406,UL,CZ
 "Varnsdorf,policie",50.91868,14.6195564,DC,CZ
 "Varnsdorf,,pošta",50.91012,14.62675,DC,CZ
 "Varnsdorf,Východní škola",50.9154358,14.6262379,DC,CZ
+"Velemín,Kletečná",50.56686,13.9880905,LT,CZ
 "Černuc,Miletice",50.3040428,14.2339517,KD,CZ
 "Velvary,Na Šibenici",50.2893753,14.2329044,KD,CZ
-_no_name_,50.6346206665039,13.8123798370361,TP,CZ
-_no_name_,50.6347312927246,13.8088903427124,TP,CZ
 "Blažim,kostel",50.4087944,13.6238567,LN,CZ
 "Blažim,kostel",50.4085158,13.6251039,LN,CZ
 "Bad Schandau,Elbkai",50.9176979,14.14948,,D
+"Verneřice,za kostelem",50.6611862,14.3035259,DC,CZ
