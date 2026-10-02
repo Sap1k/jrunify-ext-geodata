@@ -16,7 +16,7 @@ the updater does not impose a licence gate.
 | Karlovarský kraj | obsolete | listed ArcGIS service now reports that it is stopped; retain the last checked-in snapshot pending a replacement endpoint |
 | Olomoucký kraj | duplicate | IDSOK already covers the regional catalogue; DPMO adds a directly maintained urban catalogue |
 | DPMO GTFS | newly usable | official `https://www.dpmo.cz/doc/dpmo-olomouc-cz.zip`, now `DPMO.csv`; bare urban names are explicitly prefixed with Olomouc |
-| Ústecký kraj / DÚK | integrated | ArcGIS, QRide and live-map catalogues |
+| Ústecký kraj / DÚK | integrated | ArcGIS and QRide catalogues; the live map duplicated QRide positions and was retired when its certificate expired |
 | MPVNet regional maps | integrated | PID, ODIS, IDOL, Zlín and JIKORD catalogues |
 | IDS JMK live maps | integrated | stable stop endpoint; retired BMHD iRIS is obsolete |
 | old IREDO map | obsolete | first-generation endpoint no longer returns JSON and was announced for retirement |
@@ -52,3 +52,16 @@ now contains 336 stop-level name/region/country identities. Reconciliation of th
 original regional-adjacent work list left zero unresolved identities. Mapy raw
 responses and the credential were not retained. Approximate town-coordinate
 rows were removed when JrUtil adopted route-derived estimates for unresolved stops.
+
+## 2026-10-02 refresh
+
+All sources were attempted. The Moravskoslezský kraj layer moved to a new
+public multipoint FeatureServer (the old service now requires a token), and
+Žďár's kdyPrijede endpoint now rejects the default python-requests User-Agent;
+both were fixed. MapaDUK was retired after verifying that QRide covers every
+referenced name once `Ústí n.L.` is expanded (one renamed stop went to
+`Retained.csv`). CestujOK (IDSOK) and DPMLJ reset the TLS handshake from the
+non-Czech refresh host and the Plzeň portal answered 503; their previous
+snapshots are kept. The MPVNet catalogues shrank by 10-40 % upstream (tiling the
+query returns even fewer stops), so names that disappeared but are still
+referenced by the feed were preserved in `Retained.csv` (319 names).

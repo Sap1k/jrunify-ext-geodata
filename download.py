@@ -11,7 +11,6 @@ import time
 import pathlib
 import urllib3
 import zipfile
-import itertools
 from dataclasses import dataclass
 import lxml.html
 import pyproj
@@ -278,7 +277,9 @@ def arcgis_download_stops(url, layer, name_fields, where="1=1"):
             attrs = stop["attributes"]
             name = ",".join((attrs[nf] or "").strip() for nf in name_fields)
             geom = stop["geometry"]
-            yield Stop(name, geom["y"], geom["x"])
+            # Multipoint layers hold one point per stop post
+            for x, y in geom.get("points") or [(geom["x"], geom["y"])]:
+                yield Stop(name, y, x)
 
         print("Got", len(stops), "stops", file=sys.stderr)
         if len(stops) != batch:
@@ -307,23 +308,6 @@ def abirun_tim_download_stops(url):
             yield Stop(stop["text"], stop["point"]["lat"], stop["point"]["lon"])
 
 
-def mapaduk_download_stops():
-    URL = "https://provoz.kr-ustecky.cz/TMD/API/Map/GetStopMarkers"
-
-    resp = requests.post(URL, json={})
-    stops = resp.json()["ItemL"]
-
-    # Sometimes there are multiple entries for stops, and only one is
-    # identified correctly as a train stop
-    for (lat, lng), stops in itertools.groupby(stops, lambda s: (s["Lat"], s["Lng"])):
-        stops = list(stops)
-        # These look like train stops
-        if any(s["PostNote"] in ["žst.", "žel.zast."] for s in stops):
-            continue
-        for stop in stops:
-            yield Stop(stop["Name"], lat, lng)
-
-
 def qride_download_stops():
     resp = requests.get("https://tabule.portabo.cz/api/v1-tabule/cis/GetStations")
     for stop in resp.json()["ItemList"]:
@@ -331,6 +315,13 @@ def qride_download_stops():
             print(f"Skipping stop {stop['Name']} without position")
             continue
         yield Stop(stop["Name"], stop["Latitude"], stop["Longitude"])
+        # JDF spells out the town for Ústí MHD stops, which QRide abbreviates
+        if stop["Name"].startswith("Ústí n.L.,"):
+            yield Stop(
+                "Ústí nad Labem," + stop["Name"].removeprefix("Ústí n.L.,"),
+                stop["Latitude"],
+                stop["Longitude"],
+            )
 
 
 def iredo_mapa2_download_stops():
@@ -544,7 +535,11 @@ def plzen_download_stops():
 
 
 def zdarns_download_stops():
-    resp = requests.get("https://mhdzdar.kdyprijede.cz/stops")
+    # The endpoint answers 400 to the default python-requests User-Agent
+    resp = requests.get(
+        "https://mhdzdar.kdyprijede.cz/stops", headers={"User-Agent": "curl/8"}
+    )
+    resp.raise_for_status()
     for stop in resp.json()["stops"]:
         yield Stop(
             "Žďár n.Sáz.," + re.sub(r" *\[.*\]", "", stop[2]),
@@ -652,10 +647,12 @@ def write_stops_csv(outfile, stops):
 
 SOURCES = {
     "other/MoravskoslezskyKraj.csv": lambda: arcgis_download_stops(
-        # Backing service for https://data.msk.cz/datasets/17da5e4200744a6e8bfd3a8a31777402_0/explore
-        "https://services8.arcgis.com/jfWD14yYevYeDEj7/arcgis/rest/services/cp_di_zastavky_vhd/FeatureServer",
+        # Backing service for the data.msk.cz dataset "Zastávky veřejné
+        # hromadné dopravy v Moravskoslezském kraji"; the former
+        # cp_di_zastavky_vhd service now requires a token
+        "https://services8.arcgis.com/jfWD14yYevYeDEj7/arcgis/rest/services/Zast%C3%A1vky_ve%C5%99ejn%C3%A9_hromadn%C3%A9_dopravy_v_Moravskoslezsk%C3%A9m_kraj/FeatureServer",
         0,
-        ["NAZEV_ZASTAVKY"],
+        ["NAZ_ZAS"],
     ),
     "other/UsteckyKraj.csv": lambda: arcgis_download_stops(
         "https://ags.kr-ustecky.cz/arcgis/rest/services/Doprava/zastavky/MapServer",
@@ -671,7 +668,6 @@ SOURCES = {
     "other/MapaVDV.csv": lambda: abirun_tim_download_stops(
         "https://tim.abirun.eu/KrajVysocina/TarifniPocitadlo/Mapa"
     ),
-    "other/MapaDUK.csv": mapaduk_download_stops,
     "other/QRideDUK.csv": qride_download_stops,
     "other/MapaIREDO2.csv": iredo_mapa2_download_stops,
     "other/MapaIDSOK.csv": lambda: tmapy_download_stops("https://cestujok.cz"),
