@@ -92,6 +92,44 @@ exact refreshed-source matches with compatible geography and a candidate
 cluster under one kilometre. The resulting CSV includes source stop IDs, route
 distinctions, route names and the recommended next matching stage.
 
+# Stop ID registry
+
+`registry/stops.csv` pins the merged-JDF stop number `N`, published as
+`jdf:stop:N`, to a stop identity so IDs stay the same between exports. Its
+columns are `id,town,district,nearby_place,okres,country,lat,lon,status,note`.
+The file is append-only:
+
+- Rows that share an `id` are aliases. Record a rename by adding a row, not by
+  editing one.
+- A stop that is no longer served gets `status=retired`. Its row stays.
+- A `merged_into:<id>` note marks a duplicate.
+- An `id` is never reused.
+
+`lat`/`lon` are optional reference coordinates, not geodata. They only tell
+apart stops whose identity is the same. Such stops must be at least 75 m apart,
+the distance at which JrUtil stops merging same-named stops.
+
+`registry/posts.csv` (`stop_id,post_key,lat,lon,status,note`) pins post
+suffixes (`post:<num>`, or `est:<k>` for inferred posts) to reference
+coordinates. Inferred posts are matched by position, so their IDs survive
+changes in evidence.
+
+Stops the registry does not know get a provisional ID of at least
+`1000000000` and are listed in `stop_registry_candidates.csv`. To register them,
+fill `decision` with `new` or `alias` (with `alias_of`) in that file, then run:
+
+```sh
+python registry.py promote stop_registry_candidates.csv
+python registry.py validate
+```
+
+`python registry.py seed MERGED_JDF.zip --gtfs BUNDLE/gtfs-intermediate`
+bootstraps the registry once from an existing export and keeps that export's
+numbers. Reference coordinates are taken only for `stop`-precision places.
+
+Do not pass the repository root to `fix-jdf -g`. It loads `*.csv`
+recursively, and the registry files are not geodata.
+
 # Railway sources
 
 ## SR70.csv
