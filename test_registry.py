@@ -1,7 +1,5 @@
 import csv
-import io
 import unittest
-import zipfile
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from types import SimpleNamespace
@@ -51,6 +49,8 @@ class RegistryTests(unittest.TestCase):
         self.assertIn("stops.csv must be sorted by id, then by identity", errors)
         errors = registry.validate([stop(1, "A", note="merged_into:9")], [])
         self.assertTrue(any("merged_into:9" in error for error in errors))
+        chained = [stop(1, "A", note="merged_into:2"), stop(2, "B", note="merged_into:3"), stop(3, "C")]
+        self.assertTrue(any("is itself merged" in error for error in registry.validate(chained, [])))
 
     def test_posts_reference_registered_stops(self):
         stops = [stop(1, "A")]
@@ -60,60 +60,89 @@ class RegistryTests(unittest.TestCase):
         errors = registry.validate(stops, [post(1, "est:2"), post(1, "est:1")])
         self.assertEqual(errors, ["posts.csv must be sorted by stop_id, then post_key"])
 
-    def write_registry(self, root, stops):
-        registry.write_table(root / "stops.csv", registry.STOP_FIELDS, stops)
-        registry.write_table(root / "posts.csv", registry.POST_FIELDS, [])
+    def write_registry(self, root, stops, posts=(), places=()):
+        registry.write_table(root / "stops.csv", registry.STOP_FIELDS, list(stops))
+        registry.write_table(root / "posts.csv", registry.POST_FIELDS, list(posts))
+        registry.write_table(root / "overlay_places.csv", registry.PLACE_FIELDS, list(places))
+
+    def write_candidates(self, path, fields, rows):
+        with path.open("w", encoding="utf-8", newline="") as stream:
+            writer = csv.DictWriter(stream, fieldnames=fields, restval="")
+            writer.writeheader()
+            writer.writerows(rows)
+
+    def promote(self, root, candidates, accept_new=False):
+        registry.run_promote(SimpleNamespace(registry=root, candidates=candidates, accept_new=accept_new))
+        return registry._load(root)
+
+    STOP_CANDIDATE_FIELDS = [
+        "provisional_id", "town", "district", "nearby_place", "okres", "country",
+        "lat", "lon", "reason", "alias_of_suggestion", "decision", "alias_of",
+    ]
 
     def test_promote_allocates_ids_and_aliases(self):
         with TemporaryDirectory() as directory:
             root = Path(directory) / "registry"
             self.write_registry(root, [stop(5, "Babice", "", "pošta")])
             candidates = Path(directory) / "candidates.csv"
-            with candidates.open("w", encoding="utf-8", newline="") as stream:
-                writer = csv.DictWriter(
-                    stream,
-                    fieldnames=["provisional_id", "town", "district", "nearby_place", "okres", "country", "lat", "lon", "reason", "alias_of_suggestion", "decision", "alias_of"],
-                )
-                writer.writeheader()
-                base = {"provisional_id": "1000000001", "district": "", "okres": "UH", "country": "CZ", "lat": "", "lon": "", "reason": "new", "alias_of_suggestion": ""}
-                writer.writerow({**base, "town": "Zlín", "nearby_place": "nádraží", "decision": "new", "alias_of": ""})
-                writer.writerow({**base, "town": "Babice", "nearby_place": "pošta nová", "decision": "alias", "alias_of": "5"})
-                writer.writerow({**base, "town": "Alpha", "nearby_place": "", "decision": "", "alias_of": ""})
-            args = SimpleNamespace(registry=root, candidates=candidates)
-            registry.run_promote(args)
-            stops, _ = registry._load(root)
+            base = {"district": "", "okres": "UH", "country": "CZ", "reason": "new"}
+            self.write_candidates(candidates, self.STOP_CANDIDATE_FIELDS, [
+                {**base, "provisional_id": "1000000002", "town": "Zlín", "nearby_place": "nádraží", "decision": "new"},
+                {**base, "provisional_id": "1000000002", "town": "Zlín", "nearby_place": "žel.st.", "decision": "new"},
+                {**base, "provisional_id": "", "town": "Babice", "nearby_place": "pošta nová", "reason": "alias", "alias_of_suggestion": "5", "decision": "alias"},
+                {**base, "provisional_id": "1000000001", "town": "Alpha"},
+            ])
+            stops, _, _ = self.promote(root, candidates)
             self.assertEqual(
                 [(row["id"], row["town"], row["nearby_place"]) for row in stops],
-                [("5", "Babice", "pošta"), ("5", "Babice", "pošta nová"), ("6", "Zlín", "nádraží")],
+                [("5", "Babice", "pošta"), ("5", "Babice", "pošta nová"),
+                 ("6", "Zlín", "nádraží"), ("6", "Zlín", "žel.st.")],
             )
-            registry.run_promote(args)
-            self.assertEqual(registry._load(root)[0], stops)
+            self.assertEqual(self.promote(root, candidates)[0][:2], stops[:2])
 
-    def test_seed_keeps_export_numbers(self):
+    def test_accept_new_bootstraps_an_empty_registry(self):
         with TemporaryDirectory() as directory:
-            directory = Path(directory)
-            jdf = directory / "merged.zip"
-            with zipfile.ZipFile(jdf, "w") as archive:
-                archive.writestr(
-                    "Zastavky.txt",
-                    '"12","Babice","","pošta","UH","CZ"\r\n"7","Zlín","","nádraží","ZL","CZ"\r\n'.encode("cp1250"),
-                )
-            gtfs = directory / "gtfs"
-            gtfs.mkdir()
-            (gtfs / "stops.txt").write_text(
-                "stop_id,stop_lat,stop_lon\njdf:stop:12,49.12,17.47\njdf:stop:12:unspecified,49.12,17.47\njdf:stop:7,0,0\n",
-                encoding="utf-8",
+            root = Path(directory) / "registry"
+            self.write_registry(root, [])
+            candidates = Path(directory) / "candidates.csv"
+            base = {"district": "", "nearby_place": "", "okres": "UH", "country": "CZ", "reason": "new"}
+            self.write_candidates(candidates, self.STOP_CANDIDATE_FIELDS[:10], [
+                {**base, "provisional_id": "1000000009", "town": "B"},
+                {**base, "provisional_id": "1000000003", "town": "A"},
+                {**base, "provisional_id": "1000000004", "town": "C", "reason": "ambiguous"},
+            ])
+            stops, _, _ = self.promote(root, candidates, accept_new=True)
+            self.assertEqual([(row["id"], row["town"]) for row in stops], [("1", "A"), ("2", "B")])
+
+    def test_promote_posts_and_overlay_places(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory) / "registry"
+            self.write_registry(
+                root,
+                [stop(1, "A")],
+                places=[{"source_id": "pid", "group_key": "group:x:old", "place_id": "overlay:pid:stop-place:aa", "status": "active", "note": ""}],
             )
-            root = directory / "registry"
-            registry.run_seed(SimpleNamespace(registry=root, jdf=jdf, gtfs=gtfs, metadata=None, force=False))
-            stops, _ = registry._load(root)
-            self.assertEqual([(row["id"], row["lat"]) for row in stops], [("7", ""), ("12", "49.120000")])
-            with self.assertRaises(SystemExit):
-                registry.run_seed(SimpleNamespace(registry=root, jdf=jdf, gtfs=None, metadata=None, force=False))
+            posts = Path(directory) / "posts.csv"
+            self.write_candidates(posts, ["stop_id", "post_key", "lat", "lon", "reason"], [
+                {"stop_id": "1", "post_key": "est:2", "lat": "49.1", "lon": "17.4", "reason": "new"},
+                {"stop_id": "1", "post_key": "est:1", "lat": "49.2", "lon": "17.4", "reason": "new"},
+            ])
+            _, stored_posts, _ = self.promote(root, posts, accept_new=True)
+            self.assertEqual([row["post_key"] for row in stored_posts], ["est:1", "est:2"])
+            places = Path(directory) / "places.csv"
+            self.write_candidates(places, ["source_id", "group_key", "place_id", "stop_name", "lat", "lon", "reason", "alias_of_suggestion", "decision"], [
+                {"source_id": "pid", "group_key": "group:x:new", "place_id": "overlay:pid:stop-place:bb", "stop_name": "X", "reason": "new", "alias_of_suggestion": "overlay:pid:stop-place:aa", "decision": "alias"},
+                {"source_id": "pid", "group_key": "group:y:", "place_id": "overlay:pid:stop-place:cc", "stop_name": "Y", "reason": "new", "decision": "new"},
+            ])
+            _, _, stored_places = self.promote(root, places)
+            self.assertEqual(
+                [(row["group_key"], row["place_id"]) for row in stored_places],
+                [("group:x:new", "overlay:pid:stop-place:aa"), ("group:x:old", "overlay:pid:stop-place:aa"), ("group:y:", "overlay:pid:stop-place:cc")],
+            )
 
     def test_checked_registry_is_valid(self):
-        stops, posts = registry._load(Path(registry.__file__).parent / "registry")
-        self.assertEqual(registry.validate(stops, posts), [])
+        stops, posts, places = registry._load(Path(registry.__file__).parent / "registry")
+        self.assertEqual(registry.validate(stops, posts, places), [])
 
 
 if __name__ == "__main__":

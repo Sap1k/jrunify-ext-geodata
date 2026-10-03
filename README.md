@@ -94,38 +94,43 @@ distinctions, route names and the recommended next matching stage.
 
 # Stop ID registry
 
-`registry/stops.csv` pins the merged-JDF stop number `N`, published as
-`jdf:stop:N`, to a stop identity so IDs stay the same between exports. Its
-columns are `id,town,district,nearby_place,okres,country,lat,lon,status,note`.
-The file is append-only:
+`registry/` pins public stop IDs so that they stay the same between exports.
+JrUtil reads it with `--stop-registry=registry` (in `merge-jdf`, `jdf-to-bundle`
+and `regional-gtfs-overlay`). All three files are append-only:
 
-- Rows that share an `id` are aliases. Record a rename by adding a row, not by
-  editing one.
-- A stop that is no longer served gets `status=retired`. Its row stays.
-- A `merged_into:<id>` note marks a duplicate.
-- An `id` is never reused.
+- **`stops.csv`** (`id,town,district,nearby_place,okres,country,lat,lon,status,note`)
+  pins the merged-JDF stop number `N`, published as `jdf:stop:N`.
+  - Rows that share an `id` are aliases. Record a rename by adding a row, not
+    by editing one.
+  - A stop that is no longer served gets `status=retired`. Its row stays.
+  - A `merged_into:<id>` note marks a duplicate; JrUtil uses the target number.
+  - An `id` is never reused.
+  - `lat`/`lon` are optional reference coordinates, not geodata. They only tell
+    apart stops whose identity is the same. Such stops must be at least 75 m
+    apart, the distance at which JrUtil stops merging same-named stops.
+- **`posts.csv`** (`stop_id,post_key,lat,lon,status,note`) pins inferred post
+  ordinals (`est:<k>`). An inferred post within 25 m of a registered one reuses
+  its ordinal, so the ID survives changes in the evidence behind it.
+- **`overlay_places.csv`** (`source_id,group_key,place_id,status,note`) pins
+  regional-overlay stop places that match no national stop. Their default ID is
+  a hash of the source group, and that hash changes when the stop is renamed.
 
-`lat`/`lon` are optional reference coordinates, not geodata. They only tell
-apart stops whose identity is the same. Such stops must be at least 75 m apart,
-the distance at which JrUtil stops merging same-named stops.
-
-`registry/posts.csv` (`stop_id,post_key,lat,lon,status,note`) pins post
-suffixes (`post:<num>`, or `est:<k>` for inferred posts) to reference
-coordinates. Inferred posts are matched by position, so their IDs survive
-changes in evidence.
-
-Stops the registry does not know get a provisional ID of at least
-`1000000000` and are listed in `stop_registry_candidates.csv`. To register them,
-fill `decision` with `new` or `alias` (with `alias_of`) in that file, then run:
+Stops the registry does not know get a provisional number of at least
+`1000000000`. With `--stop-registry-candidates=FILE`, each JrUtil command writes
+what is missing: unregistered stops and new spellings of registered ones
+(`merge-jdf`), new post ordinals (`jdf-to-bundle`) and unpinned places
+(`regional-gtfs-overlay`). To register them, fill a `decision` column with `new`
+or `alias` (with `alias_of`, unless `alias_of_suggestion` names a single
+value), then run:
 
 ```sh
-python registry.py promote stop_registry_candidates.csv
+python registry.py promote stop-candidates.csv
 python registry.py validate
 ```
 
-`python registry.py seed MERGED_JDF.zip --gtfs BUNDLE/gtfs-intermediate`
-bootstraps the registry once from an existing export and keeps that export's
-numbers. Reference coordinates are taken only for `stop`-precision places.
+`promote --accept-new` treats every undecided row with `reason=new` as `new`.
+Running it on the first build's candidates numbers every stop from 1, which is
+the one planned stop-ID break.
 
 Do not pass the repository root to `fix-jdf -g`. It loads `*.csv`
 recursively, and the registry files are not geodata.
