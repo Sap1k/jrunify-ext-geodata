@@ -1,1 +1,120 @@
 source_id,group_key,place_id,status,note
+ids-jmk-gtfs,ids-jmk-gtfs:U1051N3249,overlay:ids-jmk-gtfs:stop-place:8d413e7d92a6065d,active,"Bystrc, přístav"
+ids-jmk-gtfs,ids-jmk-gtfs:U1165N3255,overlay:ids-jmk-gtfs:stop-place:006f12165ce3416e,active,"Hrad Veveří, přístaviště"
+ids-jmk-gtfs,ids-jmk-gtfs:U1281N3250,overlay:ids-jmk-gtfs:stop-place:a8ba9b3298e35545,active,"Kozí horka, přístaviště"
+ids-jmk-gtfs,ids-jmk-gtfs:U1375N3256,overlay:ids-jmk-gtfs:stop-place:496c73e70a16b63d,active,"Mečkov, přístaviště"
+ids-jmk-gtfs,ids-jmk-gtfs:U1500N3254,overlay:ids-jmk-gtfs:stop-place:0b5e65319577ca44,active,Pod Trnůvkou
+ids-jmk-gtfs,ids-jmk-gtfs:U1545N3253,overlay:ids-jmk-gtfs:stop-place:755c0094a549b1ab,active,"Rokle, přístaviště"
+ids-jmk-gtfs,ids-jmk-gtfs:U1571N3257,overlay:ids-jmk-gtfs:stop-place:216d37a49e077a81,active,Skály
+ids-jmk-gtfs,ids-jmk-gtfs:U1593N3251,overlay:ids-jmk-gtfs:stop-place:1a0a9c1c70cd39e5,active,Sokolské koupaliště
+ids-jmk-gtfs,ids-jmk-gtfs:U1685N3252,overlay:ids-jmk-gtfs:stop-place:e7d18eaa32b2a041,active,U kotvy
+ids-jmk-gtfs,ids-jmk-gtfs:U1734N3258,overlay:ids-jmk-gtfs:stop-place:ec47b9541386742c,active,"Veverská Bítýška, přístaviště"
+pid-gtfs,group:pid-gtfs:group:1040:pivovarská,overlay:pid-gtfs:stop-place:477a7e8de18c508e,active,Pivovarská
+pid-gtfs,group:pid-gtfs:group:1177:chýně-pivovarský-dvůr,overlay:pid-gtfs:stop-place:8b5d06714021422b,active,"Chýně,Pivovarský dvůr"
+pid-gtfs,group:pid-gtfs:group:1178:chýně,overlay:pid-gtfs:stop-place:472a09f3a89020c1,active,Chýně
+pid-gtfs,group:pid-gtfs:group:1262:dobřejovice-čestlická,overlay:pid-gtfs:stop-place:77b938652bdccd3c,active,"Dobřejovice,Čestlická"
+pid-gtfs,group:pid-gtfs:group:1369:kodymova,overlay:pid-gtfs:stop-place:061a22140b624be7,active,Kodymova
+pid-gtfs,group:pid-gtfs:group:1381:sedlec,overlay:pid-gtfs:stop-place:000394adfe81df20,active,Sedlec
+pid-gtfs,group:pid-gtfs:group:1515:březová-oleško-březová,overlay:pid-gtfs:stop-place:7efc815c12c8ed0e,active,"Březová-Oleško,Březová"
+pid-gtfs,group:pid-gtfs:group:1517:březová-oleško-oleško,overlay:pid-gtfs:stop-place:41ec1f03ed6b0ba6,active,"Březová-Oleško,Oleško"
+pid-gtfs,group:pid-gtfs:group:163:hradčanská-ul-badeniho,overlay:pid-gtfs:stop-place:f5fbf93f22c498fb,active,Hradčanská (ul. Badeniho)
+pid-gtfs,group:pid-gtfs:group:20001:kounice-č-p-129-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:53f5f4bda82938af,active,"Kounice,č.p.129 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20001:kounice-č-p-164-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:b9e1fe14e3089da7,active,"Kounice,č.p.164 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20001:kounice-č-p-341-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:a2b8b5a9a687e4fd,active,"Kounice,č.p.341 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20001:kounice-č-p-365-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:f0e25e92f98fc9b2,active,"Kounice,č.p.365 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20001:kounice-č-p-404-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:6b2627e84c09a5dd,active,"Kounice,č.p.404 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20001:kounice-č-p-412-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:54788bb396ed6341,active,"Kounice,č.p.412 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20001:kounice-č-p-561-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:0093958879641358,active,"Kounice,č.p.561 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20001:kounice-č-p-629-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:d824baf50bdcc555,active,"Kounice,č.p.629 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20009:tuchoraz-č-p-219-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:05e1b9cfa7dab231,active,"Tuchoraz,č.p.219 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20009:tuchoraz-č-p-43-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:d3c3620531f08a0c,active,"Tuchoraz,č.p.43 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-jiřího-wolkera-č-p-1169-nm,overlay:pid-gtfs:stop-place:d51067775e3c2c60,active,"Český Brod,Jiřího Wolkera č.p.1169 NM"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-kounická-č-p-1383-nm,overlay:pid-gtfs:stop-place:e3bae6a0196183d8,active,"Český Brod,Kounická č.p.1383 NM"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-pizzeria-malechov-nm,overlay:pid-gtfs:stop-place:77e02cbe8630bc0a,active,"Český Brod,Pizzeria Malechov NM"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-pod-malým-vrchem-č-p-1508-nm,overlay:pid-gtfs:stop-place:d5377898281fc843,active,"Český Brod,Pod Malým Vrchem č.p.1508 NM"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-ruská-č-p-1079-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:1d8970627105693c,active,"Český Brod,Ruská č.p.1079 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-ruská-č-p-732-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:12810f20ed82f032,active,"Český Brod,Ruská č.p.732 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-tuchorazská-č-p-566-nm,overlay:pid-gtfs:stop-place:b2fc056213368a6f,active,"Český Brod,Tuchorazská č.p.566 NM"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-veterinární-nemocnice-nm,overlay:pid-gtfs:stop-place:bf33fd1ff32f707b,active,"Český Brod,veterinární nemocnice NM"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-úřad-práce-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:7856d743b8a7458f,active,"Český Brod,úřad práce (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20010:český-brod-žítomířská-č-p-758-nm,overlay:pid-gtfs:stop-place:f84ef9e5cb53593e,active,"Český Brod,Žítomířská č.p.758 NM"
+pid-gtfs,group:pid-gtfs:group:20011:český-brod-liblice-lstibořská-č-p-271-nm,overlay:pid-gtfs:stop-place:1c463923d2a5c6a8,active,"Český Brod,Liblice,Lstibořská č.p.271 NM"
+pid-gtfs,group:pid-gtfs:group:20011:český-brod-liblice-na-parcelách-č-p-217-nm,overlay:pid-gtfs:stop-place:a6a9fb72209dfc82,active,"Český Brod,Liblice,Na Parcelách č.p.217 NM"
+pid-gtfs,group:pid-gtfs:group:20012:český-brod-štolmíř-českobrodská-č-p-45-nm,overlay:pid-gtfs:stop-place:83eb5d4e31337dcc,active,"Český Brod,Štolmíř,Českobrodská č.p.45 NM"
+pid-gtfs,group:pid-gtfs:group:20012:český-brod-štolmíř-českobrodská-č-p-76-nm,overlay:pid-gtfs:stop-place:ae5fe539fcb1f257,active,"Český Brod,Štolmíř,Českobrodská č.p.76 NM"
+pid-gtfs,group:pid-gtfs:group:20013:chrášťany-chotouň-č-p-48-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:426f00e830e01b4a,active,"Chrášťany,Chotouň,č.p.48 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20014:chrášťany-č-p-24-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:704ca842e56e7acd,active,"Chrášťany,č.p.24 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20015:pečky-velké-chvalovice-ke-hřišti-č-p-197-nm,overlay:pid-gtfs:stop-place:2d6af175de103425,active,"Pečky,Velké Chvalovice,Ke Hřišti č.p.197 NM"
+pid-gtfs,group:pid-gtfs:group:20016:kouřim-království-otočka-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:9742e87144714b40,active,"Kouřim,Království,otočka (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20016:kouřim-muzeum-kouřimska-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:21162c1c3ddba3b8,active,"Kouřim,Muzeum Kouřimska (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20017:kostelec-n-č-l-jánské-náměstí-nm,overlay:pid-gtfs:stop-place:d3a1d19db0825e7d,active,"Kostelec n.Č.l.,Jánské náměstí NM"
+pid-gtfs,group:pid-gtfs:group:20017:kostelec-n-č-l-k-trativodům-dětské-hřiště-vz-nm,overlay:pid-gtfs:stop-place:0716e45f353fc0fd,active,"Kostelec n.Č.l.,K Trativodům,dětské hřiště (vz NM)"
+pid-gtfs,group:pid-gtfs:group:20017:kostelec-n-č-l-pivovar-nm,overlay:pid-gtfs:stop-place:e148d5d3c37c48c4,active,"Kostelec n.Č.l.,pivovar NM"
+pid-gtfs,group:pid-gtfs:group:20017:kostelec-n-č-l-sportovní-č-p-920-nm,overlay:pid-gtfs:stop-place:920bff987d500d93,active,"Kostelec n.Č.l.,Sportovní č.p.920 NM"
+pid-gtfs,group:pid-gtfs:group:20018:vitice-dobré-pole-hřiště-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:8172fe941eee825d,active,"Vitice,Dobré Pole,hřiště (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20019:vitice-chotýš-zvonička-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:8b4fd83b8e41125a,active,"Vitice,Chotýš,zvonička (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20019:vitice-chotýš-č-p-8-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:b65f796c89e45d94,active,"Vitice,Chotýš,č.p.8 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20020:mrzky-č-p-80-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:fb4f957856242d0d,active,"Mrzky,č.p.80 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20021:vrátkov-obecní-úřad-nm,overlay:pid-gtfs:stop-place:2e1024edfc354166,active,"Vrátkov,obecní úřad NM"
+pid-gtfs,group:pid-gtfs:group:20022:klučov-lstiboř-č-p-85-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:70f3e23b8949befc,active,"Klučov,Lstiboř,č.p.85 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20023:bystřice-božkovice-nm,overlay:pid-gtfs:stop-place:5acc89bc598551c7,active,"Bystřice,Božkovice NM"
+pid-gtfs,group:pid-gtfs:group:20023:bystřice-radošovice-hasičárna-nm,overlay:pid-gtfs:stop-place:dfc187f226444948,active,"Bystřice,Radošovice,hasičárna NM"
+pid-gtfs,group:pid-gtfs:group:20023:bystřice-tožice-hasičárna-nm,overlay:pid-gtfs:stop-place:4423b9e1a5c74505,active,"Bystřice,Tožice,hasičárna NM"
+pid-gtfs,group:pid-gtfs:group:20023:bystřice-zahořany-křižovatka-nm,overlay:pid-gtfs:stop-place:eb3511df1d71e5bd,active,"Bystřice,Zahořany,křižovatka NM"
+pid-gtfs,group:pid-gtfs:group:20024:pečky-dobřichovská-č-p-756-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:cbfa72052ed68533,active,"Pečky,Dobřichovská č.p.756 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20024:pečky-křížův-mlýn-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:1311a09deb800554,active,"Pečky,Křížův mlýn (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20024:pečky-petra-bezruče-č-p-678-nm,overlay:pid-gtfs:stop-place:324826d7fb5a2296,active,"Pečky,Petra Bezruče č.p.678 (NM)"
+pid-gtfs,group:pid-gtfs:group:20024:pečky-třída-jana-švermy-č-p-843-nm,overlay:pid-gtfs:stop-place:c99e74d0999592f7,active,"Pečky,Třída Jana Švermy č.p.843 (NM)"
+pid-gtfs,group:pid-gtfs:group:20025:dobřichov-hřbitov-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:65e83361fb1e92e2,active,"Dobřichov,hřbitov (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20026:radim-č-p-398-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:a5e2c68825428172,active,"Radim,č.p.398 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20026:radim-škola-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:a03867f56330c15f,active,"Radim,škola (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20026:radim-žel-zast-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:1a9cd762cd821634,active,"Radim,žel.zast. (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20027:chotutice-kaple-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:58e622c28c334af1,active,"Chotutice,kaple (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20027:chotutice-obecní-úřad-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:010ca6d2b136c28f,active,"Chotutice,obecní úřad (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20028:plaňany-fügnerova-č-p-336-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:5b3adfd9ad1e0af1,active,"Plaňany,Fügnerova č.p.336 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20028:plaňany-tylova-č-p-207-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:0b73b46d13b534f8,active,"Plaňany,Tylova č.p.207 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20028:plaňany-u-kostela-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:892bb12a87602c60,active,"Plaňany,u kostela (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20028:plaňany-švermova-č-p-255-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:1a28925dd6e6569f,active,"Plaňany,Švermova č.p.255 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20029:ratenice-křížek-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:9cd860cf186f659e,active,"Ratenice,křížek (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20029:ratenice-č-p-217-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:e74815d522da2d48,active,"Ratenice,č.p.217 (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20030:vrbová-lhota-močidlo-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:a4524a6a386873cb,active,"Vrbová Lhota,Močidlo (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:20030:vrbová-lhota-poděbradská-č-p-93-nm,overlay:pid-gtfs:stop-place:25487ef5e6cbaacb,active,"Vrbová Lhota,Poděbradská č.p.93 (NM)"
+pid-gtfs,group:pid-gtfs:group:20030:vrbová-lhota-u-školy-virtuální-zastávka-nm,overlay:pid-gtfs:stop-place:f3de01d5a4765901,active,"Vrbová Lhota,u školy (virtuální zastávka NM)"
+pid-gtfs,group:pid-gtfs:group:2385:horní-kruty-rozcestí,overlay:pid-gtfs:stop-place:6d0dabdeb5a8a1ce,active,Horní Kruty (rozcestí)
+pid-gtfs,group:pid-gtfs:group:2904:ledečko,overlay:pid-gtfs:stop-place:b37d6e701206b147,active,Ledečko
+pid-gtfs,group:pid-gtfs:group:2925:radim,overlay:pid-gtfs:stop-place:c07dac20c222af39,active,Radim
+pid-gtfs,group:pid-gtfs:group:2926:rakovník,overlay:pid-gtfs:stop-place:ddfcef9e28beaf76,active,Rakovník
+pid-gtfs,group:pid-gtfs:group:2940:zalešany,overlay:pid-gtfs:stop-place:a57b99719ee7ab1a,active,Zalešany
+pid-gtfs,group:pid-gtfs:group:2993:císařská-louka,overlay:pid-gtfs:stop-place:aa0c716683995ee2,active,Císařská louka
+pid-gtfs,group:pid-gtfs:group:3005:nemocnice-bulovka,overlay:pid-gtfs:stop-place:d5b7551690bd97cb,active,Nemocnice Bulovka
+pid-gtfs,group:pid-gtfs:group:31698:ledeč-n-sáz-obrvaň,overlay:pid-gtfs:stop-place:ddc5748c3b57eb46,active,"Ledeč n.Sáz.,Obrvaň"
+pid-gtfs,group:pid-gtfs:group:32360:žlutice-zahradnictví,overlay:pid-gtfs:stop-place:2708bad1aea702b4,active,"Žlutice,zahradnictví"
+pid-gtfs,group:pid-gtfs:group:32373:poseč,overlay:pid-gtfs:stop-place:133615fa8f262475,active,Poseč
+pid-gtfs,group:pid-gtfs:group:32632:świeradów-zdrój-długa-granica,overlay:pid-gtfs:stop-place:8c0129e0f4040f83,active,"Świeradów-Zdrój,Długa-granica"
+pid-gtfs,group:pid-gtfs:group:32633:świeradów-zdrój-ulicko-graniczna,overlay:pid-gtfs:stop-place:57e7be03a1cc44db,active,"Świeradów-Zdrój,Ulicko-Graniczna"
+pid-gtfs,group:pid-gtfs:group:32634:świeradów-zdrój-strażacka-tewa,overlay:pid-gtfs:stop-place:840982876e57064c,active,"Świeradów-Zdrój,Strażacka-Tewa"
+pid-gtfs,group:pid-gtfs:group:32635:świeradów-zdrój-strażacka-kolej-gondolowa,overlay:pid-gtfs:stop-place:440fa30873001835,active,"Świeradów-Zdrój,Strażacka-Kolej Gondolowa"
+pid-gtfs,group:pid-gtfs:group:32636:świeradów-zdrój-grundwaldska-urzad-miasta,overlay:pid-gtfs:stop-place:e09cc4f677ef8e1c,active,"Świeradów-Zdrój,Grundwaldska-Urzad Miasta"
+pid-gtfs,group:pid-gtfs:group:32637:świeradów-zdrój-k-s-wyszyńskiego-plac-zabaw,overlay:pid-gtfs:stop-place:b209b646b400a2ad,active,"Świeradów-Zdrój,K.S.Wyszyńskiego-Plac zabaw"
+pid-gtfs,group:pid-gtfs:group:3277:roztoky-nádr,overlay:pid-gtfs:stop-place:6cb33b4250832b49,active,"Roztoky,nádr."
+pid-gtfs,group:pid-gtfs:group:3280:pustověty,overlay:pid-gtfs:stop-place:796103d9ed2b062d,active,Pustověty
+pid-gtfs,group:pid-gtfs:group:3282:chlum-u-rakovníka,overlay:pid-gtfs:stop-place:8c7355685b216a7f,active,Chlum u Rakovníka
+pid-gtfs,group:pid-gtfs:group:331:libeňský-most,overlay:pid-gtfs:stop-place:126cdb56fc4da01f,active,Libeňský most
+pid-gtfs,group:pid-gtfs:group:4100:kotevní,overlay:pid-gtfs:stop-place:b03ed438f07d0032,active,Kotevní
+pid-gtfs,group:pid-gtfs:group:4209:chotutice,overlay:pid-gtfs:stop-place:38ca542cfe86a969,active,Chotutice
+pid-gtfs,group:pid-gtfs:group:4210:chotutice-průběžná,overlay:pid-gtfs:stop-place:2df00a263a788476,active,"Chotutice,Průběžná"
+pid-gtfs,group:pid-gtfs:group:4620:mlýnec,overlay:pid-gtfs:stop-place:5fd56ced3b987892,active,Mlýnec
+pid-gtfs,group:pid-gtfs:group:5054:jičíněves-žitětín-odb-žel-zast,overlay:pid-gtfs:stop-place:5472be395011deb7,active,"Jičíněves,Žitětín,odb.žel.zast."
+pid-gtfs,group:pid-gtfs:group:5056:nemyčeves,overlay:pid-gtfs:stop-place:041c62263a138c8c,active,Nemyčeves
+pid-gtfs,group:pid-gtfs:group:5211:schorova,overlay:pid-gtfs:stop-place:6d293cc5f18b56b0,active,Schorova
+pid-gtfs,group:pid-gtfs:group:553:plzeňka,overlay:pid-gtfs:stop-place:241317e2774633e2,active,Plzeňka
+pid-gtfs,group:pid-gtfs:group:586:olšanská,overlay:pid-gtfs:stop-place:ad9f25a8ebd233e2,active,Olšanská
+pid-gtfs,group:pid-gtfs:group:6593:neustupov-dolní-borek,overlay:pid-gtfs:stop-place:c444c5af81bb68b4,active,"Neustupov,Dolní Borek"
+pid-gtfs,group:pid-gtfs:group:6802:říčany-strašín-bazalková,overlay:pid-gtfs:stop-place:fdbb04d6be4beb2d,active,"Říčany,Strašín,Bazalková"
+pid-gtfs,group:pid-gtfs:group:7309:černíny-zavadilka,overlay:pid-gtfs:stop-place:4ec4c94e886199c2,active,"Černíny,Zavadilka"
+pid-gtfs,group:pid-gtfs:group:7310:černíny,overlay:pid-gtfs:stop-place:6df1e5877f69d889,active,Černíny
+pid-gtfs,group:pid-gtfs:group:7742:načeradec-horní-lhota-u-váhy,overlay:pid-gtfs:stop-place:6c5bd9340271879c,active,"Načeradec,Horní Lhota,u váhy"
+pid-gtfs,group:pid-gtfs:group:7744:načeradec-novotinky,overlay:pid-gtfs:stop-place:5919e2054317b346,active,"Načeradec,Novotinky"
+pid-gtfs,group:pid-gtfs:group:9410:zruč-nad-sázavou,overlay:pid-gtfs:stop-place:486e7b33a17ac7c3,active,Zruč nad Sázavou
+pid-gtfs,group:pid-gtfs:group:9438:hodkov-zast,overlay:pid-gtfs:stop-place:a0b603a53dc61e2b,active,Hodkov zast.
+pid-gtfs,group:pid-gtfs:group:9971:úžice-radvanice-rozc-budín,overlay:pid-gtfs:stop-place:a55da273b3e8aa54,active,"Úžice,Radvanice,rozc.Budín"
