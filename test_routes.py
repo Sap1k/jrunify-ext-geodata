@@ -54,6 +54,11 @@ class RuleValidationTests(unittest.TestCase):
         liberec = {row["licence"] for row in rows if row["agency_id"] == "47311975"}
         self.assertEqual(liberec, {"545002", "545003", "545004", "545005", "545011"})
 
+    def test_arriva_express_markings(self):
+        rows = routes.read_table(Path(__file__).parent / "routes" / "presentation.csv", routes.PRESENTATION_FIELDS)
+        markings = {row["licence"]: row["route_short_name"] for row in rows if row["route_short_name"]}
+        self.assertEqual(markings, {"157710": "AEx (710)", "580916": "AEx (916)", "721341": "AEx (341)"})
+
     def test_mode_rows(self):
         self.assertEqual(routes.validate_modes([mode("915001-915019", public_line="1-19")]), [])
         errors = routes.validate_modes([mode("915001", expected="X", effective="A", reason="")])
