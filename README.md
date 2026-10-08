@@ -135,6 +135,52 @@ the one planned stop-ID break.
 Do not pass the repository root to `fix-jdf -g`. It loads `*.csv`
 recursively, and the registry files are not geodata.
 
+# Route rules
+
+`routes/` holds reviewed corrections of JDF lines. JrUtil reads them in
+`jdf-to-bundle` (`--transport-mode-rules`, `--route-presentation-rules`); the
+presentation rules are applied again after `regional-gtfs-overlay`
+(`--route-presentation-rules`), so they win over regional feed values. Every
+row needs a `reason`.
+
+Rows select routes by `licence` and an optional `agency_id` (IČO):
+
+- `915003`: one licence
+- `915001-915019`: an inclusive range of equally long licences
+- `915*`: a licence prefix; `*` alone matches every licence
+
+The most specific rule wins: a single licence, then a range (narrower first),
+then a prefix (longer first). At equal specificity a rule naming an agency wins.
+Two equally specific rules that can set the same field of one route are an
+error.
+
+- **`transport-modes.csv`**
+  (`agency_id,licence,public_line,expected_mode,effective_mode,reason`) replaces
+  the JDF mode (`A` bus, `E` tram, `T` trolleybus, `L` cable car, `M` metro, `P`
+  ferry). The rule applies only while the source still has `expected_mode` and,
+  when `public_line` (`11` or `1-19`) is given, a numeric public line in it.
+- **`presentation.csv`**
+  (`agency_id,licence,route_short_name,route_color,route_text_color,reason`)
+  overrides the published line marking and colours (six hex digits, no `#`). An
+  empty field keeps the computed value, and each field is resolved on its own,
+  so `915*` can set colours while `915003` renames one line. Regional-overlay
+  route matching still uses the source line marking.
+
+Check changes with `python routes.py`.
+
+# Regional overlay overrides
+
+`overlay/` holds reviewed identity overrides of the regional GTFS overlay
+(`source_namespace,source_id,target_namespace,target_id,valid_from,valid_to,review_note`).
+The overlay policies name these files; Oběhy passes
+`--overrides-root=overlay` to `regional-gtfs-overlay`.
+
+# Filtered JDF rules
+
+`filtered-jdf/rules-v1.json` lists the operators, integrated-system codes and
+line prefixes whose CIS lines the filtered national JDF feed omits because
+regional feeds already publish them.
+
 # Railway sources
 
 ## SR70.csv

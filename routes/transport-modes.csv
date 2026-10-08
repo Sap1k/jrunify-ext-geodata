@@ -1,0 +1,8 @@
+agency_id,licence,public_line,expected_mode,effective_mode,reason
+61974757,915001-915019,1-19,A,E,Reviewed Dopravni podnik Ostrava tram route family
+61974757,915101-915113,101-113,A,T,Reviewed Dopravni podnik Ostrava trolleybus route family
+47311975,545002,2,A,E,Confirmed by the DPMLJ regional GTFS route
+47311975,545003,3,A,E,Confirmed by the DPMLJ regional GTFS route
+47311975,545004,4,A,E,Confirmed by the DPMLJ regional GTFS route
+47311975,545005,5,A,E,Confirmed by the DPMLJ regional GTFS route
+47311975,545011,11,A,E,Confirmed by the DPMLJ regional GTFS route
