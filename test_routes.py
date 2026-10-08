@@ -49,6 +49,11 @@ class RuleValidationTests(unittest.TestCase):
     def test_checked_in_rules_are_valid(self):
         self.assertEqual(routes.validate_directory(Path(__file__).parent / "routes"), [])
 
+    def test_liberec_replacement_buses_stay_buses(self):
+        rows = routes.read_table(Path(__file__).parent / "routes" / "transport-modes.csv", routes.MODE_FIELDS)
+        liberec = {row["licence"] for row in rows if row["agency_id"] == "47311975"}
+        self.assertEqual(liberec, {"545002", "545003", "545004", "545005", "545011"})
+
     def test_mode_rows(self):
         self.assertEqual(routes.validate_modes([mode("915001-915019", public_line="1-19")]), [])
         errors = routes.validate_modes([mode("915001", expected="X", effective="A", reason="")])
