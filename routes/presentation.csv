@@ -1,7 +1,7 @@
 agency_id,licence,route_short_name,route_color,route_text_color,reason
-27229131,157710,AEx (710),007c99,ffffff,Arriva Express (RT linkNumberAlias AEx)
-27229131,580916,AEx (916),007c99,ffffff,Arriva Express (RT linkNumberAlias AEx)
-25945408,721341,AEx (341),007c99,ffffff,Arriva Express (RT linkNumberAlias AEx)
+27229131,157710,AEx,1c1745,03eafc,Arriva Express (RT linkNumberAlias AEx)
+27229131,580916,AEx,1c1745,03eafc,Arriva Express (RT linkNumberAlias AEx)
+25945408,721341,AEx,1c1745,03eafc,Arriva Express (RT linkNumberAlias AEx)
 17196264,*,,283286,ffce00,Městská doprava Teplice livery
 ,001401,,00843d,ffffff,DÚK line 401 (jr.kr-ustecky.cz)
 ,001435,,00843d,ffffff,DÚK line 435 (jr.kr-ustecky.cz)

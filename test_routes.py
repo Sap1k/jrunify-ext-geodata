@@ -57,7 +57,7 @@ class RuleValidationTests(unittest.TestCase):
     def test_arriva_express_markings(self):
         rows = routes.read_table(Path(__file__).parent / "routes" / "presentation.csv", routes.PRESENTATION_FIELDS)
         markings = {row["licence"]: row["route_short_name"] for row in rows if row["route_short_name"]}
-        self.assertEqual(markings, {"157710": "AEx (710)", "580916": "AEx (916)", "721341": "AEx (341)"})
+        self.assertEqual(markings, {"157710": "AEx", "580916": "AEx", "721341": "AEx"})
 
     def test_mode_rows(self):
         self.assertEqual(routes.validate_modes([mode("915001-915019", public_line="1-19")]), [])
