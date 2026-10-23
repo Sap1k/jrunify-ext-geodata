@@ -1,0 +1,523 @@
+vehicle_id,source,source_vehicle_id,valid_from,valid_to,manufacturer,model,mode,fleet_number,operator,year,low_floor,contactless_payment,air_conditioning,alternative_fuel,usb
+duk:100,duk,100,,,Iveco,Crossway LE LINE 13M,bus,100,AKV bus,2014,true,false,true,false,false
+duk:101,duk,101,,,Iveco,Crossway LE LINE 13M,bus,101,AKV bus,2014,true,false,true,false,false
+duk:102,duk,102,,,Iveco,Crossway LE LINE 13M,bus,102,AKV bus,2014,true,false,true,false,false
+duk:103,duk,103,,,Iveco,Crossway LE LINE 13M,bus,103,AKV bus,2014,true,false,true,false,false
+duk:104,duk,104,,,Iveco,Crossway LE LINE 13M,bus,104,AKV bus,2014,true,false,true,false,false
+duk:106,duk,106,,,Iveco,Crossway LE LINE 13M,bus,106,AKV bus,2014,true,false,true,false,false
+duk:107,duk,107,,,Iveco,Crossway LE LINE 13M,bus,107,AKV bus,2014,true,false,true,false,false
+duk:108,duk,108,,,Iveco,Crossway LE LINE 13M,bus,108,AKV bus,2014,true,false,true,false,false
+duk:109,duk,109,,,Iveco,Crossway LE LINE 13M,bus,109,AKV bus,2014,true,false,true,false,false
+duk:110,duk,110,,,Iveco,Crossway LE LINE 13M,bus,110,AKV bus,2014,true,false,true,false,false
+duk:111,duk,111,,,Iveco,Crossway LE LINE 13M,bus,111,AKV bus,2014,true,false,true,false,false
+duk:112,duk,112,,,Iveco,Crossway LE LINE 13M,bus,112,AKV bus,2014,true,false,true,false,false
+duk:113,duk,113,,,Iveco,Crossway LE LINE 13M,bus,113,AKV bus,2014,true,false,true,false,false
+duk:114,duk,114,,,Iveco,Crossway LE LINE 13M,bus,114,AKV bus,2014,true,false,true,false,false
+duk:115,duk,115,,,Iveco,Crossway LE LINE 13M,bus,115,AKV bus,2014,true,false,true,false,false
+duk:116,duk,116,,,Iveco,Crossway LE LINE 13M,bus,116,AKV bus,2014,true,false,true,false,false
+duk:117,duk,117,,,Iveco,Crossway LE LINE 13M,bus,117,AKV bus,2014,true,false,true,false,false
+duk:118,duk,118,,,Iveco,Crossway LE LINE 13M,bus,118,AKV bus,2014,true,false,true,false,false
+duk:119,duk,119,,,Iveco,Crossway LE LINE 13M,bus,119,AKV bus,2014,true,false,true,false,false
+duk:120,duk,120,,,Iveco,Crossway LE LINE 13M,bus,120,AKV bus,2014,true,false,true,false,false
+duk:121,duk,121,,,Iveco,Crossway LE LINE 13M,bus,121,AKV bus,2014,true,false,true,false,false
+duk:122,duk,122,,,Iveco,Crossway LE LINE 13M,bus,122,AKV bus,2014,true,false,true,false,false
+duk:123,duk,123,,,Iveco,Crossway LE LINE 13M,bus,123,AKV bus,2014,true,false,true,false,false
+duk:124,duk,124,,,SOR,CN 8.5,bus,124,AKV bus,2014,true,false,true,false,false
+duk:125,duk,125,,,SOR,CN 12,bus,125,AKV bus,2014,true,false,true,false,false
+duk:126,duk,126,,,SOR,CN 10.5,bus,126,AKV bus,2014,true,false,true,false,false
+duk:127,duk,127,,,SOR,CN 10.5,bus,127,AKV bus,2014,true,false,true,false,false
+duk:128,duk,128,,,SOR,CN 10.5,bus,128,AKV bus,2014,true,false,true,false,false
+duk:129,duk,129,,,SOR,CN 10.5,bus,129,AKV bus,2014,true,false,true,false,false
+duk:130,duk,130,,,SOR,CN 10.5,bus,130,AKV bus,2014,true,false,true,false,false
+duk:131,duk,131,,,SOR,CN 10.5,bus,131,AKV bus,2014,true,false,true,false,false
+duk:132,duk,132,,,SOR,CN 10.5,bus,132,AKV bus,2014,true,false,true,false,false
+duk:133,duk,133,,,SOR,CN 12,bus,133,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:134,duk,134,,,SOR,CN 12,bus,134,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:135,duk,135,,,SOR,CN 12,bus,135,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:136,duk,136,,,SOR,CN 12,bus,136,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:137,duk,137,,,SOR,CN 12,bus,137,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:138,duk,138,,,SOR,CN 12,bus,138,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:139,duk,139,,,SOR,CN 12,bus,139,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:140,duk,140,,,SOR,CN 12,bus,140,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:141,duk,141,,,SOR,CN 12,bus,141,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:142,duk,142,,,SOR,CN 12,bus,142,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:143,duk,143,,,SOR,CN 12,bus,143,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:144,duk,144,,,SOR,CN 12,bus,144,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:145,duk,145,,,SOR,CN 12,bus,145,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:146,duk,146,,,SOR,CN 12,bus,146,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:147,duk,147,,,SOR,CN 12,bus,147,AKV bus,2014,true,false,true,false,false
+duk:148,duk,148,,,SOR,CN 12,bus,148,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:149,duk,149,,,SOR,CN 12,bus,149,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:150,duk,150,,,SOR,CN 12,bus,150,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:151,duk,151,,,SOR,CN 12,bus,151,AKV bus,2014,true,false,true,false,false
+duk:152,duk,152,,,SOR,CN 8.5,bus,152,AKV bus,2014,true,false,true,false,false
+duk:153,duk,153,,,SOR,CN 12,bus,153,AKV bus,2014,true,false,true,false,false
+duk:154,duk,154,,,SOR,CN 12,bus,154,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:155,duk,155,,,SOR,CN 12,bus,155,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:156,duk,156,,,SOR,CN 12,bus,156,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:158,duk,158,,,SOR,CN 9.5,bus,158,Dopravní společnost Ústeckého kraje,2013,true,false,true,false,false
+duk:160,duk,160,,,SOR,CN 9.5,bus,160,Dopravní společnost Ústeckého kraje,2013,true,false,true,false,false
+duk:161,duk,161,,,Iveco,Crossway LE LINE 12M,bus,161,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:162,duk,162,,,Iveco,Crossway LE LINE 12M,bus,162,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:163,duk,163,,,Iveco,Crossway LE LINE 12M,bus,163,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:164,duk,164,,,Iveco,Crossway LE LINE 12M,bus,164,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:165,duk,165,,,Iveco,Crossway LE LINE 12M,bus,165,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:166,duk,166,,,Iveco,Crossway LE LINE 12M,bus,166,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:167,duk,167,,,Iveco,Crossway LE LINE 12M,bus,167,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:168,duk,168,,,Iveco,Crossway LE LINE 12M,bus,168,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:169,duk,169,,,Iveco,Crossway LE LINE 12M,bus,169,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:170,duk,170,,,Iveco,Crossway LE LINE 12M,bus,170,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:171,duk,171,,,Iveco,Crossway LE LINE 12M,bus,171,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:172,duk,172,,,Iveco,Crossway LE LINE 12M,bus,172,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:173,duk,173,,,Iveco,Crossway LE LINE 12M,bus,173,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:174,duk,174,,,Iveco,Crossway LE LINE 12M,bus,174,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:175,duk,175,,,Iveco,Crossway LE LINE 12M,bus,175,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:176,duk,176,,,Iveco,Crossway LE LINE 12M,bus,176,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:177,duk,177,,,Iveco,Crossway LE LINE 12M,bus,177,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:178,duk,178,,,Iveco,Crossway LE LINE 12M,bus,178,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:179,duk,179,,,Iveco,Crossway LE LINE 12M,bus,179,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:187,duk,187,,,SOR,CN 12,bus,187,AKV bus,2010,true,false,false,false,false
+duk:189,duk,189,,,SOR,CN 9.5,bus,189,AKV bus,2011,true,false,true,false,false
+duk:190,duk,190,,,SOR,BN 9.5,bus,190,AKV bus,2008,true,false,false,false,false
+duk:194,duk,194,,,Irisbus,Crossway LE 12M,bus,194,AKV bus,2010,true,false,false,false,false
+duk:196,duk,196,,,Irisbus,Crossway LE 12.8M,bus,196,AKV bus,2009,true,false,true,false,false
+duk:197,duk,197,,,Irisbus,Crossway LE 12.8M,bus,197,AKV bus,2009,true,false,true,false,false
+duk:198,duk,198,,,SOR,CN 12,bus,198,AKV bus,2007,true,false,false,false,false
+duk:201,duk,201,,,SOR,CN 12,bus,201,AKV bus,2022,true,true,true,false,true
+duk:202,duk,202,,,SOR,CN 12,bus,202,AKV bus,2022,true,true,true,false,true
+duk:203,duk,203,,,SOR,CN 12,bus,203,AKV bus,2022,true,true,true,false,true
+duk:204,duk,204,,,SOR,CN 12,bus,204,AKV bus,2022,true,true,true,false,true
+duk:205,duk,205,,,SOR,CN 12,bus,205,AKV bus,2022,true,true,true,false,true
+duk:206,duk,206,,,SOR,CN 12,bus,206,AKV bus,2022,true,true,true,false,true
+duk:207,duk,207,,,SOR,CN 12,bus,207,AKV bus,2022,true,true,true,false,true
+duk:208,duk,208,,,SOR,CN 12,bus,208,AKV bus,2022,true,true,true,false,true
+duk:209,duk,209,,,SOR,CN 12,bus,209,AKV bus,2022,true,true,true,false,true
+duk:210,duk,210,,,SOR,CN 12,bus,210,AKV bus,2022,true,true,true,false,true
+duk:211,duk,211,,,SOR,CN 12,bus,211,AKV bus,2022,true,true,true,false,true
+duk:212,duk,212,,,SOR,CN 12,bus,212,AKV bus,2022,true,true,true,false,true
+duk:213,duk,213,,,SOR,CN 12,bus,213,AKV bus,2022,true,true,true,false,true
+duk:214,duk,214,,,SOR,CN 12,bus,214,AKV bus,2022,true,true,true,false,true
+duk:215,duk,215,,,SOR,CN 12,bus,215,AKV bus,2022,true,true,true,false,true
+duk:218,duk,218,,,SOR,CN 9.5,bus,218,Dopravní společnost Ústeckého kraje,2013,true,false,true,false,false
+duk:229,duk,229,,,ROŠERO-P,First FCLLI,bus,229,Dopravní společnost Ústeckého kraje,2014,true,false,false,false,false
+duk:242,duk,242,,,Setra,S 416 LE Business,bus,242,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:243,duk,243,,,Setra,S 416 LE Business,bus,243,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:244,duk,244,,,Setra,S 415 LE Business,bus,244,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:245,duk,245,,,Setra,S 415 LE Business,bus,245,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:246,duk,246,,,Setra,S 415 LE Business,bus,246,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:247,duk,247,,,Setra,S 415 LE Business,bus,247,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:248,duk,248,,,Setra,S 415 LE Business,bus,248,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:249,duk,249,,,Setra,S 415 LE Business,bus,249,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:250,duk,250,,,Setra,S 415 LE Business,bus,250,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:251,duk,251,,,Setra,S 415 LE Business,bus,251,ČSAD Slaný,2016,true,true,true,false,false
+duk:252,duk,252,,,Setra,S 415 LE Business,bus,252,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:253,duk,253,,,Setra,S 415 LE Business,bus,253,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:254,duk,254,,,Setra,S 415 LE Business,bus,254,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:255,duk,255,,,Setra,S 415 LE Business,bus,255,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:256,duk,256,,,Setra,S 415 LE Business,bus,256,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:257,duk,257,,,Setra,S 415 LE Business,bus,257,ČSAD Slaný,2016,true,true,true,false,false
+duk:258,duk,258,,,Setra,S 415 LE Business,bus,258,Dopravní společnost Ústeckého kraje,2016,true,false,true,false,false
+duk:259,duk,259,,,Setra,S 416 LE Business,bus,259,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:260,duk,260,,,Setra,S 416 LE Business,bus,260,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:261,duk,261,,,Setra,S 416 LE Business,bus,261,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:262,duk,262,,,Setra,S 416 LE Business,bus,262,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:263,duk,263,,,Setra,S 416 LE Business,bus,263,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:264,duk,264,,,Setra,S 416 LE Business,bus,264,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:265,duk,265,,,Setra,S 416 LE Business,bus,265,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:266,duk,266,,,Setra,S 416 LE Business,bus,266,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:267,duk,267,,,Setra,S 416 LE Business,bus,267,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:268,duk,268,,,Setra,S 416 LE Business,bus,268,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:269,duk,269,,,Setra,S 416 LE Business,bus,269,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:270,duk,270,,,Setra,S 416 LE Business,bus,270,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:271,duk,271,,,Setra,S 416 LE Business,bus,271,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:272,duk,272,,,Setra,S 416 LE Business,bus,272,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:273,duk,273,,,Setra,S 416 LE Business,bus,273,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:274,duk,274,,,Setra,S 416 LE Business,bus,274,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:275,duk,275,,,Setra,S 416 LE Business,bus,275,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:276,duk,276,,,Setra,S 416 LE Business,bus,276,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:277,duk,277,,,Setra,S 416 LE Business,bus,277,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:278,duk,278,,,Setra,S 416 LE Business,bus,278,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:279,duk,279,,,Setra,S 416 LE Business,bus,279,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:280,duk,280,,,Setra,S 416 LE Business,bus,280,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:281,duk,281,,,Setra,S 416 LE Business,bus,281,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:282,duk,282,,,Setra,S 416 LE Business,bus,282,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:283,duk,283,,,Setra,S 416 LE Business,bus,283,Dopravní společnost Ústeckého kraje,2017,true,false,true,false,false
+duk:313,duk,313,,,SOR,CN 10.5,bus,313,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:315,duk,315,,,SOR,CN 10.5,bus,315,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:316,duk,316,,,SOR,CN 10.5,bus,316,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:318,duk,318,,,SOR,CN 10.5,bus,318,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:319,duk,319,,,SOR,CN 10.5,bus,319,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:320,duk,320,,,SOR,CN 10.5,bus,320,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:325,duk,325,,,SOR,CN 9.5,bus,325,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:326,duk,326,,,SOR,CN 9.5,bus,326,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:327,duk,327,,,SOR,CN 9.5,bus,327,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:328,duk,328,,,SOR,CN 9.5,bus,328,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:329,duk,329,,,SOR,CN 9.5,bus,329,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:330,duk,330,,,SOR,CN 10.5,bus,330,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:331,duk,331,,,SOR,CN 9.5,bus,331,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:333,duk,333,,,Iveco,Crossway LE LINE 10.8M,bus,333,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:334,duk,334,,,Iveco,Crossway LE LINE 10.8M,bus,334,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:371,duk,371,,,Solaris,Urbino 15 III LE,bus,371,Dopravní společnost Ústeckého kraje,2014,true,true,true,false,false
+duk:379,duk,379,,,Iveco,Crossway LE LINE 10.8M,bus,379,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:380,duk,380,,,Iveco,Crossway LE LINE 10.8M,bus,380,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:382,duk,382,,,Iveco,Crossway LE LINE 10.8M,bus,382,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:383,duk,383,,,Iveco,Crossway LE LINE 10.8M,bus,383,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:384,duk,384,,,Iveco,Crossway LE LINE 10.8M,bus,384,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:385,duk,385,,,Iveco,Crossway LE LINE 10.8M,bus,385,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:388,duk,388,,,Iveco,Crossway LE LINE 10.8M,bus,388,Autobusová doprava Podbořany,2014,true,false,true,false,false
+duk:392,duk,392,,,SOR,CN 9.5,bus,392,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:393,duk,393,,,SOR,CN 9.5,bus,393,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:394,duk,394,,,SOR,CN 9.5,bus,394,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:395,duk,395,,,Iveco,Crossway LE LINE 10.8M,bus,395,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:396,duk,396,,,SOR,CN 9.5,bus,396,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:397,duk,397,,,SOR,CN 9.5,bus,397,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:398,duk,398,,,SOR,CN 9.5,bus,398,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:399,duk,399,,,SOR,CN 9.5,bus,399,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:400,duk,400,,,SOR,CN 9.5,bus,400,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:401,duk,401,,,SOR,CN 9.5,bus,401,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:403,duk,403,,,Iveco,Crossway LE LINE 10.8M,bus,403,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:404,duk,404,,,Iveco,Crossway LE LINE 10.8M,bus,404,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:405,duk,405,,,SOR,CN 9.5,bus,405,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:406,duk,406,,,Iveco,Crossway LE LINE 10.8M,bus,406,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:407,duk,407,,,Iveco,Crossway LE LINE 10.8M,bus,407,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:408,duk,408,,,Iveco,Crossway LE LINE 10.8M,bus,408,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:411,duk,411,,,Setra,S 415 LE Business,bus,411,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:412,duk,412,,,Setra,S 415 LE Business,bus,412,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:413,duk,413,,,Setra,S 415 LE Business,bus,413,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:414,duk,414,,,Setra,S 415 LE Business,bus,414,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:415,duk,415,,,Setra,S 415 LE Business,bus,415,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:416,duk,416,,,Setra,S 415 LE Business,bus,416,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:417,duk,417,,,Setra,S 415 LE Business,bus,417,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:418,duk,418,,,Setra,S 415 LE Business,bus,418,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:419,duk,419,,,Setra,S 415 LE Business,bus,419,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:420,duk,420,,,Setra,S 415 LE Business,bus,420,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:421,duk,421,,,Setra,S 415 LE Business,bus,421,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:422,duk,422,,,Setra,S 415 LE Business,bus,422,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:423,duk,423,,,Setra,S 415 LE Business,bus,423,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:424,duk,424,,,Setra,S 415 LE Business,bus,424,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:425,duk,425,,,Setra,S 415 LE Business,bus,425,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:426,duk,426,,,Setra,S 415 LE Business,bus,426,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:427,duk,427,,,Setra,S 415 LE Business,bus,427,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:428,duk,428,,,Setra,S 415 LE Business,bus,428,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:429,duk,429,,,Setra,S 415 LE Business,bus,429,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:430,duk,430,,,Setra,S 415 LE Business,bus,430,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:431,duk,431,,,Setra,S 415 LE Business,bus,431,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:432,duk,432,,,Setra,S 415 LE Business,bus,432,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:433,duk,433,,,Setra,S 415 LE Business,bus,433,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:434,duk,434,,,Setra,S 415 LE Business,bus,434,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:435,duk,435,,,Setra,S 415 LE Business,bus,435,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:436,duk,436,,,Setra,S 415 LE Business,bus,436,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:437,duk,437,,,Setra,S 415 LE Business,bus,437,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:438,duk,438,,,Setra,S 415 LE Business,bus,438,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:439,duk,439,,,Setra,S 415 LE Business,bus,439,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:440,duk,440,,,Setra,S 415 LE Business,bus,440,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:441,duk,441,,,Setra,S 415 LE Business,bus,441,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:442,duk,442,,,Setra,S 415 LE Business,bus,442,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:443,duk,443,,,Setra,S 415 LE Business,bus,443,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:444,duk,444,,,Setra,S 415 LE Business,bus,444,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:445,duk,445,,,Setra,S 415 LE Business,bus,445,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:446,duk,446,,,Setra,S 415 LE Business,bus,446,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:447,duk,447,,,Setra,S 415 LE Business,bus,447,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:448,duk,448,,,Setra,S 415 LE Business,bus,448,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:449,duk,449,,,Setra,S 415 LE Business,bus,449,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:450,duk,450,,,Setra,S 415 LE Business,bus,450,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:451,duk,451,,,Setra,S 415 LE Business,bus,451,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:452,duk,452,,,Setra,S 415 LE Business,bus,452,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:453,duk,453,,,Setra,S 415 LE Business,bus,453,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:454,duk,454,,,Setra,S 415 LE Business,bus,454,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:455,duk,455,,,Setra,S 415 LE Business,bus,455,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:456,duk,456,,,Setra,S 415 LE Business,bus,456,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:457,duk,457,,,Setra,S 415 LE Business,bus,457,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:458,duk,458,,,Setra,S 415 LE Business,bus,458,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:459,duk,459,,,Setra,S 415 LE Business,bus,459,UMBRELLA CITY LINES,2022,true,true,true,false,true
+duk:470,duk,470,,,SOR,CN 10.5,bus,470,Autobusová doprava Podbořany,2009,true,false,false,false,false
+duk:494,duk,494,,,Iveco,Crossway LE LINE 12M,bus,494,Dopravní společnost Ústeckého kraje,2014,true,false,true,false,false
+duk:496,duk,496,,,Solaris,Urbino 12 III,bus,496,Dopravní společnost Ústeckého kraje,2006,true,false,false,false,false
+duk:501,duk,501,,,Scania,Citywide LE 12M,bus,501,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:502,duk,502,,,Scania,Citywide LE 12M,bus,502,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:503,duk,503,,,Scania,Citywide LE 12M,bus,503,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:504,duk,504,,,Scania,Citywide LE 12M,bus,504,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:505,duk,505,,,Scania,Citywide LE 12M,bus,505,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:506,duk,506,,,Scania,Citywide LE 12M,bus,506,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:507,duk,507,,,Scania,Citywide LE 12M,bus,507,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:508,duk,508,,,Scania,Citywide LE 12M,bus,508,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:509,duk,509,,,Scania,Citywide LE 12M,bus,509,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:510,duk,510,,,Scania,Citywide LE 12M,bus,510,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:511,duk,511,,,Scania,Citywide LE 12M,bus,511,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:512,duk,512,,,Scania,Citywide LE 12M,bus,512,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:513,duk,513,,,Scania,Citywide LE 12M,bus,513,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:514,duk,514,,,Scania,Citywide LE 12M,bus,514,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:515,duk,515,,,Scania,Citywide LE 12M,bus,515,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:516,duk,516,,,Scania,Citywide LE 12M,bus,516,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:517,duk,517,,,Scania,Citywide LE 12M,bus,517,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:518,duk,518,,,Scania,Citywide LE 12M,bus,518,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:519,duk,519,,,Scania,Citywide LE 12M,bus,519,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:520,duk,520,,,Scania,Citywide LE 12M,bus,520,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:521,duk,521,,,Scania,Citywide LE 12M,bus,521,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:522,duk,522,,,Scania,Citywide LE 12M,bus,522,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:523,duk,523,,,Scania,Citywide LE 12M,bus,523,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:524,duk,524,,,Scania,Citywide LE 12M,bus,524,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:525,duk,525,,,Scania,Citywide LE 12M,bus,525,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:526,duk,526,,,Scania,Citywide LE 12M,bus,526,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:527,duk,527,,,Scania,Citywide LE 12M,bus,527,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:528,duk,528,,,Scania,Citywide LE 12M,bus,528,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:529,duk,529,,,Scania,Citywide LE 12M,bus,529,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:530,duk,530,,,Scania,Citywide LE 12M,bus,530,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:531,duk,531,,,Scania,Citywide LE 12M,bus,531,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:532,duk,532,,,Scania,Citywide LE 12M,bus,532,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:533,duk,533,,,Scania,Citywide LE 12M,bus,533,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:534,duk,534,,,Scania,Citywide LE 12M,bus,534,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:535,duk,535,,,Scania,Citywide LE 12M,bus,535,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:536,duk,536,,,Scania,Citywide LE 12M,bus,536,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:537,duk,537,,,Scania,Citywide LE 12M,bus,537,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:538,duk,538,,,Scania,Citywide LE 12M,bus,538,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:539,duk,539,,,Scania,Citywide LE 12M,bus,539,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:540,duk,540,,,Scania,Citywide LE 12M,bus,540,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:541,duk,541,,,Scania,Citywide LE 12M,bus,541,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:542,duk,542,,,Scania,Citywide LE 12M,bus,542,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:543,duk,543,,,Scania,Citywide LE 12M,bus,543,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:544,duk,544,,,Scania,Citywide LE 12M,bus,544,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:545,duk,545,,,Scania,Citywide LE 12M,bus,545,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:546,duk,546,,,Scania,Citywide LE 12M,bus,546,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:547,duk,547,,,Scania,Citywide LE 12M,bus,547,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:548,duk,548,,,Scania,Citywide LE 12M,bus,548,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:549,duk,549,,,Scania,Citywide LE 12M,bus,549,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:550,duk,550,,,Scania,Citywide LE 12M,bus,550,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:551,duk,551,,,Scania,Citywide LE 12M,bus,551,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:552,duk,552,,,Scania,Citywide LE 12M,bus,552,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:553,duk,553,,,Scania,Citywide LE 12M,bus,553,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:554,duk,554,,,Scania,Citywide LE 12M,bus,554,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:555,duk,555,,,Scania,Citywide LE 12M,bus,555,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:556,duk,556,,,Scania,Citywide LE 12M,bus,556,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:557,duk,557,,,Scania,Citywide LE 12M,bus,557,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:558,duk,558,,,Scania,Citywide LE 12M,bus,558,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:559,duk,559,,,Scania,Citywide LE 12M,bus,559,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:560,duk,560,,,Scania,Citywide LE 12M,bus,560,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:561,duk,561,,,Scania,Citywide LE 12M,bus,561,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:562,duk,562,,,Scania,Citywide LE 12M,bus,562,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:563,duk,563,,,Scania,Citywide LE 12M,bus,563,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:564,duk,564,,,Scania,Citywide LE 12M,bus,564,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:565,duk,565,,,Scania,Citywide LE 12M,bus,565,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:566,duk,566,,,Scania,Citywide LE 12M,bus,566,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:567,duk,567,,,Scania,Citywide LE 12M,bus,567,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:568,duk,568,,,Scania,Citywide LE 12M,bus,568,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:569,duk,569,,,Scania,Citywide LE 12M,bus,569,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:570,duk,570,,,Scania,Citywide LE 12M,bus,570,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:571,duk,571,,,Scania,Citywide LE 12M,bus,571,Dopravní společnost Ústeckého kraje,2019,true,true,true,false,true
+duk:601,duk,601,,,Iveco,Crossway LE LINE 13M,bus,601,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:602,duk,602,,,Iveco,Crossway LE LINE 13M,bus,602,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:603,duk,603,,,Iveco,Crossway LE LINE 13M,bus,603,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:604,duk,604,,,Iveco,Crossway LE LINE 13M,bus,604,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:605,duk,605,,,Iveco,Crossway LE LINE 13M,bus,605,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:606,duk,606,,,Iveco,Crossway LE LINE 13M,bus,606,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:607,duk,607,,,Iveco,Crossway LE LINE 13M,bus,607,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:608,duk,608,,,Iveco,Crossway LE LINE 13M,bus,608,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:609,duk,609,,,Iveco,Crossway LE LINE 13M,bus,609,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:610,duk,610,,,Iveco,Crossway LE LINE 13M,bus,610,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:611,duk,611,,,Iveco,Crossway LE LINE 13M,bus,611,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:612,duk,612,,,Iveco,Crossway LE LINE 13M,bus,612,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:613,duk,613,,,Iveco,Crossway LE LINE 13M,bus,613,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:614,duk,614,,,Iveco,Crossway LE LINE 13M,bus,614,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:615,duk,615,,,Iveco,Crossway LE LINE 13M,bus,615,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:616,duk,616,,,Iveco,Crossway LE LINE 13M,bus,616,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:617,duk,617,,,Iveco,Crossway LE LINE 13M,bus,617,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:618,duk,618,,,Iveco,Crossway LE LINE 13M,bus,618,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:619,duk,619,,,Iveco,Crossway LE LINE 13M,bus,619,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:620,duk,620,,,Iveco,Crossway LE LINE 13M,bus,620,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:621,duk,621,,,Iveco,Crossway LE LINE 13M,bus,621,Dopravní společnost Ústeckého kraje,2024,true,true,true,false,true
+duk:622,duk,622,,,Iveco,Crossway LE LINE 13M,bus,622,Dopravní společnost Ústeckého kraje,2024,true,true,true,false,true
+duk:661,duk,661,,,Iveco,Crossway LE LINE 14.5M,bus,661,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:662,duk,662,,,Iveco,Crossway LE LINE 14.5M,bus,662,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:663,duk,663,,,Iveco,Crossway LE LINE 14.5M,bus,663,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:664,duk,664,,,Iveco,Crossway LE LINE 14.5M,bus,664,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:665,duk,665,,,Iveco,Crossway LE LINE 14.5M,bus,665,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:666,duk,666,,,Iveco,Crossway LE LINE 14.5M,bus,666,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:667,duk,667,,,Iveco,Crossway LE LINE 14.5M,bus,667,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:668,duk,668,,,Iveco,Crossway LE LINE 14.5M,bus,668,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:669,duk,669,,,Iveco,Crossway LE LINE 14.5M,bus,669,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:670,duk,670,,,Iveco,Crossway LE LINE 14.5M,bus,670,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:671,duk,671,,,Iveco,Crossway LE LINE 14.5M,bus,671,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:672,duk,672,,,Iveco,Crossway LE LINE 14.5M,bus,672,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:673,duk,673,,,Iveco,Crossway LE LINE 14.5M,bus,673,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:674,duk,674,,,Iveco,Crossway LE LINE 14.5M,bus,674,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:675,duk,675,,,Iveco,Crossway LE LINE 14.5M,bus,675,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:676,duk,676,,,Iveco,Crossway LE LINE 14.5M,bus,676,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:677,duk,677,,,Iveco,Crossway LE LINE 14.5M,bus,677,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:678,duk,678,,,Iveco,Crossway LE LINE 14.5M,bus,678,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:679,duk,679,,,Iveco,Crossway LE LINE 14.5M,bus,679,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:680,duk,680,,,Iveco,Crossway LE LINE 14.5M,bus,680,Dopravní společnost Ústeckého kraje,2022,true,true,true,false,true
+duk:691,duk,691,,,Dekstra,LE 37,bus,691,Dopravní společnost Ústeckého kraje,2021,true,true,true,false,false
+duk:692,duk,692,,,Dekstra,LE 37,bus,692,Dopravní společnost Ústeckého kraje,2021,true,true,true,false,false
+duk:693,duk,693,,,ROŠERO-P,First FCLLI,bus,693,Dopravní společnost Ústeckého kraje,2024,true,true,true,false,true
+duk:694,duk,694,,,ROŠERO-P,First FCLLI,bus,694,Dopravní společnost Ústeckého kraje,2024,true,true,true,false,true
+duk:695,duk,695,,,ROŠERO-P,First FCLLI,bus,695,Dopravní společnost Ústeckého kraje,2024,true,true,true,false,true
+duk:740,duk,740,,,Setra,S 415 LE Business,bus,740,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:741,duk,741,,,Setra,S 415 LE Business,bus,741,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:742,duk,742,,,Setra,S 415 LE Business,bus,742,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:743,duk,743,,,Setra,S 415 LE Business,bus,743,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:744,duk,744,,,Setra,S 415 LE Business,bus,744,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:745,duk,745,,,Setra,S 415 LE Business,bus,745,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:746,duk,746,,,Setra,S 415 LE Business,bus,746,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:747,duk,747,,,Setra,S 415 LE Business,bus,747,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:748,duk,748,,,Setra,S 415 LE Business,bus,748,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:749,duk,749,,,Setra,S 415 LE Business,bus,749,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:750,duk,750,,,Setra,S 415 LE Business,bus,750,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:751,duk,751,,,Iveco,Crossway LE LINE 12M,bus,751,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:752,duk,752,,,Iveco,Crossway LE LINE 12M,bus,752,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:753,duk,753,,,Iveco,Crossway LE LINE 12M,bus,753,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:754,duk,754,,,Iveco,Crossway LE LINE 12M,bus,754,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:755,duk,755,,,Iveco,Crossway LE LINE 12M,bus,755,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:756,duk,756,,,Iveco,Crossway LE LINE 12M,bus,756,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:757,duk,757,,,Iveco,Crossway LE LINE 12M,bus,757,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:771,duk,771,,,Setra,S 418 LE Business,bus,771,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:772,duk,772,,,Setra,S 418 LE Business,bus,772,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:773,duk,773,,,Setra,S 418 LE Business,bus,773,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:774,duk,774,,,Setra,S 418 LE Business,bus,774,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:775,duk,775,,,Setra,S 418 LE Business,bus,775,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:776,duk,776,,,Setra,S 418 LE Business,bus,776,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:777,duk,777,,,Setra,S 418 LE Business,bus,777,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:778,duk,778,,,Setra,S 418 LE Business,bus,778,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:779,duk,779,,,Setra,S 418 LE Business,bus,779,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:780,duk,780,,,Setra,S 418 LE Business,bus,780,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:781,duk,781,,,Setra,S 418 LE Business,bus,781,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:782,duk,782,,,Setra,S 418 LE Business,bus,782,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:783,duk,783,,,Setra,S 418 LE Business,bus,783,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:784,duk,784,,,Setra,S 418 LE Business,bus,784,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:785,duk,785,,,Setra,S 418 LE Business,bus,785,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:786,duk,786,,,Setra,S 418 LE Business,bus,786,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:787,duk,787,,,Setra,S 418 LE Business,bus,787,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:788,duk,788,,,Setra,S 418 LE Business,bus,788,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:789,duk,789,,,Setra,S 418 LE Business,bus,789,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:790,duk,790,,,Setra,S 418 LE Business,bus,790,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:791,duk,791,,,Setra,S 418 LE Business,bus,791,Doprava Teplice (ICOM),2021,true,true,true,false,true
+duk:801,duk,801,,,Iveco,Crossway LE LINE 14.5M,bus,801,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:802,duk,802,,,Iveco,Crossway LE LINE 14.5M,bus,802,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:803,duk,803,,,Iveco,Crossway LE LINE 14.5M,bus,803,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:804,duk,804,,,Iveco,Crossway LE LINE 14.5M,bus,804,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:805,duk,805,,,Iveco,Crossway LE LINE 14.5M,bus,805,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:806,duk,806,,,Iveco,Crossway LE LINE 14.5M,bus,806,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:807,duk,807,,,Iveco,Crossway LE LINE 14.5M,bus,807,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:808,duk,808,,,Iveco,Crossway LE LINE 14.5M,bus,808,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:809,duk,809,,,Iveco,Crossway LE LINE 14.5M,bus,809,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:810,duk,810,,,Iveco,Crossway LE LINE 14.5M,bus,810,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:811,duk,811,,,Iveco,Crossway LE LINE 14.5M,bus,811,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:812,duk,812,,,Iveco,Crossway LE LINE 14.5M,bus,812,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:813,duk,813,,,Iveco,Crossway LE LINE 14.5M,bus,813,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:814,duk,814,,,Iveco,Crossway LE LINE 14.5M,bus,814,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:815,duk,815,,,Iveco,Crossway LE LINE 14.5M,bus,815,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:816,duk,816,,,Iveco,Crossway LE LINE 14.5M,bus,816,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:817,duk,817,,,Iveco,Crossway LE LINE 14.5M,bus,817,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:818,duk,818,,,Iveco,Crossway LE LINE 14.5M,bus,818,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:819,duk,819,,,Iveco,Crossway LE LINE 14.5M,bus,819,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:820,duk,820,,,Iveco,Crossway LE LINE 14.5M,bus,820,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:821,duk,821,,,Iveco,Crossway LE LINE 14.5M,bus,821,Doprava Teplice (ICOM),2026,true,true,true,false,true
+duk:855,duk,855,,,Setra,S 415 LE Business,bus,855,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:856,duk,856,,,Setra,S 415 LE Business,bus,856,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:857,duk,857,,,Setra,S 415 LE Business,bus,857,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:858,duk,858,,,Setra,S 415 LE Business,bus,858,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:859,duk,859,,,Setra,S 415 LE Business,bus,859,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:860,duk,860,,,Setra,S 415 LE Business,bus,860,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:861,duk,861,,,Setra,S 415 LE Business,bus,861,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:862,duk,862,,,Setra,S 415 LE Business,bus,862,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:863,duk,863,,,Setra,S 415 LE Business,bus,863,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:864,duk,864,,,Setra,S 415 LE Business,bus,864,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:865,duk,865,,,Setra,S 415 LE Business,bus,865,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:866,duk,866,,,Setra,S 415 LE Business,bus,866,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:867,duk,867,,,Setra,S 415 LE Business,bus,867,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:868,duk,868,,,Setra,S 415 LE Business,bus,868,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:869,duk,869,,,Setra,S 415 LE Business,bus,869,Dopravní společnost Ústeckého kraje,2020,true,true,true,false,true
+duk:872,duk,872,,,Iveco,Crossway LE LINE 13M,bus,872,Dopravní společnost Ústeckého kraje,2024,true,true,true,false,true
+duk:881,duk,881,,,SOR,NS 18,bus,881,Dopravní společnost Ústeckého kraje,2025,true,true,true,false,true
+duk:882,duk,882,,,SOR,NS 18,bus,882,Dopravní společnost Ústeckého kraje,2025,true,true,true,false,true
+duk:883,duk,883,,,SOR,NS 18,bus,883,Dopravní společnost Ústeckého kraje,2025,true,true,true,false,true
+duk:884,duk,884,,,SOR,NS 18,bus,884,Dopravní společnost Ústeckého kraje,2025,true,true,true,false,true
+duk:901,duk,901,,,Otokar,Vectio U LE,bus,901,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:902,duk,902,,,Otokar,Vectio U LE,bus,902,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:903,duk,903,,,Otokar,Vectio U LE,bus,903,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:904,duk,904,,,Otokar,Vectio U LE,bus,904,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:905,duk,905,,,Otokar,Vectio U LE,bus,905,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:906,duk,906,,,Otokar,Vectio U LE,bus,906,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:907,duk,907,,,Otokar,Vectio U LE,bus,907,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:908,duk,908,,,Otokar,Vectio U LE,bus,908,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:909,duk,909,,,Otokar,Vectio U LE,bus,909,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:910,duk,910,,,Otokar,Vectio U LE,bus,910,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:911,duk,911,,,Otokar,Vectio U LE,bus,911,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:912,duk,912,,,Otokar,Vectio U LE,bus,912,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:913,duk,913,,,Otokar,Vectio U LE,bus,913,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:914,duk,914,,,Otokar,Vectio U LE,bus,914,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:915,duk,915,,,Otokar,Vectio U LE,bus,915,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:916,duk,916,,,Otokar,Vectio U LE,bus,916,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:917,duk,917,,,Otokar,Vectio U LE,bus,917,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:918,duk,918,,,Otokar,Vectio U LE,bus,918,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:919,duk,919,,,Otokar,Vectio U LE,bus,919,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:920,duk,920,,,Otokar,Vectio U LE,bus,920,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:921,duk,921,,,Otokar,Vectio U LE,bus,921,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:922,duk,922,,,Otokar,Vectio U LE,bus,922,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:923,duk,923,,,Otokar,Vectio U LE,bus,923,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:924,duk,924,,,Otokar,Vectio U LE,bus,924,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:925,duk,925,,,Otokar,Vectio U LE,bus,925,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:926,duk,926,,,Otokar,Vectio U LE,bus,926,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:927,duk,927,,,Otokar,Vectio U LE,bus,927,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:928,duk,928,,,Otokar,Vectio U LE,bus,928,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:929,duk,929,,,Otokar,Vectio U LE,bus,929,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:930,duk,930,,,Otokar,Vectio U LE,bus,930,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:931,duk,931,,,Otokar,Vectio U LE,bus,931,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:932,duk,932,,,Otokar,Vectio U LE,bus,932,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:933,duk,933,,,Otokar,Vectio U LE,bus,933,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:934,duk,934,,,Otokar,Vectio U LE,bus,934,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:935,duk,935,,,Otokar,Vectio U LE,bus,935,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:936,duk,936,,,Otokar,Vectio U LE,bus,936,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:937,duk,937,,,Otokar,Vectio U LE,bus,937,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:938,duk,938,,,Otokar,Vectio U LE,bus,938,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:939,duk,939,,,Otokar,Vectio U LE,bus,939,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:940,duk,940,,,Otokar,Vectio U LE,bus,940,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:941,duk,941,,,Otokar,Vectio U LE,bus,941,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:942,duk,942,,,Otokar,Vectio U LE,bus,942,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:943,duk,943,,,Otokar,Vectio U LE,bus,943,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:944,duk,944,,,Otokar,Vectio U LE,bus,944,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:945,duk,945,,,Otokar,Vectio U LE,bus,945,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:946,duk,946,,,Otokar,Vectio U LE,bus,946,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:947,duk,947,,,Otokar,Vectio U LE,bus,947,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:948,duk,948,,,Otokar,Vectio U LE,bus,948,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:949,duk,949,,,Otokar,Vectio U LE,bus,949,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:950,duk,950,,,Otokar,Vectio U LE,bus,950,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:951,duk,951,,,Otokar,Vectio U LE,bus,951,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:952,duk,952,,,Otokar,Vectio U LE,bus,952,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:953,duk,953,,,Otokar,Vectio U LE,bus,953,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:954,duk,954,,,Otokar,Vectio U LE,bus,954,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:955,duk,955,,,Otokar,Vectio U LE,bus,955,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:956,duk,956,,,Otokar,Vectio U LE,bus,956,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:957,duk,957,,,Otokar,Vectio U LE,bus,957,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:958,duk,958,,,Otokar,Vectio U LE,bus,958,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:959,duk,959,,,Otokar,Vectio U LE,bus,959,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:960,duk,960,,,Otokar,Vectio U LE,bus,960,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:961,duk,961,,,Otokar,Vectio U LE,bus,961,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:962,duk,962,,,Otokar,Vectio U LE,bus,962,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:963,duk,963,,,Otokar,Vectio U LE,bus,963,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:964,duk,964,,,Otokar,Vectio U LE,bus,964,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:965,duk,965,,,Otokar,Vectio U LE,bus,965,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:966,duk,966,,,Otokar,Vectio U LE,bus,966,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:967,duk,967,,,Otokar,Vectio U LE,bus,967,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:968,duk,968,,,Otokar,Vectio U LE,bus,968,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:969,duk,969,,,Otokar,Vectio U LE,bus,969,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:970,duk,970,,,Otokar,Vectio U LE,bus,970,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:971,duk,971,,,Otokar,Vectio U LE,bus,971,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:972,duk,972,,,Otokar,Vectio U LE,bus,972,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:973,duk,973,,,Otokar,Vectio U LE,bus,973,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:974,duk,974,,,Otokar,Vectio U LE,bus,974,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:975,duk,975,,,Otokar,Vectio U LE,bus,975,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:976,duk,976,,,Otokar,Vectio U LE,bus,976,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:977,duk,977,,,Otokar,Vectio U LE,bus,977,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:978,duk,978,,,Otokar,Vectio U LE,bus,978,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:979,duk,979,,,Otokar,Vectio U LE,bus,979,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:980,duk,980,,,Otokar,Vectio U LE,bus,980,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:981,duk,981,,,Otokar,Vectio U LE,bus,981,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:982,duk,982,,,Otokar,Vectio U LE,bus,982,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:983,duk,983,,,Otokar,Vectio U LE,bus,983,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:984,duk,984,,,Otokar,Vectio U LE,bus,984,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:985,duk,985,,,Otokar,Vectio U LE,bus,985,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:986,duk,986,,,Otokar,Vectio U LE,bus,986,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:987,duk,987,,,Otokar,Vectio U LE,bus,987,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:988,duk,988,,,Otokar,Vectio U LE,bus,988,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:989,duk,989,,,Otokar,Vectio U LE,bus,989,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true
+duk:990,duk,990,,,Otokar,Vectio U LE,bus,990,Dopravní společnost Ústeckého kraje,2023,true,true,true,false,true

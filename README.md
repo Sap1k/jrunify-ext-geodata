@@ -181,6 +181,34 @@ The overlay policies name these files; Oběhy passes
 line prefixes whose CIS lines the filtered national JDF feed omits because
 regional feeds already publish them.
 
+# Vehicles
+
+`vehicles/` is Oběhy's vehicle registry (`obehy ref import`; see Oběhy's README): which vehicle a
+source's report is, and what it is. Every file has the same columns, one row per key of a
+vehicle:
+
+```text
+vehicle_id,source,source_vehicle_id,licence_plate,valid_from,valid_to,
+manufacturer,model,mode,<attribute>,...
+```
+
+- `vehicle_id` is opaque and never reused. Several rows with one ID give a vehicle several keys:
+  a source's vehicle ID (`source` + `source_vehicle_id`) and identifiers (`licence_plate`, `evn`,
+  `series_number`). `valid_from` defaults to 2000-01-01; an empty `valid_to` is open.
+- Every other column is an attribute from Oběhy's vocabulary
+  (`src/obehy/data/vehicles/attributes.toml`): `fleet_number`, `operator`, `year`, `low_floor`,
+  `air_conditioning`, `usb` and so on, flags as `true`/`false`. A vehicle's rows may repeat a
+  value but never contradict it.
+- `model` is the model without its maker, `manufacturer` the maker; a maker is only filled in
+  where it is known, never guessed.
+
+Files:
+
+- **`vehicles.csv`** — our own list (priority 0, not started yet): wins over every seed.
+- **`duk.csv`** — the DÚK vehicle register (seed, priority 10): 522 buses of the operators in
+  DÚK, keyed by the vehicle ID DÚK's feed sends (`duk:<id>`). Normalised from DÚK's export
+  (`vhc_id, model, agency, …`); makers split off where the model name starts with one.
+
 # Railway sources
 
 ## SR70.csv
