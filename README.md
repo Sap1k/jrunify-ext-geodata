@@ -181,6 +181,22 @@ The overlay policies name these files; Oběhy passes
 line prefixes whose CIS lines the filtered national JDF feed omits because
 regional feeds already publish them.
 
+# Gazetteers
+
+`gazetteer/` holds the place-name data jrutil-rs matches JDF stops with (`[jdf] gazetteer`;
+Oběhy's `[paths] gazetteer_dir` defaults to this directory). The files are byte-for-byte the
+ones the F# JrUtil shipped in `jrutil/data` (added there in 2023, `d134a30`), moved here so the
+build no longer needs that checkout. `.gitattributes` keeps them out of line-ending conversion.
+
+- **`cz_regions.json.gz`**: simplified boundaries of the Czech okresy (GeoJSON, CRS84),
+  `code` the okres code JDF uses.
+- **`cz_towns.json.gz`**: Czech municipality boundaries (GeoJSON, EPSG:3035) with `name` and
+  `region` (okres code).
+- **`eur_towns_countries.csv`**: European town names to country and position
+  (`name,country,lat,lon`, no header; empty position where one name is far apart in two
+  places), from the osmnames.org OSM export (ODbL, © OpenStreetMap contributors). The script
+  that made it is in JrUtil's `src/GeoData/EurTowns.fs`.
+
 # Vehicles
 
 `vehicles/` is Oběhy's vehicle registry (`obehy ref import`; see Oběhy's README): which vehicle a
