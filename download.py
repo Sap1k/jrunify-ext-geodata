@@ -30,6 +30,12 @@ class Stop:
     country: str | None = None
 
 
+# A coordinate that this many differently named stops of one source share is a
+# placeholder, not a position (QRide gives 52 Ústí stops one point near Tallinn).
+# Real shared points carry at most a handful of names: the same stop spelt twice.
+PLACEHOLDER_MIN_NAMES = 10
+
+
 # JDF country identifiers intentionally retain historical values. External
 # sources generally publish ISO 3166-1 alpha-2 codes, so translate them once
 # while materialising the geodata repository rather than changing JDF data.
@@ -582,6 +588,18 @@ def dpmlj_stop_name(row, name):
     raise ValueError(f"Unknown DPMLJ zone {row.get('zone_id')!r} for {name!r}")
 
 
+def drop_placeholders(stops):
+    """The stops whose coordinate is not a placeholder, and the placeholders."""
+    names = {}
+    for stop in stops:
+        names.setdefault((stop.lat, stop.lon), set()).add(stop.name)
+    placeholders = {
+        point for point, named in names.items() if len(named) >= PLACEHOLDER_MIN_NAMES
+    }
+    kept = [stop for stop in stops if (stop.lat, stop.lon) not in placeholders]
+    return kept, sorted(placeholders)
+
+
 def write_stops_csv(outfile, stops):
     skipped_blank = 0
     raw_stops = stops
@@ -606,7 +624,14 @@ def write_stops_csv(outfile, stops):
                 continue
             yield stop
 
-    stops = add_missing_regions(validated_stops())
+    stops, placeholders = drop_placeholders(list(validated_stops()))
+    for lat, lon in placeholders:
+        print(
+            f"Dropped placeholder coordinate {lat}, {lon} shared by "
+            f"{PLACEHOLDER_MIN_NAMES} or more stop names",
+            file=sys.stderr,
+        )
+    stops = add_missing_regions(stops)
     stops = add_missing_countries(stops)
     with outfile.open("w", encoding="utf-8", newline="") as stream:
         w = csv.writer(stream, lineterminator="\n")

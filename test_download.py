@@ -64,6 +64,20 @@ class DownloadTests(unittest.TestCase):
 
         self.assertEqual(["Stop", "50.0", "14.0", "AB", "D"], rows[0])
 
+    def test_a_coordinate_many_stops_share_is_a_placeholder(self):
+        placeholder = [
+            download.Stop(f"Ústí n.L.,Stop {index}", 59.7560959, 24.8294525)
+            for index in range(download.PLACEHOLDER_MIN_NAMES)
+        ]
+        spelt_twice = [
+            download.Stop("Ústí n.L.,Brná", 50.6, 14.0),
+            download.Stop("Ústí nad Labem,Brná", 50.6, 14.0),
+        ]
+        kept, placeholders = download.drop_placeholders(placeholder + spelt_twice)
+
+        self.assertEqual(spelt_twice, kept)
+        self.assertEqual([(59.7560959, 24.8294525)], placeholders)
+
     def test_known_town_is_added_once(self):
         stops = [
             download.Stop("Fibichova", 49.0, 17.0, "OC", "CZ"),

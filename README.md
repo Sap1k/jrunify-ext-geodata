@@ -11,7 +11,8 @@ Run a complete refresh into staging before replacing checked-in files:
 python download.py /path/to/empty-staging-directory
 ```
 
-The updater validates rows, removes spatially coincident duplicates, stages
+The updater validates rows, drops placeholder coordinates (one point that ten or more
+differently named stops of a source share), removes spatially coincident duplicates, stages
 each source atomically, and reports every failed source after attempting the
 full inventory. See [SOURCE_AUDIT.md](SOURCE_AUDIT.md) for the DADOF audit and
 known retired endpoints. Pass the repository's `other` directory to JrUtil;
@@ -190,6 +191,9 @@ build no longer needs that checkout. `.gitattributes` keeps them out of line-end
 
 - **`cz_regions.json.gz`**: simplified boundaries of the Czech okresy (GeoJSON, CRS84),
   `code` the okres code JDF uses.
+- **`eur_countries.json.gz`**: simplified European country boundaries (GeoJSON, CRS84),
+  `code` the ISO 3166-1 alpha-2 code; a copy of `data/countries.json.gz`. jrutil-rs gives a
+  foreign OSM stop the country it lies in (JDF-R011).
 - **`cz_towns.json.gz`**: Czech municipality boundaries (GeoJSON, EPSG:3035) with `name` and
   `region` (okres code).
 - **`eur_towns_countries.csv`**: European town names to country and position
